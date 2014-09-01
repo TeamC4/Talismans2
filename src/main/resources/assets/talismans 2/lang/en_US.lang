@@ -1,0 +1,43 @@
+
+# Item localizations
+item.Itemtalisman Talisman.Blank.name=Blank Talisman
+item.Itemtalisman Talisman.Dragon.name=Dragon Talisman
+item.Itemtalisman Talisman.Rabbit.name=Rabbit Talisman
+item.Itemtalisman Talisman.Bull.name=Bull Talisman
+item.Itemtalisman Talisman.Horse.name=Horse Talisman
+item.Itemtalisman Talisman.Fish.name=Fish Talisman
+item.Itemtalisman Talisman.Bat.name=Bat Talisman
+item.Itemtalisman Talisman.Chameleon.name=Chameleon Talisman
+item.Itemtalisman Talisman.Cow.name=Cow Talisman
+item.Itemtalisman Talisman.Icy.name=Icy Talisman
+
+item.ItemtalismanBelt TalismanBelt.BeltNormal.name= Normal Belt
+item.ItemtalismanBelt TalismanBelt.BeltDragon.name= Dragon Belt
+item.ItemtalismanBelt TalismanBelt.BeltRabbit.name= Rabbit Belt
+item.ItemtalismanBelt TalismanBelt.BeltBull.name= Bull Belt
+item.ItemtalismanBelt TalismanBelt.BeltHorse.name= Horse Belt
+item.ItemtalismanBelt TalismanBelt.BeltFish.name= Fish Belt
+item.ItemtalismanBelt TalismanBelt.BeltBat.name= Bat Belt
+item.ItemtalismanBelt TalismanBelt.BeltChameleon.name= Chameleon Belt
+item.ItemtalismanBelt TalismanBelt.BeltCow.name= Cow Belt
+item.ItemtalismanBelt TalismanBelt.BeltIcy.name= Icy Belt
+
+
+
+
+
+
+
+
+
+
+# Block localizations
+tile.Blocktalismans TalismansDupe.name= Talisman Duplicator
+
+
+# GUI localizations
+
+
+# Creative Tab localizations
+itemGroup.Talismans=Talismans
+

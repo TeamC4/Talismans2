@@ -1,0 +1,21 @@
+[
+{
+  "modid": "Talismans 2",
+  "name": "Talismans 2",
+  "description": "Add Talismans that give you buffs when equipped ",
+  "version": "DEV",
+  "url": "http://gigabit101.co.uk/mods/talismans/",
+  "updateUrl": "",
+  "authorList": [
+    "gigabit101"
+    
+  ],
+  "credits": "Nexans For the awesome Textures",
+  "logoFile": "/assets/talismans/textures/logo/logo.png",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
