@@ -1,7 +1,11 @@
-package Talismans.item.talismans;
+package Talismans2.item.talismans;
 
-import Talismans.Talismans2;
+import Talismans2.Talismans2;
 import net.minecraft.item.Item;
+
+/**
+ * @author Gigabit101
+ */
 
 public class ItemBlankTalisman extends Item{
 	

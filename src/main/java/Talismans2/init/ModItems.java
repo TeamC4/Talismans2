@@ -1,9 +1,13 @@
-package Talismans.init;
+package Talismans2.init;
 
-import Talismans.item.talismans.ItemBlankTalisman;
-import Talismans.item.talismans.ItemDragonTalisman;
+import Talismans2.item.talismans.ItemBlankTalisman;
+import Talismans2.item.talismans.ItemDragonTalisman;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
+
+/**
+ * @author Gigabit101
+ */
 
 public class ModItems {
 	

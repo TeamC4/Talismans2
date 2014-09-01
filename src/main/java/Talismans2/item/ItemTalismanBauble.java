@@ -1,11 +1,15 @@
-package Talismans.item;
+package Talismans2.item;
 
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import Talismans.Talismans2;
+import Talismans2.Talismans2;
 import baubles.api.BaubleType;
 import baubles.api.IBauble;
+
+/**
+ * @author Gigabit101
+ */
 
 public class ItemTalismanBauble extends Item implements IBauble{
 	

@@ -1,4 +1,8 @@
-package Talismans.lib;
+package Talismans2.lib;
+
+/**
+ * @author Gigabit101
+ */
 
 public class Modinfo {
 	

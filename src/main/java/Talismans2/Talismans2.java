@@ -1,13 +1,17 @@
-package Talismans;
+package Talismans2;
 
 import net.minecraft.creativetab.CreativeTabs;
-import Talismans.creativeTab.CreativeTabTalismans;
-import Talismans.init.ModItems;
-import Talismans.lib.Modinfo;
+import Talismans2.creativeTab.CreativeTabTalismans;
+import Talismans2.init.ModItems;
+import Talismans2.lib.Modinfo;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+
+/**
+ * @author Gigabit101
+ */
 
 @Mod(modid = Modinfo.ID, name = Modinfo.NAME, version = Modinfo.Version)
 public class Talismans2 {

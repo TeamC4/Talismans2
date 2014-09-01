@@ -1,6 +1,10 @@
-package Talismans.item.talismans;
+package Talismans2.item.talismans;
 
-import Talismans.item.ItemTalismanBauble;
+import Talismans2.item.ItemTalismanBauble;
+
+/**
+ * @author Gigabit101
+ */
 
 public class ItemDragonTalisman extends ItemTalismanBauble{
 	
