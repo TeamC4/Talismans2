@@ -1,5 +1,6 @@
 package Talismans2.creativeTab;
 
+import Talismans2.init.ModItems;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -16,7 +17,7 @@ public class CreativeTabTalismans extends CreativeTabs{
 
 	@Override
 	public Item getTabIconItem() {
-		return Items.diamond;
+		return ModItems.BlankTalisman;
 	}
 
 }

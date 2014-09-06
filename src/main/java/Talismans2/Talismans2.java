@@ -4,6 +4,8 @@ import net.minecraft.creativetab.CreativeTabs;
 import Talismans2.creativeTab.CreativeTabTalismans;
 import Talismans2.init.ModItems;
 import Talismans2.lib.Modinfo;
+import Talismans2.module.thaumcraft.ThaumcraftRecipes;
+import Talismans2.module.thaumcraft.ThaumonomiconResearch;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
@@ -25,14 +27,19 @@ public class Talismans2 {
 		//Loads ModItems
 		ModItems.init();
 	}
+	
 	@Mod.EventHandler
 	public void init (FMLInitializationEvent event){
-			
-	}
-	@Mod.EventHandler
-	public void postinit (FMLPostInitializationEvent event){
-		
+		//Load Thaumcraft Recipes
+		ThaumcraftRecipes.init();
 	}
 	
-
+	@Mod.EventHandler
+	public void postinit (FMLPostInitializationEvent event){
+		//Load Thaumonomicon Tab
+		ThaumonomiconResearch.addResearchTab();
+		//Load Thaumcraft Research
+		ThaumonomiconResearch.addResearch();
+	}
+	
 }
