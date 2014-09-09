@@ -5,6 +5,7 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
+import Talismans2.Talismans2;
 import Talismans2.item.ItemTalismanBauble;
 
 /**
@@ -15,6 +16,7 @@ public class ItemFlameTalisman extends ItemTalismanBauble{
 	
 	public ItemFlameTalisman(){
 		super();
+		this.setCreativeTab(Talismans2.tabsTalismans);
 		this.setUnlocalizedName("Flame Talisman");	
 	}
 	@Override
@@ -23,6 +25,7 @@ public class ItemFlameTalisman extends ItemTalismanBauble{
 	}
 
 	@Override
+	//Returns Potion Effect on Tick
 	public void onWornTick(ItemStack itemstack, EntityLivingBase player) {
 		if (!player.isPotionActive(Potion.fireResistance)) {
 			player.addPotionEffect(new PotionEffect(Potion.fireResistance.id,
