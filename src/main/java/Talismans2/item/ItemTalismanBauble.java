@@ -15,9 +15,9 @@ import baubles.common.lib.PlayerHandler;
  * @author Gigabit101
  */
 
-public class ItemTalismanBauble extends Item implements IBauble{
-	
-	public ItemTalismanBauble(){
+public class ItemTalismanBauble extends Item implements IBauble {
+
+	public ItemTalismanBauble() {
 		super();
 		this.setCreativeTab(Talismans2.tabsTalismans);
 		this.setMaxStackSize(1);
@@ -40,16 +40,19 @@ public class ItemTalismanBauble extends Item implements IBauble{
 	}
 
 	@Override
-	public void onEquipped(ItemStack arg0, EntityLivingBase arg1) {}
+	public void onEquipped(ItemStack arg0, EntityLivingBase arg1) {
+	}
 
 	@Override
-	public void onUnequipped(ItemStack arg0, EntityLivingBase arg1) {}
+	public void onUnequipped(ItemStack arg0, EntityLivingBase arg1) {
+	}
 
 	@Override
-	public void onWornTick(ItemStack arg0, EntityLivingBase arg1) {}
-	
+	public void onWornTick(ItemStack arg0, EntityLivingBase arg1) {
+	}
+
 	@Override
-	//Equips Talismans When Right Clicked In Players Hand
+	// Equips Talismans When Right Clicked In Players Hand
 	public ItemStack onItemRightClick(ItemStack par1ItemStack, World par2World,
 			EntityPlayer par3EntityPlayer) {
 		InventoryBaubles baubles = PlayerHandler
