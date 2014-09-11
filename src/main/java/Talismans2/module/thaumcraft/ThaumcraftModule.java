@@ -6,13 +6,14 @@ public class ThaumcraftModule {
 
 	public static void init() {
 		if (ConfigTalismans.ThaumcraftRecipes = true)
-		
+			
+			 //Load Thaumcraft Recipes
+			ThaumcraftRecipes.init();		
 		    // Load Thaumonomicon Tab
 		    ThaumonomiconResearch.addResearchTab();
 		    // Load Thaumcraft Research
 		    ThaumonomiconResearch.addResearch();
-		    //Load Thaumcraft Recipes
-			ThaumcraftRecipes.init();
+		   
 	}
 
 }
