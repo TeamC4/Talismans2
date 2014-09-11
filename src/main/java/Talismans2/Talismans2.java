@@ -7,6 +7,7 @@ import Talismans2.creativeTab.CreativeTabTalismans;
 import Talismans2.init.ModItems;
 import Talismans2.lib.Modinfo;
 import Talismans2.module.thaumcraft.ThaumcraftModule;
+import Talismans2.module.thaumcraft.ThaumcraftRecipes;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
@@ -34,7 +35,6 @@ public class Talismans2 {
 
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
-
 	}
 
 	@Mod.EventHandler

@@ -29,8 +29,9 @@ public class ItemFlameTalisman extends ItemTalismanBauble {
 	// Returns Potion Effect on Tick
 	public void onWornTick(ItemStack itemstack, EntityLivingBase player) {
 		if (!player.isPotionActive(Potion.fireResistance)) {
-			player.addPotionEffect(new PotionEffect(Potion.fireResistance.id,
+			player.addPotionEffect(new PotionEffect(Potion.fireResistance.id,					
 					Integer.MAX_VALUE, 1, true));
+			
 		}
 	}
 

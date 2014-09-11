@@ -37,7 +37,7 @@ public class ThaumonomiconResearch {
 		research = new ResearchItem("Flame_Talisman", "Talismans",
 				new AspectList(), 1, 2, 3, new ResourceLocation(
 						"talismans2:textures/items/Flame.png")).setAutoUnlock()
-				.setSecondary().setParents("Blank_Talisman").setStub();
+				.setParents("Blank_Talisman").setRound();
 		research.setPages(new ResearchPage(text),
 				new ResearchPage(ThaumcraftRecipes.FlameTalisman))
 				.setSecondary().registerResearchItem();
@@ -49,7 +49,9 @@ public class ThaumonomiconResearch {
 						"talismans2:textures/items/Water.png")).setSecondary()
 				.setAutoUnlock().setParents("Blank_Talisman")
 				.registerResearchItem();
-		research.setPages(new ResearchPage(text));
+		research.setPages(new ResearchPage(text),
+				new ResearchPage(ThaumcraftRecipes.WaterTalisman))
+				.setSecondary().registerResearchItem();
 
 		// Light Talisman
 		text = "PAGE_LIGHT_TALISMAN";
@@ -58,6 +60,20 @@ public class ThaumonomiconResearch {
 						"talismans2:textures/items/Light.png")).setSecondary()
 				.setAutoUnlock().setParents("Blank_Talisman")
 				.registerResearchItem();
-		research.setPages(new ResearchPage(text));
+		research.setPages(new ResearchPage(text),
+				new ResearchPage(ThaumcraftRecipes.LightTalisman))
+				.setSecondary().registerResearchItem();
+		
+		// Movement Talisman
+		text = "PAGE_MOVEMENT_TALISMAN";
+		research = new ResearchItem("Movement_Talisman", "Talismans",
+				new AspectList(), 4, 4, 4, new ResourceLocation(
+						"talismans2:textures/items/Movement.png")).setSecondary()
+				.setAutoUnlock().setParents("Blank_Talisman")
+				.registerResearchItem();
+		research.setPages(new ResearchPage(text),
+				new ResearchPage(ThaumcraftRecipes.MovementTalisman))
+				.setSecondary().registerResearchItem();
+		
 	}
 }

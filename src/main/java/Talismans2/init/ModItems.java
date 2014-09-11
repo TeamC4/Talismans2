@@ -4,6 +4,7 @@ import net.minecraft.item.Item;
 import Talismans2.item.talismans.ItemBlankTalisman;
 import Talismans2.item.talismans.ItemFlameTalisman;
 import Talismans2.item.talismans.ItemLightTalisman;
+import Talismans2.item.talismans.ItemMovementTalisman;
 import Talismans2.item.talismans.ItemWaterTalisman;
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -17,6 +18,7 @@ public class ModItems {
 	public static Item FlameTalisman;
 	public static Item WaterTalisman;
 	public static Item LightTalisman;
+	public static Item MovementTalisman;
 
 	public static void init() {
 		// Blank Talisman
@@ -31,6 +33,9 @@ public class ModItems {
 		// Light Talisman
 		LightTalisman = new ItemLightTalisman();
 		GameRegistry.registerItem(LightTalisman, "Light Talisman");
+		// Movement Talisman
+		MovementTalisman = new ItemMovementTalisman();
+		GameRegistry.registerItem(MovementTalisman, "Movement Talisman");
 
 	}
 
