@@ -26,11 +26,12 @@ public class Talismans2 {
 
 	@Mod.EventHandler
 	public void preinit(FMLPreInitializationEvent event) {
-		// Loads ModItems
-		ModItems.init();
+		// Loads Config	
 		ConfigTalismans.config = new Configuration(
 				event.getSuggestedConfigurationFile());
 		ConfigTalismans.createConfig();
+		// Load ModItems
+		ModItems.init();
 	}
 
 	@Mod.EventHandler

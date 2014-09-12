@@ -11,12 +11,11 @@ public class ConfigTalismans {
 	public static Configuration config;
 
 	public static void createConfig() {
+		config.load();
+		
 		config.addCustomCategoryComment(CATEGORY_THAUMCRAFT,
 				"Enable Thaumcraft Intergration");
 		
-
-		config.load();
-
 		// CATEGORY_THAUMCRAFT
 		ThaumcraftRecipes = config.get(CATEGORY_THAUMCRAFT,
 				"ThaumcraftRecipes", false).getBoolean(ThaumcraftRecipes);
