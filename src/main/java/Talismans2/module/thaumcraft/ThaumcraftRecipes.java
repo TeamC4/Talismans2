@@ -44,7 +44,7 @@ public class ThaumcraftRecipes {
 						new ItemStack(Items.water_bucket) });
 		
 		LightTalisman = ThaumcraftApi.addInfusionCraftingRecipe(
-				"Light_Talisman", new ItemStack(ModItems.WaterTalisman), 5,
+				"Light_Talisman", new ItemStack(ModItems.LightTalisman), 5,
 				new AspectList().add(Aspect.MAGIC, 15).add(Aspect.LIGHT, 15),
 				new ItemStack(ModItems.BlankTalisman), new ItemStack[] {
 						new ItemStack(Items.carrot),
