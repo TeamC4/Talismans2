@@ -3,6 +3,7 @@ package Talismans2.init;
 import net.minecraft.item.Item;
 import Talismans2.item.talismans.ItemBlankTalisman;
 import Talismans2.item.talismans.ItemFlameTalisman;
+import Talismans2.item.talismans.ItemInvisibleTalisman;
 import Talismans2.item.talismans.ItemLightTalisman;
 import Talismans2.item.talismans.ItemMiningTalisman;
 import Talismans2.item.talismans.ItemMovementTalisman;
@@ -21,6 +22,7 @@ public class ModItems {
 	public static Item LightTalisman;
 	public static Item MovementTalisman;
 	public static Item MiningTalisman;
+	public static Item InvisibleTalisman;
 
 	public static void init() {
 		// Blank Talisman
@@ -41,6 +43,9 @@ public class ModItems {
 		// Mining Talisman
 		MiningTalisman = new ItemMiningTalisman();
 		GameRegistry.registerItem(MiningTalisman, "Mining Talisman");
+		//Invisible Talisman
+		InvisibleTalisman = new ItemInvisibleTalisman();
+		GameRegistry.registerItem(InvisibleTalisman, "Invisible Talisman");
 
 	}
 

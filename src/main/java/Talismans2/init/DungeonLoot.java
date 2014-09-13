@@ -32,6 +32,9 @@ public class DungeonLoot {
         if (properties.WaterTalismanLootTrue) {
             ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ModItems.WaterTalisman), 0, 1, ConfigTalismans.ChanceWaterTalisman));
         }
+        if (properties.InvisibleTalismanLootTrue){
+        	ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ModItems.InvisibleTalisman), 0, 1, ConfigTalismans.ChanceInvisibleTalisman));
+        }
     }
 
 }

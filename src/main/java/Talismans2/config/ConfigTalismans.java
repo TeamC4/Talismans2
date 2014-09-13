@@ -16,6 +16,7 @@ public class ConfigTalismans {
     public final boolean LightTalismanLootTrue;
     public final boolean MiningTalismanLootTrue;
     public final boolean MovementTalismanLootTrue;
+    public final boolean InvisibleTalismanLootTrue;
     
     public static int ChanceBlankTalisman;
     public static int ChanceFlameTalisman;
@@ -23,6 +24,7 @@ public class ConfigTalismans {
     public static int ChanceLightTalisman;
     public static int ChanceMovementTalisman;
     public static int ChanceMiningTalisman;
+    public static int ChanceInvisibleTalisman;
 
 
 	private ConfigTalismans(File configFile) {
@@ -43,6 +45,8 @@ public class ConfigTalismans {
 				"Add Mining Talismans To DungeonLoot", true).getBoolean(true);
 		MovementTalismanLootTrue = config.get(CATEGORY_LOOT,
 				"Add Movement Talismans To DungeonLoot", true).getBoolean(true);
+		InvisibleTalismanLootTrue = config.get(CATEGORY_LOOT,
+				"Add Invisible Talisman To DungeonLoot", true).getBoolean(true);
 		
 		//Loot Chance
         ChanceBlankTalisman = config.get(Configuration.CATEGORY_GENERAL, "Blank Talisman spawning chance", 15).getInt();
@@ -51,7 +55,8 @@ public class ConfigTalismans {
         ChanceLightTalisman = config.get(Configuration.CATEGORY_GENERAL, "Light Talisman spawning chance", 15).getInt();
         ChanceMovementTalisman = config.get(Configuration.CATEGORY_GENERAL, "Movement Talisman spawning chance", 15).getInt();
         ChanceMiningTalisman = config.get(Configuration.CATEGORY_GENERAL, "Mining Talisman spawning chance", 15).getInt();
-
+        ChanceInvisibleTalisman = config.get(Configuration.CATEGORY_GENERAL,"Invisible Talisman Spawning Chance", 15).getInt();
+        
 
 		config.save();
 
