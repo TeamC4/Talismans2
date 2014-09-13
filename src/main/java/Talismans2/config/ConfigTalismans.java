@@ -6,15 +6,16 @@ import net.minecraftforge.common.config.Configuration;
 
 public class ConfigTalismans {
 	private static ConfigTalismans instance = null;
-	private final String CATEGORY_Thaumcraft = "Thaumcraft";
-//	private final String CATEGORY_LOOT = "loot";
+	private final String CATEGORY_THAUMCRAFT = "Thaumcraft";
+	// private final String CATEGORY_LOOT = "loot";
 	public final boolean ThaumscraftModuleTrue;
-//	public final boolean DungeonLootAllowed;
+
+	// public final boolean DungeonLootAllowed;
 
 	private ConfigTalismans(File configFile) {
 		Configuration config = new Configuration(configFile);
 		config.load();
-		ThaumscraftModuleTrue = config.get(CATEGORY_Thaumcraft,
+		ThaumscraftModuleTrue = config.get(CATEGORY_THAUMCRAFT,
 				"Thaumcraft Module On", true).getBoolean(true);
 
 		config.save();

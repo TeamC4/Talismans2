@@ -35,7 +35,7 @@ public class ThaumonomiconResearch {
 		// Flame Talisman
 		text = "PAGE_FLAME_TALISMAN";
 		research = new ResearchItem("Flame_Talisman", "Talismans",
-				//                X  Y  Z
+		// X Y Z
 				new AspectList(), 0, 2, 1, new ResourceLocation(
 						"talismans2:textures/items/Flame.png")).setAutoUnlock()
 				.setParents("Blank_Talisman").setRound();
@@ -64,28 +64,28 @@ public class ThaumonomiconResearch {
 		research.setPages(new ResearchPage(text),
 				new ResearchPage(ThaumcraftRecipes.LightTalisman))
 				.setSecondary().registerResearchItem();
-		
+
 		// Movement Talisman
 		text = "PAGE_MOVEMENT_TALISMAN";
 		research = new ResearchItem("Movement_Talisman", "Talismans",
 				new AspectList(), 0, 3, 1, new ResourceLocation(
-						"talismans2:textures/items/Movement.png")).setSecondary()
-				.setAutoUnlock().setParents("Flame_Talisman")
+						"talismans2:textures/items/Movement.png"))
+				.setSecondary().setAutoUnlock().setParents("Flame_Talisman")
 				.registerResearchItem();
 		research.setPages(new ResearchPage(text),
 				new ResearchPage(ThaumcraftRecipes.MovementTalisman))
 				.setSecondary().registerResearchItem();
-		
+
 		// Mining Talisman
-				text = "PAGE_MINING_TALISMAN";
-				research = new ResearchItem("Mining_Talisman", "Talismans",
-						new AspectList(), 0, 4, 1, new ResourceLocation(
-								"talismans2:textures/items/Mining.png")).setSecondary()
-						.setAutoUnlock().setParents("Movement_Talisman")
-						.registerResearchItem();
-				research.setPages(new ResearchPage(text),
-						new ResearchPage(ThaumcraftRecipes.MiningTalisman))
-						.setSecondary().registerResearchItem();
-		
+		text = "PAGE_MINING_TALISMAN";
+		research = new ResearchItem("Mining_Talisman", "Talismans",
+				new AspectList(), 0, 4, 1, new ResourceLocation(
+						"talismans2:textures/items/Mining.png")).setSecondary()
+				.setAutoUnlock().setParents("Movement_Talisman")
+				.registerResearchItem();
+		research.setPages(new ResearchPage(text),
+				new ResearchPage(ThaumcraftRecipes.MiningTalisman))
+				.setSecondary().registerResearchItem();
+
 	}
 }

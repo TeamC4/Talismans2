@@ -25,6 +25,7 @@ public class ItemWaterTalisman extends ItemTalismanBauble {
 	public void registerIcons(IIconRegister iconRegister) {
 		itemIcon = iconRegister.registerIcon("talismans2:Water");
 	}
+
 	@Override
 	// Returns Potion Effect on Tick
 	public void onWornTick(ItemStack itemstack, EntityLivingBase player) {

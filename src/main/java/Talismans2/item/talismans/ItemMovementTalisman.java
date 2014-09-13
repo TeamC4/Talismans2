@@ -1,6 +1,5 @@
 package Talismans2.item.talismans;
 
-
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
@@ -9,13 +8,14 @@ import net.minecraft.potion.PotionEffect;
 import Talismans2.Talismans2;
 import Talismans2.item.ItemTalismanBauble;
 
-public class ItemMovementTalisman extends ItemTalismanBauble{
-	
-	public ItemMovementTalisman(){
+public class ItemMovementTalisman extends ItemTalismanBauble {
+
+	public ItemMovementTalisman() {
 		super();
 		this.setUnlocalizedName("Movement Talisman");
 		this.setCreativeTab(Talismans2.tabsTalismans);
 	}
+
 	@Override
 	public void registerIcons(IIconRegister iconRegister) {
 		itemIcon = iconRegister.registerIcon("talismans2:Movement");
@@ -39,5 +39,3 @@ public class ItemMovementTalisman extends ItemTalismanBauble{
 	}
 
 }
-
-

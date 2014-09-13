@@ -25,7 +25,7 @@ public class ThaumcraftRecipes {
 				new ItemStack(ModItems.BlankTalisman), new ItemStack(
 						Blocks.stone), new AspectList().add(Aspect.MAGIC, 12)
 						.add(Aspect.AIR, 10));
-		
+
 		// Infusion Recipes
 		FlameTalisman = ThaumcraftApi.addInfusionCraftingRecipe(
 				"Flame_Talisman", new ItemStack(ModItems.FlameTalisman), 5,
@@ -34,7 +34,7 @@ public class ThaumcraftRecipes {
 						new ItemStack(Items.coal),
 						new ItemStack(Items.coal, 1, 1),
 						new ItemStack(Items.lava_bucket) });
-		
+
 		WaterTalisman = ThaumcraftApi.addInfusionCraftingRecipe(
 				"Water_Talisman", new ItemStack(ModItems.WaterTalisman), 5,
 				new AspectList().add(Aspect.MAGIC, 15).add(Aspect.WATER, 15),
@@ -43,7 +43,7 @@ public class ThaumcraftRecipes {
 						new ItemStack(Items.fishing_rod),
 						new ItemStack(Items.boat),
 						new ItemStack(Items.water_bucket) });
-		
+
 		LightTalisman = ThaumcraftApi.addInfusionCraftingRecipe(
 				"Light_Talisman", new ItemStack(ModItems.LightTalisman), 5,
 				new AspectList().add(Aspect.MAGIC, 15).add(Aspect.LIGHT, 15),
@@ -51,24 +51,26 @@ public class ThaumcraftRecipes {
 						new ItemStack(Items.carrot),
 						new ItemStack(Items.carrot),
 						new ItemStack(Items.ender_eye) });
-		
+
 		MovementTalisman = ThaumcraftApi.addInfusionCraftingRecipe(
-				"Movement_Talisman", new ItemStack(ModItems.MovementTalisman), 5,
-				new AspectList().add(Aspect.MAGIC, 15).add(Aspect.MAN, 15),
+				"Movement_Talisman", new ItemStack(ModItems.MovementTalisman),
+				5, new AspectList().add(Aspect.MAGIC, 15).add(Aspect.MAN, 15),
 				new ItemStack(ModItems.BlankTalisman), new ItemStack[] {
-						new ItemStack(Items.bed),
-						new ItemStack(Items.sugar),
+						new ItemStack(Items.bed), new ItemStack(Items.sugar),
 						new ItemStack(Items.iron_boots) });
-		
-		MiningTalisman = ThaumcraftApi.addInfusionCraftingRecipe(
-				"Mining_Talisman", new ItemStack(ModItems.MiningTalisman), 5,
-				new AspectList().add(Aspect.MAGIC, 15).add(Aspect.TOOL, 15),
-				new ItemStack(ModItems.BlankTalisman), new ItemStack[] {
-						new ItemStack(Items.diamond_pickaxe),
-						new ItemStack(Items.diamond_shovel),
-						new ItemStack(Items.sugar),
-						new ItemStack(Items.sugar) });
-		
+
+		MiningTalisman = ThaumcraftApi
+				.addInfusionCraftingRecipe(
+						"Mining_Talisman",
+						new ItemStack(ModItems.MiningTalisman),
+						5,
+						new AspectList().add(Aspect.MAGIC, 15).add(Aspect.TOOL,
+								15), new ItemStack(ModItems.BlankTalisman),
+						new ItemStack[] { new ItemStack(Items.diamond_pickaxe),
+								new ItemStack(Items.diamond_shovel),
+								new ItemStack(Items.sugar),
+								new ItemStack(Items.sugar) });
+
 	}
 
 }
