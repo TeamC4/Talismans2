@@ -22,6 +22,7 @@ tc.research_name.Water_Talisman=Water Talisman
 tc.research_name.Light_Talisman=Light Talisman
 tc.research_name.Movement_Talisman=Movement Talisman
 tc.research_name.Mining_Talisman=Mining Talisman
+tc.research_name.Invisible_Talisman=Invisible Talisman
 
 
 
@@ -32,7 +33,7 @@ tc.research_text.Water_Talisman=Learning the powers of Water Breathing
 tc.research_text.Light_Talisman=Learning the powers of Seeing in the Dark
 tc.research_text.Movement_Talisman=ToDo
 tc.research_text.Mining_Talisman=ToDo
-
+tc.research_text.Invisible_Talisman=ToDo
 
 
 # Thaumcraft Thaumonomicon Text localizations
@@ -42,6 +43,7 @@ PAGE_WATER_TALISMAN=TODO
 PAGE_LIGHT_TALISMAN=TODO
 PAGE_MOVEMENT_TALISMAN=TODO
 PAGE_MINING_TALISMAN=TODO
+PAGE_INVISIBLE_TALISMAN=TODO
 
 
 

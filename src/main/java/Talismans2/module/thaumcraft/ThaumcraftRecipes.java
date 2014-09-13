@@ -18,6 +18,7 @@ public class ThaumcraftRecipes {
 	public static InfusionRecipe LightTalisman;
 	public static InfusionRecipe MovementTalisman;
 	public static InfusionRecipe MiningTalisman;
+	public static InfusionRecipe InvisibleTalisman;
 
 	public static void init() {
 		// Crucible Recipes
@@ -69,6 +70,17 @@ public class ThaumcraftRecipes {
 						new ItemStack[] { new ItemStack(Items.diamond_pickaxe),
 								new ItemStack(Items.diamond_shovel),
 								new ItemStack(Items.sugar),
+								new ItemStack(Items.sugar) });
+		
+		InvisibleTalisman = ThaumcraftApi
+				.addInfusionCraftingRecipe(
+						"Invisible_Talisman",
+						new ItemStack(ModItems.InvisibleTalisman),
+						5,
+						new AspectList().add(Aspect.MAGIC, 15).add(Aspect.MAN,
+								15), new ItemStack(ModItems.BlankTalisman),
+						new ItemStack[] { new ItemStack(Items.ghast_tear),
+								new ItemStack(Items.blaze_powder),
 								new ItemStack(Items.sugar) });
 
 	}

@@ -84,6 +84,16 @@ public class ThaumonomiconResearch {
 		research.setPages(new ResearchPage(text),
 				new ResearchPage(ThaumcraftRecipes.MiningTalisman))
 				.registerResearchItem();
+		
+		// Invisible Talisman
+		text = "PAGE_INVISIBLE_TALISMAN";
+		research = new ResearchItem("Invisible_Talisman", "Talismans",
+				ResearchAspects.InvisibleTalismanResearch, 0, 5, 1, new ResourceLocation(
+						"talismans2:textures/items/Invisible.png"))
+				.setParents("Blank_Talisman");
+		research.setPages(new ResearchPage(text),
+				new ResearchPage(ThaumcraftRecipes.InvisibleTalisman))
+				.registerResearchItem();
 
 	}
 

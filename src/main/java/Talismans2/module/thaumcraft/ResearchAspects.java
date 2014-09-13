@@ -10,5 +10,6 @@ public class ResearchAspects {
     public static AspectList LightTalismanResearch = new AspectList().add(Aspect.LIGHT, 5).add(Aspect.TOOL, 6).add(Aspect.MAGIC, 4);
     public static AspectList MiningTalismanResearch = new AspectList().add(Aspect.MINE, 5).add(Aspect.EARTH, 5).add(Aspect.TOOL, 6).add(Aspect.MAGIC, 4);
     public static AspectList MovementTalismanResearch = new AspectList().add(Aspect.MAN, 5).add(Aspect.MOTION, 5).add(Aspect.SENSES, 5).add(Aspect.TOOL, 6).add(Aspect.MAGIC, 4);
+    public static AspectList InvisibleTalismanResearch = new AspectList().add(Aspect.MAN, 5).add(Aspect.MAGIC, 5);
 
 }
