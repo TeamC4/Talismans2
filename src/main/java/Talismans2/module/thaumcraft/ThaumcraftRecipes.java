@@ -17,6 +17,7 @@ public class ThaumcraftRecipes {
 	public static InfusionRecipe WaterTalisman;
 	public static InfusionRecipe LightTalisman;
 	public static InfusionRecipe MovementTalisman;
+	public static InfusionRecipe MiningTalisman;
 
 	public static void init() {
 		// Crucible Recipes
@@ -58,6 +59,15 @@ public class ThaumcraftRecipes {
 						new ItemStack(Items.bed),
 						new ItemStack(Items.sugar),
 						new ItemStack(Items.iron_boots) });
+		
+		MiningTalisman = ThaumcraftApi.addInfusionCraftingRecipe(
+				"Mining_Talisman", new ItemStack(ModItems.MiningTalisman), 5,
+				new AspectList().add(Aspect.MAGIC, 15).add(Aspect.TOOL, 15),
+				new ItemStack(ModItems.BlankTalisman), new ItemStack[] {
+						new ItemStack(Items.diamond_pickaxe),
+						new ItemStack(Items.diamond_shovel),
+						new ItemStack(Items.sugar),
+						new ItemStack(Items.sugar) });
 		
 	}
 

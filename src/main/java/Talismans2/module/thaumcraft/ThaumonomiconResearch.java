@@ -76,5 +76,16 @@ public class ThaumonomiconResearch {
 				new ResearchPage(ThaumcraftRecipes.MovementTalisman))
 				.setSecondary().registerResearchItem();
 		
+		// Mining Talisman
+				text = "PAGE_MINING_TALISMAN";
+				research = new ResearchItem("Mining_Talisman", "Talismans",
+						new AspectList(), 0, 4, 1, new ResourceLocation(
+								"talismans2:textures/items/Mining.png")).setSecondary()
+						.setAutoUnlock().setParents("Movement_Talisman")
+						.registerResearchItem();
+				research.setPages(new ResearchPage(text),
+						new ResearchPage(ThaumcraftRecipes.MiningTalisman))
+						.setSecondary().registerResearchItem();
+		
 	}
 }
