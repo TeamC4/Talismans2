@@ -5,6 +5,7 @@ import java.io.File;
 import net.minecraft.creativetab.CreativeTabs;
 import Talismans2.config.ConfigTalismans;
 import Talismans2.creativeTab.CreativeTabTalismans;
+import Talismans2.init.DungeonLoot;
 import Talismans2.init.ModItems;
 import Talismans2.lib.Modinfo;
 import Talismans2.module.thaumcraft.ThaumcraftModule;
@@ -43,6 +44,7 @@ public class Talismans2 {
 
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
+		DungeonLoot.init(properties);
 	}
 
 	@Mod.EventHandler
