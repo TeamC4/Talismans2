@@ -1,5 +1,7 @@
 package Talismans2;
 
+import java.io.File;
+
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.common.config.Configuration;
 import Talismans2.config.ConfigTalismans;
@@ -9,6 +11,7 @@ import Talismans2.lib.Modinfo;
 import Talismans2.module.thaumcraft.ThaumcraftModule;
 import Talismans2.module.thaumcraft.ThaumcraftRecipes;
 import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -19,6 +22,10 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
 @Mod(modid = Modinfo.ID, name = Modinfo.NAME, version = Modinfo.Version)
 public class Talismans2 {
+	public static ConfigTalismans properties;
+
+	@Instance(Modinfo.ID)
+	public static Talismans2 instance;
 
 	// Loads Talismans Creative Tab
 	public static CreativeTabs tabsTalismans = new CreativeTabTalismans(
@@ -26,10 +33,12 @@ public class Talismans2 {
 
 	@Mod.EventHandler
 	public void preinit(FMLPreInitializationEvent event) {
-		// Loads Config	
-		ConfigTalismans.config = new Configuration(
-				event.getSuggestedConfigurationFile());
-		ConfigTalismans.createConfig();
+		instance = this;
+		// This should be the FIRST thing that gets done.
+		String path = event.getSuggestedConfigurationFile().getAbsolutePath()
+				.replace(Modinfo.ID, "Talismans2");
+
+		properties = ConfigTalismans.initialize(new File(path));
 		// Load ModItems
 		ModItems.init();
 	}
@@ -41,7 +50,7 @@ public class Talismans2 {
 	@Mod.EventHandler
 	public void postinit(FMLPostInitializationEvent event) {
 		// Loads Thaumcraft Module
-		ThaumcraftModule.init();
+		ThaumcraftModule.init(properties);
 	}
 
 }
