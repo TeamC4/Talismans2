@@ -31,7 +31,7 @@ public class ItemMiningTalisman extends ItemTalismanBauble {
 	public void onWornTick(ItemStack itemstack, EntityLivingBase player) {
 		if (!player.isPotionActive(Potion.digSpeed)) {
 			player.addPotionEffect(new PotionEffect(Potion.digSpeed.id,
-					Integer.MAX_VALUE, 1, true));
+					Integer.MAX_VALUE, 3, true));
 		}
 	}
 

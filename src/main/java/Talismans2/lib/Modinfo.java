@@ -11,6 +11,6 @@ public class Modinfo {
 	// Mod Name
 	public static final String NAME = "Talismans 2";
 	// Mod Version
-	public static final String Version = "DEV";
+	public static final String Version = "Alpha 0.0.2";
 
 }

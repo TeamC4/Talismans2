@@ -9,6 +9,7 @@ import Talismans2.init.DungeonLoot;
 import Talismans2.init.ModItems;
 import Talismans2.lib.Modinfo;
 import Talismans2.module.thaumcraft.ThaumcraftModule;
+import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -49,8 +50,17 @@ public class Talismans2 {
 
 	@Mod.EventHandler
 	public void postinit(FMLPostInitializationEvent event) {
-		// Loads Thaumcraft Module
-		ThaumcraftModule.init(properties);
+		// Loads Thaumcraft Module if Thaumcraft is Installed   
+		if (Loader.isModLoaded("Thaumcraft"))
+        {
+           System.out.print("Thaumcraft Detected");
+   		   ThaumcraftModule.init(properties);
+        }
+        else
+        {
+            System.out.print("Thaumcraft Not Detected");
+        }
+
 	}
 
 }
