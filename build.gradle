@@ -19,7 +19,7 @@ apply plugin: 'forge'
 
 version = "0.0"
 group= "com.gigabit101.talismans2" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "Talismans 2"
+archivesBaseName = "Talismans2"
 
 def grabDep(name, url){
 	ant.get(src: url, dest: 'dep')
