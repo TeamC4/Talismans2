@@ -1,3 +1,5 @@
+[![Build Status](https://drone.io/bitbucket.org/gigabit101/talismans-2/status.png)](https://drone.io/bitbucket.org/gigabit101/talismans-2/latest)
+
 Talismans 2
 Talismans 2 is a WIP Minecraft
 
