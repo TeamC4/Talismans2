@@ -21,7 +21,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
  * @author Gigabit101
  */
 
-@Mod(modid = Modinfo.ID, name = Modinfo.NAME, version = Modinfo.Version)
+@Mod(modid = Modinfo.ID, name = Modinfo.NAME, version = Modinfo.Version, dependencies = "required-after:Baubles@:")
 public class Talismans2 {
 	public static ConfigTalismans properties;
 
