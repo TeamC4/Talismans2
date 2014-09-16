@@ -2,12 +2,14 @@ package Talismans2.init;
 
 import net.minecraft.item.Item;
 import Talismans2.item.talismans.ItemBlankTalisman;
+import Talismans2.item.talismans.ItemCraftingTalisman;
 import Talismans2.item.talismans.ItemFlameTalisman;
 import Talismans2.item.talismans.ItemInvisibleTalisman;
 import Talismans2.item.talismans.ItemLightTalisman;
 import Talismans2.item.talismans.ItemMiningTalisman;
 import Talismans2.item.talismans.ItemMovementTalisman;
 import Talismans2.item.talismans.ItemWaterTalisman;
+import Talismans2.item.talismans.ItemWitherlessTalisman;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 /**
@@ -23,6 +25,10 @@ public class ModItems {
 	public static Item MovementTalisman;
 	public static Item MiningTalisman;
 	public static Item InvisibleTalisman;
+	public static Item WitherlessTalisman;
+	public static Item CraftingTalisman;
+
+
 
 	public static void init() {
 		// Blank Talisman
@@ -46,6 +52,12 @@ public class ModItems {
 		//Invisible Talisman
 		InvisibleTalisman = new ItemInvisibleTalisman();
 		GameRegistry.registerItem(InvisibleTalisman, "Invisible Talisman");
+		//Witherless Talisman
+		WitherlessTalisman = new ItemWitherlessTalisman();
+		GameRegistry.registerItem(WitherlessTalisman, "Witherless Talisman");
+		//Crafting Talisman
+		CraftingTalisman = new ItemCraftingTalisman();
+		GameRegistry.registerItem(CraftingTalisman, "Crafting Talisman");
 
 	}
 

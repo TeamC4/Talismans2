@@ -17,6 +17,8 @@ public class ThaumcraftModule {
 		ThaumonomiconResearch.addResearchTab();
 		// Load Thaumcraft Research
 		ThaumonomiconResearch.addResearch();
+		// Load Fusion Research
+		ThaumonomiconResearch.addFusionResearch();
 
 	}
 

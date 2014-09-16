@@ -48,7 +48,7 @@ public class ThaumonomiconResearch {
 		// Water Talisman
 		text = "PAGE_WATER_TALISMAN";
 		research = new ResearchItem("Water_Talisman", "Talismans",
-				ResearchAspects.WaterTalismanResearch, -1, 2, 1, new ResourceLocation(
+				ResearchAspects.WaterTalismanResearch, 0, -2, 1, new ResourceLocation(
 						"talismans2:textures/items/Water.png"))
 				.setParents("Blank_Talisman");
 		research.setPages(new ResearchPage(text),
@@ -58,7 +58,7 @@ public class ThaumonomiconResearch {
 		// Light Talisman
 		text = "PAGE_LIGHT_TALISMAN";
 		research = new ResearchItem("Light_Talisman", "Talismans",
-				ResearchAspects.LightTalismanResearch, 1, 2, 1, new ResourceLocation(
+				ResearchAspects.LightTalismanResearch, 2, 0, 1, new ResourceLocation(
 						"talismans2:textures/items/Light.png"))
 				.setParents("Blank_Talisman");
 		research.setPages(new ResearchPage(text),
@@ -68,9 +68,9 @@ public class ThaumonomiconResearch {
 		// Movement Talisman
 		text = "PAGE_MOVEMENT_TALISMAN";
 		research = new ResearchItem("Movement_Talisman", "Talismans",
-				ResearchAspects.MovementTalismanResearch, 0, 3, 1, new ResourceLocation(
+				ResearchAspects.MovementTalismanResearch, -2, 0, 1, new ResourceLocation(
 						"talismans2:textures/items/Movement.png"))
-				.setParents("Flame_Talisman");
+				.setParents("Blank_Talisman");
 		research.setPages(new ResearchPage(text),
 				new ResearchPage(ThaumcraftRecipes.MovementTalisman))
 				.registerResearchItem();
@@ -78,9 +78,9 @@ public class ThaumonomiconResearch {
 		// Mining Talisman
 		text = "PAGE_MINING_TALISMAN";
 		research = new ResearchItem("Mining_Talisman", "Talismans",
-				ResearchAspects.MiningTalismanResearch, 0, 4, 1, new ResourceLocation(
+				ResearchAspects.MiningTalismanResearch, -1, 1, 1, new ResourceLocation(
 						"talismans2:textures/items/Mining.png"))
-				.setParents("Movement_Talisman");
+				.setParents("Blank_Talisman");
 		research.setPages(new ResearchPage(text),
 				new ResearchPage(ThaumcraftRecipes.MiningTalisman))
 				.registerResearchItem();
@@ -88,13 +88,38 @@ public class ThaumonomiconResearch {
 		// Invisible Talisman
 		text = "PAGE_INVISIBLE_TALISMAN";
 		research = new ResearchItem("Invisible_Talisman", "Talismans",
-				ResearchAspects.InvisibleTalismanResearch, 0, 5, 1, new ResourceLocation(
+				ResearchAspects.InvisibleTalismanResearch, 1, 1, 1, new ResourceLocation(
 						"talismans2:textures/items/Invisible.png"))
 				.setParents("Blank_Talisman");
 		research.setPages(new ResearchPage(text),
 				new ResearchPage(ThaumcraftRecipes.InvisibleTalisman))
 				.registerResearchItem();
+		
+		// Witherless Talisman
+		text = "PAGE_WITHERLESS_TALISMAN";
+		research = new ResearchItem("Witherless_Talisman", "Talismans",
+				ResearchAspects.WitherlessTalismanResearch, 1, -1, 1, new ResourceLocation(
+						"talismans2:textures/items/Witherless.png"))
+				.setParents("Blank_Talisman");
+		research.setPages(new ResearchPage(text),
+				new ResearchPage(ThaumcraftRecipes.WitherlessTalisman))
+				.registerResearchItem();
 
+	}
+	
+	public static void addFusionResearch(){
+		ResearchItem research;
+		String text = "1";
+
+		// FusionResearch
+		text = "PAGE_FUSION_RESEARCH";
+		research = new ResearchItem("Fusion", "Talismans",
+				new AspectList(), 0, 6, 0, new ResourceLocation(
+						"talismans2:textures/items/Fusion.png")).setRound()
+				.setAutoUnlock().registerResearchItem().setSpecial();
+		research.setPages(new ResearchPage(text));
+		
+		
 	}
 
 }

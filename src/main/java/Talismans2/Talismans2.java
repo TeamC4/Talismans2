@@ -9,9 +9,11 @@ import Talismans2.init.DungeonLoot;
 import Talismans2.init.ModItems;
 import Talismans2.lib.Modinfo;
 import Talismans2.module.thaumcraft.ThaumcraftModule;
+import Talismans2.proxies.CommonProxy;
 import Talismans2.util.LogHelper;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
@@ -27,6 +29,9 @@ public class Talismans2 {
 
 	@Instance(Modinfo.ID)
 	public static Talismans2 instance;
+	
+	@SidedProxy(clientSide = Modinfo.CLIENT_PROXY_CLASS, serverSide = Modinfo.SERVER_PROXY_CLASS)
+	public static CommonProxy proxy;
 
 	// Loads Talismans Creative Tab
 	public static CreativeTabs tabsTalismans = new CreativeTabTalismans(
@@ -40,6 +45,10 @@ public class Talismans2 {
 				.replace(Modinfo.ID, "Talismans2");
 
 		properties = ConfigTalismans.initialize(new File(path));
+		
+		// Loads Keybindings
+		proxy.registerKeyBindings();
+		
 		// Load ModItems
 		ModItems.init();
 		

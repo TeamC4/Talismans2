@@ -7,13 +7,19 @@ item.Water Talisman.name=Water Talisman
 item.Movement Talisman.name=Movement Talisman
 item.Mining Talisman.name=Mining Talisman
 item.Invisible Talisman.name=Invisible Talisman
+item.Witherless Talisman.name=Witherless Talisman
+
 
 
 # Creative Tab localizations
 itemGroup.Talismans 2=Talismans 2
 
+
+
 # Thaumcraft Tab localizations
 tc.research_category.Talismans=Talismans 2
+
+
 
 # Thaumcraft Research localizations
 tc.research_name.Flame_Talisman=Flame Talisman
@@ -23,6 +29,7 @@ tc.research_name.Light_Talisman=Light Talisman
 tc.research_name.Movement_Talisman=Movement Talisman
 tc.research_name.Mining_Talisman=Mining Talisman
 tc.research_name.Invisible_Talisman=Invisible Talisman
+tc.research_name.Witherless_Talisman=Witherless Talisman
 
 
 
@@ -34,6 +41,8 @@ tc.research_text.Light_Talisman=Learning the powers of Seeing in the Dark
 tc.research_text.Movement_Talisman=ToDo
 tc.research_text.Mining_Talisman=ToDo
 tc.research_text.Invisible_Talisman=ToDo
+tc.research_text.Witherless_Talisman=ToDo
+
 
 
 # Thaumcraft Thaumonomicon Text localizations
@@ -44,6 +53,7 @@ PAGE_LIGHT_TALISMAN=TODO
 PAGE_MOVEMENT_TALISMAN=TODO
 PAGE_MINING_TALISMAN=TODO
 PAGE_INVISIBLE_TALISMAN=TODO
+PAGE_WITHERLESS_TALISMAN=TODO
 
 
 
