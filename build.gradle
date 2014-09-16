@@ -17,7 +17,7 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "DEV"
+version = "0.0"
 group= "com.gigabit101.talismans2" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "Talismans 2"
 
@@ -37,10 +37,12 @@ dependencies {
     }
 	println("  Downloading dependencies!")
 	grabDep('gbl', 'https://dl.dropboxusercontent.com/u/47135879/Baubles-deobf-1.7.10-1.0.1.4.jar')
+	grabDep('gbt', 'https://dl.dropboxusercontent.com/u/47135879/Thaumcraft-1.7.10-4.2.0.1.jar')
 
 	
 	println("  Adding dependencies!")
     compile files("dep/gbl.jar")
+	 compile files("dep/gbt.jar")
 	println("  Finished adding dependencies!")
 }
 
@@ -51,7 +53,8 @@ minecraft {
 
 dependencies {
 	compile files (
-		'Baubles-deobf.jar'
+		'Baubles-deobf.jar',
+		'Thaumcraft.jar'
 	)
 }
 
