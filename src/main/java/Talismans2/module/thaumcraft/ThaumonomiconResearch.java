@@ -121,5 +121,18 @@ public class ThaumonomiconResearch {
 		
 		
 	}
+	
+	public static void addDonationThanks(){
+		ResearchItem research;
+		String text = "1";
+		
+		text = "PAGE_THANKS_RESEARCH";
+		research = new ResearchItem("Thanks", "Talismans",
+				new AspectList(), -4, -6, 0, new ResourceLocation(
+						"talismans2:textures/items/Thanks.png")).setRound()
+				.setAutoUnlock().registerResearchItem().setSpecial();
+		research.setPages(new ResearchPage(text));
+		
+	}
 
 }

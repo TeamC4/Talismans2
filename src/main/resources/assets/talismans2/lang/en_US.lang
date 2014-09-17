@@ -30,6 +30,8 @@ tc.research_name.Movement_Talisman=Movement Talisman
 tc.research_name.Mining_Talisman=Mining Talisman
 tc.research_name.Invisible_Talisman=Invisible Talisman
 tc.research_name.Witherless_Talisman=Witherless Talisman
+tc.research_name.Thanks=Thanks To My Supporters
+
 
 
 
@@ -42,6 +44,8 @@ tc.research_text.Movement_Talisman=ToDo
 tc.research_text.Mining_Talisman=ToDo
 tc.research_text.Invisible_Talisman=ToDo
 tc.research_text.Witherless_Talisman=ToDo
+tc.research_text.Thanks=Thanks To My Supporters
+
 
 
 
@@ -54,6 +58,7 @@ PAGE_MOVEMENT_TALISMAN=TODO
 PAGE_MINING_TALISMAN=TODO
 PAGE_INVISIBLE_TALISMAN=TODO
 PAGE_WITHERLESS_TALISMAN=TODO
+PAGE_THANKS_RESEARCH=This is just a small Thankyou to all the people who support me and my mods.                            •CyborgShadow (Brandon)
 
 
 

@@ -19,6 +19,8 @@ public class ThaumcraftModule {
 		ThaumonomiconResearch.addResearch();
 		// Load Fusion Research
 		ThaumonomiconResearch.addFusionResearch();
+		// Load Donator Credits 
+		ThaumonomiconResearch.addDonationThanks();
 
 	}
 
