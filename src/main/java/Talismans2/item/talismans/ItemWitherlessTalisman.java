@@ -1,5 +1,6 @@
 package Talismans2.item.talismans;
 
+import baubles.api.BaubleType;
 import Talismans2.Talismans2;
 import Talismans2.item.ItemTalismanBauble;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -32,6 +33,11 @@ public class ItemWitherlessTalisman extends ItemTalismanBauble {
         {
 			player.removePotionEffect(Potion.wither.id);
 		}
+	}
+	
+	@Override
+	public BaubleType getBaubleType(ItemStack arg0) {
+		return BaubleType.AMULET;
 	}
 
 }

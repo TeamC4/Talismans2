@@ -36,7 +36,7 @@ public class ItemTalismanBauble extends Item implements IBauble {
 
 	@Override
 	public BaubleType getBaubleType(ItemStack arg0) {
-		return BaubleType.AMULET;
+		return null;
 	}
 
 	@Override

@@ -1,5 +1,6 @@
 package Talismans2.item.talismans;
 
+import baubles.api.BaubleType;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
@@ -32,6 +33,11 @@ public class ItemInvisibleTalisman extends ItemTalismanBauble{
 	public void onUnequipped(ItemStack itemstack, EntityLivingBase player){
 		player.removePotionEffect(Potion.invisibility.id);
 		
+	}
+	
+	@Override
+	public BaubleType getBaubleType(ItemStack arg0) {
+		return BaubleType.AMULET;
 	}
 	
 }

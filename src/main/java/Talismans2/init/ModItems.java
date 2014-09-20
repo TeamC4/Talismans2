@@ -1,6 +1,7 @@
 package Talismans2.init;
 
 import net.minecraft.item.Item;
+import Talismans2.item.misc.ItemTalismanRings;
 import Talismans2.item.talismans.ItemBlankTalisman;
 import Talismans2.item.talismans.ItemCraftingTalisman;
 import Talismans2.item.talismans.ItemFlameTalisman;
@@ -27,6 +28,7 @@ public class ModItems {
 	public static Item InvisibleTalisman;
 	public static Item WitherlessTalisman;
 	public static Item CraftingTalisman;
+	public static Item TalismanRings;
 
 
 
@@ -58,6 +60,9 @@ public class ModItems {
 		//Crafting Talisman
 		CraftingTalisman = new ItemCraftingTalisman();
 		GameRegistry.registerItem(CraftingTalisman, "Crafting Talisman");
+		//Talisman Rings
+		TalismanRings = new ItemTalismanRings();
+		GameRegistry.registerItem(TalismanRings, "Talisman Rings");
 
 	}
 

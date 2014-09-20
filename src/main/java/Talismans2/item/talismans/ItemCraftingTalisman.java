@@ -1,5 +1,6 @@
 package Talismans2.item.talismans;
 
+import baubles.api.BaubleType;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
@@ -24,6 +25,11 @@ public class ItemCraftingTalisman extends ItemTalismanBauble {
 	@Override
 	public void registerIcons(IIconRegister iconRegister) {
 		itemIcon = iconRegister.registerIcon("talismans2:Crafting");
+	}
+	
+	@Override
+	public BaubleType getBaubleType(ItemStack arg0) {
+		return BaubleType.AMULET;
 	}
 
 }

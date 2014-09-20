@@ -1,5 +1,6 @@
 package Talismans2.item.talismans;
 
+import baubles.api.BaubleType;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
@@ -34,5 +35,10 @@ public class ItemLightTalisman extends ItemTalismanBauble {
 	// Removes Potion effect on Unequip
 	public void onUnequipped(ItemStack itemstack, EntityLivingBase player) {
 		player.removePotionEffect(Potion.nightVision.id);
+	}
+	
+	@Override
+	public BaubleType getBaubleType(ItemStack arg0) {
+		return BaubleType.AMULET;
 	}
 }

@@ -1,5 +1,6 @@
 package Talismans2.item.talismans;
 
+import baubles.api.BaubleType;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
@@ -35,6 +36,11 @@ public class ItemMovementTalisman extends ItemTalismanBauble {
 	public void onUnequipped(ItemStack itemstack, EntityLivingBase player) {
 		player.removePotionEffect(Potion.moveSpeed.id);
 		player.removePotionEffect(Potion.jump.id);
+	}
+	
+	@Override
+	public BaubleType getBaubleType(ItemStack arg0) {
+		return BaubleType.AMULET;
 	}
 
 }
