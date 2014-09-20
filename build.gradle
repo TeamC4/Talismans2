@@ -56,7 +56,7 @@ minecraft {
 dependencies {
 	compile files (
 		'Baubles-deobf.jar',
-		'Thaumcraft.jar'
+		'Thaumcraft.jar',
 		'Blood.jar'
 	)
 }
