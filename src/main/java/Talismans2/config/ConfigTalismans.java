@@ -1,7 +1,8 @@
 package Talismans2.config;
 
-import java.io.File;
 import net.minecraftforge.common.config.Configuration;
+
+import java.io.File;
 
 /**
  * @author Gigabit101
@@ -10,9 +11,11 @@ import net.minecraftforge.common.config.Configuration;
 public class ConfigTalismans {
 	private static ConfigTalismans instance = null;
 	private final String CATEGORY_THAUMCRAFT = "Thaumcraft";
+    private final String CATEGORY_BLOODMAGIC = "Blood Magic";
 	private final String CATEGORY_LOOT = "loot";
 	
 	public final boolean ThaumscraftModuleTrue;
+    public final boolean BloodMagicModuleTrue;
     public final boolean BlankTalismanLootTrue;
     public final boolean FlameTalismanLootTrue;
     public final boolean WaterTalismanLootTrue;
@@ -37,8 +40,8 @@ public class ConfigTalismans {
 	private ConfigTalismans(File configFile) {
 		Configuration config = new Configuration(configFile);
 		config.load();
-		ThaumscraftModuleTrue = config.get(CATEGORY_THAUMCRAFT,
-				"Thaumcraft Module On", true).getBoolean(true);
+		ThaumscraftModuleTrue = config.get(CATEGORY_THAUMCRAFT,"Thaumcraft Module On", true).getBoolean(true);
+        BloodMagicModuleTrue = config.get(CATEGORY_BLOODMAGIC, "Blood Magic Module On", true).getBoolean(true);
 		//Loot
 		BlankTalismanLootTrue = config.get(CATEGORY_LOOT,"Add Blank Talismans To DungeonLoot", true).getBoolean(true);
 		FlameTalismanLootTrue = config.get(CATEGORY_LOOT,"Add Flame Talismans To DungeonLoot", true).getBoolean(true);

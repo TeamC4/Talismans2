@@ -1,7 +1,6 @@
 package Talismans2.item.misc;
 
-import java.util.List;
-
+import Talismans2.item.ItemTalismanBauble;
 import baubles.api.BaubleType;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
@@ -11,7 +10,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.IIcon;
-import Talismans2.item.ItemTalismanBauble;
+
+import java.util.List;
 
 public class ItemTalismanRings extends ItemTalismanBauble{
 	// Names For Rings Depending on Meta Data
