@@ -29,9 +29,9 @@ public class ItemMiningTalisman extends ItemTalismanBauble {
 	@Override
 	// Returns Potion Effect on Tick
 	public void onWornTick(ItemStack itemstack, EntityLivingBase player) {
-		if (!player.isPotionActive(Potion.digSpeed)) {
-			player.addPotionEffect(new PotionEffect(Potion.digSpeed.id,
-					Integer.MAX_VALUE, 3, true));
+		if (!player.isPotionActive(Potion.digSpeed))
+        {
+			player.addPotionEffect(new PotionEffect(Potion.digSpeed.id,Integer.MAX_VALUE, 3, true));
 		}
 	}
 

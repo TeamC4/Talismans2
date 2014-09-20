@@ -13,7 +13,6 @@ public class KeyInputEventHandler {
 	private static Key getPressedKeybinding() {
 		if (Keybindings.craft.isPressed()) {
 			return Key.CRAFT;
-
 		}
 
 		return Key.UNKNOWN;

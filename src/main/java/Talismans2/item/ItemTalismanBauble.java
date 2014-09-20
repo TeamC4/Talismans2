@@ -53,31 +53,29 @@ public class ItemTalismanBauble extends Item implements IBauble {
 
 	@Override
 	// Equips Talismans When Right Clicked In Players Hand
-	public ItemStack onItemRightClick(ItemStack par1ItemStack, World par2World,
-			EntityPlayer par3EntityPlayer) {
-		InventoryBaubles baubles = PlayerHandler
-				.getPlayerBaubles(par3EntityPlayer);
-		for (int i = 0; i < baubles.getSizeInventory(); i++) {
-			if (baubles.isItemValidForSlot(i, par1ItemStack)) {
+	public ItemStack onItemRightClick(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer)
+    {
+		InventoryBaubles baubles = PlayerHandler.getPlayerBaubles(par3EntityPlayer);
+		for (int i = 0; i < baubles.getSizeInventory(); i++)
+        {
+			if (baubles.isItemValidForSlot(i, par1ItemStack))
+            {
 				ItemStack stackInSlot = baubles.getStackInSlot(i);
-				if (stackInSlot == null
-						|| ((IBauble) stackInSlot.getItem()).canUnequip(
-								stackInSlot, par3EntityPlayer)) {
-					if (!par2World.isRemote) {
-						baubles.setInventorySlotContents(i,
-								par1ItemStack.copy());
-						if (!par3EntityPlayer.capabilities.isCreativeMode)
-							par3EntityPlayer.inventory
-									.setInventorySlotContents(
-											par3EntityPlayer.inventory.currentItem,
-											null);
+
+                if (stackInSlot == null || ((IBauble) stackInSlot.getItem()).canUnequip(stackInSlot, par3EntityPlayer))
+                {
+					if (!par2World.isRemote)
+                    {
+						baubles.setInventorySlotContents(i,	par1ItemStack.copy());
+
+                        if (!par3EntityPlayer.capabilities.isCreativeMode)
+							par3EntityPlayer.inventory.setInventorySlotContents(par3EntityPlayer.inventory.currentItem,null);
 					}
 
 					onEquipped(par1ItemStack, par3EntityPlayer);
 
 					if (stackInSlot != null) {
-						((IBauble) stackInSlot.getItem()).onUnequipped(
-								stackInSlot, par3EntityPlayer);
+						((IBauble) stackInSlot.getItem()).onUnequipped(stackInSlot, par3EntityPlayer);
 						return stackInSlot.copy();
 					}
 					break;
