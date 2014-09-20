@@ -39,7 +39,7 @@ dependencies {
 	grabDep('gbl', 'https://dl.dropboxusercontent.com/u/47135879/Baubles-deobf-1.7.10-1.0.1.4.jar')
 	grabDep('gbt', 'https://dl.dropboxusercontent.com/u/47135879/Thaumcraft-1.7.10-4.2.0.1.jar')
     grabDep('gbb', 'https://dl.dropboxusercontent.com/content_link/JnPnhO1HVUfYoMXX4j8jXVrCN0iOP6OIP1xJr42vD11rXBm9ZK3p58zph0xfolgU?dl=1')
-')
+
 
 	println("  Adding dependencies!")
     compile files("dep/gbl.jar")
