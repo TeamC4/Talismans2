@@ -42,16 +42,10 @@ public class ConfigTalismans {
 	private ConfigTalismans(File configFile) {
 		Configuration config = new Configuration(configFile);
 		config.load();
-<<<<<<< HEAD
-		ThaumscraftModuleTrue = config.get(CATEGORY_THAUMCRAFT,
-				"Thaumcraft Module On", true).getBoolean(true);
-		CopyTalismansTrue = config.get(CATEGORY_RECIPES,
-				"Allow Talismans to be copyed", true).getBoolean(true);
-		
-=======
+
+		CopyTalismansTrue = config.get(CATEGORY_RECIPES,"Allow Talismans to be copyed", true).getBoolean(true);		
 		ThaumscraftModuleTrue = config.get(CATEGORY_THAUMCRAFT,"Thaumcraft Module On", true).getBoolean(true);
         BloodMagicModuleTrue = config.get(CATEGORY_BLOODMAGIC, "Blood Magic Module On", true).getBoolean(true);
->>>>>>> 003411a04c8a073b396a3dc423ac4104a9d776cd
 		//Loot
 		BlankTalismanLootTrue = config.get(CATEGORY_LOOT,"Add Blank Talismans To DungeonLoot", true).getBoolean(true);
 		FlameTalismanLootTrue = config.get(CATEGORY_LOOT,"Add Flame Talismans To DungeonLoot", true).getBoolean(true);
