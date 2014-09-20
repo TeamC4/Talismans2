@@ -40,22 +40,14 @@ public class ConfigTalismans {
 		ThaumscraftModuleTrue = config.get(CATEGORY_THAUMCRAFT,
 				"Thaumcraft Module On", true).getBoolean(true);
 		//Loot
-		BlankTalismanLootTrue = config.get(CATEGORY_LOOT,
-				"Add Blank Talismans To DungeonLoot", true).getBoolean(true);
-		FlameTalismanLootTrue = config.get(CATEGORY_LOOT,
-				"Add Flame Talismans To DungeonLoot", true).getBoolean(true);
-		WaterTalismanLootTrue = config.get(CATEGORY_LOOT,
-				"Add Water Talismans To DungeonLoot", true).getBoolean(true);
-		LightTalismanLootTrue = config.get(CATEGORY_LOOT,
-				"Add Light Talismans To DungeonLoot", true).getBoolean(true);
-		MiningTalismanLootTrue = config.get(CATEGORY_LOOT,
-				"Add Mining Talismans To DungeonLoot", true).getBoolean(true);
-		MovementTalismanLootTrue = config.get(CATEGORY_LOOT,
-				"Add Movement Talismans To DungeonLoot", true).getBoolean(true);
-		InvisibleTalismanLootTrue = config.get(CATEGORY_LOOT,
-				"Add Invisible Talisman To DungeonLoot", true).getBoolean(true);
-		WitherlessTalismanLootTrue = config.get(CATEGORY_LOOT,
-				"Add Witherless Talisman To DungeonLoot", true).getBoolean(true);
+		BlankTalismanLootTrue = config.get(CATEGORY_LOOT,"Add Blank Talismans To DungeonLoot", true).getBoolean(true);
+		FlameTalismanLootTrue = config.get(CATEGORY_LOOT,"Add Flame Talismans To DungeonLoot", true).getBoolean(true);
+		WaterTalismanLootTrue = config.get(CATEGORY_LOOT,"Add Water Talismans To DungeonLoot", true).getBoolean(true);
+		LightTalismanLootTrue = config.get(CATEGORY_LOOT,"Add Light Talismans To DungeonLoot", true).getBoolean(true);
+		MiningTalismanLootTrue = config.get(CATEGORY_LOOT,"Add Mining Talismans To DungeonLoot", true).getBoolean(true);
+		MovementTalismanLootTrue = config.get(CATEGORY_LOOT,"Add Movement Talismans To DungeonLoot", true).getBoolean(true);
+		InvisibleTalismanLootTrue = config.get(CATEGORY_LOOT,"Add Invisible Talisman To DungeonLoot", true).getBoolean(true);
+		WitherlessTalismanLootTrue = config.get(CATEGORY_LOOT,"Add Witherless Talisman To DungeonLoot", true).getBoolean(true);
 		
 		//Loot Chance
         ChanceBlankTalisman = config.get(Configuration.CATEGORY_GENERAL, "Blank Talisman spawning chance", 15).getInt();

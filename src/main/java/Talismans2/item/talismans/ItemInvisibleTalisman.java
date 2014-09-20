@@ -22,7 +22,8 @@ public class ItemInvisibleTalisman extends ItemTalismanBauble{
 	
 	@Override
 	public void onWornTick(ItemStack itemstack, EntityLivingBase player){
-		if(!player.isPotionActive(Potion.invisibility)){
+		if(!player.isPotionActive(Potion.invisibility))
+        {
 			player.addPotionEffect(new PotionEffect(Potion.invisibility.id,Integer.MAX_VALUE, 1, true));
 		}
 		

@@ -1,8 +1,5 @@
 package Talismans2;
 
-import java.io.File;
-
-import net.minecraft.creativetab.CreativeTabs;
 import Talismans2.config.ConfigTalismans;
 import Talismans2.creativeTab.CreativeTabTalismans;
 import Talismans2.init.DungeonLoot;
@@ -13,11 +10,14 @@ import Talismans2.proxies.CommonProxy;
 import Talismans2.util.LogHelper;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
-import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.Mod.Instance;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import net.minecraft.creativetab.CreativeTabs;
+
+import java.io.File;
 
 /**
  * @author Gigabit101
@@ -34,15 +34,14 @@ public class Talismans2 {
 	public static CommonProxy proxy;
 
 	// Loads Talismans Creative Tab
-	public static CreativeTabs tabsTalismans = new CreativeTabTalismans(
-			CreativeTabs.getNextID(), Modinfo.NAME);
+	public static CreativeTabs tabsTalismans = new CreativeTabTalismans(CreativeTabs.getNextID(), Modinfo.NAME);
 
 	@Mod.EventHandler
-	public void preinit(FMLPreInitializationEvent event) {
+	public void preinit(FMLPreInitializationEvent event)
+    {
 		instance = this;
 		// This should be the FIRST thing that gets done.
-		String path = event.getSuggestedConfigurationFile().getAbsolutePath()
-				.replace(Modinfo.ID, "Talismans2");
+		String path = event.getSuggestedConfigurationFile().getAbsolutePath().replace(Modinfo.ID, "Talismans2");
 
 		properties = ConfigTalismans.initialize(new File(path));
 		

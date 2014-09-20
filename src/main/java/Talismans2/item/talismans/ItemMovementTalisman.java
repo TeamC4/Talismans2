@@ -24,11 +24,10 @@ public class ItemMovementTalisman extends ItemTalismanBauble {
 	@Override
 	// Returns Potion Effect on Tick
 	public void onWornTick(ItemStack itemstack, EntityLivingBase player) {
-		if (!player.isPotionActive(Potion.moveSpeed)) {
-			player.addPotionEffect(new PotionEffect(Potion.moveSpeed.id,
-					Integer.MAX_VALUE, 1, true));
-			player.addPotionEffect(new PotionEffect(Potion.jump.id,
-					Integer.MAX_VALUE, 1, true));
+		if (!player.isPotionActive(Potion.moveSpeed))
+        {
+            player.addPotionEffect(new PotionEffect(Potion.moveSpeed.id, Integer.MAX_VALUE, 1, true));
+			player.addPotionEffect(new PotionEffect(Potion.jump.id, Integer.MAX_VALUE, 1, true));
 		}
 	}
 

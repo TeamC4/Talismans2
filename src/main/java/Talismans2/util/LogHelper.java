@@ -1,9 +1,8 @@
 package Talismans2.util;
 
-import org.apache.logging.log4j.Level;
-
 import Talismans2.lib.Modinfo;
 import cpw.mods.fml.common.FMLLog;
+import org.apache.logging.log4j.Level;
 
 /**
  * @author Gigabit101

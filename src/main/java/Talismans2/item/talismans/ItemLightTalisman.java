@@ -25,9 +25,9 @@ public class ItemLightTalisman extends ItemTalismanBauble {
 	@Override
 	// Returns Potion Effect on Tick
 	public void onWornTick(ItemStack itemstack, EntityLivingBase player) {
-		if (!player.isPotionActive(Potion.nightVision)) {
-			player.addPotionEffect(new PotionEffect(Potion.nightVision.id,
-					Integer.MAX_VALUE, 1, true));
+		if (!player.isPotionActive(Potion.nightVision))
+        {
+			player.addPotionEffect(new PotionEffect(Potion.nightVision.id, Integer.MAX_VALUE, 1, true));
 		}
 	}
 
