@@ -24,14 +24,14 @@ public class BloodMagicRecipes {
         AltarRecipeRegistry.registerAltarRecipe(TalismanStacks.talismanWitherless, new ItemStack(Blocks.skull), 3, 6000, 10, 1, false);
         
         //Binding Recipes
-        BindingRegistry.registerRecipe(new ItemStack(ModItems.TalismanRings,1,1), TalismanStacks.talismanCrafting);
-        BindingRegistry.registerRecipe(new ItemStack(ModItems.TalismanRings,1,2), TalismanStacks.talismanFlame);
-        BindingRegistry.registerRecipe(new ItemStack(ModItems.TalismanRings,1,3), TalismanStacks.talismanInvisible);
-        BindingRegistry.registerRecipe(new ItemStack(ModItems.TalismanRings,1,4), TalismanStacks.talismanLight);
-        BindingRegistry.registerRecipe(new ItemStack(ModItems.TalismanRings,1,5), TalismanStacks.talismanMining);
-        BindingRegistry.registerRecipe(new ItemStack(ModItems.TalismanRings,1,6), TalismanStacks.talismanMovement);
-        BindingRegistry.registerRecipe(new ItemStack(ModItems.TalismanRings,1,7), TalismanStacks.talismanWater);
-        BindingRegistry.registerRecipe(new ItemStack(ModItems.TalismanRings,1,8), TalismanStacks.talismanWitherless);
+        BindingRegistry.registerRecipe(TalismanStacks.talismanRingCrafting, TalismanStacks.talismanCrafting);
+        BindingRegistry.registerRecipe(TalismanStacks.talismanRingFlame, TalismanStacks.talismanFlame);
+        BindingRegistry.registerRecipe(TalismanStacks.talismanRingInvisible, TalismanStacks.talismanInvisible);
+        BindingRegistry.registerRecipe(TalismanStacks.talismanRingLight, TalismanStacks.talismanLight);
+        BindingRegistry.registerRecipe(TalismanStacks.talismanRingMining, TalismanStacks.talismanMining);
+        BindingRegistry.registerRecipe(TalismanStacks.talismanRingMovement, TalismanStacks.talismanMovement);
+        BindingRegistry.registerRecipe(TalismanStacks.talismanRingWater, TalismanStacks.talismanWater);
+        BindingRegistry.registerRecipe(TalismanStacks.talismanRingWitherless, TalismanStacks.talismanWitherless);
 
 
     }
