@@ -7,6 +7,7 @@ import Talismans2.init.ModItems;
 import Talismans2.lib.Modinfo;
 import Talismans2.module.thaumcraft.ThaumcraftModule;
 import Talismans2.proxies.CommonProxy;
+import Talismans2.recipe.CopyingTalismans;
 import Talismans2.util.LogHelper;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
@@ -50,6 +51,9 @@ public class Talismans2 {
 		
 		// Load ModItems
 		ModItems.init();
+		
+		// Load Old Recipes
+		CopyingTalismans.init(properties);
 		
         LogHelper.info("Pre Initialization Complete!");
 

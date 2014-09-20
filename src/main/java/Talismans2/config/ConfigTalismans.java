@@ -11,6 +11,7 @@ public class ConfigTalismans {
 	private static ConfigTalismans instance = null;
 	private final String CATEGORY_THAUMCRAFT = "Thaumcraft";
 	private final String CATEGORY_LOOT = "loot";
+	private final String CATEGORY_RECIPES = "Recipes";
 	
 	public final boolean ThaumscraftModuleTrue;
     public final boolean BlankTalismanLootTrue;
@@ -21,6 +22,7 @@ public class ConfigTalismans {
     public final boolean MovementTalismanLootTrue;
     public final boolean InvisibleTalismanLootTrue;
     public final boolean WitherlessTalismanLootTrue;
+    public final boolean CopyTalismansTrue;
 
     
     public static int ChanceBlankTalisman;
@@ -39,6 +41,9 @@ public class ConfigTalismans {
 		config.load();
 		ThaumscraftModuleTrue = config.get(CATEGORY_THAUMCRAFT,
 				"Thaumcraft Module On", true).getBoolean(true);
+		CopyTalismansTrue = config.get(CATEGORY_RECIPES,
+				"Allow Talismans to be copyed", true).getBoolean(true);
+		
 		//Loot
 		BlankTalismanLootTrue = config.get(CATEGORY_LOOT,"Add Blank Talismans To DungeonLoot", true).getBoolean(true);
 		FlameTalismanLootTrue = config.get(CATEGORY_LOOT,"Add Flame Talismans To DungeonLoot", true).getBoolean(true);
