@@ -10,17 +10,17 @@ import cpw.mods.fml.common.gameevent.InputEvent;
  */
 
 public class KeyInputEventHandler {
-	private static Key getPressedKeybinding() {
-		if (Keybindings.craft.isPressed()) {
-			return Key.CRAFT;
-		}
+    private static Key getPressedKeybinding() {
+        if (Keybindings.craft.isPressed()) {
+            return Key.CRAFT;
+        }
 
-		return Key.UNKNOWN;
-	}
+        return Key.UNKNOWN;
+    }
 
-	@SubscribeEvent
-	public void handleKeyInputEvent(InputEvent.KeyInputEvent event) {
-		LogHelper.info(getPressedKeybinding());
-	}
+    @SubscribeEvent
+    public void handleKeyInputEvent(InputEvent.KeyInputEvent event) {
+        LogHelper.info(getPressedKeybinding());
+    }
 
 }

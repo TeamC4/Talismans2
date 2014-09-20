@@ -8,11 +8,9 @@ import net.minecraft.item.ItemStack;
 public class BloodMagicRecipes {
 
 
-
-    public static void init()
-    {
+    public static void init() {
         //Altar Recipes
-        AltarRecipeRegistry.registerAltarRecipe(TalismanStacks.talismanCrafting, new ItemStack(Blocks.crafting_table), 1, 400, 10, 1, false);
+        AltarRecipeRegistry.registerAltarRecipe(TalismanStacks.talismanCrafting, new ItemStack(Blocks.crafting_table), 3, 6000, 10, 1, false);
 
     }
 }

@@ -12,21 +12,21 @@ import baubles.api.BaubleType;
 
 public class ItemCraftingTalisman extends ItemTalismanBauble {
 
-	public ItemCraftingTalisman() {
-		super();
-		this.setCreativeTab(Talismans2.tabsTalismans);
-		this.setMaxStackSize(1);
-		this.setUnlocalizedName("Crafting Talisman");
-	}
+    public ItemCraftingTalisman() {
+        super();
+        this.setCreativeTab(Talismans2.tabsTalismans);
+        this.setMaxStackSize(1);
+        this.setUnlocalizedName("Crafting Talisman");
+    }
 
-	@Override
-	public void registerIcons(IIconRegister iconRegister) {
-		itemIcon = iconRegister.registerIcon("talismans2:Crafting");
-	}
-	
-	@Override
-	public BaubleType getBaubleType(ItemStack arg0) {
-		return BaubleType.AMULET;
-	}
+    @Override
+    public void registerIcons(IIconRegister iconRegister) {
+        itemIcon = iconRegister.registerIcon("talismans2:Crafting");
+    }
+
+    @Override
+    public BaubleType getBaubleType(ItemStack arg0) {
+        return BaubleType.AMULET;
+    }
 
 }

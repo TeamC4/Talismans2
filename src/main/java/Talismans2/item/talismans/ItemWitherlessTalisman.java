@@ -14,30 +14,29 @@ import baubles.api.BaubleType;
 
 public class ItemWitherlessTalisman extends ItemTalismanBauble {
 
-	public ItemWitherlessTalisman() {
-		super();
-		this.setCreativeTab(Talismans2.tabsTalismans);
-		this.setMaxStackSize(1);
-		this.setUnlocalizedName("Witherless Talisman");
-	}
+    public ItemWitherlessTalisman() {
+        super();
+        this.setCreativeTab(Talismans2.tabsTalismans);
+        this.setMaxStackSize(1);
+        this.setUnlocalizedName("Witherless Talisman");
+    }
 
-	@Override
-	public void registerIcons(IIconRegister iconRegister) {
-		itemIcon = iconRegister.registerIcon("talismans2:Witherless");
-	}
+    @Override
+    public void registerIcons(IIconRegister iconRegister) {
+        itemIcon = iconRegister.registerIcon("talismans2:Witherless");
+    }
 
-	@Override
-	// Removes Potion Effect on Tick
-	public void onWornTick(ItemStack itemstack, EntityLivingBase player) {
-		if (!player.isPotionActive(Potion.wither))
-        {
-			player.removePotionEffect(Potion.wither.id);
-		}
-	}
-	
-	@Override
-	public BaubleType getBaubleType(ItemStack arg0) {
-		return BaubleType.AMULET;
-	}
+    @Override
+    // Removes Potion Effect on Tick
+    public void onWornTick(ItemStack itemstack, EntityLivingBase player) {
+        if (!player.isPotionActive(Potion.wither)) {
+            player.removePotionEffect(Potion.wither.id);
+        }
+    }
+
+    @Override
+    public BaubleType getBaubleType(ItemStack arg0) {
+        return BaubleType.AMULET;
+    }
 
 }

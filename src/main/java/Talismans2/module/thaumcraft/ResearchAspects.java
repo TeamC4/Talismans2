@@ -4,7 +4,7 @@ import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
 
 public class ResearchAspects {
-	
+
     public static AspectList FlameTalismanResearch = new AspectList().add(Aspect.FIRE, 5).add(Aspect.TOOL, 6).add(Aspect.MAGIC, 4);
     public static AspectList WaterTalismanResearch = new AspectList().add(Aspect.WATER, 5).add(Aspect.TOOL, 6).add(Aspect.MAGIC, 4);
     public static AspectList LightTalismanResearch = new AspectList().add(Aspect.LIGHT, 5).add(Aspect.TOOL, 6).add(Aspect.MAGIC, 4);

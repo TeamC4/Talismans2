@@ -10,7 +10,7 @@ import Talismans2.config.ConfigTalismans;
  */
 
 public class DungeonLoot {
-		
+
     public static void init(ConfigTalismans properties) {
         if (properties.BlankTalismanLootTrue) {
             ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ModItems.BlankTalisman), 0, 1, ConfigTalismans.ChanceBlankTalisman));
@@ -48,14 +48,14 @@ public class DungeonLoot {
             ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ModItems.WaterTalisman), 0, 1, ConfigTalismans.ChanceWaterTalisman));
             ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(ModItems.WaterTalisman), 0, 1, ConfigTalismans.ChanceWaterTalisman));
         }
-        if (properties.InvisibleTalismanLootTrue){
-        	ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ModItems.InvisibleTalisman), 0, 1, ConfigTalismans.ChanceInvisibleTalisman));
+        if (properties.InvisibleTalismanLootTrue) {
+            ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ModItems.InvisibleTalisman), 0, 1, ConfigTalismans.ChanceInvisibleTalisman));
             ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(ModItems.InvisibleTalisman), 0, 1, ConfigTalismans.ChanceInvisibleTalisman));
             ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ModItems.InvisibleTalisman), 0, 1, ConfigTalismans.ChanceInvisibleTalisman));
             ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(ModItems.InvisibleTalisman), 0, 1, ConfigTalismans.ChanceInvisibleTalisman));
         }
-        if (properties.WitherlessTalismanLootTrue){
-        	ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ModItems.WitherlessTalisman), 0, 1, ConfigTalismans.ChanceWitherlessTalisman));
+        if (properties.WitherlessTalismanLootTrue) {
+            ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ModItems.WitherlessTalisman), 0, 1, ConfigTalismans.ChanceWitherlessTalisman));
             ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(ModItems.WitherlessTalisman), 0, 1, ConfigTalismans.ChanceWitherlessTalisman));
             ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ModItems.WitherlessTalisman), 0, 1, ConfigTalismans.ChanceWitherlessTalisman));
             ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(ModItems.WitherlessTalisman), 0, 1, ConfigTalismans.ChanceWitherlessTalisman));

@@ -7,11 +7,11 @@ import Talismans2.init.ModItems;
 
 public class CopyingTalismans {
 
-	public static void init(ConfigTalismans properties){
-		if (properties.CopyTalismansTrue)
-			GameRegistry.addShapelessRecipe(new ItemStack(ModItems.FlameTalisman),
-					new Object[] { new ItemStack(ModItems.BlankTalisman),
-							ModItems.FlameTalisman});
-		
-	}
+    public static void init(ConfigTalismans properties) {
+        if (properties.CopyTalismansTrue)
+            GameRegistry.addShapelessRecipe(new ItemStack(ModItems.FlameTalisman),
+                    new Object[]{new ItemStack(ModItems.BlankTalisman),
+                            ModItems.FlameTalisman});
+
+    }
 }
