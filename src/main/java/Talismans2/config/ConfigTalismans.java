@@ -1,8 +1,11 @@
 package Talismans2.config;
 
-import net.minecraftforge.common.config.Configuration;
-
 import java.io.File;
+
+import Talismans2.lib.Modinfo;
+import cpw.mods.fml.client.event.ConfigChangedEvent;
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.common.config.Configuration;
 
 /**
  * @author Gigabit101
@@ -43,7 +46,7 @@ public class ConfigTalismans {
 		Configuration config = new Configuration(configFile);
 		config.load();
 
-		CopyTalismansTrue = config.get(CATEGORY_RECIPES,"Allow Talismans to be copyed", true).getBoolean(true);		
+		CopyTalismansTrue = config.get(CATEGORY_RECIPES,"Allow Talismans to be copyed", false).getBoolean(true);		
 		ThaumscraftModuleTrue = config.get(CATEGORY_THAUMCRAFT,"Thaumcraft Module On", true).getBoolean(true);
         BloodMagicModuleTrue = config.get(CATEGORY_BLOODMAGIC, "Blood Magic Module On", true).getBoolean(true);
 		//Loot
@@ -90,5 +93,6 @@ public class ConfigTalismans {
 		}
 		return instance;
 	}
+	
 
 }

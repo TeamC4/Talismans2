@@ -1,11 +1,9 @@
 package Talismans2.init;
 
-import java.util.Properties;
-
-import Talismans2.config.ConfigTalismans;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.WeightedRandomChestContent;
 import net.minecraftforge.common.ChestGenHooks;
+import Talismans2.config.ConfigTalismans;
 
 /**
  * @author Gigabit101
