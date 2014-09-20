@@ -1,6 +1,7 @@
 package Talismans2.module.thaumcraft;
 
 import net.minecraft.util.ResourceLocation;
+import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
 import thaumcraft.api.research.ResearchCategories;
 import thaumcraft.api.research.ResearchItem;
@@ -69,9 +70,48 @@ public class ThaumonomiconResearch {
 
 		// FusionResearch
 		text = "PAGE_FUSION_RESEARCH";
-		research = new ResearchItem("Fusion", "Talismans", new AspectList(), 0, 6, 0, new ResourceLocation("talismans2:textures/items/Fusion.png")).setRound().setAutoUnlock().registerResearchItem().setSpecial();
+		research = new ResearchItem("Fusion", "Talismans", new AspectList(), 0, 6, 0, new ResourceLocation("talismans2:textures/items/Fusion.png")).setRound().registerResearchItem().setSpecial();
 		research.setPages(new ResearchPage(text));
 		
+		// Blank Ring
+		text = "PAGE_BLANK_RING";
+		research = new ResearchItem("Blank_Ring", "Talismans", new AspectList(), -2, 8, 0, new ResourceLocation("talismans2:textures/items/Ring.png")).setRound().registerResearchItem().setParents("Fusion");
+		research.setPages(new ResearchPage(text), new ResearchPage(ThaumcraftRecipes.BlankRing));
+		
+		// Flame Ring
+		text = "PAGE_FLAME_RING";
+		research = new ResearchItem("Flame_Ring", "Talismans", new AspectList().add(Aspect.MAGIC, 5).add(Aspect.FIRE, 5), -2, 9, 0, new ResourceLocation("talismans2:textures/items/Ring.png")).setRound().registerResearchItem().setParents("Blank_Ring");
+		research.setPages(new ResearchPage(text), new ResearchPage(ThaumcraftRecipes.FlameRing));
+		
+		// Water Ring
+		text = "PAGE_WATER_RING";
+		research = new ResearchItem("Water_Ring", "Talismans", new AspectList().add(Aspect.MAGIC, 5).add(Aspect.WATER, 5), -2, 10, 0, new ResourceLocation("talismans2:textures/items/Ring.png")).setRound().registerResearchItem().setParents("Blank_Ring");
+		research.setPages(new ResearchPage(text), new ResearchPage(ThaumcraftRecipes.WaterRing));
+		
+		// Light Ring
+		text = "PAGE_LIGHT_RING";
+		research = new ResearchItem("Light_Ring", "Talismans", new AspectList().add(Aspect.MAGIC, 5).add(Aspect.LIGHT, 5), -3, 8, 0, new ResourceLocation("talismans2:textures/items/Ring.png")).setRound().setParents("Blank_Ring");
+		research.setPages(new ResearchPage(text), new ResearchPage(ThaumcraftRecipes.LightRing)).registerResearchItem();
+
+		// Movement Ring
+		text = "PAGE_MOVEMENT_RING";
+		research = new ResearchItem("Movement_Ring", "Talismans", new AspectList().add(Aspect.MAGIC, 5).add(Aspect.MAN, 5), -3, 9, 0, new ResourceLocation("talismans2:textures/items/Ring.png")).setRound().setParents("Blank_Ring");
+		research.setPages(new ResearchPage(text), new ResearchPage(ThaumcraftRecipes.MovementRing)).registerResearchItem();
+
+		// Mining Ring
+		text = "PAGE_MINING_RING";
+		research = new ResearchItem("Mining_Ring", "Talismans", new AspectList().add(Aspect.MAGIC, 5).add(Aspect.TOOL, 5), -3, 10, 0, new ResourceLocation("talismans2:textures/items/Ring.png")).setRound().setParents("Blank_Ring");
+		research.setPages(new ResearchPage(text), new ResearchPage(ThaumcraftRecipes.MiningRing)).registerResearchItem();
+		
+		// Invisible Ring
+		text = "PAGE_INVISIBLE_RING";
+		research = new ResearchItem("Invisible_Ring", "Talismans", new AspectList().add(Aspect.MAGIC, 5).add(Aspect.MAN, 5).add(Aspect.SENSES, 5), -1, 8, 0, new ResourceLocation("talismans2:textures/items/Ring.png")).setRound().setParents("Blank_Ring");
+		research.setPages(new ResearchPage(text), new ResearchPage(ThaumcraftRecipes.InvisibleRing)).registerResearchItem();
+		
+		// Witherless Ring
+		text = "PAGE_WITHERLESS_RING";
+		research = new ResearchItem("Witherless_Ring", "Talismans", new AspectList().add(Aspect.MAGIC, 5).add(Aspect.HEAL, 5), -1, 9, 0, new ResourceLocation("talismans2:textures/items/Ring.png")).setRound().setParents("Blank_Ring");
+		research.setPages(new ResearchPage(text), new ResearchPage(ThaumcraftRecipes.WitherlessRing)).registerResearchItem();
 		
 	}
 	
