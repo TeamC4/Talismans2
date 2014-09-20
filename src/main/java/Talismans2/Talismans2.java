@@ -74,12 +74,16 @@ public class Talismans2 {
 		if (Loader.isModLoaded("Thaumcraft"))
         {            
    		   ThaumcraftModule.init(properties);
-   		System.out.print("Thaumcraft Detected");
         }
         else
         {
-       		System.out.print("Thaumcraft Not Detected");
 
+        }
+        if (Loader.isModLoaded("AWWayofTime"))
+        {
+        }
+        else
+        {
         }
         LogHelper.info("Post Initialization Complete!");
 

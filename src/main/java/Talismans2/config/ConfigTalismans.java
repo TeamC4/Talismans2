@@ -1,7 +1,8 @@
 package Talismans2.config;
 
-import java.io.File;
 import net.minecraftforge.common.config.Configuration;
+
+import java.io.File;
 
 /**
  * @author Gigabit101
@@ -10,10 +11,12 @@ import net.minecraftforge.common.config.Configuration;
 public class ConfigTalismans {
 	private static ConfigTalismans instance = null;
 	private final String CATEGORY_THAUMCRAFT = "Thaumcraft";
+    private final String CATEGORY_BLOODMAGIC = "Blood Magic";
 	private final String CATEGORY_LOOT = "loot";
 	private final String CATEGORY_RECIPES = "Recipes";
 	
 	public final boolean ThaumscraftModuleTrue;
+    public final boolean BloodMagicModuleTrue;
     public final boolean BlankTalismanLootTrue;
     public final boolean FlameTalismanLootTrue;
     public final boolean WaterTalismanLootTrue;
@@ -39,11 +42,16 @@ public class ConfigTalismans {
 	private ConfigTalismans(File configFile) {
 		Configuration config = new Configuration(configFile);
 		config.load();
+<<<<<<< HEAD
 		ThaumscraftModuleTrue = config.get(CATEGORY_THAUMCRAFT,
 				"Thaumcraft Module On", true).getBoolean(true);
 		CopyTalismansTrue = config.get(CATEGORY_RECIPES,
 				"Allow Talismans to be copyed", true).getBoolean(true);
 		
+=======
+		ThaumscraftModuleTrue = config.get(CATEGORY_THAUMCRAFT,"Thaumcraft Module On", true).getBoolean(true);
+        BloodMagicModuleTrue = config.get(CATEGORY_BLOODMAGIC, "Blood Magic Module On", true).getBoolean(true);
+>>>>>>> 003411a04c8a073b396a3dc423ac4104a9d776cd
 		//Loot
 		BlankTalismanLootTrue = config.get(CATEGORY_LOOT,"Add Blank Talismans To DungeonLoot", true).getBoolean(true);
 		FlameTalismanLootTrue = config.get(CATEGORY_LOOT,"Add Flame Talismans To DungeonLoot", true).getBoolean(true);
