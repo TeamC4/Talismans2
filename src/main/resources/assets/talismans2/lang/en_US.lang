@@ -9,7 +9,15 @@ item.Mining Talisman.name=Mining Talisman
 item.Invisible Talisman.name=Invisible Talisman
 item.Witherless Talisman.name=Witherless Talisman
 item.Crafting Talisman.name=Crafting Talisman
-
+item.Talisman Ring.Blank.name=A Normal Ring
+item.Talisman Ring.Crafting.name=Ring Of Crafting
+item.Talisman Ring.Flame.name=Ring Of Fire
+item.Talisman Ring.Invisible.name=Ring Of Invisibility
+item.Talisman Ring.Light.name=Ring Of Light
+item.Talisman Ring.Mining.name=Ring Of The Miner
+item.Talisman Ring.Movement.name=Ring Of Movement
+item.Talisman Ring.Water.name=Ring Of Water Breathing
+item.Talisman Ring.Witherless.name=Ring Of Witherless
 
 
 # Creative Tab localizations
@@ -33,6 +41,17 @@ tc.research_name.Movement_Talisman=Movement Talisman
 tc.research_name.Mining_Talisman=Mining Talisman
 tc.research_name.Invisible_Talisman=Invisible Talisman
 tc.research_name.Witherless_Talisman=Witherless Talisman
+tc.research_name.Fusion=Talisman Fusion
+tc.research_name.Light_Ring=Ring Of Light
+tc.research_name.Light_Ring=Ring Of Light
+tc.research_name.Movement_Ring=Ring Of Movement
+tc.research_name.Mining_Ring=Ring Of Mining
+tc.research_name.Blank_Ring=A Normal Ring
+tc.research_name.Flame_Ring=Ring Of Fire
+tc.research_name.Water_Ring=Ring Of Water
+tc.research_name.Invisible_Ring=Ring Of Invisibility
+tc.research_name.Witherless_Ring=Ring Of Witherless
+
 tc.research_name.Thanks=Thanks To My Supporters
 
 
@@ -47,6 +66,17 @@ tc.research_text.Movement_Talisman=ToDo
 tc.research_text.Mining_Talisman=ToDo
 tc.research_text.Invisible_Talisman=ToDo
 tc.research_text.Witherless_Talisman=ToDo
+tc.research_text.Fusion=ToDo
+tc.research_text.Light_Ring=ToDo
+tc.research_text.Movement_Ring=ToDo
+tc.research_text.Mining_Ring=ToDo
+tc.research_text.Blank_Ring=ToDo
+tc.research_text.Flame_Ring=ToDo
+tc.research_text.Water_Ring=ToDo
+tc.research_text.Invisible_Ring=ToDo
+tc.research_text.Witherless_Ring=ToDo
+
+
 tc.research_text.Thanks=Thanks To My Supporters
 
 
@@ -61,7 +91,17 @@ PAGE_MOVEMENT_TALISMAN=TODO
 PAGE_MINING_TALISMAN=TODO
 PAGE_INVISIBLE_TALISMAN=TODO
 PAGE_WITHERLESS_TALISMAN=TODO
-PAGE_THANKS_RESEARCH=This is just a small Thankyou to all the people who support me and my mods.                            �CyborgShadow (Brandon)
+PAGE_FUSION_RESEARCH=TODO
+PAGE_LIGHT_RING=TODO
+PAGE_MOVEMENT_RING=TODO
+PAGE_MINING_RING=TODO
+PAGE_BLANK_RING=TODO
+PAGE_FLAME_RING=TODO
+PAGE_WATER_RING=TODO
+PAGE_INVISIBLE_RING=TODO
+PAGE_WITHERLESS_RING=TODO
+
+PAGE_THANKS_RESEARCH=This is just a small Thankyou to all the people who support me and my mods.                               CyborgShadow (Brandon)                                               Necrogami
 
 
 

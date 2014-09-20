@@ -39,7 +39,7 @@ public class ItemTalismanRings extends ItemTalismanBauble {
         textures = new IIcon[types.length];
 
         for (int i = 0; i < types.length; ++i) {
-            textures[i] = iconRegister.registerIcon("talismans:" + "Ring");
+            textures[i] = iconRegister.registerIcon("talismans2:" + "Ring");
         }
     }
 
