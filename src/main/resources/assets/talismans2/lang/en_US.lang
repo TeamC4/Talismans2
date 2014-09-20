@@ -14,7 +14,9 @@ item.Witherless Talisman.name=Witherless Talisman
 # Creative Tab localizations
 itemGroup.Talismans 2=Talismans 2
 
-
+# KeyBinding 
+keys.Talismans.category=Talismans 2
+keys.Talismans.craft=Portable Crafting
 
 # Thaumcraft Tab localizations
 tc.research_category.Talismans=Talismans 2

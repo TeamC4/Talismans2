@@ -35,5 +35,4 @@ public class ItemWitherlessTalisman extends ItemTalismanBauble {
 		}
 	}
 
-
 }
