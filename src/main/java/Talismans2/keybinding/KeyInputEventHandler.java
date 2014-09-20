@@ -5,6 +5,10 @@ import cpw.mods.fml.common.gameevent.InputEvent;
 import Talismans2.lib.Key;
 import Talismans2.util.LogHelper;
 
+/**
+ * @author Gigabit101
+ */
+
 public class KeyInputEventHandler {
 	private static Key getPressedKeybinding() {
 		if (Keybindings.craft.isPressed()) {

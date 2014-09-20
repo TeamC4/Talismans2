@@ -1,8 +1,11 @@
 package Talismans2.config;
 
 import java.io.File;
-
 import net.minecraftforge.common.config.Configuration;
+
+/**
+ * @author Gigabit101
+ */
 
 public class ConfigTalismans {
 	private static ConfigTalismans instance = null;

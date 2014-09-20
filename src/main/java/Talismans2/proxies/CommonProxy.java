@@ -1,7 +1,11 @@
 package Talismans2.proxies;
 
-public class CommonProxy {
+/**
+ * @author Gigabit101
+ */
 
+public class CommonProxy {
+	
 	public void registerKeyBindings() {
 		
 		// NOOP

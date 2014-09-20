@@ -12,7 +12,7 @@ import net.minecraftforge.common.ChestGenHooks;
  */
 
 public class DungeonLoot {
-	
+		
     public static void init(ConfigTalismans properties) {
         if (properties.BlankTalismanLootTrue) {
             ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ModItems.BlankTalisman), 0, 1, ConfigTalismans.ChanceBlankTalisman));

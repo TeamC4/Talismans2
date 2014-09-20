@@ -1,5 +1,9 @@
 package Talismans2.lib;
 
+/**
+ * @author Gigabit101
+ */
+
 public class Names {
 
 	public static final class Keys {
