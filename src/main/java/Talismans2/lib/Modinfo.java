@@ -12,9 +12,9 @@ public class Modinfo {
 	public static final String NAME = "Talismans 2";
 	// Mod Version
 	public static final String Version = "Alpha 0.0.2";
-	// Server Proxy
+	// Common Proxy
 	public static final String SERVER_PROXY_CLASS = "Talismans2.proxies.CommonProxy";
-	//Client Proxy
+	// Client Proxy
 	public static final String CLIENT_PROXY_CLASS = "Talismans2.proxies.ClientProxy";
 
 }
