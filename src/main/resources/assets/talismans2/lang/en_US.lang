@@ -31,7 +31,6 @@ keys.Talismans.craft=Portable Crafting
 tc.research_category.Talismans=Talismans 2
 
 
-
 # Thaumcraft Research localizations
 tc.research_name.Flame_Talisman=Flame Talisman
 tc.research_name.Blank_Talisman=Blank Talisman
@@ -55,8 +54,6 @@ tc.research_name.Witherless_Ring=Ring Of Witherless
 tc.research_name.Thanks=Thanks To My Supporters
 
 
-
-
 # Thaumcraft Research Text localizations
 tc.research_text.Flame_Talisman=Learning the powers of Fire Imunity 
 tc.research_text.Blank_Talisman=First steps into the world of Talismans
@@ -76,9 +73,7 @@ tc.research_text.Water_Ring=ToDo
 tc.research_text.Invisible_Ring=ToDo
 tc.research_text.Witherless_Ring=ToDo
 
-
 tc.research_text.Thanks=Thanks To My Supporters
-
 
 
 
@@ -102,7 +97,3 @@ PAGE_INVISIBLE_RING=TODO
 PAGE_WITHERLESS_RING=TODO
 
 PAGE_THANKS_RESEARCH=This is just a small Thankyou to all the people who support me and my mods.                               CyborgShadow (Brandon)                                               Necrogami
-
-
-
-
