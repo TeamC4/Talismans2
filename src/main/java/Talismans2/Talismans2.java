@@ -8,6 +8,7 @@ import Talismans2.creativeTab.CreativeTabTalismans;
 import Talismans2.init.DungeonLoot;
 import Talismans2.init.ModItems;
 import Talismans2.lib.Modinfo;
+import Talismans2.module.bloodmagic.BloodMagicModule;
 import Talismans2.module.thaumcraft.ThaumcraftModule;
 import Talismans2.proxies.CommonProxy;
 import Talismans2.recipe.CraftingHandler;
@@ -54,8 +55,8 @@ public class Talismans2 {
 		
 		// Load Old Recipes
 		CraftingHandler.CopyTalismans(properties);
+		
         LogHelper.info("Pre Initialization Complete!");
-
 	}
 
 	@Mod.EventHandler
@@ -80,6 +81,7 @@ public class Talismans2 {
         }
         if (Loader.isModLoaded("AWWayofTime"))
         {
+        	BloodMagicModule.init(properties);
         }
         else
         {
