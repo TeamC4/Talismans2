@@ -1,9 +1,9 @@
 package Talismans2.keybinding;
 
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import cpw.mods.fml.common.gameevent.InputEvent;
 import Talismans2.lib.Key;
 import Talismans2.util.LogHelper;
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import cpw.mods.fml.common.gameevent.InputEvent;
 
 /**
  * @author Gigabit101

@@ -1,5 +1,8 @@
 package Talismans2;
 
+import java.io.File;
+
+import net.minecraft.creativetab.CreativeTabs;
 import Talismans2.config.ConfigTalismans;
 import Talismans2.creativeTab.CreativeTabTalismans;
 import Talismans2.init.DungeonLoot;
@@ -7,7 +10,7 @@ import Talismans2.init.ModItems;
 import Talismans2.lib.Modinfo;
 import Talismans2.module.thaumcraft.ThaumcraftModule;
 import Talismans2.proxies.CommonProxy;
-import Talismans2.recipe.CopyingTalismans;
+import Talismans2.recipe.CraftingHandler;
 import Talismans2.util.LogHelper;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
@@ -16,9 +19,6 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import net.minecraft.creativetab.CreativeTabs;
-
-import java.io.File;
 
 /**
  * @author Gigabit101
@@ -53,8 +53,7 @@ public class Talismans2 {
 		ModItems.init();
 		
 		// Load Old Recipes
-		CopyingTalismans.init(properties);
-		
+		CraftingHandler.CopyTalismans(properties);
         LogHelper.info("Pre Initialization Complete!");
 
 	}
