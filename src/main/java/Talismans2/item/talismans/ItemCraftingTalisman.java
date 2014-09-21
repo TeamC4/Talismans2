@@ -21,7 +21,7 @@ public class ItemCraftingTalisman extends ItemTalismanBauble {
 
     @Override
     public void registerIcons(IIconRegister iconRegister) {
-        itemIcon = iconRegister.registerIcon("talismans2:Crafting");
+        itemIcon = iconRegister.registerIcon("talismans2:Craft");
     }
 
     @Override
