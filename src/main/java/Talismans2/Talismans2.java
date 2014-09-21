@@ -17,6 +17,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.EntityRegistry;
 import net.minecraft.creativetab.CreativeTabs;
 
 import java.io.File;
@@ -53,9 +54,10 @@ public class Talismans2 {
         ModItems.init();
 
         // Load Old Recipes
-        CraftingHandler.CopyTalismans(properties);
-
-        LogHelper.info("Pre Initialization Complete!");
+        CraftingHandler.CopyTalismans(properties); 
+        
+        
+        LogHelper.info("Pre Initialization Complete!"); 
     }
 
     @Mod.EventHandler
@@ -64,6 +66,8 @@ public class Talismans2 {
         DungeonLoot.init(properties);
 
         LogHelper.info("Initialization Complete!");
+        
+        
 
     }
 
