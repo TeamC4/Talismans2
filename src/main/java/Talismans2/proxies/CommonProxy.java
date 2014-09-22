@@ -1,6 +1,5 @@
 package Talismans2.proxies;
 
-import Talismans2.client.PlayerRenderHandler;
 
 /**
  * @author Gigabit101
@@ -8,13 +7,14 @@ import Talismans2.client.PlayerRenderHandler;
 
 public class CommonProxy {
 
-    public void registerKeyBindings() {
+	public void registerKeyBindings() {
 
-        // NOOP
-    }
-    public void registerPlayerRenderHandler(){
-    	
-    	//NOOP
-    }
+		// NOOP
+	}
+
+	public void registerPlayerRenderHandler() {
+
+		// NOOP
+	}
 
 }

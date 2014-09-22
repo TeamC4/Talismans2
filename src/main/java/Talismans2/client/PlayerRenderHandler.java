@@ -1,25 +1,19 @@
 package Talismans2.client;
 
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.Tessellator;
+import net.minecraft.client.renderer.texture.TextureMap;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.util.IIcon;
+import net.minecraftforge.client.event.RenderLivingEvent;
+import net.minecraftforge.common.MinecraftForge;
+
 import org.lwjgl.opengl.GL11;
 
 import Talismans2.init.ModItems;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.TickEvent;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.Tessellator;
-import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.client.renderer.texture.TextureMap;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.player.EntityPlayerMP;
-import net.minecraft.init.Items;
-import net.minecraft.util.IIcon;
-import net.minecraftforge.client.event.RenderLivingEvent;
-import net.minecraftforge.common.MinecraftForge;
-
-/**
- * @author dmillerw
- */
 
 public class PlayerRenderHandler {
 
@@ -40,13 +34,15 @@ public class PlayerRenderHandler {
 
 	@SubscribeEvent
 	public void onRenderLiving(RenderLivingEvent.Specials.Post event) {
+		String[] owners = { "Gigabit101faf" };
 		if (!(event.entity instanceof EntityPlayer))
 			return;
 		Minecraft mc = Minecraft.getMinecraft();
-		IIcon icon = ModItems.MovementTalisman.getIconFromDamage(0); // This can be
-																// changed to
-																// whatever you
-																// want
+		IIcon icon = ModItems.MovementTalisman.getIconFromDamage(0); // This can
+																		// be
+		// changed to
+		// whatever you
+		// want
 
 		mc.getTextureManager().bindTexture(TextureMap.locationItemsTexture);
 		// mc.getTextureManager().bindTexture(TextureMap.locationBlocksTexture);

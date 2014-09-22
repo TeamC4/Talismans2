@@ -11,6 +11,7 @@ import Talismans2.lib.Names;
  */
 
 public class Keybindings {
-    public static KeyBinding craft = new KeyBinding(Names.Keys.CRAFT, Keyboard.KEY_C, Names.Keys.CATEGORY);
+	public static KeyBinding craft = new KeyBinding(Names.Keys.CRAFT,
+			Keyboard.KEY_C, Names.Keys.CATEGORY);
 
 }

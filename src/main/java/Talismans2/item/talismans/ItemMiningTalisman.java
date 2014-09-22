@@ -15,34 +15,35 @@ import baubles.api.BaubleType;
 
 public class ItemMiningTalisman extends ItemTalismanBauble {
 
-    public ItemMiningTalisman() {
-        super();
-        this.setCreativeTab(Talismans2.tabsTalismans);
-        this.setMaxStackSize(1);
-        this.setUnlocalizedName("Mining Talisman");
-    }
+	public ItemMiningTalisman() {
+		super();
+		this.setCreativeTab(Talismans2.tabsTalismans);
+		this.setMaxStackSize(1);
+		this.setUnlocalizedName("Mining Talisman");
+	}
 
-    @Override
-    public void registerIcons(IIconRegister iconRegister) {
-        itemIcon = iconRegister.registerIcon("talismans2:Mining");
-    }
+	@Override
+	public void registerIcons(IIconRegister iconRegister) {
+		itemIcon = iconRegister.registerIcon("talismans2:Mining");
+	}
 
-    @Override
-    // Returns Potion Effect on Tick
-    public void onWornTick(ItemStack itemstack, EntityLivingBase player) {
-        if (!player.isPotionActive(Potion.digSpeed)) {
-            player.addPotionEffect(new PotionEffect(Potion.digSpeed.id, Integer.MAX_VALUE, 3, true));
-        }
-    }
+	@Override
+	// Returns Potion Effect on Tick
+	public void onWornTick(ItemStack itemstack, EntityLivingBase player) {
+		if (!player.isPotionActive(Potion.digSpeed)) {
+			player.addPotionEffect(new PotionEffect(Potion.digSpeed.id,
+					Integer.MAX_VALUE, 3, true));
+		}
+	}
 
-    // Removes Potion effect on Unequip
-    public void onUnequipped(ItemStack itemstack, EntityLivingBase player) {
-        player.removePotionEffect(Potion.digSpeed.id);
-    }
+	// Removes Potion effect on Unequip
+	public void onUnequipped(ItemStack itemstack, EntityLivingBase player) {
+		player.removePotionEffect(Potion.digSpeed.id);
+	}
 
-    @Override
-    public BaubleType getBaubleType(ItemStack arg0) {
-        return BaubleType.AMULET;
-    }
+	@Override
+	public BaubleType getBaubleType(ItemStack arg0) {
+		return BaubleType.AMULET;
+	}
 
 }

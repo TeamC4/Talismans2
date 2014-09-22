@@ -17,7 +17,7 @@ import net.minecraftforge.oredict.OreDictionary;
 import WayofTime.alchemicalWizardry.api.items.interfaces.IBloodOrb;
 
 /** Shaped Blood Orb Recipe Handler by joshie **/
-public class ShapedBloodOrbRecipe implements IRecipe {		
+public class ShapedBloodOrbRecipe implements IRecipe {
 	private static final int MAX_CRAFT_GRID_WIDTH = 3;
 	private static final int MAX_CRAFT_GRID_HEIGHT = 3;
 
@@ -83,15 +83,33 @@ public class ShapedBloodOrbRecipe implements IRecipe {
 			Character chr = (Character) recipe[idx];
 			Object in = recipe[idx + 1];
 
-			if (in instanceof IBloodOrb || (in instanceof ItemStack && ((ItemStack)in).getItem() instanceof IBloodOrb)) { //If the item is an instanceof IBloodOrb then save the level of the orb
-				if(in instanceof ItemStack) itemMap.put(chr, (Integer)(((IBloodOrb)((ItemStack)in).getItem()).getOrbLevel()));
-				else itemMap.put(chr, (Integer)(((IBloodOrb)in).getOrbLevel()));
+			if (in instanceof IBloodOrb
+					|| (in instanceof ItemStack && ((ItemStack) in).getItem() instanceof IBloodOrb)) { // If
+																										// the
+																										// item
+																										// is
+																										// an
+																										// instanceof
+																										// IBloodOrb
+																										// then
+																										// save
+																										// the
+																										// level
+																										// of
+																										// the
+																										// orb
+				if (in instanceof ItemStack)
+					itemMap.put(chr, (Integer) (((IBloodOrb) ((ItemStack) in)
+							.getItem()).getOrbLevel()));
+				else
+					itemMap.put(chr, (Integer) (((IBloodOrb) in).getOrbLevel()));
 			} else if (in instanceof ItemStack) {
 				itemMap.put(chr, ((ItemStack) in).copy());
 			} else if (in instanceof Item) {
 				itemMap.put(chr, new ItemStack((Item) in));
 			} else if (in instanceof Block) {
-				itemMap.put(chr, new ItemStack((Block) in, 1, OreDictionary.WILDCARD_VALUE));
+				itemMap.put(chr, new ItemStack((Block) in, 1,
+						OreDictionary.WILDCARD_VALUE));
 			} else if (in instanceof String) {
 				itemMap.put(chr, OreDictionary.getOres((String) in));
 			} else {
@@ -111,7 +129,8 @@ public class ShapedBloodOrbRecipe implements IRecipe {
 		}
 	}
 
-	ShapedBloodOrbRecipe(ShapedRecipes recipe, Map<ItemStack, String> replacements) {
+	ShapedBloodOrbRecipe(ShapedRecipes recipe,
+			Map<ItemStack, String> replacements) {
 		output = recipe.getRecipeOutput();
 		width = recipe.recipeWidth;
 		height = recipe.recipeHeight;
@@ -168,7 +187,8 @@ public class ShapedBloodOrbRecipe implements IRecipe {
 	}
 
 	@SuppressWarnings("unchecked")
-	private boolean checkMatch(InventoryCrafting inv, int startX, int startY, boolean mirror) {
+	private boolean checkMatch(InventoryCrafting inv, int startX, int startY,
+			boolean mirror) {
 		for (int x = 0; x < MAX_CRAFT_GRID_WIDTH; x++) {
 			for (int y = 0; y < MAX_CRAFT_GRID_HEIGHT; y++) {
 				int subX = x - startX;
@@ -182,26 +202,31 @@ public class ShapedBloodOrbRecipe implements IRecipe {
 						target = input[subX + subY * width];
 					}
 				}
-				
+
 				ItemStack slot = inv.getStackInRowAndColumn(x, y);
-				//If target is integer, then we should be check the blood orb value of the item instead
-				if(target instanceof Integer) {
-					if(slot != null && slot.getItem() instanceof IBloodOrb) {
+				// If target is integer, then we should be check the blood orb
+				// value of the item instead
+				if (target instanceof Integer) {
+					if (slot != null && slot.getItem() instanceof IBloodOrb) {
 						IBloodOrb orb = (IBloodOrb) slot.getItem();
-						if(orb.getOrbLevel() < (Integer)target) {
+						if (orb.getOrbLevel() < (Integer) target) {
 							return false;
 						}
-					} else return false;
+					} else
+						return false;
 				} else if (target instanceof ItemStack) {
-					if (!OreDictionary.itemMatches((ItemStack) target, slot, false)) {
+					if (!OreDictionary.itemMatches((ItemStack) target, slot,
+							false)) {
 						return false;
 					}
 				} else if (target instanceof ArrayList) {
 					boolean matched = false;
 
-					Iterator<ItemStack> itr = ((ArrayList<ItemStack>) target).iterator();
+					Iterator<ItemStack> itr = ((ArrayList<ItemStack>) target)
+							.iterator();
 					while (itr.hasNext() && !matched) {
-						matched = OreDictionary.itemMatches(itr.next(), slot, false);
+						matched = OreDictionary.itemMatches(itr.next(), slot,
+								false);
 					}
 
 					if (!matched) {

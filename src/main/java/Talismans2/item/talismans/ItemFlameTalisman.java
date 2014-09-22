@@ -1,13 +1,10 @@
 package Talismans2.item.talismans;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
-import net.minecraft.util.IIcon;
 import Talismans2.Talismans2;
 import Talismans2.item.ItemTalismanBauble;
 import baubles.api.BaubleType;
@@ -18,35 +15,34 @@ import baubles.api.BaubleType;
 
 public class ItemFlameTalisman extends ItemTalismanBauble {
 
-    public ItemFlameTalisman() {
-        super();
-        this.setCreativeTab(Talismans2.tabsTalismans);
-        this.setUnlocalizedName("Flame Talisman");
-    }
-    
-    
-    @Override
-    public void registerIcons(IIconRegister iconRegister) {
-        itemIcon = iconRegister.registerIcon("talismans2:Flame");
-    }
-    
+	public ItemFlameTalisman() {
+		super();
+		this.setCreativeTab(Talismans2.tabsTalismans);
+		this.setUnlocalizedName("Flame Talisman");
+	}
 
-    @Override
-    // Returns Potion Effect on Tick
-    public void onWornTick(ItemStack itemstack, EntityLivingBase player) {
-        if (!player.isPotionActive(Potion.fireResistance)) {
-            player.addPotionEffect(new PotionEffect(Potion.fireResistance.id, Integer.MAX_VALUE, 1, true));
-        }
-    }
+	@Override
+	public void registerIcons(IIconRegister iconRegister) {
+		itemIcon = iconRegister.registerIcon("talismans2:Flame");
+	}
 
-    // Removes Potion effect on Unequip
-    public void onUnequipped(ItemStack itemstack, EntityLivingBase player) {
-        player.removePotionEffect(Potion.fireResistance.id);
-    }
+	@Override
+	// Returns Potion Effect on Tick
+	public void onWornTick(ItemStack itemstack, EntityLivingBase player) {
+		if (!player.isPotionActive(Potion.fireResistance)) {
+			player.addPotionEffect(new PotionEffect(Potion.fireResistance.id,
+					Integer.MAX_VALUE, 1, true));
+		}
+	}
 
-    @Override
-    public BaubleType getBaubleType(ItemStack arg0) {
-        return BaubleType.AMULET;
-    }
+	// Removes Potion effect on Unequip
+	public void onUnequipped(ItemStack itemstack, EntityLivingBase player) {
+		player.removePotionEffect(Potion.fireResistance.id);
+	}
+
+	@Override
+	public BaubleType getBaubleType(ItemStack arg0) {
+		return BaubleType.AMULET;
+	}
 
 }
