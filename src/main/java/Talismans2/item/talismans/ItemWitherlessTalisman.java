@@ -29,9 +29,8 @@ public class ItemWitherlessTalisman extends ItemTalismanBauble {
     @Override
     // Removes Potion Effect on Tick
     public void onWornTick(ItemStack itemstack, EntityLivingBase player) {
-        if (!player.isPotionActive(Potion.wither)) {
             player.removePotionEffect(Potion.wither.id);
-        }
+
     }
 
     @Override
