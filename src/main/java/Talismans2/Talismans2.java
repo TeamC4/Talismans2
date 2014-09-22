@@ -10,6 +10,8 @@ import Talismans2.module.thaumcraft.ThaumcraftModule;
 import Talismans2.proxies.CommonProxy;
 import Talismans2.recipe.CraftingHandler;
 import Talismans2.util.LogHelper;
+import cpw.mods.fml.client.event.ConfigChangedEvent;
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Instance;
@@ -17,7 +19,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import cpw.mods.fml.common.registry.EntityRegistry;
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraft.creativetab.CreativeTabs;
 
 import java.io.File;
@@ -26,7 +28,7 @@ import java.io.File;
  * @author Gigabit101
  */
 
-@Mod(modid = Modinfo.ID, name = Modinfo.NAME, version = Modinfo.Version, dependencies = "required-after:Baubles@:")
+@Mod(modid = Modinfo.ID, name = Modinfo.NAME, version = Modinfo.Version, dependencies = "required-after:Baubles@:", guiFactory = "Talismans2.gui.TalismanGUIFactory")
 public class Talismans2 {
     public static ConfigTalismans properties;
 
@@ -66,8 +68,9 @@ public class Talismans2 {
         DungeonLoot.init(properties);
 
         LogHelper.info("Initialization Complete!");
-        
-        
+
+        FMLCommonHandler.instance().bus().register(instance);
+
 
     }
 
@@ -86,6 +89,14 @@ public class Talismans2 {
         LogHelper.info("Post Initialization Complete!");
 
 
+    }
+
+    @SubscribeEvent
+    public void onConfigChanged(ConfigChangedEvent.OnConfigChangedEvent cfgChange){
+        if(cfgChange.modID.equals("Talismans 2")){
+            ConfigTalismans.Configs();
+            LogHelper.info("IT IS HAPPENING");
+        }
     }
 
 }

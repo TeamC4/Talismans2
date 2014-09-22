@@ -1,9 +1,7 @@
 package Talismans2.module.bloodmagic;
 
-import Talismans2.init.ModItems;
 import Talismans2.util.TalismanStacks;
 import WayofTime.alchemicalWizardry.api.altarRecipeRegistry.AltarRecipeRegistry;
-import WayofTime.alchemicalWizardry.api.bindingRegistry.BindingRecipe;
 import WayofTime.alchemicalWizardry.api.bindingRegistry.BindingRegistry;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
