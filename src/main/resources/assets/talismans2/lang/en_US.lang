@@ -55,15 +55,15 @@ tc.research_name.Thanks=Thanks To My Supporters
 
 
 # Thaumcraft Research Text localizations
-tc.research_text.Flame_Talisman=Learning the powers of Fire Imunity 
+tc.research_text.Flame_Talisman=Lava? What Lava? 
 tc.research_text.Blank_Talisman=First steps into the world of Talismans
-tc.research_text.Water_Talisman=Learning the powers of Water Breathing 
-tc.research_text.Light_Talisman=Learning the powers of Seeing in the Dark
-tc.research_text.Movement_Talisman=ToDo
-tc.research_text.Mining_Talisman=ToDo
-tc.research_text.Invisible_Talisman=ToDo
-tc.research_text.Witherless_Talisman=ToDo
-tc.research_text.Fusion=ToDo
+tc.research_text.Water_Talisman=One with the squid. 
+tc.research_text.Light_Talisman=Not blind as a bat.
+tc.research_text.Movement_Talisman=Swift as a windigo.
+tc.research_text.Mining_Talisman=Putting dwarves to shame.
+tc.research_text.Invisible_Talisman=Finding nemo.
+tc.research_text.Witherless_Talisman=Snake oil.
+tc.research_text.Fusion=Making talismans fashionable.
 tc.research_text.Light_Ring=ToDo
 tc.research_text.Movement_Ring=ToDo
 tc.research_text.Mining_Ring=ToDo
