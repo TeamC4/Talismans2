@@ -1,10 +1,13 @@
 package Talismans2.item.talismans;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.IIcon;
 import Talismans2.Talismans2;
 import Talismans2.item.ItemTalismanBauble;
 import baubles.api.BaubleType;
@@ -20,11 +23,13 @@ public class ItemFlameTalisman extends ItemTalismanBauble {
         this.setCreativeTab(Talismans2.tabsTalismans);
         this.setUnlocalizedName("Flame Talisman");
     }
-
+    
+    
     @Override
     public void registerIcons(IIconRegister iconRegister) {
         itemIcon = iconRegister.registerIcon("talismans2:Flame");
     }
+    
 
     @Override
     // Returns Potion Effect on Tick

@@ -20,7 +20,9 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import cpw.mods.fml.relauncher.Side;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraftforge.common.MinecraftForge;
 
 import java.io.File;
 
@@ -51,14 +53,15 @@ public class Talismans2 {
 
         // Loads Keybindings
         proxy.registerKeyBindings();
+        
+        proxy.registerPlayerRenderHandler();
 
         // Load ModItems
         ModItems.init();
 
         // Load Old Recipes
         CraftingHandler.CopyTalismans(properties); 
-        
-        
+      
         LogHelper.info("Pre Initialization Complete!"); 
     }
 
@@ -70,7 +73,6 @@ public class Talismans2 {
         LogHelper.info("Initialization Complete!");
 
         FMLCommonHandler.instance().bus().register(instance);
-
 
     }
 

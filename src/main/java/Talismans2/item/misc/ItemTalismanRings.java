@@ -106,11 +106,8 @@ public class ItemTalismanRings extends ItemTalismanBauble {
             player.addPotionEffect(new PotionEffect(Potion.waterBreathing.id,
                     Integer.MAX_VALUE, 1, true));
         }
-        if (itemstack.getItemDamage() == 8
-                && !player.isPotionActive(Potion.wither)) {
+        if (itemstack.getItemDamage() == 8);
             player.removePotionEffect(Potion.wither.id);
-
-        }
     }
 
     @Override

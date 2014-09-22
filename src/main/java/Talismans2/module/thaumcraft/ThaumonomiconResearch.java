@@ -120,7 +120,7 @@ public class ThaumonomiconResearch {
         String text = "1";
 
         text = "PAGE_THANKS_RESEARCH";
-        research = new ResearchItem("Thanks", "Talismans", new AspectList(), -4, -6, 0, new ResourceLocation("talismans2:textures/items/Thanks.png")).setRound().setAutoUnlock().registerResearchItem().setSpecial();
+        research = new ResearchItem("Thanks", "Talismans", new AspectList(), -4, -6, 0, new ResourceLocation("talismans2:textures/items/Donator.png")).setRound().setAutoUnlock().registerResearchItem().setSpecial();
         research.setPages(new ResearchPage(text));
 
     }

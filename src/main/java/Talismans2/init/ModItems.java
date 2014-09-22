@@ -65,8 +65,8 @@ public class ModItems {
         TalismanRings = new ItemTalismanRings();
         GameRegistry.registerItem(TalismanRings, "Talisman Rings");
         // Talismans Debug
-        TalismansDubugTool = new ItemTalismanDebug();
-        GameRegistry.registerItem(TalismansDubugTool, "Talismans Debug Tool");
+//        TalismansDubugTool = new ItemTalismanDebug();
+//        GameRegistry.registerItem(TalismansDubugTool, "Talismans Debug Tool");
 
     }
 
