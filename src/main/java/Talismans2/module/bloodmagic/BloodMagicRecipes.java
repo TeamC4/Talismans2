@@ -1,8 +1,5 @@
 package Talismans2.module.bloodmagic;
 
-import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
-import net.minecraft.item.ItemStack;
 import Talismans2.util.TalismanStacks;
 import WayofTime.alchemicalWizardry.api.altarRecipeRegistry.AltarRecipeRegistry;
 import WayofTime.alchemicalWizardry.api.bindingRegistry.BindingRegistry;
@@ -11,26 +8,15 @@ public class BloodMagicRecipes {
 
 	public static void init() {
 		// Altar Recipes
-		AltarRecipeRegistry.registerAltarRecipe(
-				TalismanStacks.talismanCrafting, new ItemStack(
-						Blocks.crafting_table), 3, 6000, 10, 1, false);
-		AltarRecipeRegistry.registerAltarRecipe(TalismanStacks.talismanFlame,
-				new ItemStack(Items.flint_and_steel), 3, 6000, 10, 1, false);
-		AltarRecipeRegistry.registerAltarRecipe(
-				TalismanStacks.talismanInvisible, new ItemStack(Items.carrot),
-				3, 6000, 10, 1, false);
-		AltarRecipeRegistry.registerAltarRecipe(TalismanStacks.talismanLight,
-				new ItemStack(Blocks.torch), 3, 6000, 10, 1, false);
-		AltarRecipeRegistry.registerAltarRecipe(TalismanStacks.talismanMining,
-				new ItemStack(Items.diamond_pickaxe), 3, 6000, 10, 1, false);
-		AltarRecipeRegistry.registerAltarRecipe(
-				TalismanStacks.talismanMovement, new ItemStack(
-						Items.diamond_boots), 3, 6000, 10, 1, false);
-		AltarRecipeRegistry.registerAltarRecipe(TalismanStacks.talismanWater,
-				new ItemStack(Items.water_bucket), 3, 6000, 10, 1, false);
-		AltarRecipeRegistry.registerAltarRecipe(
-				TalismanStacks.talismanWitherless, new ItemStack(Blocks.skull),
-				3, 6000, 10, 1, false);
+        AltarRecipeRegistry.registerAltarRecipe(TalismanStacks.bloodBlankTalisman, TalismanStacks.talismanBlank, 3, 4000, 50, 15, false);
+		AltarRecipeRegistry.registerAltarRecipe(TalismanStacks.bloodCraftingTalisman, TalismanStacks.talismanCrafting, 5, 14000, 50, 15, false);
+		AltarRecipeRegistry.registerAltarRecipe(TalismanStacks.bloodFlameTalisman, TalismanStacks.talismanFlame, 5, 14000, 50, 15, false);
+		AltarRecipeRegistry.registerAltarRecipe(TalismanStacks.bloodInvisibleTalisman, TalismanStacks.talismanInvisible, 5, 14000, 50, 15, false);
+		AltarRecipeRegistry.registerAltarRecipe(TalismanStacks.bloodLightTalisman, TalismanStacks.talismanLight, 5, 14000, 50, 15, false);
+		AltarRecipeRegistry.registerAltarRecipe(TalismanStacks.bloodMiningTalisman, TalismanStacks.talismanMining, 5, 14000, 50, 15, false);
+		AltarRecipeRegistry.registerAltarRecipe(TalismanStacks.bloodMovementTalisman, TalismanStacks.talismanMovement, 5, 14000, 50, 15, false);
+		AltarRecipeRegistry.registerAltarRecipe(TalismanStacks.bloodWaterTalisman, TalismanStacks.talismanWater, 5, 14000, 50, 15, false);
+		AltarRecipeRegistry.registerAltarRecipe(TalismanStacks.bloodWitherlessTalisman, TalismanStacks.talismanWitherless, 5, 14000, 50, 15, false);
 
 		// Binding Recipes
 		BindingRegistry.registerRecipe(TalismanStacks.talismanRingCrafting,

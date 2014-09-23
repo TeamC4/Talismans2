@@ -9,6 +9,7 @@ item.Mining Talisman.name=Mining Talisman
 item.Invisible Talisman.name=Invisible Talisman
 item.Witherless Talisman.name=Witherless Talisman
 item.Crafting Talisman.name=Crafting Talisman
+
 item.Talisman Ring.Blank.name=A Normal Ring
 item.Talisman Ring.Crafting.name=Ring Of Crafting
 item.Talisman Ring.Flame.name=Ring Of Fire
@@ -18,6 +19,16 @@ item.Talisman Ring.Mining.name=Ring Of The Miner
 item.Talisman Ring.Movement.name=Ring Of Movement
 item.Talisman Ring.Water.name=Ring Of Water Breathing
 item.Talisman Ring.Witherless.name=Ring Of Witherless
+
+item.Blood Light Talisman.name=Blood Light Talisman
+item.Blood Invisible Talisman.name=Blood Invisible Talisman
+item.Blood Movement Talisman.name=Blood Movement Talisman
+item.Blood Witherless Talisman.name=Blood Witherless Talisman
+item.Blood Mining Talisman.name=Blood Mining Talisman
+item.Blood Water Talisman.name=Blood Water Talisman
+item.Blood Flame Talisman.name=Blood Flame Talisman
+item.Blood Crafting Talisman.name=Blood Crafting Talisman
+item.Blank Blood Talisman.name=Blank Blood Talisman
 
 
 # Creative Tab localizations
@@ -76,11 +87,11 @@ tc.research_text.Witherless_Ring=Take THAT Wither!
 tc.research_text.Thanks=Thanks To My Supporters
 
 #ConfigGUI Text
-tm2.configgui.category.tmLoot=Spawn Rates
+tm2.configgui.category.tmLoot=Enable or Disable Talismans
 tm2.configgui.category.tmRecipes=Crafting Changes
 tm2.configgui.category.tmTC=Thaumcraft Integration
 tm2.configgui.category.tmBloodMagic=Blood Magic Integration
-tm2.configgui.category.tmGeneral=Enable or Disable Talismans
+tm2.configgui.category.tmGeneral=Spawn Rates
 
 tm2.configgui.category.tmLoot.tooltip=Change the rate at which talismans spawn
 tm2.configgui.category.tmRecipes.tooltip=Change crafting mechanics
