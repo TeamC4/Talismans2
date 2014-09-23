@@ -2,8 +2,10 @@ package Talismans2.client;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.Tessellator;
+import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.client.renderer.texture.TextureMap;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Items;
 import net.minecraft.util.IIcon;
 import net.minecraftforge.client.event.RenderLivingEvent;
 import net.minecraftforge.common.MinecraftForge;
@@ -38,8 +40,9 @@ public class PlayerRenderHandler {
 		if (!(event.entity instanceof EntityPlayer))
 			return;
 		Minecraft mc = Minecraft.getMinecraft();
-		IIcon icon = ModItems.MovementTalisman.getIconFromDamage(0); // This can
-																		// be
+		IIcon icon = ModItems.MovementTalisman.
+				getIconFromDamage(0); // This can
+																		
 		// changed to
 		// whatever you
 		// want
@@ -48,7 +51,7 @@ public class PlayerRenderHandler {
 		// mc.getTextureManager().bindTexture(TextureMap.locationBlocksTexture);
 		// Uncomment this if using a block texture
 
-		final float yOffset = 0.55F; // Adjusts how far above the player to
+		final float yOffset = 0.45F; // Adjusts how far above the player to
 										// render
 		final float spinModifier = 20F; // Controls how fast the texture spins.
 										// Lower number equals faster spin
@@ -63,11 +66,11 @@ public class PlayerRenderHandler {
 
 		GL11.glRotatef(spin, 0, 1, 0);
 
-		// Re-enable these for billboarding (facing player)
-		// GL11.glRotatef(-RenderManager.instance.playerViewY, 0.0F, 1.0F,
-		// 0.0F);
-		// GL11.glRotatef( RenderManager.instance.playerViewX, 1.0F, 0.0F,
-		// 0.0F); Uncomment this for icon to face player based on pitch
+//		 Re-enable these for billboarding (facing player)
+		 GL11.glRotatef(-RenderManager.instance.playerViewY, 0.0F, 1.0F,
+		 0.0F);
+		 GL11.glRotatef( RenderManager.instance.playerViewX, 1.0F, 0.0F,
+		 0.0F); 
 
 		Tessellator tessellator = Tessellator.instance;
 		tessellator.startDrawingQuads();
