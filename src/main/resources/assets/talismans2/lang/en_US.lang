@@ -101,22 +101,22 @@ tm2.configgui.category.tmGeneral.tooltip=Enable or Disable Certain Talismans
 
 
 # Thaumcraft Thaumonomicon Text localizations
-PAGE_BLANK_TALISMAN=TODO
-PAGE_FLAME_TALISMAN=TODO
-PAGE_WATER_TALISMAN=TODO
-PAGE_LIGHT_TALISMAN=TODO
-PAGE_MOVEMENT_TALISMAN=TODO
-PAGE_MINING_TALISMAN=TODO
-PAGE_INVISIBLE_TALISMAN=TODO
-PAGE_WITHERLESS_TALISMAN=TODO
-PAGE_FUSION_RESEARCH=TODO
-PAGE_LIGHT_RING=TODO
-PAGE_MOVEMENT_RING=TODO
-PAGE_MINING_RING=TODO
-PAGE_BLANK_RING=TODO
-PAGE_FLAME_RING=TODO
-PAGE_WATER_RING=TODO
-PAGE_INVISIBLE_RING=TODO
-PAGE_WITHERLESS_RING=TODO
+PAGE_BLANK_TALISMAN=Through experimentation or accident you have discovered a new way to use arcane stone. By further soaking in a cauldron it shape becomes altered into a disc like form that can be infused with many useful abilities. You have decided to call these talismans.
+PAGE_FLAME_TALISMAN=Focusing the essence of flame into a blank talisman will yield this variant. The Flame talisman grants immunity to flames of all sorts. Should you ever decide to venture into the depths of the nether be sure to take this with you.
+PAGE_WATER_TALISMAN=By infusing a blank talisman with the elements of water it becomes attuned to the creatures that dwell within. This talisman grants its wearer water breathing.
+PAGE_LIGHT_TALISMAN=Through accident whilst trying to discover a way to remain unseen you stumbled upon this infusion. This infusion allows you to see in the dark. No longer shall you fear the dark for now you can see what horrors lurk within.
+PAGE_MOVEMENT_TALISMAN=Ever wanted to run faster? Jump higher? Well with this discovery now you can. The talisman of movement will make your parkour dreams come true.
+PAGE_MINING_TALISMAN=After many failures and much wasted resources you have discovered a talisman infusion that enhances your mining skills. Now all the ore shall be yours, Just don't dig too deep for none truly know what lies at the bottom of the world.
+PAGE_INVISIBLE_TALISMAN=By infusing a blank talisman with light and the reflective properties of mirrors you have made a talisman that will bend light around its wearer. Use responsibly
+PAGE_WITHERLESS_TALISMAN=By taking the curative properties of milk and infusing a blank talisman with the ability to negate any negative potion effects. Now the wither shall quiver.
+PAGE_FUSION_RESEARCH=During your research as a thaumaturge you discovered ways to produce enchanted trinkets.As you progressed down the path of research into talismans it dawns on you. “Why can't I combine talisman abilities with rings or belts?”. After many nights of experimentation you discover the secret to this process. You can now infuse mundane rings and belts with talismans.
+PAGE_LIGHT_RING=Worn on either finger this ring will grant the same ablitiy as a light talisman.
+PAGE_MOVEMENT_RING=Worn on either finger this ring will grant the movement powers of the talisman of movement.
+PAGE_MINING_RING=While wearing this ring you will be granted the power of the mining talisman.
+PAGE_BLANK_RING=Why would you ever bother wearing this?
+PAGE_FLAME_RING=Granting you resistance to fire no matter which finger it adorns.
+PAGE_WATER_RING=Wearing this ring keeps you from drowning as long as it has vis.
+PAGE_INVISIBLE_RING=Wearing this instantly make you see through.
+PAGE_WITHERLESS_RING=The witherless ring will grant all the powers of the witherless talisman. No longer fear Poison.
 
 PAGE_THANKS_RESEARCH=This is just a small Thankyou to all the people who support me and my mods.                               CyborgShadow (Brandon)                                               Necrogami
