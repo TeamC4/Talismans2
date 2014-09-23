@@ -45,14 +45,23 @@ public class TalismanStacks {
 	public static ItemStack talismanRingWitherless = new ItemStack(
 			ModItems.TalismanRings, 1, 8);
 
-    public static ItemStack bloodBlankTalisman = new ItemStack(ModItems.BloodBlankTalisman);
-    public static ItemStack bloodFlameTalisman = new ItemStack(ModItems.BloodFlameTalisman);
-    public static ItemStack bloodCraftingTalisman = new ItemStack(ModItems.BloodCraftingTalisman);
-    public static ItemStack bloodWitherlessTalisman = new ItemStack(ModItems.BloodWitherlessTalisman);
-    public static ItemStack bloodMovementTalisman = new ItemStack(ModItems.BloodMovementTalisman);
-    public static ItemStack bloodInvisibleTalisman = new ItemStack(ModItems.BloodInvisibleTalisman);
-    public static ItemStack bloodLightTalisman = new ItemStack(ModItems.BloodLightTalisman);
-    public static ItemStack bloodWaterTalisman = new ItemStack(ModItems.BloodWaterTalisman);
-    public static ItemStack bloodMiningTalisman = new ItemStack(ModItems.BloodMiningTalisman);
+	public static ItemStack bloodBlankTalisman = new ItemStack(
+			ModItems.BloodBlankTalisman);
+	public static ItemStack bloodFlameTalisman = new ItemStack(
+			ModItems.BloodFlameTalisman);
+	public static ItemStack bloodCraftingTalisman = new ItemStack(
+			ModItems.BloodCraftingTalisman);
+	public static ItemStack bloodWitherlessTalisman = new ItemStack(
+			ModItems.BloodWitherlessTalisman);
+	public static ItemStack bloodMovementTalisman = new ItemStack(
+			ModItems.BloodMovementTalisman);
+	public static ItemStack bloodInvisibleTalisman = new ItemStack(
+			ModItems.BloodInvisibleTalisman);
+	public static ItemStack bloodLightTalisman = new ItemStack(
+			ModItems.BloodLightTalisman);
+	public static ItemStack bloodWaterTalisman = new ItemStack(
+			ModItems.BloodWaterTalisman);
+	public static ItemStack bloodMiningTalisman = new ItemStack(
+			ModItems.BloodMiningTalisman);
 
 }

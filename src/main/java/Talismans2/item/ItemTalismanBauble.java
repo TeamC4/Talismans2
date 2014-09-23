@@ -51,6 +51,10 @@ public class ItemTalismanBauble extends Item implements IBauble {
 	public void onWornTick(ItemStack arg0, EntityLivingBase arg1) {
 	}
 
+	public boolean isFull3D() {
+		return true;
+	}
+
 	@Override
 	// Equips Talismans When Right Clicked In Players Hand
 	public ItemStack onItemRightClick(ItemStack par1ItemStack, World par2World,

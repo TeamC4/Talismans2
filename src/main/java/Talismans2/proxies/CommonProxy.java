@@ -1,6 +1,5 @@
 package Talismans2.proxies;
 
-
 /**
  * @author Gigabit101
  */
