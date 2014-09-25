@@ -10,7 +10,7 @@ import WayofTime.alchemicalWizardry.api.items.interfaces.IBindable;
 import baubles.api.BaubleType;
 import baubles.api.IBauble;
 
-public class ItemBloodFlameTalisman extends Item implements IBauble, IBindable {
+public class ItemBloodFlameTalisman extends ItemTalismanBauble {
 
 	public ItemBloodFlameTalisman() {
 		super();
