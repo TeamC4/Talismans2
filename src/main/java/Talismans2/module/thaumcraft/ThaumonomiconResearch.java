@@ -120,23 +120,16 @@ public class ThaumonomiconResearch {
 				6, 0, new ResourceLocation(
 						"talismans2:textures/items/Fusion.png")).setRound()
 				.registerResearchItem().setSpecial();
-		research.setPages(new ResearchPage(text));
-
-		// Blank Ring
-		text = "PAGE_BLANK_RING";
-		research = new ResearchItem("Blank_Ring", "Talismans",
-				new AspectList(), -2, 8, 0, new ResourceLocation(
-						"talismans2:textures/items/Ring.png")).setRound()
-				.registerResearchItem().setParents("Fusion");
 		research.setPages(new ResearchPage(text), new ResearchPage(
 				ThaumcraftRecipes.BlankRing));
+
 
 		// Flame Ring
 		text = "PAGE_FLAME_RING";
 		research = new ResearchItem("Flame_Ring", "Talismans", new AspectList()
 				.add(Aspect.MAGIC, 5).add(Aspect.FIRE, 5), -2, 9, 0,
 				new ResourceLocation("talismans2:textures/items/Ring.png"))
-				.setRound().registerResearchItem().setParents("Blank_Ring");
+				.setRound().registerResearchItem().setParents("Fusion");
 		research.setPages(new ResearchPage(text), new ResearchPage(
 				ThaumcraftRecipes.FlameRing));
 
@@ -145,7 +138,7 @@ public class ThaumonomiconResearch {
 		research = new ResearchItem("Water_Ring", "Talismans", new AspectList()
 				.add(Aspect.MAGIC, 5).add(Aspect.WATER, 5), -2, 10, 0,
 				new ResourceLocation("talismans2:textures/items/Ring.png"))
-				.setRound().registerResearchItem().setParents("Blank_Ring");
+				.setRound().registerResearchItem().setParents("Fusion");
 		research.setPages(new ResearchPage(text), new ResearchPage(
 				ThaumcraftRecipes.WaterRing));
 
@@ -154,7 +147,7 @@ public class ThaumonomiconResearch {
 		research = new ResearchItem("Light_Ring", "Talismans", new AspectList()
 				.add(Aspect.MAGIC, 5).add(Aspect.LIGHT, 5), -3, 8, 0,
 				new ResourceLocation("talismans2:textures/items/Ring.png"))
-				.setRound().setParents("Blank_Ring");
+				.setRound().setParents("Fusion");
 		research.setPages(new ResearchPage(text),
 				new ResearchPage(ThaumcraftRecipes.LightRing))
 				.registerResearchItem();
@@ -165,7 +158,7 @@ public class ThaumonomiconResearch {
 				new AspectList().add(Aspect.MAGIC, 5).add(Aspect.MAN, 5), -3,
 				9, 0,
 				new ResourceLocation("talismans2:textures/items/Ring.png"))
-				.setRound().setParents("Blank_Ring");
+				.setRound().setParents("Fusion");
 		research.setPages(new ResearchPage(text),
 				new ResearchPage(ThaumcraftRecipes.MovementRing))
 				.registerResearchItem();
@@ -176,7 +169,7 @@ public class ThaumonomiconResearch {
 				new AspectList().add(Aspect.MAGIC, 5).add(Aspect.TOOL, 5), -3,
 				10, 0, new ResourceLocation(
 						"talismans2:textures/items/Ring.png")).setRound()
-				.setParents("Blank_Ring");
+				.setParents("Fusion");
 		research.setPages(new ResearchPage(text),
 				new ResearchPage(ThaumcraftRecipes.MiningRing))
 				.registerResearchItem();
@@ -187,7 +180,7 @@ public class ThaumonomiconResearch {
 				new AspectList().add(Aspect.MAGIC, 5).add(Aspect.MAN, 5)
 						.add(Aspect.SENSES, 5), -1, 8, 0, new ResourceLocation(
 						"talismans2:textures/items/Ring.png")).setRound()
-				.setParents("Blank_Ring");
+				.setParents("Fusion");
 		research.setPages(new ResearchPage(text),
 				new ResearchPage(ThaumcraftRecipes.InvisibleRing))
 				.registerResearchItem();
@@ -198,7 +191,7 @@ public class ThaumonomiconResearch {
 				new AspectList().add(Aspect.MAGIC, 5).add(Aspect.HEAL, 5), -1,
 				9, 0,
 				new ResourceLocation("talismans2:textures/items/Ring.png"))
-				.setRound().setParents("Blank_Ring");
+				.setRound().setParents("Fusion");
 		research.setPages(new ResearchPage(text),
 				new ResearchPage(ThaumcraftRecipes.WitherlessRing))
 				.registerResearchItem();
@@ -211,7 +204,7 @@ public class ThaumonomiconResearch {
 
 		text = "PAGE_THANKS_RESEARCH";
 		research = new ResearchItem("Thanks", "Talismans", new AspectList(),
-				-4, -6, 0, new ResourceLocation(
+				0, -4, 1, new ResourceLocation(
 						"talismans2:textures/items/Donator.png")).setRound()
 				.setAutoUnlock().registerResearchItem().setSpecial();
 		research.setPages(new ResearchPage(text));
