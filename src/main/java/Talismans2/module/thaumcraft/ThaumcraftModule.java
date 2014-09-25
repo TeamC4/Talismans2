@@ -12,7 +12,7 @@ public class ThaumcraftModule {
 
 	public static void ThaumcraftInit() {
 		// Load Thaumcraft Recipes
-		ThaumcraftRecipes.init();
+		ThaumcraftRecipes.init(null);
 		// Load Thaumonomicon Tab
 		ThaumonomiconResearch.addResearchTab();
 		// Load Thaumcraft Research

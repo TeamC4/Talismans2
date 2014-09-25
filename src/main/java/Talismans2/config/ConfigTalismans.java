@@ -14,9 +14,10 @@ public class ConfigTalismans {
 	public static String CATEGORY_BLOODMAGIC = "blood magic";
 	public static String CATEGORY_LOOT = "loot";
 	public static String CATEGORY_RECIPES = "recipes";
-
+    //Module
 	public static boolean ThaumscraftModuleTrue;
 	public static boolean BloodMagicModuleTrue;
+	//Loot
 	public static boolean BlankTalismanLootTrue;
 	public static boolean FlameTalismanLootTrue;
 	public static boolean WaterTalismanLootTrue;
@@ -25,8 +26,18 @@ public class ConfigTalismans {
 	public static boolean MovementTalismanLootTrue;
 	public static boolean InvisibleTalismanLootTrue;
 	public static boolean WitherlessTalismanLootTrue;
+	//Disable Recipes
+	public static boolean BlankTalismanTrue;
+	public static boolean FlameTalismanTrue;
+	public static boolean WaterTalismanTrue;
+	public static boolean LightTalismanTrue;
+	public static boolean MiningTalismanTrue;
+	public static boolean MovementTalismanTrue;
+	public static boolean InvisibleTalismanTrue;
+	public static boolean WitherlessTalismanTrue;
+	//Misc
 	public static boolean CopyTalismansTrue;
-
+    //Spawn Chance 
 	public static int ChanceBlankTalisman;
 	public static int ChanceFlameTalisman;
 	public static int ChanceWaterTalisman;
@@ -80,6 +91,30 @@ public class ConfigTalismans {
 		BloodMagicModuleTrue = config.get(CATEGORY_BLOODMAGIC,
 				"Blood Magic Module On", true,
 				"Enable or Disable Blood Magic Integration").getBoolean(true);
+		//Disable Talisman Recipes
+		
+		FlameTalismanTrue = config.get(CATEGORY_RECIPES,
+				"Set to False to Dissable Flame Talisman Recipe.",true)
+				.getBoolean(true);
+		WaterTalismanTrue = config.get(CATEGORY_RECIPES,
+				"Set to False to Dissable Water Talisman Recipe.",true)
+				.getBoolean(true);
+		LightTalismanTrue = config.get(CATEGORY_RECIPES,
+				"Set to False to Dissable Light Talisman Recipe.",true)
+				.getBoolean(true);
+		MiningTalismanTrue = config.get(CATEGORY_RECIPES,
+				"Set to False to Dissable Mining Talisman Recipe.",true)
+				.getBoolean(true);
+		MovementTalismanTrue = config.get(CATEGORY_RECIPES,
+				"Set to False to Dissable Movement Talisman Recipe.",true)
+				.getBoolean(true);
+		InvisibleTalismanTrue = config.get(CATEGORY_RECIPES,
+				"Set to False to Dissable Invisible Talisman Recipe.",true)
+				.getBoolean(true);
+		WitherlessTalismanTrue = config.get(CATEGORY_RECIPES,
+				"Set to False to Dissable Witherless Talisman Recipe.",true)
+				.getBoolean(true);
+		
 		// Loot
 		BlankTalismanLootTrue = config.get(CATEGORY_LOOT,
 				"Add Blank Talismans To DungeonLoot", true,
@@ -110,42 +145,42 @@ public class ConfigTalismans {
 		// Loot Chance
 		ChanceBlankTalisman = config
 				.get(Configuration.CATEGORY_GENERAL,
-						"Blank Talisman spawning chance", 15,
+						"Blank Talisman spawning chance", 7,
 						"Change the spawn chance for Blank Talisman's to appear in chests")
 				.getInt();
 		ChanceFlameTalisman = config
 				.get(Configuration.CATEGORY_GENERAL,
-						"Flame Talisman spawning chance", 15,
+						"Flame Talisman spawning chance", 7,
 						"Change the spawn chance for Flame Talisman's to appear in chests")
 				.getInt();
 		ChanceWaterTalisman = config
 				.get(Configuration.CATEGORY_GENERAL,
-						"Water Talisman spawning chance", 15,
+						"Water Talisman spawning chance", 7,
 						"Change the spawn chance for Water Talisman's to appear in chests")
 				.getInt();
 		ChanceLightTalisman = config
 				.get(Configuration.CATEGORY_GENERAL,
-						"Light Talisman spawning chance", 15,
+						"Light Talisman spawning chance", 7,
 						"Change the spawn chance for Light Talisman's to appear in chests")
 				.getInt();
 		ChanceMovementTalisman = config
 				.get(Configuration.CATEGORY_GENERAL,
-						"Movement Talisman spawning chance", 15,
+						"Movement Talisman spawning chance", 7,
 						"Change the spawn chance for Movement Talisman's to appear in chests")
 				.getInt();
 		ChanceMiningTalisman = config
 				.get(Configuration.CATEGORY_GENERAL,
-						"Mining Talisman spawning chance", 15,
+						"Mining Talisman spawning chance", 7,
 						"Change the spawn chance for Mining Talisman's to appear in chests")
 				.getInt();
 		ChanceInvisibleTalisman = config
 				.get(Configuration.CATEGORY_GENERAL,
-						"Invisible Talisman Spawning Chance", 15,
+						"Invisible Talisman Spawning Chance", 7,
 						"Change the spawn chance for Invisible Talisman's to appear in chests")
 				.getInt();
 		ChanceWitherlessTalisman = config
 				.get(Configuration.CATEGORY_GENERAL,
-						"Witherless Talisman Spawning Chance", 15,
+						"Witherless Talisman Spawning Chance", 7,
 						"Change the spawn chance for Witherless Talisman's to appear in chests")
 				.getInt();
 

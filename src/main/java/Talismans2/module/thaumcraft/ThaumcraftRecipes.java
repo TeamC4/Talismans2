@@ -8,6 +8,7 @@ import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
 import thaumcraft.api.crafting.CrucibleRecipe;
 import thaumcraft.api.crafting.InfusionRecipe;
+import Talismans2.config.ConfigTalismans;
 import Talismans2.util.TalismanStacks;
 
 public class ThaumcraftRecipes {
@@ -29,7 +30,7 @@ public class ThaumcraftRecipes {
 	public static InfusionRecipe InvisibleRing;
 	public static InfusionRecipe WitherlessRing;
 
-	public static void init() {
+	public static void init(ConfigTalismans properties) {
 		// Crucible Recipes
 		BlankTalisman = ThaumcraftApi.addCrucibleRecipe("Blank_Talisman",
 				TalismanStacks.talismanBlank, new ItemStack(Blocks.stone),
@@ -40,6 +41,7 @@ public class ThaumcraftRecipes {
 				new AspectList().add(Aspect.MAGIC, 12).add(Aspect.METAL, 10));
 
 		// Infusion Recipes
+		if (properties.FlameTalismanTrue)
 		FlameTalisman = ThaumcraftApi.addInfusionCraftingRecipe(
 				"Flame_Talisman", TalismanStacks.talismanFlame, 5,
 				new AspectList().add(Aspect.MAGIC, 15).add(Aspect.FIRE, 15),
@@ -49,6 +51,7 @@ public class ThaumcraftRecipes {
 						new ItemStack(Items.lava_bucket),
 						new ItemStack(Items.flint_and_steel) });
 
+		if (properties.WaterTalismanTrue)
 		WaterTalisman = ThaumcraftApi.addInfusionCraftingRecipe(
 				"Water_Talisman", TalismanStacks.talismanWater, 5,
 				new AspectList().add(Aspect.MAGIC, 15).add(Aspect.WATER, 15),
@@ -58,6 +61,7 @@ public class ThaumcraftRecipes {
 						new ItemStack(Items.boat),
 						new ItemStack(Items.water_bucket) });
 
+		if (properties.LightTalismanTrue)
 		LightTalisman = ThaumcraftApi.addInfusionCraftingRecipe(
 				"Light_Talisman", TalismanStacks.talismanLight, 5,
 				new AspectList().add(Aspect.MAGIC, 15).add(Aspect.LIGHT, 15),
@@ -66,6 +70,7 @@ public class ThaumcraftRecipes {
 						new ItemStack(Items.carrot),
 						new ItemStack(Items.ender_eye) });
 
+		if (properties.MovementTalismanTrue)
 		MovementTalisman = ThaumcraftApi.addInfusionCraftingRecipe(
 				"Movement_Talisman", TalismanStacks.talismanMovement, 5,
 				new AspectList().add(Aspect.MAGIC, 15).add(Aspect.MAN, 15),
@@ -73,6 +78,7 @@ public class ThaumcraftRecipes {
 						new ItemStack(Items.bed), new ItemStack(Items.sugar),
 						new ItemStack(Items.iron_boots) });
 
+		if (properties.MiningTalismanTrue)
 		MiningTalisman = ThaumcraftApi
 				.addInfusionCraftingRecipe(
 						"Mining_Talisman",
@@ -85,6 +91,7 @@ public class ThaumcraftRecipes {
 								new ItemStack(Items.sugar),
 								new ItemStack(Items.sugar) });
 
+		if (properties.InvisibleTalismanTrue)
 		InvisibleTalisman = ThaumcraftApi.addInfusionCraftingRecipe(
 				"Invisible_Talisman", TalismanStacks.talismanInvisible, 5,
 				new AspectList().add(Aspect.MAGIC, 15).add(Aspect.MAN, 15),
@@ -93,6 +100,7 @@ public class ThaumcraftRecipes {
 						new ItemStack(Items.blaze_powder),
 						new ItemStack(Items.sugar) });
 
+		if (properties.WitherlessTalismanTrue)
 		WitherlessTalisman = ThaumcraftApi.addInfusionCraftingRecipe(
 				"Witherless_Talisman",
 				TalismanStacks.talismanWitherless,
@@ -103,6 +111,7 @@ public class ThaumcraftRecipes {
 						new ItemStack(Items.milk_bucket),
 						new ItemStack(Items.sugar) });
 
+		if (properties.FlameTalismanTrue)
 		FlameRing = ThaumcraftApi.addInfusionCraftingRecipe("Flame_Ring",
 				TalismanStacks.talismanRingFlame, 5,
 				new AspectList().add(Aspect.MAGIC, 15).add(Aspect.FIRE, 15),
@@ -111,6 +120,7 @@ public class ThaumcraftRecipes {
 						new ItemStack(Items.coal, 1, 1),
 						new ItemStack(Items.lava_bucket) });
 
+		if (properties.WaterTalismanTrue)
 		WaterRing = ThaumcraftApi.addInfusionCraftingRecipe("Water_Ring",
 				TalismanStacks.talismanRingWater, 5,
 				new AspectList().add(Aspect.MAGIC, 15).add(Aspect.WATER, 15),
@@ -120,6 +130,7 @@ public class ThaumcraftRecipes {
 						new ItemStack(Items.boat),
 						new ItemStack(Items.water_bucket) });
 
+		if (properties.LightTalismanTrue)
 		LightRing = ThaumcraftApi.addInfusionCraftingRecipe("Light_Ring",
 				TalismanStacks.talismanRingLight, 5,
 				new AspectList().add(Aspect.MAGIC, 15).add(Aspect.LIGHT, 15),
@@ -128,6 +139,7 @@ public class ThaumcraftRecipes {
 						new ItemStack(Items.carrot),
 						new ItemStack(Items.ender_eye) });
 
+		if (properties.InvisibleTalismanTrue)
 		InvisibleRing = ThaumcraftApi.addInfusionCraftingRecipe(
 				"Invisible_Ring", TalismanStacks.talismanRingInvisible, 5,
 				new AspectList().add(Aspect.MAGIC, 15).add(Aspect.MAN, 15),
@@ -136,6 +148,7 @@ public class ThaumcraftRecipes {
 						new ItemStack(Items.blaze_powder),
 						new ItemStack(Items.sugar) });
 
+		if (properties.MiningTalismanTrue)
 		MiningRing = ThaumcraftApi
 				.addInfusionCraftingRecipe("Mining_Ring",
 						TalismanStacks.talismanRingMining, 5, new AspectList()
@@ -146,6 +159,7 @@ public class ThaumcraftRecipes {
 								new ItemStack(Items.sugar),
 								new ItemStack(Items.sugar) });
 
+		if (properties.MovementTalismanTrue)
 		MovementRing = ThaumcraftApi.addInfusionCraftingRecipe("Movement_Ring",
 				TalismanStacks.talismanRingMovement, 5,
 				new AspectList().add(Aspect.MAGIC, 15).add(Aspect.MAN, 15),
@@ -154,6 +168,7 @@ public class ThaumcraftRecipes {
 						new ItemStack(Items.iron_boots),
 						new ItemStack(Items.sugar) });
 
+		if (properties.WitherlessTalismanTrue)
 		WitherlessRing = ThaumcraftApi.addInfusionCraftingRecipe(
 				"Witherless_Ring", TalismanStacks.talismanRingWitherless, 5,
 				new AspectList().add(Aspect.MAGIC, 15).add(Aspect.HEAL, 15),
