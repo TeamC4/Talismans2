@@ -51,7 +51,7 @@ public class PlayerRenderHandler {
 		// mc.getTextureManager().bindTexture(TextureMap.locationBlocksTexture);
 		// Uncomment this if using a block texture
 
-		final float yOffset = 0.45F; // Adjusts how far above the player to
+		final float yOffset = 0.65F; // Adjusts how far above the player to
 										// render
 		final float spinModifier = 20F; // Controls how fast the texture spins.
 										// Lower number equals faster spin
