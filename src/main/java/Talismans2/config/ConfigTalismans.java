@@ -94,25 +94,25 @@ public class ConfigTalismans {
 		//Disable Talisman Recipes
 		
 		FlameTalismanTrue = config.get(CATEGORY_RECIPES,
-				"Set to False to Dissable Flame Talisman Recipe.",true)
+				"Set to False to Disable Flame Talisman Recipe.",true)
 				.getBoolean(true);
 		WaterTalismanTrue = config.get(CATEGORY_RECIPES,
-				"Set to False to Dissable Water Talisman Recipe.",true)
+				"Set to False to Disable Water Talisman Recipe.",true)
 				.getBoolean(true);
 		LightTalismanTrue = config.get(CATEGORY_RECIPES,
-				"Set to False to Dissable Light Talisman Recipe.",true)
+				"Set to False to Disable Light Talisman Recipe.",true)
 				.getBoolean(true);
 		MiningTalismanTrue = config.get(CATEGORY_RECIPES,
-				"Set to False to Dissable Mining Talisman Recipe.",true)
+				"Set to False to Disable Mining Talisman Recipe.",true)
 				.getBoolean(true);
 		MovementTalismanTrue = config.get(CATEGORY_RECIPES,
-				"Set to False to Dissable Movement Talisman Recipe.",true)
+				"Set to False to Disable Movement Talisman Recipe.",true)
 				.getBoolean(true);
 		InvisibleTalismanTrue = config.get(CATEGORY_RECIPES,
-				"Set to False to Dissable Invisible Talisman Recipe.",true)
+				"Set to False to Disable Invisible Talisman Recipe.",true)
 				.getBoolean(true);
 		WitherlessTalismanTrue = config.get(CATEGORY_RECIPES,
-				"Set to False to Dissable Witherless Talisman Recipe.",true)
+				"Set to False to Disable Witherless Talisman Recipe.",true)
 				.getBoolean(true);
 		
 		// Loot
