@@ -1,4 +1,4 @@
-package Talismans2.module.bloodmagic.items;
+package Talismans2.module.bloodmagic.items.talismans;
 
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;

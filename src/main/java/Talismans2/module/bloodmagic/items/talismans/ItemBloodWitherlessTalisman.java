@@ -1,12 +1,12 @@
-package Talismans2.module.bloodmagic.items;
+package Talismans2.module.bloodmagic.items.talismans;
 
+import Talismans2.Talismans2;
+import Talismans2.module.bloodmagic.items.ItemBloodTalisman;
+import baubles.api.BaubleType;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.ItemStack;
-import Talismans2.Talismans2;
-import Talismans2.item.ItemTalismanBauble;
-import baubles.api.BaubleType;
 
-public class ItemBloodWitherlessTalisman extends ItemTalismanBauble {
+public class ItemBloodWitherlessTalisman extends ItemBloodTalisman {
 
 	public ItemBloodWitherlessTalisman() {
 		super();

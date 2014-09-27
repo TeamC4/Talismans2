@@ -1,12 +1,12 @@
-package Talismans2.module.bloodmagic.items;
+package Talismans2.module.bloodmagic.items.talismans;
 
+import Talismans2.Talismans2;
+import Talismans2.module.bloodmagic.items.ItemBloodTalisman;
+import baubles.api.BaubleType;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.ItemStack;
-import Talismans2.Talismans2;
-import Talismans2.item.ItemTalismanBauble;
-import baubles.api.BaubleType;
 
-public class ItemBloodCraftingTalisman extends ItemTalismanBauble {
+public class ItemBloodCraftingTalisman extends ItemBloodTalisman {
 
 	public ItemBloodCraftingTalisman() {
 		super();
@@ -24,5 +24,6 @@ public class ItemBloodCraftingTalisman extends ItemTalismanBauble {
 	public BaubleType getBaubleType(ItemStack arg0) {
 		return BaubleType.AMULET;
 	}
+
 
 }

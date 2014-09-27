@@ -1,27 +1,11 @@
 package Talismans2.init;
 
-import net.minecraft.item.Item;
 import Talismans2.item.misc.ItemTalismanRings;
-import Talismans2.item.talismans.ItemBlankTalisman;
-import Talismans2.item.talismans.ItemCraftingTalisman;
-import Talismans2.item.talismans.ItemFlameTalisman;
-import Talismans2.item.talismans.ItemInvisibleTalisman;
-import Talismans2.item.talismans.ItemLightTalisman;
-import Talismans2.item.talismans.ItemMiningTalisman;
-import Talismans2.item.talismans.ItemMovementTalisman;
-import Talismans2.item.talismans.ItemWaterTalisman;
-import Talismans2.item.talismans.ItemWitherlessTalisman;
-import Talismans2.module.bloodmagic.items.ItemBlankBloodTalisman;
-import Talismans2.module.bloodmagic.items.ItemBloodCraftingTalisman;
-import Talismans2.module.bloodmagic.items.ItemBloodFlameTalisman;
-import Talismans2.module.bloodmagic.items.ItemBloodInvisibleTalisman;
-import Talismans2.module.bloodmagic.items.ItemBloodLightTalisman;
-import Talismans2.module.bloodmagic.items.ItemBloodMiningTalisman;
-import Talismans2.module.bloodmagic.items.ItemBloodMovementTalisman;
-import Talismans2.module.bloodmagic.items.ItemBloodWaterTalisman;
-import Talismans2.module.bloodmagic.items.ItemBloodWitherlessTalisman;
+import Talismans2.item.talismans.*;
+import Talismans2.module.bloodmagic.items.talismans.*;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.item.Item;
 
 /**
  * @author Gigabit101
@@ -89,45 +73,45 @@ public class ModItems {
 		// GameRegistry.registerItem(TalismansDubugTool,
 		// "Talismans Debug Tool");
 
-//		if (Loader.isModLoaded("AWWayofTime")) {
-//
-//			BloodBlankTalisman = new ItemBlankBloodTalisman();
-//			GameRegistry.registerItem(BloodBlankTalisman,
-//					"Blank Blood Talisman");
-//
-//			BloodCraftingTalisman = new ItemBloodCraftingTalisman();
-//			GameRegistry.registerItem(BloodCraftingTalisman,
-//					"Blood Crafting Talisman");
-//
-//			BloodFlameTalisman = new ItemBloodFlameTalisman();
-//			GameRegistry.registerItem(BloodFlameTalisman,
-//					"Blood Flame Talisman");
-//
-//			BloodInvisibleTalisman = new ItemBloodInvisibleTalisman();
-//			GameRegistry.registerItem(BloodInvisibleTalisman,
-//					"Blood Invisible Talisman");
-//
-//			BloodLightTalisman = new ItemBloodLightTalisman();
-//			GameRegistry.registerItem(BloodLightTalisman,
-//					"Blood Light Talisman");
-//
-//			BloodMiningTalisman = new ItemBloodMiningTalisman();
-//			GameRegistry.registerItem(BloodMiningTalisman,
-//					"Blood Mining Talisman");
-//
-//			BloodWaterTalisman = new ItemBloodWaterTalisman();
-//			GameRegistry.registerItem(BloodWaterTalisman,
-//					"Blood Water Talisman");
-//
-//			BloodMovementTalisman = new ItemBloodMovementTalisman();
-//			GameRegistry.registerItem(BloodMovementTalisman,
-//					"Blood Movement Talisman");
-//
-//			BloodWitherlessTalisman = new ItemBloodWitherlessTalisman();
-//			GameRegistry.registerItem(BloodWitherlessTalisman,
-//					"Blood Witherless Talisman");
-//
-//		}
+		if (Loader.isModLoaded("AWWayofTime")) {
+
+            BloodBlankTalisman = new ItemBlankBloodTalisman();
+			GameRegistry.registerItem(BloodBlankTalisman,
+					"Blank Blood Talisman");
+
+			BloodCraftingTalisman = new ItemBloodCraftingTalisman();
+			GameRegistry.registerItem(BloodCraftingTalisman,
+					"Blood Crafting Talisman");
+
+			BloodFlameTalisman = new ItemBloodFlameTalisman();
+			GameRegistry.registerItem(BloodFlameTalisman,
+					"Blood Flame Talisman");
+
+			BloodInvisibleTalisman = new ItemBloodInvisibleTalisman();
+			GameRegistry.registerItem(BloodInvisibleTalisman,
+					"Blood Invisible Talisman");
+
+			BloodLightTalisman = new ItemBloodLightTalisman();
+			GameRegistry.registerItem(BloodLightTalisman,
+					"Blood Light Talisman");
+
+			BloodMiningTalisman = new ItemBloodMiningTalisman();
+			GameRegistry.registerItem(BloodMiningTalisman,
+					"Blood Mining Talisman");
+
+    		BloodWaterTalisman = new ItemBloodWaterTalisman();
+			GameRegistry.registerItem(BloodWaterTalisman,
+					"Blood Water Talisman");
+
+			BloodMovementTalisman = new ItemBloodMovementTalisman();
+			GameRegistry.registerItem(BloodMovementTalisman,
+					"Blood Movement Talisman");
+
+			BloodWitherlessTalisman = new ItemBloodWitherlessTalisman();
+			GameRegistry.registerItem(BloodWitherlessTalisman,
+					"Blood Witherless Talisman");
+
+		}
 
 	}
 

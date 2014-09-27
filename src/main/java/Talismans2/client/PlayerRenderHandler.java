@@ -1,21 +1,19 @@
 package Talismans2.client;
 
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.Tessellator;
-import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.client.renderer.texture.TextureMap;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Items;
-import net.minecraft.util.IIcon;
-import net.minecraftforge.client.event.RenderLivingEvent;
-import net.minecraftforge.common.MinecraftForge;
-
-import org.lwjgl.opengl.GL11;
-
 import Talismans2.init.ModItems;
+import Talismans2.util.RendererUtil;
+import Talismans2.util.TalismanStacks;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.TickEvent;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.texture.TextureMap;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.IIcon;
+import net.minecraftforge.client.event.RenderLivingEvent;
+import net.minecraftforge.common.MinecraftForge;
+import org.lwjgl.opengl.GL11;
 
 public class PlayerRenderHandler {
 
@@ -39,6 +37,7 @@ public class PlayerRenderHandler {
 		String[] owners = { "Gigabit101faf" };
 		if (!(event.entity instanceof EntityPlayer))
 			return;
+        ItemStack iS = TalismanStacks.talismanMovement;
 		Minecraft mc = Minecraft.getMinecraft();
 		IIcon icon = ModItems.MovementTalisman.
 				getIconFromDamage(0); // This can
@@ -59,41 +58,45 @@ public class PlayerRenderHandler {
 		float spin = (((float) clientTickCount) / spinModifier)
 				* (180F / (float) Math.PI);
 
-		GL11.glPushMatrix();
-		GL11.glTranslatef((float) event.x + 0.0F, (float) event.y
-				+ event.entity.height + yOffset, (float) event.z);
-		GL11.glNormal3f(0.0F, 1.0F, 0.0F);
+        GL11.glPushMatrix();
+        GL11.glTranslatef((float) event.x + 0.0F, (float) event.y
+                + event.entity.height + yOffset, (float) event.z);
+        GL11.glNormal3f(0.0F, 1.0F, 0.0F);
 
-		GL11.glRotatef(spin, 0, 1, 0);
+        /*		 Re-enable these for billboarding (facing player)
+        GL11.glRotatef(-RenderManager.instance.playerViewY, 0.0F, 1.0F,
+                0.0F);
+        GL11.glRotatef( RenderManager.instance.playerViewX, 1.0F, 0.0F,
+                0.0F);*/
 
-//		 Re-enable these for billboarding (facing player)
-		 GL11.glRotatef(-RenderManager.instance.playerViewY, 0.0F, 1.0F,
-		 0.0F);
-		 GL11.glRotatef( RenderManager.instance.playerViewX, 1.0F, 0.0F,
-		 0.0F); 
+        GL11.glRotatef(spin, 0, 1, 0);
 
-		Tessellator tessellator = Tessellator.instance;
-		tessellator.startDrawingQuads();
+        RendererUtil.renderItemIn3d(iS);
+/*
+        Tessellator tessellator = Tessellator.instance;
+        tessellator.startDrawingQuads();
 
-		tessellator.addVertexWithUV(-0.25, 0.25, 0, icon.getMinU(),
-				icon.getMaxV());
-		tessellator.addVertexWithUV(0.25, 0.25, 0, icon.getMaxU(),
-				icon.getMaxV());
-		tessellator.addVertexWithUV(0.25, -0.25, 0, icon.getMaxU(),
-				icon.getMinV());
-		tessellator.addVertexWithUV(-0.25, -0.25, 0, icon.getMinU(),
-				icon.getMinV());
+        tessellator.addVertexWithUV(-0.25, -0.25, 0, icon.getMinU(),
+                icon.getMaxV());
+        tessellator.addVertexWithUV(0.25, -0.25, 0, icon.getMaxU(),
+                icon.getMaxV());
+        tessellator.addVertexWithUV(0.25, 0.25, 0, icon.getMaxU(),
+                icon.getMinV());
+        tessellator.addVertexWithUV(-0.25, 0.25, 0, icon.getMinU(),
+                icon.getMinV());
 
-		tessellator.addVertexWithUV(-0.25, -0.25, 0, icon.getMinU(),
-				icon.getMinV());
-		tessellator.addVertexWithUV(0.25, -0.25, 0, icon.getMaxU(),
-				icon.getMinV());
-		tessellator.addVertexWithUV(0.25, 0.25, 0, icon.getMaxU(),
-				icon.getMaxV());
-		tessellator.addVertexWithUV(-0.25, 0.25, 0, icon.getMinU(),
-				icon.getMaxV());
+        tessellator.addVertexWithUV(-0.25, 0.25, 0, icon.getMinU(),
+                icon.getMinV());
+        tessellator.addVertexWithUV(0.25, 0.25, 0, icon.getMaxU(),
+                icon.getMinV());
+        tessellator.addVertexWithUV(0.25, -0.25, 0, icon.getMaxU(),
+                icon.getMaxV());
+        tessellator.addVertexWithUV(-0.25, -0.25, 0, icon.getMinU(),
+                icon.getMaxV());
 
-		tessellator.draw();
+        tessellator.draw(); */
+
+        GL11.glScalef(-0.5F, -0.5F, -0.5F);
 
 		GL11.glPopMatrix();
 	}
