@@ -118,7 +118,7 @@ public class ThaumonomiconResearch {
 		text = "PAGE_FUSION_RESEARCH";
 		research = new ResearchItem("Fusion", "Talismans", new AspectList(), 0,
 				6, 0, new ResourceLocation(
-						"talismans2:textures/items/Fusion.png")).setRound()
+						"talismans2:textures/items/Ring.png")).setRound()
 				.registerResearchItem().setSpecial();
 		research.setPages(new ResearchPage(text), new ResearchPage(
 				ThaumcraftRecipes.BlankRing));

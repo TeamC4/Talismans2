@@ -9,7 +9,7 @@ public class ItemBlankBloodTalisman extends Item {
 	public ItemBlankBloodTalisman() {
 		super();
 		this.setCreativeTab(Talismans2.tabsTalismans);
-		this.setMaxStackSize(1);
+		this.setMaxStackSize(64);
 		this.setUnlocalizedName("Blank Blood Talisman");
 	}
 
