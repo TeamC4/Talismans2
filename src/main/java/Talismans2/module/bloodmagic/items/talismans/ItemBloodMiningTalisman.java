@@ -21,7 +21,7 @@ public class ItemBloodMiningTalisman extends ItemBloodTalisman {
 
 	@Override
 	public void registerIcons(IIconRegister iconRegister) {
-		itemIcon = iconRegister.registerIcon("talismans2:BloodMining");
+		itemIcon = iconRegister.registerIcon("talismans2:Mining_Crack");
 	}
 
 	@Override
@@ -41,7 +41,7 @@ public class ItemBloodMiningTalisman extends ItemBloodTalisman {
 				|| SoulNetworkHandler.syphonFromNetwork(par1ItemStack, 15) > 0) {
 			SoulNetworkHandler.syphonFromNetwork(par1ItemStack, 15);
 			player.addPotionEffect(new PotionEffect(Potion.digSpeed.id,
-					Integer.MAX_VALUE, 1, true));
+					Integer.MAX_VALUE, 3, true));
 		} else {
 			player.removePotionEffect(Potion.digSpeed.id);
 		}

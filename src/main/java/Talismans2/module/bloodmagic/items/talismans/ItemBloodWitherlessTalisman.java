@@ -36,6 +36,9 @@ public class ItemBloodWitherlessTalisman extends ItemBloodTalisman {
 				|| SoulNetworkHandler.syphonFromNetwork(par1ItemStack, 15) > 0) {
 			SoulNetworkHandler.syphonFromNetwork(par1ItemStack, 15);
 			player.removePotionEffect(Potion.wither.id);
+			player.removePotionEffect(Potion.poison.id);
+			player.removePotionEffect(Potion.confusion.id);
+
 		} else {
 			player.addPotionEffect(new PotionEffect(Potion.confusion.id, 10));
 			;

@@ -15,7 +15,7 @@ public class ItemBlankBloodTalisman extends Item {
 
 	@Override
 	public void registerIcons(IIconRegister iconRegister) {
-		itemIcon = iconRegister.registerIcon("talismans2:BloodBlank");
+		itemIcon = iconRegister.registerIcon("talismans2:Blank");
 	}
 
 }

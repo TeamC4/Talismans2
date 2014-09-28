@@ -54,7 +54,8 @@ public class Talismans2 {
 		// Loads Keybindings
 		proxy.registerKeyBindings();
 
-		proxy.registerPlayerRenderHandler();
+		//Loads Floating Talisman Patreon Only
+//		proxy.registerPlayerRenderHandler();
 
 		// Load ModItems
 		ModItems.init();
