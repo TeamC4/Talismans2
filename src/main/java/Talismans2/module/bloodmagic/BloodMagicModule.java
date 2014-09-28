@@ -1,7 +1,5 @@
 package Talismans2.module.bloodmagic;
 
-import java.util.Properties;
-
 import Talismans2.config.ConfigTalismans;
 
 public class BloodMagicModule {

@@ -1,5 +1,8 @@
 package Talismans2;
 
+import java.io.File;
+
+import net.minecraft.creativetab.CreativeTabs;
 import Talismans2.config.ConfigTalismans;
 import Talismans2.creativeTab.CreativeTabTalismans;
 import Talismans2.init.DungeonLoot;
@@ -20,9 +23,6 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import net.minecraft.creativetab.CreativeTabs;
-
-import java.io.File;
 
 /**
  * @author Gigabit101

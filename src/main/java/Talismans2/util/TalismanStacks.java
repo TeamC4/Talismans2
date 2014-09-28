@@ -44,7 +44,7 @@ public class TalismanStacks {
 			ModItems.TalismanRings, 1, 7);
 	public static ItemStack talismanRingWitherless = new ItemStack(
 			ModItems.TalismanRings, 1, 8);
-
+	//Blood Talismans
 	public static ItemStack bloodBlankTalisman = new ItemStack(
 			ModItems.BloodBlankTalisman);
 	public static ItemStack bloodFlameTalisman = new ItemStack(

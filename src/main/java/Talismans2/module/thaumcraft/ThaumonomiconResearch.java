@@ -123,7 +123,6 @@ public class ThaumonomiconResearch {
 		research.setPages(new ResearchPage(text), new ResearchPage(
 				ThaumcraftRecipes.BlankRing));
 
-
 		// Flame Ring
 		text = "PAGE_FLAME_RING";
 		research = new ResearchItem("Flame_Ring", "Talismans", new AspectList()
@@ -203,8 +202,8 @@ public class ThaumonomiconResearch {
 		String text = "1";
 
 		text = "PAGE_THANKS_RESEARCH";
-		research = new ResearchItem("Thanks", "Talismans", new AspectList(),
-				0, -4, 1, new ResourceLocation(
+		research = new ResearchItem("Thanks", "Talismans", new AspectList(), 0,
+				-4, 1, new ResourceLocation(
 						"talismans2:textures/items/Donator.png")).setRound()
 				.setAutoUnlock().registerResearchItem().setSpecial();
 		research.setPages(new ResearchPage(text));

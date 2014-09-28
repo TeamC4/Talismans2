@@ -1,8 +1,8 @@
 package Talismans2.item.talismans;
 
-import Talismans2.Talismans2;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
+import Talismans2.Talismans2;
 
 /**
  * @author Gigabit101

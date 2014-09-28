@@ -1,6 +1,5 @@
 package Talismans2.module.bloodmagic;
 
-import Talismans2.config.ConfigTalismans;
 import Talismans2.util.TalismanStacks;
 import WayofTime.alchemicalWizardry.api.altarRecipeRegistry.AltarRecipeRegistry;
 import WayofTime.alchemicalWizardry.api.bindingRegistry.BindingRegistry;

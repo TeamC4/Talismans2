@@ -1,11 +1,27 @@
 package Talismans2.init;
 
+import net.minecraft.item.Item;
 import Talismans2.item.misc.ItemTalismanRings;
-import Talismans2.item.talismans.*;
-import Talismans2.module.bloodmagic.items.talismans.*;
+import Talismans2.item.talismans.ItemBlankTalisman;
+import Talismans2.item.talismans.ItemCraftingTalisman;
+import Talismans2.item.talismans.ItemFlameTalisman;
+import Talismans2.item.talismans.ItemInvisibleTalisman;
+import Talismans2.item.talismans.ItemLightTalisman;
+import Talismans2.item.talismans.ItemMiningTalisman;
+import Talismans2.item.talismans.ItemMovementTalisman;
+import Talismans2.item.talismans.ItemWaterTalisman;
+import Talismans2.item.talismans.ItemWitherlessTalisman;
+import Talismans2.module.bloodmagic.items.talismans.ItemBlankBloodTalisman;
+import Talismans2.module.bloodmagic.items.talismans.ItemBloodCraftingTalisman;
+import Talismans2.module.bloodmagic.items.talismans.ItemBloodFlameTalisman;
+import Talismans2.module.bloodmagic.items.talismans.ItemBloodInvisibleTalisman;
+import Talismans2.module.bloodmagic.items.talismans.ItemBloodLightTalisman;
+import Talismans2.module.bloodmagic.items.talismans.ItemBloodMiningTalisman;
+import Talismans2.module.bloodmagic.items.talismans.ItemBloodMovementTalisman;
+import Talismans2.module.bloodmagic.items.talismans.ItemBloodWaterTalisman;
+import Talismans2.module.bloodmagic.items.talismans.ItemBloodWitherlessTalisman;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraft.item.Item;
 
 /**
  * @author Gigabit101
@@ -75,7 +91,7 @@ public class ModItems {
 
 		if (Loader.isModLoaded("AWWayofTime")) {
 
-            BloodBlankTalisman = new ItemBlankBloodTalisman();
+			BloodBlankTalisman = new ItemBlankBloodTalisman();
 			GameRegistry.registerItem(BloodBlankTalisman,
 					"Blank Blood Talisman");
 
@@ -99,7 +115,7 @@ public class ModItems {
 			GameRegistry.registerItem(BloodMiningTalisman,
 					"Blood Mining Talisman");
 
-    		BloodWaterTalisman = new ItemBloodWaterTalisman();
+			BloodWaterTalisman = new ItemBloodWaterTalisman();
 			GameRegistry.registerItem(BloodWaterTalisman,
 					"Blood Water Talisman");
 

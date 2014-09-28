@@ -14,10 +14,10 @@ public class ConfigTalismans {
 	public static String CATEGORY_BLOODMAGIC = "blood magic";
 	public static String CATEGORY_LOOT = "loot";
 	public static String CATEGORY_RECIPES = "recipes";
-    //Module
+	// Module
 	public static boolean ThaumscraftModuleTrue;
 	public static boolean BloodMagicModuleTrue;
-	//Loot
+	// Loot
 	public static boolean BlankTalismanLootTrue;
 	public static boolean FlameTalismanLootTrue;
 	public static boolean WaterTalismanLootTrue;
@@ -26,7 +26,7 @@ public class ConfigTalismans {
 	public static boolean MovementTalismanLootTrue;
 	public static boolean InvisibleTalismanLootTrue;
 	public static boolean WitherlessTalismanLootTrue;
-	//Disable Recipes
+	// Disable Recipes
 	public static boolean BlankTalismanTrue;
 	public static boolean FlameTalismanTrue;
 	public static boolean WaterTalismanTrue;
@@ -35,9 +35,9 @@ public class ConfigTalismans {
 	public static boolean MovementTalismanTrue;
 	public static boolean InvisibleTalismanTrue;
 	public static boolean WitherlessTalismanTrue;
-	//Misc
+	// Misc
 	public static boolean CopyTalismansTrue;
-    //Spawn Chance 
+	// Spawn Chance
 	public static int ChanceBlankTalisman;
 	public static int ChanceFlameTalisman;
 	public static int ChanceWaterTalisman;
@@ -91,30 +91,30 @@ public class ConfigTalismans {
 		BloodMagicModuleTrue = config.get(CATEGORY_BLOODMAGIC,
 				"Blood Magic Module On", true,
 				"Enable or Disable Blood Magic Integration").getBoolean(true);
-		//Disable Talisman Recipes
-		
+		// Disable Talisman Recipes
+
 		FlameTalismanTrue = config.get(CATEGORY_RECIPES,
-				"Set to False to Disable Flame Talisman Recipe.",true)
+				"Set to False to Disable Flame Talisman Recipe.", true)
 				.getBoolean(true);
 		WaterTalismanTrue = config.get(CATEGORY_RECIPES,
-				"Set to False to Disable Water Talisman Recipe.",true)
+				"Set to False to Disable Water Talisman Recipe.", true)
 				.getBoolean(true);
 		LightTalismanTrue = config.get(CATEGORY_RECIPES,
-				"Set to False to Disable Light Talisman Recipe.",true)
+				"Set to False to Disable Light Talisman Recipe.", true)
 				.getBoolean(true);
 		MiningTalismanTrue = config.get(CATEGORY_RECIPES,
-				"Set to False to Disable Mining Talisman Recipe.",true)
+				"Set to False to Disable Mining Talisman Recipe.", true)
 				.getBoolean(true);
 		MovementTalismanTrue = config.get(CATEGORY_RECIPES,
-				"Set to False to Disable Movement Talisman Recipe.",true)
+				"Set to False to Disable Movement Talisman Recipe.", true)
 				.getBoolean(true);
 		InvisibleTalismanTrue = config.get(CATEGORY_RECIPES,
-				"Set to False to Disable Invisible Talisman Recipe.",true)
+				"Set to False to Disable Invisible Talisman Recipe.", true)
 				.getBoolean(true);
 		WitherlessTalismanTrue = config.get(CATEGORY_RECIPES,
-				"Set to False to Disable Witherless Talisman Recipe.",true)
+				"Set to False to Disable Witherless Talisman Recipe.", true)
 				.getBoolean(true);
-		
+
 		// Loot
 		BlankTalismanLootTrue = config.get(CATEGORY_LOOT,
 				"Add Blank Talismans To DungeonLoot", true,
