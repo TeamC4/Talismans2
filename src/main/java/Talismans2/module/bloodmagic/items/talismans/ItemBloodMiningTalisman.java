@@ -31,16 +31,18 @@ public class ItemBloodMiningTalisman extends ItemBloodTalisman {
 
     @Override
     public void onUnequipped(ItemStack arg0, EntityLivingBase player) {
-        player.removePotionEffect(Potion.fireResistance.id);
+        player.removePotionEffect(Potion.digSpeed.id);
     }
 
     @Override
     public void onWornTick(ItemStack par1ItemStack, EntityLivingBase player) {
 
-        if (!player.isPotionActive(Potion.fireResistance) || SoulNetworkHandler.syphonFromNetwork(par1ItemStack, 15) > 0) {
+        if (!player.isPotionActive(Potion.digSpeed) || SoulNetworkHandler.syphonFromNetwork(par1ItemStack, 15) > 0) {
             SoulNetworkHandler.syphonFromNetwork(par1ItemStack, 15);
-            player.addPotionEffect(new PotionEffect(Potion.fireResistance.id,
+            player.addPotionEffect(new PotionEffect(Potion.digSpeed.id,
                     Integer.MAX_VALUE, 1, true));
+        }else{
+        	player.removePotionEffect(Potion.digSpeed.id);
         }
 
     }

@@ -43,6 +43,9 @@ public class ItemBloodMovementTalisman extends ItemBloodTalisman {
             player.addPotionEffect(new PotionEffect(Potion.moveSpeed.id,
                     Integer.MAX_VALUE, 3, true));
             player.addPotionEffect(new PotionEffect(Potion.jump.id, Integer.MAX_VALUE, 3, true));
+        }else{
+        	player.removePotionEffect(Potion.moveSpeed.id);
+        	player.removePotionEffect(Potion.jump.id);
         }
 
     }
