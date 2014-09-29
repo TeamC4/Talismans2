@@ -91,44 +91,44 @@ public class ModItems {
 
 		if (Loader.isModLoaded("AWWayofTime")) {
 
-			BloodBlankTalisman = new ItemBlankBloodTalisman();
-			GameRegistry.registerItem(BloodBlankTalisman,
-					"Blank Blood Talisman");
-
-			BloodFlameTalisman = new ItemBloodFlameTalisman();
-			GameRegistry.registerItem(BloodFlameTalisman,
-					"Blood Flame Talisman");
-
-			BloodWaterTalisman = new ItemBloodWaterTalisman();
-			GameRegistry.registerItem(BloodWaterTalisman,
-					"Blood Water Talisman");
-
-			BloodLightTalisman = new ItemBloodLightTalisman();
-			GameRegistry.registerItem(BloodLightTalisman,
-					"Blood Light Talisman");
-
-			BloodMovementTalisman = new ItemBloodMovementTalisman();
-			GameRegistry.registerItem(BloodMovementTalisman,
-					"Blood Movement Talisman");
-
-			BloodMiningTalisman = new ItemBloodMiningTalisman();
-			GameRegistry.registerItem(BloodMiningTalisman,
-					"Blood Mining Talisman");
-
-			BloodInvisibleTalisman = new ItemBloodInvisibleTalisman();
-			GameRegistry.registerItem(BloodInvisibleTalisman,
-					"Blood Invisible Talisman");
-
-			BloodWitherlessTalisman = new ItemBloodWitherlessTalisman();
-			GameRegistry.registerItem(BloodWitherlessTalisman,
-					"Blood Witherless Talisman");
-
-			BloodCraftingTalisman = new ItemBloodCraftingTalisman();
-			GameRegistry.registerItem(BloodCraftingTalisman,
-					"Blood Crafting Talisman");
+			BloodInit();
 
 		}
 
+	}
+
+	public static void BloodInit() {
+
+		BloodBlankTalisman = new ItemBlankBloodTalisman();
+		GameRegistry.registerItem(BloodBlankTalisman, "Blank Blood Talisman");
+
+		BloodFlameTalisman = new ItemBloodFlameTalisman();
+		GameRegistry.registerItem(BloodFlameTalisman, "Blood Flame Talisman");
+
+		BloodWaterTalisman = new ItemBloodWaterTalisman();
+		GameRegistry.registerItem(BloodWaterTalisman, "Blood Water Talisman");
+
+		BloodLightTalisman = new ItemBloodLightTalisman();
+		GameRegistry.registerItem(BloodLightTalisman, "Blood Light Talisman");
+
+		BloodMovementTalisman = new ItemBloodMovementTalisman();
+		GameRegistry.registerItem(BloodMovementTalisman,
+				"Blood Movement Talisman");
+
+		BloodMiningTalisman = new ItemBloodMiningTalisman();
+		GameRegistry.registerItem(BloodMiningTalisman, "Blood Mining Talisman");
+
+		BloodInvisibleTalisman = new ItemBloodInvisibleTalisman();
+		GameRegistry.registerItem(BloodInvisibleTalisman,
+				"Blood Invisible Talisman");
+
+		BloodWitherlessTalisman = new ItemBloodWitherlessTalisman();
+		GameRegistry.registerItem(BloodWitherlessTalisman,
+				"Blood Witherless Talisman");
+
+		BloodCraftingTalisman = new ItemBloodCraftingTalisman();
+		GameRegistry.registerItem(BloodCraftingTalisman,
+				"Blood Crafting Talisman");
 	}
 
 }
