@@ -2,6 +2,7 @@ package Talismans2.util;
 
 import net.minecraft.item.ItemStack;
 import Talismans2.init.ModItems;
+import Talismans2.module.bloodmagic.BloodItems;
 
 //All thanks to Tombenpotter for having Sanguimancy open source with this, making life much easier and code cleaner!
 public class TalismanStacks {
@@ -46,22 +47,22 @@ public class TalismanStacks {
 			ModItems.TalismanRings, 1, 8);
 	//Blood Talismans
 	public static ItemStack bloodBlankTalisman = new ItemStack(
-			ModItems.BloodBlankTalisman);
+			BloodItems.BloodBlankTalisman);
 	public static ItemStack bloodFlameTalisman = new ItemStack(
-			ModItems.BloodFlameTalisman);
+			BloodItems.BloodFlameTalisman);
 	public static ItemStack bloodCraftingTalisman = new ItemStack(
-			ModItems.BloodCraftingTalisman);
+			BloodItems.BloodCraftingTalisman);
 	public static ItemStack bloodWitherlessTalisman = new ItemStack(
-			ModItems.BloodWitherlessTalisman);
+			BloodItems.BloodWitherlessTalisman);
 	public static ItemStack bloodMovementTalisman = new ItemStack(
-			ModItems.BloodMovementTalisman);
+			BloodItems.BloodMovementTalisman);
 	public static ItemStack bloodInvisibleTalisman = new ItemStack(
-			ModItems.BloodInvisibleTalisman);
+			BloodItems.BloodInvisibleTalisman);
 	public static ItemStack bloodLightTalisman = new ItemStack(
-			ModItems.BloodLightTalisman);
+			BloodItems.BloodLightTalisman);
 	public static ItemStack bloodWaterTalisman = new ItemStack(
-			ModItems.BloodWaterTalisman);
+			BloodItems.BloodWaterTalisman);
 	public static ItemStack bloodMiningTalisman = new ItemStack(
-			ModItems.BloodMiningTalisman);
+			BloodItems.BloodMiningTalisman);
 
 }

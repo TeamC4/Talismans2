@@ -4,7 +4,6 @@ import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
-import net.minecraft.potion.PotionEffect;
 import Talismans2.Talismans2;
 import Talismans2.module.bloodmagic.items.ItemBloodTalisman;
 import WayofTime.alchemicalWizardry.api.soulNetwork.SoulNetworkHandler;
