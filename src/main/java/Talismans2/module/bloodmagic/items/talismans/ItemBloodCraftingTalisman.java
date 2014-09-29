@@ -17,7 +17,7 @@ public class ItemBloodCraftingTalisman extends ItemBloodTalisman {
 
 	@Override
 	public void registerIcons(IIconRegister iconRegister) {
-		itemIcon = iconRegister.registerIcon("talismans2:Craft_Crack");
+		itemIcon = iconRegister.registerIcon("talismans2:Craft_Blood");
 	}
 
 	@Override

@@ -21,7 +21,7 @@ public class ItemBloodWaterTalisman extends ItemBloodTalisman {
 
 	@Override
 	public void registerIcons(IIconRegister iconRegister) {
-		itemIcon = iconRegister.registerIcon("talismans2:Water_Crack");
+		itemIcon = iconRegister.registerIcon("talismans2:Water_Blood");
 	}
 
 	@Override

@@ -21,7 +21,7 @@ public class ItemBloodFlameTalisman extends ItemBloodTalisman {
 
 	@Override
 	public void registerIcons(IIconRegister iconRegister) {
-		itemIcon = iconRegister.registerIcon("talismans2:Flame_Crack");
+		itemIcon = iconRegister.registerIcon("talismans2:Flame_Blood");
 	}
 
 	@Override
@@ -43,7 +43,6 @@ public class ItemBloodFlameTalisman extends ItemBloodTalisman {
 			player.addPotionEffect(new PotionEffect(Potion.fireResistance.id,
 					Integer.MAX_VALUE, 1, true));
 		} else {
-//			player.removePotionEffect(Potion.fireResistance.id);
 		}
 
 	}

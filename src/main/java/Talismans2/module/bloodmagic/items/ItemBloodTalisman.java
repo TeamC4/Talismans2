@@ -12,8 +12,6 @@ import WayofTime.alchemicalWizardry.api.items.interfaces.IBindable;
 import WayofTime.alchemicalWizardry.api.soulNetwork.SoulNetworkHandler;
 import baubles.api.BaubleType;
 import baubles.api.IBauble;
-import baubles.common.container.InventoryBaubles;
-import baubles.common.lib.PlayerHandler;
 
 public class ItemBloodTalisman extends Item implements IBauble, IBindable {
 
@@ -49,7 +47,11 @@ public class ItemBloodTalisman extends Item implements IBauble, IBindable {
 	@Override
 	public boolean canEquip(ItemStack itemStack,
 			EntityLivingBase entityLivingBase) {
-		return true;
+		if (itemStack.hasTagCompound()) {
+			return true;
+
+		}
+		return false;
 	}
 
 	@Override
@@ -70,7 +72,6 @@ public class ItemBloodTalisman extends Item implements IBauble, IBindable {
 			SoulNetworkHandler.checkAndSetItemOwner(par1ItemStack,
 					par3EntityPlayer);
 		}
-
 
 		return par1ItemStack;
 	}
