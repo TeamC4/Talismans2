@@ -38,12 +38,12 @@ public class ItemBloodFlameTalisman extends ItemBloodTalisman {
 	public void onWornTick(ItemStack par1ItemStack, EntityLivingBase player) {
 
 		if (!player.isPotionActive(Potion.fireResistance)
-				|| SoulNetworkHandler.syphonFromNetwork(par1ItemStack, 15) > 0) {
-			SoulNetworkHandler.syphonFromNetwork(par1ItemStack, 5);
+				& SoulNetworkHandler.syphonFromNetwork(par1ItemStack, 15) > 0) {
+			SoulNetworkHandler.syphonFromNetwork(par1ItemStack, 15);
 			player.addPotionEffect(new PotionEffect(Potion.fireResistance.id,
 					Integer.MAX_VALUE, 1, true));
 		} else {
-			player.removePotionEffect(Potion.fireResistance.id);
+//			player.removePotionEffect(Potion.fireResistance.id);
 		}
 
 	}

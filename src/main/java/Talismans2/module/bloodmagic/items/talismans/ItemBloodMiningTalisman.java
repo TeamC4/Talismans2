@@ -38,12 +38,11 @@ public class ItemBloodMiningTalisman extends ItemBloodTalisman {
 	public void onWornTick(ItemStack par1ItemStack, EntityLivingBase player) {
 
 		if (!player.isPotionActive(Potion.digSpeed)
-				|| SoulNetworkHandler.syphonFromNetwork(par1ItemStack, 15) > 0) {
+				& SoulNetworkHandler.syphonFromNetwork(par1ItemStack, 15) > 0) {
 			SoulNetworkHandler.syphonFromNetwork(par1ItemStack, 15);
 			player.addPotionEffect(new PotionEffect(Potion.digSpeed.id,
 					Integer.MAX_VALUE, 3, true));
 		} else {
-			player.removePotionEffect(Potion.digSpeed.id);
 		}
 
 	}

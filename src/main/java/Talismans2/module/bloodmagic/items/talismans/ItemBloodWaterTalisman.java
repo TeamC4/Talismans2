@@ -38,12 +38,12 @@ public class ItemBloodWaterTalisman extends ItemBloodTalisman {
 	public void onWornTick(ItemStack par1ItemStack, EntityLivingBase player) {
 
 		if (!player.isPotionActive(Potion.waterBreathing)
-				|| SoulNetworkHandler.syphonFromNetwork(par1ItemStack, 15) > 0) {
+				& SoulNetworkHandler.syphonFromNetwork(par1ItemStack, 15) > 0) {
 			SoulNetworkHandler.syphonFromNetwork(par1ItemStack, 15);
 			player.addPotionEffect(new PotionEffect(Potion.waterBreathing.id,
 					Integer.MAX_VALUE, 1, true));
 		} else {
-			player.removePotionEffect(Potion.waterBreathing.id);
+
 		}
 
 	}

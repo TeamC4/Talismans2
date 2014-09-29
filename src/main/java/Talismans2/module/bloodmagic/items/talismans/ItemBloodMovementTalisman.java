@@ -39,17 +39,14 @@ public class ItemBloodMovementTalisman extends ItemBloodTalisman {
 	public void onWornTick(ItemStack par1ItemStack, EntityLivingBase player) {
 
 		if (!player.isPotionActive(Potion.moveSpeed)
-				|| SoulNetworkHandler
-						.getCurrentEssence(par1ItemStack.stackTagCompound
-								.getString("ownerName")) > 15000) {
+				& SoulNetworkHandler.syphonFromNetwork(par1ItemStack, 15) > 0) {
 			SoulNetworkHandler.syphonFromNetwork(par1ItemStack, 15);
 			player.addPotionEffect(new PotionEffect(Potion.moveSpeed.id,
 					Integer.MAX_VALUE, 3, true));
 			player.addPotionEffect(new PotionEffect(Potion.jump.id,
 					Integer.MAX_VALUE, 3, true));
 		} else {
-			player.removePotionEffect(Potion.moveSpeed.id);
-			player.removePotionEffect(Potion.jump.id);
+
 		}
 
 	}
