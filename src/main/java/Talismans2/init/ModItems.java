@@ -89,11 +89,6 @@ public class ModItems {
 		// GameRegistry.registerItem(TalismansDubugTool,
 		// "Talismans Debug Tool");
 
-		if (Loader.isModLoaded("AWWayofTime")) {
-
-			BloodInit();
-
-		}
 
 	}
 
