@@ -9,6 +9,7 @@ import Talismans2.init.DungeonLoot;
 import Talismans2.init.ModItems;
 import Talismans2.lib.Modinfo;
 import Talismans2.module.bloodmagic.BloodMagicModule;
+import Talismans2.module.botania.BotaniaModule;
 import Talismans2.module.thaumcraft.ThaumcraftModule;
 import Talismans2.proxies.CommonProxy;
 import Talismans2.recipe.CraftingHandler;
@@ -74,6 +75,12 @@ public class Talismans2 {
 		LogHelper.info("Initialization Complete!");
 
 		FMLCommonHandler.instance().bus().register(instance);
+		
+		if (Loader.isModLoaded("Botania")) {
+			BotaniaModule.init();
+		} else {
+			
+		}
 
 	}
 
@@ -88,7 +95,9 @@ public class Talismans2 {
 		if (Loader.isModLoaded("AWWayofTime")) {
 			BloodMagicModule.init(properties);
 		} else {
+			
 		}
+
 		LogHelper.info("Post Initialization Complete!");
 
 	}
