@@ -55,8 +55,8 @@ public class Talismans2 {
 		// Loads Keybindings
 		proxy.registerKeyBindings();
 
-		//Loads Floating Talisman Patreon Only
-//		proxy.registerPlayerRenderHandler();
+		// Loads Floating Talisman Patreon Only
+		// proxy.registerPlayerRenderHandler();
 
 		// Load ModItems
 		ModItems.init();
@@ -75,11 +75,11 @@ public class Talismans2 {
 		LogHelper.info("Initialization Complete!");
 
 		FMLCommonHandler.instance().bus().register(instance);
-		
+
 		if (Loader.isModLoaded("Botania")) {
-			BotaniaModule.init();
+			BotaniaModule.init(properties);
 		} else {
-			
+
 		}
 
 	}
@@ -95,7 +95,7 @@ public class Talismans2 {
 		if (Loader.isModLoaded("AWWayofTime")) {
 			BloodMagicModule.init(properties);
 		} else {
-			
+
 		}
 
 		LogHelper.info("Post Initialization Complete!");

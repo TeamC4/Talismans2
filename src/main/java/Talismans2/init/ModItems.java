@@ -32,8 +32,6 @@ public class ModItems {
 	public static Item TalismanRings;
 	public static Item TalismansDubugTool;
 
-
-
 	public static void init() {
 		// Blank Talisman
 		BlankTalisman = new ItemBlankTalisman();
@@ -69,7 +67,6 @@ public class ModItems {
 		// TalismansDubugTool = new ItemTalismanDebug();
 		// GameRegistry.registerItem(TalismansDubugTool,
 		// "Talismans Debug Tool");
-
 
 	}
 

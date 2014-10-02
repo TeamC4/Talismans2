@@ -17,7 +17,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
  */
 
 public class BloodItems {
-	
+
 	// Blood Magic Talismans
 	public static Item BloodBlankTalisman;
 	public static Item BloodFlameTalisman;
@@ -28,9 +28,9 @@ public class BloodItems {
 	public static Item BloodInvisibleTalisman;
 	public static Item BloodWitherlessTalisman;
 	public static Item BloodCraftingTalisman;
-	
-	public static void init(){
-		
+
+	public static void init() {
+
 		BloodBlankTalisman = new ItemBlankBloodTalisman();
 		GameRegistry.registerItem(BloodBlankTalisman, "Blank Blood Talisman");
 

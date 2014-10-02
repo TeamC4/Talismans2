@@ -10,11 +10,11 @@ public class BloodMagicModule {
 
 	}
 
-	public static void BloodMagicInit() {	
+	public static void BloodMagicInit() {
 		// Load Blood Items
 		BloodItems.init();
-		
+
 		// Load Blood Magic Recipes
-		BloodMagicRecipes.init();		
+		BloodMagicRecipes.init();
 	}
 }

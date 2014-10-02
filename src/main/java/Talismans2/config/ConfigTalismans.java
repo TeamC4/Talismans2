@@ -12,11 +12,15 @@ public class ConfigTalismans {
 	private static ConfigTalismans instance = null;
 	public static String CATEGORY_THAUMCRAFT = "thaumcraft";
 	public static String CATEGORY_BLOODMAGIC = "blood magic";
+	public static String CATEGORY_BOTANIA = "botania";
+
 	public static String CATEGORY_LOOT = "loot";
 	public static String CATEGORY_RECIPES = "recipes";
 	// Module
 	public static boolean ThaumscraftModuleTrue;
 	public static boolean BloodMagicModuleTrue;
+	public static boolean BotaniaModuleTrue;
+
 	// Loot
 	public static boolean BlankTalismanLootTrue;
 	public static boolean FlameTalismanLootTrue;
@@ -91,6 +95,9 @@ public class ConfigTalismans {
 		BloodMagicModuleTrue = config.get(CATEGORY_BLOODMAGIC,
 				"Blood Magic Module On", true,
 				"Enable or Disable Blood Magic Integration").getBoolean(true);
+		BotaniaModuleTrue = config.get(CATEGORY_BOTANIA,
+				"Botania Module On", true,
+				"Enable or Disable Botania Integration").getBoolean(true);
 		// Disable Talisman Recipes
 
 		FlameTalismanTrue = config.get(CATEGORY_RECIPES,

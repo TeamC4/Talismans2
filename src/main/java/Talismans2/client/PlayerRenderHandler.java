@@ -11,7 +11,6 @@ import net.minecraftforge.common.MinecraftForge;
 import org.lwjgl.opengl.GL11;
 
 import Talismans2.init.ModItems;
-import Talismans2.lib.Uuids;
 import Talismans2.util.RendererUtil;
 import Talismans2.util.TalismanStacks;
 import cpw.mods.fml.common.FMLCommonHandler;
@@ -39,7 +38,7 @@ public class PlayerRenderHandler {
 	@SubscribeEvent
 	public void onRenderLiving(RenderLivingEvent.Specials.Post event) {
 		if (!(event.entity instanceof EntityPlayer))
-        	return;
+			return;
 		ItemStack iS = TalismanStacks.talismanFlame;
 		Minecraft mc = Minecraft.getMinecraft();
 		IIcon icon = ModItems.FlameTalisman.getIconFromDamage(0); // This can
@@ -73,6 +72,6 @@ public class PlayerRenderHandler {
 
 		GL11.glPopMatrix();
 
-		}
-	 
+	}
+
 }

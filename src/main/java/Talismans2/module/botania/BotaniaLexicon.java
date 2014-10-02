@@ -13,8 +13,7 @@ import vazkii.botania.common.lexicon.page.PageText;
  */
 
 public class BotaniaLexicon {
-	
-	
+
 	public static LexiconCategory categoryBaubles;
 
 	public static LexiconEntry entryBlankTalisman;
@@ -24,27 +23,38 @@ public class BotaniaLexicon {
 	public static LexiconEntry entryMiningTalisman;
 	public static LexiconEntry entryMovementTalisman;
 	public static LexiconEntry entryWitherlessTalisman;
-//	public static LexiconEntry entryCraftTalisman;
 
-	
-	public static void init(){
-		BotaniaAPI.addCategory(categoryBaubles = new LexiconCategory("KEY_BOTANIA_LEXICA_CATERGORY"));
+	// public static LexiconEntry entryCraftTalisman;
+
+	public static void init() {
+		BotaniaAPI.addCategory(categoryBaubles = new LexiconCategory(
+				"KEY_BOTANIA_LEXICA_CATERGORY"));
 
 		entryBlankTalisman = new BLexiconEntry("blankTalisman", categoryBaubles);
-		entryBlankTalisman.setLexiconPages(new PageText("0"), new PageManaInfusionRecipe("1", BotaniaRecipes.blankTalisman));
+		entryBlankTalisman.setLexiconPages(new PageText("0"),
+				new PageManaInfusionRecipe("1", BotaniaRecipes.blankTalisman));
 		entryFlameTalisman = new BLexiconEntry("flameTalisman", categoryBaubles);
-		entryFlameTalisman.setLexiconPages(new PageText("0"), new PageRuneRecipe("1", BotaniaRecipes.flameTalisman));
+		entryFlameTalisman.setLexiconPages(new PageText("0"),
+				new PageRuneRecipe("1", BotaniaRecipes.flameTalisman));
 		entryWaterTalisman = new BLexiconEntry("waterTalisman", categoryBaubles);
-		entryWaterTalisman.setLexiconPages(new PageText("0"), new PageRuneRecipe("1", BotaniaRecipes.waterTalisman));
+		entryWaterTalisman.setLexiconPages(new PageText("0"),
+				new PageRuneRecipe("1", BotaniaRecipes.waterTalisman));
 		entryLightTalisman = new BLexiconEntry("lightTalisman", categoryBaubles);
-		entryLightTalisman.setLexiconPages(new PageText("0"), new PageRuneRecipe("1", BotaniaRecipes.lightTalisman));
-		entryMiningTalisman = new BLexiconEntry("miningTalisman", categoryBaubles);
-		entryMiningTalisman.setLexiconPages(new PageText("0"), new PageRuneRecipe("1", BotaniaRecipes.miningTalisman));
-		entryMovementTalisman = new BLexiconEntry("movementTalisman", categoryBaubles);
-		entryMovementTalisman.setLexiconPages(new PageText("0"), new PageRuneRecipe("1", BotaniaRecipes.movementTalisman));
-		entryWitherlessTalisman = new BLexiconEntry("witherlessTalisman", categoryBaubles);
-		entryWitherlessTalisman.setLexiconPages(new PageText("0"), new PageRuneRecipe("1", BotaniaRecipes.witherlessTalisman));
-		
+		entryLightTalisman.setLexiconPages(new PageText("0"),
+				new PageRuneRecipe("1", BotaniaRecipes.lightTalisman));
+		entryMiningTalisman = new BLexiconEntry("miningTalisman",
+				categoryBaubles);
+		entryMiningTalisman.setLexiconPages(new PageText("0"),
+				new PageRuneRecipe("1", BotaniaRecipes.miningTalisman));
+		entryMovementTalisman = new BLexiconEntry("movementTalisman",
+				categoryBaubles);
+		entryMovementTalisman.setLexiconPages(new PageText("0"),
+				new PageRuneRecipe("1", BotaniaRecipes.movementTalisman));
+		entryWitherlessTalisman = new BLexiconEntry("witherlessTalisman",
+				categoryBaubles);
+		entryWitherlessTalisman.setLexiconPages(new PageText("0"),
+				new PageRuneRecipe("1", BotaniaRecipes.witherlessTalisman));
+
 	}
 
 }

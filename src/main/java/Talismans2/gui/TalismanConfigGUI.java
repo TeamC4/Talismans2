@@ -36,6 +36,9 @@ public class TalismanConfigGUI extends GuiConfig {
 		list.add(new DummyConfigElement.DummyCategoryElement(
 				"Thaumcraft Integration",
 				"tm2.configgui.category.tmThaumcraft", TMTC.class));
+		list.add(new DummyConfigElement.DummyCategoryElement(
+				"Botania Integration",
+				"tm2.configgui.category.tmBotania", TMBotania.class));
 		return list;
 	}
 
@@ -61,7 +64,7 @@ public class TalismanConfigGUI extends GuiConfig {
 							.toString()));
 		}
 	}
-
+	// Loot
 	public static class TMLoot extends CategoryEntry {
 
 		public TMLoot(GuiConfig owningScreen, GuiConfigEntries owningEntryList,
@@ -84,7 +87,7 @@ public class TalismanConfigGUI extends GuiConfig {
 							.toString()));
 		}
 	}
-
+	// Blood Magic
 	public static class TMBloodMagic extends CategoryEntry {
 
 		public TMBloodMagic(GuiConfig owningScreen,
@@ -143,6 +146,29 @@ public class TalismanConfigGUI extends GuiConfig {
 			return new GuiConfig(this.owningScreen,
 					(new ConfigElement(ConfigTalismans.config
 							.getCategory(ConfigTalismans.CATEGORY_RECIPES)))
+							.getChildElements(), this.owningScreen.modID,
+					Configuration.CATEGORY_GENERAL,
+					this.configElement.requiresWorldRestart()
+							|| this.owningScreen.allRequireWorldRestart,
+					this.configElement.requiresMcRestart()
+							|| this.owningScreen.allRequireMcRestart,
+					GuiConfig.getAbridgedConfigPath(ConfigTalismans.config
+							.toString()));
+		}
+	}
+	//Botania
+	public static class TMBotania extends CategoryEntry {
+
+		public TMBotania(GuiConfig owningScreen,
+				GuiConfigEntries owningEntryList, IConfigElement configElement) {
+			super(owningScreen, owningEntryList, configElement);
+		}
+
+		@Override
+		protected GuiScreen buildChildScreen() {
+			return new GuiConfig(this.owningScreen,
+					(new ConfigElement(ConfigTalismans.config
+							.getCategory(ConfigTalismans.CATEGORY_BOTANIA)))
 							.getChildElements(), this.owningScreen.modID,
 					Configuration.CATEGORY_GENERAL,
 					this.configElement.requiresWorldRestart()

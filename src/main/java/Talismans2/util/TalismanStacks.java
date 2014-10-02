@@ -1,7 +1,7 @@
 package Talismans2.util;
 
-import Talismans2.init.ModItems;
 import net.minecraft.item.ItemStack;
+import Talismans2.init.ModItems;
 
 //All thanks to Tombenpotter for having Sanguimancy open source with this, making life much easier and code cleaner!
 public class TalismanStacks {
@@ -44,6 +44,5 @@ public class TalismanStacks {
 			ModItems.TalismanRings, 1, 7);
 	public static ItemStack talismanRingWitherless = new ItemStack(
 			ModItems.TalismanRings, 1, 8);
-
 
 }
