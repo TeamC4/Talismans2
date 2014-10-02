@@ -11,6 +11,10 @@ import thaumcraft.api.crafting.InfusionRecipe;
 import Talismans2.config.ConfigTalismans;
 import Talismans2.util.TalismanStacks;
 
+/**
+ * @author Gigabit101
+ */
+
 public class ThaumcraftRecipes {
 
 	public static CrucibleRecipe BlankTalisman;

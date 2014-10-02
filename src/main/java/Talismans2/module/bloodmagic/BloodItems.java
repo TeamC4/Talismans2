@@ -12,6 +12,10 @@ import Talismans2.module.bloodmagic.items.talismans.ItemBloodWaterTalisman;
 import Talismans2.module.bloodmagic.items.talismans.ItemBloodWitherlessTalisman;
 import cpw.mods.fml.common.registry.GameRegistry;
 
+/**
+ * @author Gigabit101
+ */
+
 public class BloodItems {
 	
 	// Blood Magic Talismans

@@ -18,6 +18,10 @@ import vazkii.botania.common.lexicon.page.PageManaInfusionRecipe;
 import vazkii.botania.common.lexicon.page.PageText;
 import vazkii.botania.common.lib.LibLexicon;
 
+/**
+ * @author Gigabit101
+ */
+
 public class BotaniaRecipes {
 
 	public static RecipeManaInfusion poolRecipe;

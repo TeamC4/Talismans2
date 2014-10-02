@@ -3,6 +3,10 @@ package Talismans2.module.thaumcraft;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
 
+/**
+ * @author Gigabit101
+ */
+
 public class ResearchAspects {
 
 	public static AspectList FlameTalismanResearch = new AspectList()

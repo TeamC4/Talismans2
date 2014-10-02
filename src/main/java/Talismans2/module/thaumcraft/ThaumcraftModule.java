@@ -2,6 +2,10 @@ package Talismans2.module.thaumcraft;
 
 import Talismans2.config.ConfigTalismans;
 
+/**
+ * @author Gigabit101
+ */
+
 public class ThaumcraftModule {
 
 	public static void init(ConfigTalismans properties) {
