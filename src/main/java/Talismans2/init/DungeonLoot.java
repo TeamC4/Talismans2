@@ -156,6 +156,24 @@ public class DungeonLoot {
 							ModItems.WitherlessTalisman), 0, 1,
 							ConfigTalismans.ChanceWitherlessTalisman));
 		}
+		if (properties.MagnetTalismanLootTrue) {
+			ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(
+					new WeightedRandomChestContent(new ItemStack(
+							ModItems.MagnetTalisman), 0, 1,
+							ConfigTalismans.ChanceMagnetTalisman));
+			ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(
+					new WeightedRandomChestContent(new ItemStack(
+							ModItems.MagnetTalisman), 0, 1,
+							ConfigTalismans.ChanceMagnetTalisman));
+			ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(
+					new WeightedRandomChestContent(new ItemStack(
+							ModItems.MagnetTalisman), 0, 1,
+							ConfigTalismans.ChanceMagnetTalisman));
+			ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(
+					new WeightedRandomChestContent(new ItemStack(
+							ModItems.MagnetTalisman), 0, 1,
+							ConfigTalismans.ChanceMagnetTalisman));
+		}
 
 	}
 
