@@ -25,6 +25,8 @@ public class TalismanStacks {
 			ModItems.FlameTalisman);
 	public static ItemStack talismanInvisible = new ItemStack(
 			ModItems.InvisibleTalisman);
+	public static ItemStack talismanMagnet = new ItemStack(
+			ModItems.MagnetTalisman);
 	// Rings
 	public static ItemStack talismanRingBlank = new ItemStack(
 			ModItems.TalismanRings);

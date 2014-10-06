@@ -69,6 +69,18 @@ public class ModItems {
 		// Talisman Rings
 		TalismanRings = new ItemTalismanRings();
 		GameRegistry.registerItem(TalismanRings, "Talisman Rings");
+		
+		//Container Items
+		FlameTalisman.setContainerItem(FlameTalisman);
+		WaterTalisman.setContainerItem(WaterTalisman);
+		LightTalisman.setContainerItem(LightTalisman);
+		MovementTalisman.setContainerItem(MovementTalisman);
+		MiningTalisman.setContainerItem(MiningTalisman);
+		InvisibleTalisman.setContainerItem(InvisibleTalisman);
+		WitherlessTalisman.setContainerItem(WitherlessTalisman);
+		CraftingTalisman.setContainerItem(CraftingTalisman);
+		MagnetTalisman.setContainerItem(MagnetTalisman);
+		MagnetTalisman.setContainerItem(MagnetTalisman);
 		// Talismans Debug
 		// TalismansDubugTool = new ItemTalismanDebug();
 		// GameRegistry.registerItem(TalismansDubugTool,

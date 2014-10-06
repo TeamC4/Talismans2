@@ -3,6 +3,7 @@ package Talismans2.recipe;
 import net.minecraft.item.ItemStack;
 import Talismans2.config.ConfigTalismans;
 import Talismans2.init.ModItems;
+import Talismans2.util.TalismanStacks;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 public class CraftingHandler {
@@ -14,39 +15,32 @@ public class CraftingHandler {
 	}
 
 	public static void addCopyRecipes() {
-		GameRegistry.addShapelessRecipe(
-				new ItemStack(ModItems.FlameTalisman, 2), new Object[] {
-						new ItemStack(ModItems.BlankTalisman),
-						ModItems.FlameTalisman });
+		GameRegistry.addShapelessRecipe(TalismanStacks.talismanFlame,
+				TalismanStacks.talismanBlank , TalismanStacks.talismanFlame);
+		
+		GameRegistry.addShapelessRecipe(TalismanStacks.talismanWater,
+				TalismanStacks.talismanBlank , TalismanStacks.talismanWater);
 
-		GameRegistry.addShapelessRecipe(new ItemStack(
-				ModItems.CraftingTalisman, 2), new Object[] {
-				new ItemStack(ModItems.BlankTalisman),
-				ModItems.CraftingTalisman });
+		GameRegistry.addShapelessRecipe(TalismanStacks.talismanCrafting,
+				TalismanStacks.talismanBlank , TalismanStacks.talismanCrafting);
 
-		GameRegistry.addShapelessRecipe(new ItemStack(
-				ModItems.InvisibleTalisman, 2), new Object[] {
-				new ItemStack(ModItems.BlankTalisman),
-				ModItems.InvisibleTalisman });
+		GameRegistry.addShapelessRecipe(TalismanStacks.talismanInvisible,
+				TalismanStacks.talismanBlank , TalismanStacks.talismanInvisible);
 
-		GameRegistry.addShapelessRecipe(
-				new ItemStack(ModItems.LightTalisman, 2), new Object[] {
-						new ItemStack(ModItems.BlankTalisman),
-						ModItems.LightTalisman });
+		GameRegistry.addShapelessRecipe(TalismanStacks.talismanLight,
+				TalismanStacks.talismanBlank , TalismanStacks.talismanLight);
 
-		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.MiningTalisman,
-				2), new Object[] { new ItemStack(ModItems.BlankTalisman),
-				ModItems.MiningTalisman });
+		GameRegistry.addShapelessRecipe(TalismanStacks.talismanMining,
+				TalismanStacks.talismanBlank , TalismanStacks.talismanMining);
 
-		GameRegistry.addShapelessRecipe(new ItemStack(
-				ModItems.MovementTalisman, 2), new Object[] {
-				new ItemStack(ModItems.BlankTalisman),
-				ModItems.MovementTalisman });
+		GameRegistry.addShapelessRecipe(TalismanStacks.talismanMovement,
+				TalismanStacks.talismanBlank , TalismanStacks.talismanMovement);
 
-		GameRegistry.addShapelessRecipe(new ItemStack(
-				ModItems.WitherlessTalisman, 2), new Object[] {
-				new ItemStack(ModItems.BlankTalisman),
-				ModItems.WitherlessTalisman });
+		GameRegistry.addShapelessRecipe(TalismanStacks.talismanWitherless,
+				TalismanStacks.talismanBlank , TalismanStacks.talismanWitherless);
+		
+		GameRegistry.addShapelessRecipe(TalismanStacks.talismanMagnet,
+				TalismanStacks.talismanBlank , TalismanStacks.talismanMagnet);
 
 	}
 }
