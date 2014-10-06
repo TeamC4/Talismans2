@@ -11,31 +11,31 @@ public class BloodMagicRecipes {
 		// Altar Recipes
 		AltarRecipeRegistry.registerAltarRecipe(new ItemStack(
 				BloodItems.BloodBlankTalisman), TalismanStacks.talismanBlank,
-				3, 4000, 50, 15, false);
+				1, 4000, 50, 15, false);
 		AltarRecipeRegistry.registerAltarRecipe(new ItemStack(
 				BloodItems.BloodCraftingTalisman),
 				TalismanStacks.talismanCrafting, 5, 14000, 50, 15, false);
 		AltarRecipeRegistry.registerAltarRecipe(new ItemStack(
 				BloodItems.BloodFlameTalisman), TalismanStacks.talismanFlame,
-				5, 14000, 50, 15, false);
+				2, 14000, 50, 15, false);
 		AltarRecipeRegistry.registerAltarRecipe(new ItemStack(
 				BloodItems.BloodInvisibleTalisman),
 				TalismanStacks.talismanInvisible, 5, 14000, 50, 15, false);
 		AltarRecipeRegistry.registerAltarRecipe(new ItemStack(
 				BloodItems.BloodLightTalisman), TalismanStacks.talismanLight,
-				5, 14000, 50, 15, false);
+				2, 14000, 50, 15, false);
 		AltarRecipeRegistry.registerAltarRecipe(new ItemStack(
 				BloodItems.BloodMiningTalisman), TalismanStacks.talismanMining,
-				5, 14000, 50, 15, false);
+				3, 14000, 50, 15, false);
 		AltarRecipeRegistry.registerAltarRecipe(new ItemStack(
 				BloodItems.BloodMovementTalisman),
 				TalismanStacks.talismanMovement, 5, 14000, 50, 15, false);
 		AltarRecipeRegistry.registerAltarRecipe(new ItemStack(
 				BloodItems.BloodWaterTalisman), TalismanStacks.talismanWater,
-				5, 14000, 50, 15, false);
+				3, 14000, 50, 15, false);
 		AltarRecipeRegistry.registerAltarRecipe(new ItemStack(
 				BloodItems.BloodWitherlessTalisman),
-				TalismanStacks.talismanWitherless, 5, 14000, 50, 15, false);
+				TalismanStacks.talismanWitherless, 3, 14000, 50, 15, false);
 
 		// Binding Recipes
 		BindingRegistry.registerRecipe(TalismanStacks.talismanRingCrafting,
