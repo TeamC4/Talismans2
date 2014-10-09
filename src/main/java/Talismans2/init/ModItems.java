@@ -33,7 +33,6 @@ public class ModItems {
 	public static Item CraftingTalisman;
 	public static Item MagnetTalisman;
 	public static Item TalismanRings;
-	public static Item TalismansDubugTool;
 
 	public static void init() {
 		// Blank Talisman
@@ -81,10 +80,6 @@ public class ModItems {
 		CraftingTalisman.setContainerItem(CraftingTalisman);
 		MagnetTalisman.setContainerItem(MagnetTalisman);
 		MagnetTalisman.setContainerItem(MagnetTalisman);
-		// Talismans Debug
-		// TalismansDubugTool = new ItemTalismanDebug();
-		// GameRegistry.registerItem(TalismansDubugTool,
-		// "Talismans Debug Tool");
 
 	}
 

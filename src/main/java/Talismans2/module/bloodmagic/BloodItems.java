@@ -44,23 +44,19 @@ public class BloodItems {
 		GameRegistry.registerItem(BloodLightTalisman, "Blood Light Talisman");
 
 		BloodMovementTalisman = new ItemBloodMovementTalisman();
-		GameRegistry.registerItem(BloodMovementTalisman,
-				"Blood Movement Talisman");
+		GameRegistry.registerItem(BloodMovementTalisman, "Blood Movement Talisman");
 
 		BloodMiningTalisman = new ItemBloodMiningTalisman();
 		GameRegistry.registerItem(BloodMiningTalisman, "Blood Mining Talisman");
 
 		BloodInvisibleTalisman = new ItemBloodInvisibleTalisman();
-		GameRegistry.registerItem(BloodInvisibleTalisman,
-				"Blood Invisible Talisman");
+		GameRegistry.registerItem(BloodInvisibleTalisman, "Blood Invisible Talisman");
 
 		BloodWitherlessTalisman = new ItemBloodWitherlessTalisman();
-		GameRegistry.registerItem(BloodWitherlessTalisman,
-				"Blood Witherless Talisman");
+		GameRegistry.registerItem(BloodWitherlessTalisman, "Blood Witherless Talisman");
 
 		BloodCraftingTalisman = new ItemBloodCraftingTalisman();
-		GameRegistry.registerItem(BloodCraftingTalisman,
-				"Blood Crafting Talisman");
+		GameRegistry.registerItem(BloodCraftingTalisman, "Blood Crafting Talisman");
 	}
 
 }

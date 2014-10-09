@@ -42,6 +42,7 @@ public class ConfigTalismans {
 	public static boolean WitherlessTalismanTrue;
 	// Misc
 	public static boolean CopyTalismansTrue;
+	public static boolean EnableEasymodeResearch; 
 	// Spawn Chance
 	public static int ChanceBlankTalisman;
 	public static int ChanceFlameTalisman;

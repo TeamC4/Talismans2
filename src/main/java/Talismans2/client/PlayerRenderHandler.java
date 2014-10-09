@@ -60,6 +60,7 @@ public class PlayerRenderHandler {
 				* (180F / (float) Math.PI);
 
 		GL11.glPushMatrix();
+		
 		GL11.glTranslatef((float) event.x + 0.0F, (float) event.y
 				+ event.entity.height + yOffset, (float) event.z);
 		GL11.glNormal3f(0.0F, 1.0F, 0.0F);

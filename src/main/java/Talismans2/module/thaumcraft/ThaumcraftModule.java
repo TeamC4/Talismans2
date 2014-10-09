@@ -7,6 +7,7 @@ import Talismans2.config.ConfigTalismans;
  */
 
 public class ThaumcraftModule {
+	public static ConfigTalismans properties;
 
 	public static void init(ConfigTalismans properties) {
 		if (properties.ThaumscraftModuleTrue)
@@ -15,16 +16,30 @@ public class ThaumcraftModule {
 	}
 
 	public static void ThaumcraftInit() {
-		// Load Thaumcraft Recipes
-		ThaumcraftRecipes.init(null);
-		// Load Thaumonomicon Tab
-		ThaumonomiconResearch.addResearchTab();
-		// Load Thaumcraft Research
-		ThaumonomiconResearch.addResearch();
-		// Load Fusion Research
-		ThaumonomiconResearch.addFusionResearch();
-		// Load Donator Credits
-		ThaumonomiconResearch.addDonationThanks();
+		if (thaumcraft.common.config.Config.researchDifficulty == -1) {
+			// Load Thaumcraft Recipes
+			ThaumcraftRecipes.init(properties);
+			// Load Thaumonomicon Tab
+			ThaumonomiconResearch.addResearchTab();
+			// Load EasyModeResearch
+			ThaumcraftEasyMode.addResearch();
+			// Load Thaumcraft Research
+			ThaumonomiconResearch.addFusionResearch();
+			// Load Donator Credits
+			ThaumonomiconResearch.addDonationThanks();
+		} else {
+			// Load Thaumcraft Recipes
+			ThaumcraftRecipes.init(properties);
+			// Load Thaumonomicon Tab
+			ThaumonomiconResearch.addResearchTab();
+			// Load Thaumcraft Research
+			ThaumonomiconResearch.addResearch();
+			// Load Fusion Research
+			ThaumonomiconResearch.addFusionResearch();
+			// Load Donator Credits
+			ThaumonomiconResearch.addDonationThanks();
+
+		}		
 
 	}
 

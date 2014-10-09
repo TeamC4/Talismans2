@@ -119,7 +119,7 @@ public class ThaumonomiconResearch {
 		research = new ResearchItem("Fusion", "Talismans", new AspectList(), 0,
 				6, 0,
 				new ResourceLocation("talismans2:textures/items/Ring.png"))
-				.setRound().registerResearchItem().setSpecial();
+				.registerResearchItem().setSpecial();
 		research.setPages(new ResearchPage(text), new ResearchPage(
 				ThaumcraftRecipes.BlankRing));
 
@@ -128,7 +128,7 @@ public class ThaumonomiconResearch {
 		research = new ResearchItem("Flame_Ring", "Talismans", new AspectList()
 				.add(Aspect.MAGIC, 5).add(Aspect.FIRE, 5), -2, 9, 0,
 				new ResourceLocation("talismans2:textures/items/Ring.png"))
-				.setRound().registerResearchItem().setParents("Fusion");
+				.registerResearchItem().setParents("Fusion");
 		research.setPages(new ResearchPage(text), new ResearchPage(
 				ThaumcraftRecipes.FlameRing));
 
@@ -137,7 +137,7 @@ public class ThaumonomiconResearch {
 		research = new ResearchItem("Water_Ring", "Talismans", new AspectList()
 				.add(Aspect.MAGIC, 5).add(Aspect.WATER, 5), -2, 10, 0,
 				new ResourceLocation("talismans2:textures/items/Ring.png"))
-				.setRound().registerResearchItem().setParents("Fusion");
+				.registerResearchItem().setParents("Fusion");
 		research.setPages(new ResearchPage(text), new ResearchPage(
 				ThaumcraftRecipes.WaterRing));
 
@@ -146,7 +146,7 @@ public class ThaumonomiconResearch {
 		research = new ResearchItem("Light_Ring", "Talismans", new AspectList()
 				.add(Aspect.MAGIC, 5).add(Aspect.LIGHT, 5), -3, 8, 0,
 				new ResourceLocation("talismans2:textures/items/Ring.png"))
-				.setRound().setParents("Fusion");
+				.setParents("Fusion");
 		research.setPages(new ResearchPage(text),
 				new ResearchPage(ThaumcraftRecipes.LightRing))
 				.registerResearchItem();
@@ -157,7 +157,7 @@ public class ThaumonomiconResearch {
 				new AspectList().add(Aspect.MAGIC, 5).add(Aspect.MAN, 5), -3,
 				9, 0,
 				new ResourceLocation("talismans2:textures/items/Ring.png"))
-				.setRound().setParents("Fusion");
+				.setParents("Fusion");
 		research.setPages(new ResearchPage(text),
 				new ResearchPage(ThaumcraftRecipes.MovementRing))
 				.registerResearchItem();
@@ -167,7 +167,7 @@ public class ThaumonomiconResearch {
 		research = new ResearchItem("Mining_Ring", "Talismans",
 				new AspectList().add(Aspect.MAGIC, 5).add(Aspect.TOOL, 5), -3,
 				10, 0, new ResourceLocation(
-						"talismans2:textures/items/Ring.png")).setRound()
+						"talismans2:textures/items/Ring.png"))
 				.setParents("Fusion");
 		research.setPages(new ResearchPage(text),
 				new ResearchPage(ThaumcraftRecipes.MiningRing))
@@ -178,7 +178,7 @@ public class ThaumonomiconResearch {
 		research = new ResearchItem("Invisible_Ring", "Talismans",
 				new AspectList().add(Aspect.MAGIC, 5).add(Aspect.MAN, 5)
 						.add(Aspect.SENSES, 5), -1, 8, 0, new ResourceLocation(
-						"talismans2:textures/items/Ring.png")).setRound()
+						"talismans2:textures/items/Ring.png"))
 				.setParents("Fusion");
 		research.setPages(new ResearchPage(text),
 				new ResearchPage(ThaumcraftRecipes.InvisibleRing))
@@ -190,7 +190,7 @@ public class ThaumonomiconResearch {
 				new AspectList().add(Aspect.MAGIC, 5).add(Aspect.HEAL, 5), -1,
 				9, 0,
 				new ResourceLocation("talismans2:textures/items/Ring.png"))
-				.setRound().setParents("Fusion");
+				.setParents("Fusion");
 		research.setPages(new ResearchPage(text),
 				new ResearchPage(ThaumcraftRecipes.WitherlessRing))
 				.registerResearchItem();

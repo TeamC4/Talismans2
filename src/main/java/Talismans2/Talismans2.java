@@ -89,6 +89,7 @@ public class Talismans2 {
 		// Loads Thaumcraft Module if Thaumcraft is Installed
 		if (Loader.isModLoaded("Thaumcraft")) {
 			ThaumcraftModule.init(properties);
+
 		} else {
 
 		}
@@ -107,6 +108,7 @@ public class Talismans2 {
 			ConfigChangedEvent.OnConfigChangedEvent cfgChange) {
 		if (cfgChange.modID.equals("Talismans 2")) {
 			ConfigTalismans.Configs();
+			
 		}
 	}
 
