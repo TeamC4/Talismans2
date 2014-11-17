@@ -6,12 +6,14 @@ package Talismans2.proxies;
 
 public class CommonProxy {
 
-	public void registerKeyBindings() {
+	public void registerKeyBindings()
+	{
 
 		// NOOP
 	}
 
-	public void registerPlayerRenderHandler() {
+	public void registerPlayerRenderHandler()
+	{
 
 		// NOOP
 	}

@@ -12,7 +12,8 @@ import baubles.api.BaubleType;
 
 public class ItemBloodLightTalisman extends ItemBloodTalisman {
 
-	public ItemBloodLightTalisman() {
+	public ItemBloodLightTalisman()
+	{
 		super();
 		this.setCreativeTab(Talismans2.tabsTalismans);
 		this.setUnlocalizedName("Blood Light Talisman");
@@ -20,22 +21,26 @@ public class ItemBloodLightTalisman extends ItemBloodTalisman {
 	}
 
 	@Override
-	public void registerIcons(IIconRegister iconRegister) {
+	public void registerIcons(IIconRegister iconRegister)
+	{
 		itemIcon = iconRegister.registerIcon("talismans2:Light_Blood");
 	}
 
 	@Override
-	public BaubleType getBaubleType(ItemStack arg0) {
+	public BaubleType getBaubleType(ItemStack arg0)
+	{
 		return BaubleType.AMULET;
 	}
 
 	@Override
-	public void onUnequipped(ItemStack arg0, EntityLivingBase player) {
+	public void onUnequipped(ItemStack arg0, EntityLivingBase player)
+	{
 		player.removePotionEffect(Potion.nightVision.id);
 	}
 
 	@Override
-	public void onWornTick(ItemStack par1ItemStack, EntityLivingBase player) {
+	public void onWornTick(ItemStack par1ItemStack, EntityLivingBase player)
+	{
 
 		if (!player.isPotionActive(Potion.nightVision)
 				& SoulNetworkHandler.syphonFromNetwork(par1ItemStack, 15) > 0) {

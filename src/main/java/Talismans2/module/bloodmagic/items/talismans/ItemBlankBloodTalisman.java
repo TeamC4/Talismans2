@@ -6,7 +6,8 @@ import Talismans2.Talismans2;
 
 public class ItemBlankBloodTalisman extends Item {
 
-	public ItemBlankBloodTalisman() {
+	public ItemBlankBloodTalisman()
+	{
 		super();
 		this.setCreativeTab(Talismans2.tabsTalismans);
 		this.setMaxStackSize(64);
@@ -14,7 +15,8 @@ public class ItemBlankBloodTalisman extends Item {
 	}
 
 	@Override
-	public void registerIcons(IIconRegister iconRegister) {
+	public void registerIcons(IIconRegister iconRegister)
+	{
 		itemIcon = iconRegister.registerIcon("talismans2:Blank");
 	}
 

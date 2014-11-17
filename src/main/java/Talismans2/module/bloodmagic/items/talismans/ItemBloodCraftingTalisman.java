@@ -8,7 +8,8 @@ import baubles.api.BaubleType;
 
 public class ItemBloodCraftingTalisman extends ItemBloodTalisman {
 
-	public ItemBloodCraftingTalisman() {
+	public ItemBloodCraftingTalisman()
+	{
 		super();
 		this.setMaxStackSize(1);
 		this.setUnlocalizedName("Blood Crafting Talisman");
@@ -16,12 +17,14 @@ public class ItemBloodCraftingTalisman extends ItemBloodTalisman {
 	}
 
 	@Override
-	public void registerIcons(IIconRegister iconRegister) {
+	public void registerIcons(IIconRegister iconRegister)
+	{
 		itemIcon = iconRegister.registerIcon("talismans2:Craft_Blood");
 	}
 
 	@Override
-	public BaubleType getBaubleType(ItemStack arg0) {
+	public BaubleType getBaubleType(ItemStack arg0)
+	{
 		return BaubleType.AMULET;
 	}
 

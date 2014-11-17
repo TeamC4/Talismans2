@@ -10,12 +10,14 @@ import Talismans2.init.ModItems;
 
 public class CreativeTabTalismans extends CreativeTabs {
 
-	public CreativeTabTalismans(int tabId, String tabLabel) {
+	public CreativeTabTalismans(int tabId, String tabLabel)
+	{
 		super(tabId, tabLabel);
 	}
 
 	@Override
-	public Item getTabIconItem() {
+	public Item getTabIconItem()
+	{
 		return ModItems.BlankTalisman;
 	}
 

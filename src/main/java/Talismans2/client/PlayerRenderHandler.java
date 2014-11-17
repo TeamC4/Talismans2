@@ -20,7 +20,8 @@ import cpw.mods.fml.common.gameevent.TickEvent;
 public class PlayerRenderHandler {
 	public static EntityPlayer player;
 
-	public static void initialize() {
+	public static void initialize()
+	{
 		PlayerRenderHandler playerRenderHandler = new PlayerRenderHandler();
 		FMLCommonHandler.instance().bus().register(playerRenderHandler);
 		MinecraftForge.EVENT_BUS.register(playerRenderHandler);
@@ -29,14 +30,16 @@ public class PlayerRenderHandler {
 	private int clientTickCount;
 
 	@SubscribeEvent
-	public void onClientTick(TickEvent.ClientTickEvent event) {
+	public void onClientTick(TickEvent.ClientTickEvent event)
+	{
 		if (event.phase == TickEvent.Phase.START)
 			return;
 		clientTickCount++;
 	}
 
 	@SubscribeEvent
-	public void onRenderLiving(RenderLivingEvent.Specials.Post event) {
+	public void onRenderLiving(RenderLivingEvent.Specials.Post event)
+	{
 		if (!(event.entity instanceof EntityPlayer))
 			return;
 		ItemStack iS = TalismanStacks.talismanFlame;
@@ -60,7 +63,7 @@ public class PlayerRenderHandler {
 				* (180F / (float) Math.PI);
 
 		GL11.glPushMatrix();
-		
+
 		GL11.glTranslatef((float) event.x + 0.0F, (float) event.y
 				+ event.entity.height + yOffset, (float) event.z);
 		GL11.glNormal3f(0.0F, 1.0F, 0.0F);

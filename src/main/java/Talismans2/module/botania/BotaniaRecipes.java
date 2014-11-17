@@ -25,7 +25,8 @@ public class BotaniaRecipes {
 
 	// public static RecipeRuneAltar craftTalisman;
 
-	public static void init() {
+	public static void init()
+	{
 
 		blankTalisman = BotaniaAPI.registerManaInfusionRecipe(new ItemStack(
 				ModItems.BlankTalisman, 1), new ItemStack(Blocks.stone), 6000);

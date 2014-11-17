@@ -13,14 +13,16 @@ import thaumcraft.api.research.ResearchPage;
 
 public class ThaumonomiconResearch {
 
-	public static void addResearchTab() {
+	public static void addResearchTab()
+	{
 		ResourceLocation background = new ResourceLocation("thaumcraft",
 				"textures/gui/gui_researchback.png");
 		ResearchCategories.registerCategory("Talismans", new ResourceLocation(
 				"talismans2:textures/items/Blank.png"), background);
 	}
 
-	public static void addResearch() {
+	public static void addResearch()
+	{
 		ResearchItem research;
 		String text = "1";
 
@@ -110,7 +112,8 @@ public class ThaumonomiconResearch {
 
 	}
 
-	public static void addFusionResearch() {
+	public static void addFusionResearch()
+	{
 		ResearchItem research;
 		String text = "1";
 
@@ -197,7 +200,8 @@ public class ThaumonomiconResearch {
 
 	}
 
-	public static void addDonationThanks() {
+	public static void addDonationThanks()
+	{
 		ResearchItem research;
 		String text = "1";
 

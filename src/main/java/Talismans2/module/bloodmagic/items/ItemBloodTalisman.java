@@ -15,38 +15,44 @@ import baubles.api.IBauble;
 
 public class ItemBloodTalisman extends Item implements IBauble, IBindable {
 
-	public ItemBloodTalisman() {
+	public ItemBloodTalisman()
+	{
 		super();
 		this.setMaxStackSize(1);
 		this.setCreativeTab(Talismans2.tabsTalismans);
 	}
 
 	@Override
-	public BaubleType getBaubleType(ItemStack itemStack) {
+	public BaubleType getBaubleType(ItemStack itemStack)
+	{
 		return null;
 	}
 
 	@Override
 	public void onWornTick(ItemStack itemStack,
-			EntityLivingBase entityLivingBase) {
+			EntityLivingBase entityLivingBase)
+	{
 
 	}
 
 	@Override
 	public void onEquipped(ItemStack itemStack,
-			EntityLivingBase entityLivingBase) {
+			EntityLivingBase entityLivingBase)
+	{
 
 	}
 
 	@Override
 	public void onUnequipped(ItemStack itemStack,
-			EntityLivingBase entityLivingBase) {
+			EntityLivingBase entityLivingBase)
+	{
 
 	}
 
 	@Override
 	public boolean canEquip(ItemStack itemStack,
-			EntityLivingBase entityLivingBase) {
+			EntityLivingBase entityLivingBase)
+	{
 		if (itemStack.hasTagCompound()) {
 			return true;
 
@@ -56,17 +62,20 @@ public class ItemBloodTalisman extends Item implements IBauble, IBindable {
 
 	@Override
 	public boolean canUnequip(ItemStack itemStack,
-			EntityLivingBase entityLivingBase) {
+			EntityLivingBase entityLivingBase)
+	{
 		return true;
 	}
 
-	public boolean isFull3D() {
+	public boolean isFull3D()
+	{
 		return true;
 	}
 
 	@Override
 	public ItemStack onItemRightClick(ItemStack par1ItemStack, World par2World,
-			EntityPlayer par3EntityPlayer) {
+			EntityPlayer par3EntityPlayer)
+	{
 
 		if (par3EntityPlayer.isSneaking()) {
 			SoulNetworkHandler.checkAndSetItemOwner(par1ItemStack,
@@ -78,7 +87,8 @@ public class ItemBloodTalisman extends Item implements IBauble, IBindable {
 
 	@Override
 	public void addInformation(ItemStack iS, EntityPlayer eP, List list,
-			boolean par4) {
+			boolean par4)
+	{
 		if (iS.hasTagCompound()) {
 			list.add("");
 			list.add("Current owner: "

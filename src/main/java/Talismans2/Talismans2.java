@@ -1,11 +1,15 @@
 package Talismans2;
 
+import java.io.File;
+
+import net.minecraft.creativetab.CreativeTabs;
 import Talismans2.config.ConfigTalismans;
 import Talismans2.creativeTab.CreativeTabTalismans;
 import Talismans2.init.DungeonLoot;
 import Talismans2.init.ModItems;
 import Talismans2.lib.Modinfo;
 import Talismans2.module.bloodmagic.BloodMagicModule;
+import Talismans2.module.botania.BotaniaModule;
 import Talismans2.module.thaumcraft.ThaumcraftModule;
 import Talismans2.proxies.CommonProxy;
 import Talismans2.recipe.CraftingHandler;
@@ -20,9 +24,6 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import net.minecraft.creativetab.CreativeTabs;
-
-import java.io.File;
 
 /**
  * @author Gigabit101
@@ -43,7 +44,8 @@ public class Talismans2 {
 			CreativeTabs.getNextID(), Modinfo.NAME);
 
 	@Mod.EventHandler
-	public void preinit(FMLPreInitializationEvent event) {
+	public void preinit(FMLPreInitializationEvent event)
+	{
 		instance = this;
 		// This should be the FIRST thing that gets done.
 		String path = event.getSuggestedConfigurationFile().getAbsolutePath()
@@ -67,7 +69,8 @@ public class Talismans2 {
 	}
 
 	@Mod.EventHandler
-	public void init(FMLInitializationEvent event) {
+	public void init(FMLInitializationEvent event)
+	{
 		// Load DungeonLoot
 		DungeonLoot.init(properties);
 
@@ -75,28 +78,26 @@ public class Talismans2 {
 
 		FMLCommonHandler.instance().bus().register(instance);
 
-		/*if (Loader.isModLoaded("Botania")) {
-			BotaniaModule.init(properties);
-		} else {
-
-		}*/
-
 	}
 
 	@Mod.EventHandler
-	public void postinit(FMLPostInitializationEvent event) {
+	public void postinit(FMLPostInitializationEvent event)
+	{
 		// Loads Thaumcraft Module if Thaumcraft is Installed
-		if (Loader.isModLoaded("Thaumcraft")) {
+		if (Loader.isModLoaded("Thaumcraft")) 
+		{
 			ThaumcraftModule.init(properties);
-
-		} else {
-
-		}
-		if (Loader.isModLoaded("AWWayofTime")) {
+		} 
+		// Loads Blood Magic Module
+		if (Loader.isModLoaded("AWWayofTime")) 
+		{
 			BloodMagicModule.init(properties);
-		} else {
-
-		}
+		} 
+		// Loads Botania Module
+	    if (Loader.isModLoaded("Botania")) 
+	    { 
+	    	BotaniaModule.init(properties);
+		} 
 
 		LogHelper.info("Post Initialization Complete!");
 
@@ -104,10 +105,11 @@ public class Talismans2 {
 
 	@SubscribeEvent
 	public void onConfigChanged(
-			ConfigChangedEvent.OnConfigChangedEvent cfgChange) {
+			ConfigChangedEvent.OnConfigChangedEvent cfgChange)
+	{
 		if (cfgChange.modID.equals("Talismans 2")) {
 			ConfigTalismans.Configs();
-			
+
 		}
 	}
 

@@ -34,7 +34,8 @@ public class ThaumcraftRecipes {
 	public static InfusionRecipe InvisibleRing;
 	public static InfusionRecipe WitherlessRing;
 
-	public static void init(ConfigTalismans properties) {
+	public static void init(ConfigTalismans properties)
+	{
 		// Crucible Recipes
 		BlankTalisman = ThaumcraftApi.addCrucibleRecipe("Blank_Talisman",
 				TalismanStacks.talismanBlank, new ItemStack(Blocks.stone),

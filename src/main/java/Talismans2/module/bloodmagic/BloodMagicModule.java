@@ -4,13 +4,15 @@ import Talismans2.config.ConfigTalismans;
 
 public class BloodMagicModule {
 
-	public static void init(ConfigTalismans properties) {
+	public static void init(ConfigTalismans properties)
+	{
 		if (properties.BloodMagicModuleTrue)
 			BloodMagicInit();
 
 	}
 
-	public static void BloodMagicInit() {
+	public static void BloodMagicInit()
+	{
 		// Load Blood Items
 		BloodItems.init();
 

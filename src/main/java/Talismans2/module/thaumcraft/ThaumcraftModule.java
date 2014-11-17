@@ -9,13 +9,15 @@ import Talismans2.config.ConfigTalismans;
 public class ThaumcraftModule {
 	public static ConfigTalismans properties;
 
-	public static void init(ConfigTalismans properties) {
+	public static void init(ConfigTalismans properties)
+	{
 		if (properties.ThaumscraftModuleTrue)
 			ThaumcraftInit();
 
 	}
 
-	public static void ThaumcraftInit() {
+	public static void ThaumcraftInit()
+	{
 		if (thaumcraft.common.config.Config.researchDifficulty == -1) {
 			// Load Thaumcraft Recipes
 			ThaumcraftRecipes.init(properties);
@@ -39,7 +41,7 @@ public class ThaumcraftModule {
 			// Load Donator Credits
 			ThaumonomiconResearch.addDonationThanks();
 
-		}		
+		}
 
 	}
 

@@ -12,7 +12,8 @@ import baubles.api.BaubleType;
 
 public class ItemCraftingTalisman extends ItemTalismanBauble {
 
-	public ItemCraftingTalisman() {
+	public ItemCraftingTalisman()
+	{
 		super();
 		this.setCreativeTab(Talismans2.tabsTalismans);
 		this.setMaxStackSize(1);
@@ -20,12 +21,14 @@ public class ItemCraftingTalisman extends ItemTalismanBauble {
 	}
 
 	@Override
-	public void registerIcons(IIconRegister iconRegister) {
+	public void registerIcons(IIconRegister iconRegister)
+	{
 		itemIcon = iconRegister.registerIcon("talismans2:Craft");
 	}
 
 	@Override
-	public BaubleType getBaubleType(ItemStack arg0) {
+	public BaubleType getBaubleType(ItemStack arg0)
+	{
 		return BaubleType.AMULET;
 	}
 

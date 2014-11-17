@@ -26,7 +26,8 @@ public class BotaniaLexicon {
 
 	// public static LexiconEntry entryCraftTalisman;
 
-	public static void init() {
+	public static void init()
+	{
 		BotaniaAPI.addCategory(categoryBaubles = new LexiconCategory(
 				"KEY_BOTANIA_LEXICA_CATERGORY"));
 

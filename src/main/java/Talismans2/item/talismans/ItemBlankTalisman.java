@@ -10,14 +10,16 @@ import Talismans2.Talismans2;
 
 public class ItemBlankTalisman extends Item {
 
-	public ItemBlankTalisman() {
+	public ItemBlankTalisman()
+	{
 		super();
 		this.setCreativeTab(Talismans2.tabsTalismans);
 		this.setUnlocalizedName("Blank Talisman");
 	}
 
 	@Override
-	public void registerIcons(IIconRegister iconRegister) {
+	public void registerIcons(IIconRegister iconRegister)
+	{
 		itemIcon = iconRegister.registerIcon("talismans2:Blank");
 	}
 

@@ -29,7 +29,8 @@ public class BloodItems {
 	public static Item BloodWitherlessTalisman;
 	public static Item BloodCraftingTalisman;
 
-	public static void init() {
+	public static void init()
+	{
 
 		BloodBlankTalisman = new ItemBlankBloodTalisman();
 		GameRegistry.registerItem(BloodBlankTalisman, "Blank Blood Talisman");
@@ -44,19 +45,23 @@ public class BloodItems {
 		GameRegistry.registerItem(BloodLightTalisman, "Blood Light Talisman");
 
 		BloodMovementTalisman = new ItemBloodMovementTalisman();
-		GameRegistry.registerItem(BloodMovementTalisman, "Blood Movement Talisman");
+		GameRegistry.registerItem(BloodMovementTalisman,
+				"Blood Movement Talisman");
 
 		BloodMiningTalisman = new ItemBloodMiningTalisman();
 		GameRegistry.registerItem(BloodMiningTalisman, "Blood Mining Talisman");
 
 		BloodInvisibleTalisman = new ItemBloodInvisibleTalisman();
-		GameRegistry.registerItem(BloodInvisibleTalisman, "Blood Invisible Talisman");
+		GameRegistry.registerItem(BloodInvisibleTalisman,
+				"Blood Invisible Talisman");
 
 		BloodWitherlessTalisman = new ItemBloodWitherlessTalisman();
-		GameRegistry.registerItem(BloodWitherlessTalisman, "Blood Witherless Talisman");
+		GameRegistry.registerItem(BloodWitherlessTalisman,
+				"Blood Witherless Talisman");
 
 		BloodCraftingTalisman = new ItemBloodCraftingTalisman();
-		GameRegistry.registerItem(BloodCraftingTalisman, "Blood Crafting Talisman");
+		GameRegistry.registerItem(BloodCraftingTalisman,
+				"Blood Crafting Talisman");
 	}
 
 }

@@ -15,7 +15,8 @@ import baubles.api.BaubleType;
 
 public class ItemWaterTalisman extends ItemTalismanBauble {
 
-	public ItemWaterTalisman() {
+	public ItemWaterTalisman()
+	{
 		super();
 		this.setCreativeTab(Talismans2.tabsTalismans);
 		this.setMaxStackSize(1);
@@ -23,13 +24,15 @@ public class ItemWaterTalisman extends ItemTalismanBauble {
 	}
 
 	@Override
-	public void registerIcons(IIconRegister iconRegister) {
+	public void registerIcons(IIconRegister iconRegister)
+	{
 		itemIcon = iconRegister.registerIcon("talismans2:Water");
 	}
 
 	@Override
 	// Returns Potion Effect on Tick
-	public void onWornTick(ItemStack itemstack, EntityLivingBase player) {
+	public void onWornTick(ItemStack itemstack, EntityLivingBase player)
+	{
 		if (!player.isPotionActive(Potion.waterBreathing)) {
 			player.addPotionEffect(new PotionEffect(Potion.waterBreathing.id,
 					Integer.MAX_VALUE, 1, true));
@@ -37,12 +40,14 @@ public class ItemWaterTalisman extends ItemTalismanBauble {
 	}
 
 	// Removes Potion effect on Unequip
-	public void onUnequipped(ItemStack itemstack, EntityLivingBase player) {
+	public void onUnequipped(ItemStack itemstack, EntityLivingBase player)
+	{
 		player.removePotionEffect(Potion.waterBreathing.id);
 	}
 
 	@Override
-	public BaubleType getBaubleType(ItemStack arg0) {
+	public BaubleType getBaubleType(ItemStack arg0)
+	{
 		return BaubleType.AMULET;
 	}
 

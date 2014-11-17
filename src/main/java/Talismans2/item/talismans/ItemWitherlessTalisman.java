@@ -14,7 +14,8 @@ import baubles.api.BaubleType;
 
 public class ItemWitherlessTalisman extends ItemTalismanBauble {
 
-	public ItemWitherlessTalisman() {
+	public ItemWitherlessTalisman()
+	{
 		super();
 		this.setCreativeTab(Talismans2.tabsTalismans);
 		this.setMaxStackSize(1);
@@ -22,18 +23,21 @@ public class ItemWitherlessTalisman extends ItemTalismanBauble {
 	}
 
 	@Override
-	public void registerIcons(IIconRegister iconRegister) {
+	public void registerIcons(IIconRegister iconRegister)
+	{
 		itemIcon = iconRegister.registerIcon("talismans2:Witherless");
 	}
 
 	@Override
 	// Removes Potion Effect on Tick
-	public void onWornTick(ItemStack itemstack, EntityLivingBase player) {
+	public void onWornTick(ItemStack itemstack, EntityLivingBase player)
+	{
 		player.removePotionEffect(Potion.wither.id);
 	}
 
 	@Override
-	public BaubleType getBaubleType(ItemStack arg0) {
+	public BaubleType getBaubleType(ItemStack arg0)
+	{
 		return BaubleType.AMULET;
 	}
 

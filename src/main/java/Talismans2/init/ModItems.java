@@ -33,7 +33,8 @@ public class ModItems {
 	public static Item MagnetTalisman;
 	public static Item TalismanRings;
 
-	public static void init() {
+	public static void init()
+	{
 		// Blank Talisman
 		BlankTalisman = new ItemBlankTalisman();
 		GameRegistry.registerItem(BlankTalisman, "Blank Talisman");
@@ -67,8 +68,8 @@ public class ModItems {
 		// Talisman Rings
 		TalismanRings = new ItemTalismanRings();
 		GameRegistry.registerItem(TalismanRings, "Talisman Rings");
-		
-		//Container Items
+
+		// Container Items
 		FlameTalisman.setContainerItem(FlameTalisman);
 		WaterTalisman.setContainerItem(WaterTalisman);
 		LightTalisman.setContainerItem(LightTalisman);

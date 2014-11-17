@@ -3,9 +3,6 @@ package Talismans2.item.talismans;
 import java.util.Iterator;
 import java.util.List;
 
-import baubles.api.BaubleType;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
@@ -18,27 +15,35 @@ import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.world.World;
 import Talismans2.Talismans2;
 import Talismans2.item.ItemTalismanBauble;
+import baubles.api.BaubleType;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
-public class ItemMagnetTalisman extends ItemTalismanBauble{
+public class ItemMagnetTalisman extends ItemTalismanBauble {
 
-	public ItemMagnetTalisman(){
+	public ItemMagnetTalisman()
+	{
 		super();
 		this.setCreativeTab(Talismans2.tabsTalismans);
 		this.setMaxStackSize(1);
 		this.setUnlocalizedName("Magnet Talisman");
 	}
+
 	@Override
-	public void registerIcons(IIconRegister iconRegister) {
+	public void registerIcons(IIconRegister iconRegister)
+	{
 		itemIcon = iconRegister.registerIcon("talismans2:Blank");
 	}
 
 	@Override
-	public BaubleType getBaubleType(ItemStack arg0) {
+	public BaubleType getBaubleType(ItemStack arg0)
+	{
 		return BaubleType.AMULET;
 	}
-	
+
 	@Override
-	public void onUpdate(ItemStack ist, World world, Entity e, int i, boolean f) {
+	public void onUpdate(ItemStack ist, World world, Entity e, int i, boolean f)
+	{
 
 		if (ist.getItemDamage() == 0)
 			return;
@@ -52,7 +57,8 @@ public class ItemMagnetTalisman extends ItemTalismanBauble{
 	}
 
 	private void scanForEntitiesInRange(World world, EntityPlayer player,
-			double d) {
+			double d)
+	{
 		List iList = world.getEntitiesWithinAABB(EntityItem.class,
 				AxisAlignedBB.getBoundingBox(player.posX - d, player.posY - d,
 						player.posZ - d, player.posX + d, player.posY + d,
@@ -90,7 +96,8 @@ public class ItemMagnetTalisman extends ItemTalismanBauble{
 		}
 	}
 
-	private void teleportEntityToPlayer(Entity item, EntityPlayer player) {
+	private void teleportEntityToPlayer(Entity item, EntityPlayer player)
+	{
 		player.worldObj.spawnParticle("portal", item.posX, item.posY,
 				item.posZ, 0.0D, 0.1D, 0.0D);
 		player.getLookVec();
@@ -102,7 +109,8 @@ public class ItemMagnetTalisman extends ItemTalismanBauble{
 				item.posZ, 0.0D, 0.1D, 0.0D);
 	}
 
-	private boolean checkForRoom(ItemStack item, EntityPlayer player) {
+	private boolean checkForRoom(ItemStack item, EntityPlayer player)
+	{
 		int remaining = item.stackSize;
 		for (ItemStack ist : player.inventory.mainInventory) {
 			if (ist == null) {
@@ -130,47 +138,52 @@ public class ItemMagnetTalisman extends ItemTalismanBauble{
 		return false;
 	}
 
-	public void onUsingItemTick(ItemStack ist, EntityPlayer player, int count) {
+	public void onUsingItemTick(ItemStack ist, EntityPlayer player, int count)
+	{
 		if (ist.getItemDamage() == 0)
 			return;
 		scanForEntitiesInRange(player.worldObj, player, 15.0D);
 	}
 
 	@Override
-	public int getMaxItemUseDuration(ItemStack par1ItemStack) {
+	public int getMaxItemUseDuration(ItemStack par1ItemStack)
+	{
 		return 64;
 	}
 
 	@Override
-	public EnumAction getItemUseAction(ItemStack par1ItemStack) {
+	public EnumAction getItemUseAction(ItemStack par1ItemStack)
+	{
 		return EnumAction.block;
 	}
 
 	@Override
-	public ItemStack onItemRightClick(ItemStack ist, World world, EntityPlayer player) 
+	public ItemStack onItemRightClick(ItemStack ist, World world,
+			EntityPlayer player)
 	{
-		
+
 		if (player.isSneaking()) {
 			ist.setItemDamage(ist.getItemDamage() == 0 ? 1 : 0);
 		} else {
 			return ist;
 		}
-		
 
 		return ist;
 	}
-	
+
 	@Override
 	@SideOnly(Side.CLIENT)
-	public boolean hasEffect(ItemStack ist) {
-		if(ist.getItemDamage() == 1){
+	public boolean hasEffect(ItemStack ist)
+	{
+		if (ist.getItemDamage() == 1) {
 			return true;
-		}else
+		} else
 			return false;
 	}
-	
-    @Override
-    public void onWornTick(ItemStack stack, EntityLivingBase player) {
-        this.onUpdate(stack, player.worldObj, player, 0, false);
-    }
+
+	@Override
+	public void onWornTick(ItemStack stack, EntityLivingBase player)
+	{
+		this.onUpdate(stack, player.worldObj, player, 0, false);
+	}
 }

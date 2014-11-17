@@ -42,7 +42,7 @@ public class ConfigTalismans {
 	public static boolean WitherlessTalismanTrue;
 	// Misc
 	public static boolean CopyTalismansTrue;
-	public static boolean EnableEasymodeResearch; 
+	public static boolean EnableEasymodeResearch;
 	// Spawn Chance
 	public static int ChanceBlankTalisman;
 	public static int ChanceFlameTalisman;
@@ -54,10 +54,10 @@ public class ConfigTalismans {
 	public static int ChanceWitherlessTalisman;
 	public static int ChanceMagnetTalisman;
 
-
 	public static Configuration config;
 
-	private ConfigTalismans(File configFile) {
+	private ConfigTalismans(File configFile)
+	{
 		config = new Configuration(configFile);
 		config.load();
 
@@ -67,7 +67,8 @@ public class ConfigTalismans {
 
 	}
 
-	public static ConfigTalismans initialize(File configFile) {
+	public static ConfigTalismans initialize(File configFile)
+	{
 
 		if (instance == null)
 			instance = new ConfigTalismans(configFile);
@@ -78,7 +79,8 @@ public class ConfigTalismans {
 		return instance;
 	}
 
-	public static ConfigTalismans instance() {
+	public static ConfigTalismans instance()
+	{
 		if (instance == null) {
 
 			throw new IllegalStateException(
@@ -87,7 +89,8 @@ public class ConfigTalismans {
 		return instance;
 	}
 
-	public static void Configs() {
+	public static void Configs()
+	{
 
 		CopyTalismansTrue = config.get(CATEGORY_RECIPES,
 				"Allow Talismans to be copied", false,
@@ -99,9 +102,8 @@ public class ConfigTalismans {
 		BloodMagicModuleTrue = config.get(CATEGORY_BLOODMAGIC,
 				"Blood Magic Module On", true,
 				"Enable or Disable Blood Magic Integration").getBoolean(true);
-		BotaniaModuleTrue = config.get(CATEGORY_BOTANIA,
-				"Botania Module On", true,
-				"Enable or Disable Botania Integration").getBoolean(true);
+		BotaniaModuleTrue = config.get(CATEGORY_BOTANIA, "Botania Module On",
+				true, "Enable or Disable Botania Integration").getBoolean(true);
 		// Disable Talisman Recipes
 
 		FlameTalismanTrue = config.get(CATEGORY_RECIPES,
@@ -154,8 +156,7 @@ public class ConfigTalismans {
 				.getBoolean(true);
 		MagnetTalismanLootTrue = config.get(CATEGORY_LOOT,
 				"Add Magnet Talisman To DungeonLoot", true,
-				"Add or Remove Magnet Talismans from loot")
-				.getBoolean(true);
+				"Add or Remove Magnet Talismans from loot").getBoolean(true);
 
 		// Loot Chance
 		ChanceBlankTalisman = config

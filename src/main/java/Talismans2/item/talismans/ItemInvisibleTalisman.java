@@ -11,19 +11,22 @@ import baubles.api.BaubleType;
 
 public class ItemInvisibleTalisman extends ItemTalismanBauble {
 
-	public ItemInvisibleTalisman() {
+	public ItemInvisibleTalisman()
+	{
 		super();
 		this.setCreativeTab(Talismans2.tabsTalismans);
 		this.setUnlocalizedName("Invisible Talisman");
 	}
 
 	@Override
-	public void registerIcons(IIconRegister iconRegister) {
+	public void registerIcons(IIconRegister iconRegister)
+	{
 		itemIcon = iconRegister.registerIcon("talismans2:Invisible");
 	}
 
 	@Override
-	public void onWornTick(ItemStack itemstack, EntityLivingBase player) {
+	public void onWornTick(ItemStack itemstack, EntityLivingBase player)
+	{
 		if (!player.isPotionActive(Potion.invisibility)) {
 			player.addPotionEffect(new PotionEffect(Potion.invisibility.id,
 					Integer.MAX_VALUE, 1, true));
@@ -32,13 +35,15 @@ public class ItemInvisibleTalisman extends ItemTalismanBauble {
 	}
 
 	@Override
-	public void onUnequipped(ItemStack itemstack, EntityLivingBase player) {
+	public void onUnequipped(ItemStack itemstack, EntityLivingBase player)
+	{
 		player.removePotionEffect(Potion.invisibility.id);
 
 	}
 
 	@Override
-	public BaubleType getBaubleType(ItemStack arg0) {
+	public BaubleType getBaubleType(ItemStack arg0)
+	{
 		return BaubleType.AMULET;
 	}
 

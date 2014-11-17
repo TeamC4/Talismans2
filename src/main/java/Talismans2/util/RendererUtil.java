@@ -22,10 +22,12 @@ public class RendererUtil {
 	private static final ResourceLocation enchant = new ResourceLocation(
 			"textures/misc/enchanted_item_glint.png");
 
-	private RendererUtil() {
+	private RendererUtil()
+	{
 	}
 
-	public static void renderItemIn3d(ItemStack stack) {
+	public static void renderItemIn3d(ItemStack stack)
+	{
 
 		TextureManager textureManager = Minecraft.getMinecraft()
 				.getTextureManager();
@@ -94,7 +96,8 @@ public class RendererUtil {
 
 	}
 
-	public static void setColorFromInt(int color) {
+	public static void setColorFromInt(int color)
+	{
 		float r = (color >> 16 & 255) / 255.0F;
 		float g = (color >> 8 & 255) / 255.0F;
 		float b = (color & 255) / 255.0F;

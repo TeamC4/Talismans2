@@ -1,4 +1,4 @@
-package Talismans2.gui;
+package Talismans2.client.gui;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,13 +14,15 @@ import cpw.mods.fml.client.config.GuiConfigEntries.CategoryEntry;
 import cpw.mods.fml.client.config.IConfigElement;
 
 public class TalismanConfigGUI extends GuiConfig {
-	public TalismanConfigGUI(GuiScreen top) {
+	public TalismanConfigGUI(GuiScreen top)
+	{
 		super(top, getConfigCategories(), "Talismans 2", false, false,
 				GuiConfig.getAbridgedConfigPath(ConfigTalismans.config
 						.toString()));
 	}
 
-	private static List<IConfigElement> getConfigCategories() {
+	private static List<IConfigElement> getConfigCategories()
+	{
 		List<IConfigElement> list = new ArrayList<IConfigElement>();
 		list.add(new DummyConfigElement.DummyCategoryElement("Spawn Chances",
 				"tm2.configgui.category.tmGeneral", TMGeneral.class));
@@ -37,20 +39,22 @@ public class TalismanConfigGUI extends GuiConfig {
 				"Thaumcraft Integration",
 				"tm2.configgui.category.tmThaumcraft", TMTC.class));
 		list.add(new DummyConfigElement.DummyCategoryElement(
-				"Botania Integration",
-				"tm2.configgui.category.tmBotania", TMBotania.class));
+				"Botania Integration", "tm2.configgui.category.tmBotania",
+				TMBotania.class));
 		return list;
 	}
 
 	public static class TMGeneral extends CategoryEntry {
 
 		public TMGeneral(GuiConfig owningScreen,
-				GuiConfigEntries owningEntryList, IConfigElement configElement) {
+				GuiConfigEntries owningEntryList, IConfigElement configElement)
+		{
 			super(owningScreen, owningEntryList, configElement);
 		}
 
 		@Override
-		protected GuiScreen buildChildScreen() {
+		protected GuiScreen buildChildScreen()
+		{
 			return new GuiConfig(this.owningScreen,
 					(new ConfigElement(ConfigTalismans.config
 							.getCategory(Configuration.CATEGORY_GENERAL)))
@@ -64,16 +68,19 @@ public class TalismanConfigGUI extends GuiConfig {
 							.toString()));
 		}
 	}
+
 	// Loot
 	public static class TMLoot extends CategoryEntry {
 
 		public TMLoot(GuiConfig owningScreen, GuiConfigEntries owningEntryList,
-				IConfigElement configElement) {
+				IConfigElement configElement)
+		{
 			super(owningScreen, owningEntryList, configElement);
 		}
 
 		@Override
-		protected GuiScreen buildChildScreen() {
+		protected GuiScreen buildChildScreen()
+		{
 			return new GuiConfig(this.owningScreen,
 					(new ConfigElement(ConfigTalismans.config
 							.getCategory(ConfigTalismans.CATEGORY_LOOT)))
@@ -87,16 +94,19 @@ public class TalismanConfigGUI extends GuiConfig {
 							.toString()));
 		}
 	}
+
 	// Blood Magic
 	public static class TMBloodMagic extends CategoryEntry {
 
 		public TMBloodMagic(GuiConfig owningScreen,
-				GuiConfigEntries owningEntryList, IConfigElement configElement) {
+				GuiConfigEntries owningEntryList, IConfigElement configElement)
+		{
 			super(owningScreen, owningEntryList, configElement);
 		}
 
 		@Override
-		protected GuiScreen buildChildScreen() {
+		protected GuiScreen buildChildScreen()
+		{
 			return new GuiConfig(this.owningScreen,
 					(new ConfigElement(ConfigTalismans.config
 							.getCategory(ConfigTalismans.CATEGORY_BLOODMAGIC)))
@@ -114,12 +124,14 @@ public class TalismanConfigGUI extends GuiConfig {
 	public static class TMTC extends CategoryEntry {
 
 		public TMTC(GuiConfig owningScreen, GuiConfigEntries owningEntryList,
-				IConfigElement configElement) {
+				IConfigElement configElement)
+		{
 			super(owningScreen, owningEntryList, configElement);
 		}
 
 		@Override
-		protected GuiScreen buildChildScreen() {
+		protected GuiScreen buildChildScreen()
+		{
 			return new GuiConfig(this.owningScreen,
 					(new ConfigElement(ConfigTalismans.config
 							.getCategory(ConfigTalismans.CATEGORY_THAUMCRAFT)))
@@ -137,12 +149,14 @@ public class TalismanConfigGUI extends GuiConfig {
 	public static class TMRecipes extends CategoryEntry {
 
 		public TMRecipes(GuiConfig owningScreen,
-				GuiConfigEntries owningEntryList, IConfigElement configElement) {
+				GuiConfigEntries owningEntryList, IConfigElement configElement)
+		{
 			super(owningScreen, owningEntryList, configElement);
 		}
 
 		@Override
-		protected GuiScreen buildChildScreen() {
+		protected GuiScreen buildChildScreen()
+		{
 			return new GuiConfig(this.owningScreen,
 					(new ConfigElement(ConfigTalismans.config
 							.getCategory(ConfigTalismans.CATEGORY_RECIPES)))
@@ -156,16 +170,19 @@ public class TalismanConfigGUI extends GuiConfig {
 							.toString()));
 		}
 	}
-	//Botania
+
+	// Botania
 	public static class TMBotania extends CategoryEntry {
 
 		public TMBotania(GuiConfig owningScreen,
-				GuiConfigEntries owningEntryList, IConfigElement configElement) {
+				GuiConfigEntries owningEntryList, IConfigElement configElement)
+		{
 			super(owningScreen, owningEntryList, configElement);
 		}
 
 		@Override
-		protected GuiScreen buildChildScreen() {
+		protected GuiScreen buildChildScreen()
+		{
 			return new GuiConfig(this.owningScreen,
 					(new ConfigElement(ConfigTalismans.config
 							.getCategory(ConfigTalismans.CATEGORY_BOTANIA)))

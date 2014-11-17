@@ -12,7 +12,8 @@ import baubles.api.BaubleType;
 
 public class ItemBloodWaterTalisman extends ItemBloodTalisman {
 
-	public ItemBloodWaterTalisman() {
+	public ItemBloodWaterTalisman()
+	{
 		super();
 		this.setMaxStackSize(1);
 		this.setUnlocalizedName("Blood Water Talisman");
@@ -20,22 +21,26 @@ public class ItemBloodWaterTalisman extends ItemBloodTalisman {
 	}
 
 	@Override
-	public void registerIcons(IIconRegister iconRegister) {
+	public void registerIcons(IIconRegister iconRegister)
+	{
 		itemIcon = iconRegister.registerIcon("talismans2:Water_Blood");
 	}
 
 	@Override
-	public BaubleType getBaubleType(ItemStack arg0) {
+	public BaubleType getBaubleType(ItemStack arg0)
+	{
 		return BaubleType.AMULET;
 	}
 
 	@Override
-	public void onUnequipped(ItemStack arg0, EntityLivingBase player) {
+	public void onUnequipped(ItemStack arg0, EntityLivingBase player)
+	{
 		player.removePotionEffect(Potion.waterBreathing.id);
 	}
 
 	@Override
-	public void onWornTick(ItemStack par1ItemStack, EntityLivingBase player) {
+	public void onWornTick(ItemStack par1ItemStack, EntityLivingBase player)
+	{
 
 		if (!player.isPotionActive(Potion.waterBreathing)
 				& SoulNetworkHandler.syphonFromNetwork(par1ItemStack, 15) > 0) {

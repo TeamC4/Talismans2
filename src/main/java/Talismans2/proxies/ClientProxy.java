@@ -11,11 +11,13 @@ import cpw.mods.fml.client.registry.ClientRegistry;
 public class ClientProxy extends CommonProxy {
 
 	@Override
-	public void registerKeyBindings() {
+	public void registerKeyBindings()
+	{
 		ClientRegistry.registerKeyBinding(Keybindings.craft);
 	}
 
-	public void registerPlayerRenderHandler() {
+	public void registerPlayerRenderHandler()
+	{
 		PlayerRenderHandler.initialize();
 	}
 

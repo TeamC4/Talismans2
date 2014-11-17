@@ -12,7 +12,8 @@ import baubles.api.BaubleType;
 
 public class ItemBloodFlameTalisman extends ItemBloodTalisman {
 
-	public ItemBloodFlameTalisman() {
+	public ItemBloodFlameTalisman()
+	{
 		super();
 		this.setCreativeTab(Talismans2.tabsTalismans);
 		this.setMaxStackSize(1);
@@ -20,22 +21,26 @@ public class ItemBloodFlameTalisman extends ItemBloodTalisman {
 	}
 
 	@Override
-	public void registerIcons(IIconRegister iconRegister) {
+	public void registerIcons(IIconRegister iconRegister)
+	{
 		itemIcon = iconRegister.registerIcon("talismans2:Flame_Blood");
 	}
 
 	@Override
-	public BaubleType getBaubleType(ItemStack arg0) {
+	public BaubleType getBaubleType(ItemStack arg0)
+	{
 		return BaubleType.AMULET;
 	}
 
 	@Override
-	public void onUnequipped(ItemStack arg0, EntityLivingBase player) {
+	public void onUnequipped(ItemStack arg0, EntityLivingBase player)
+	{
 		player.removePotionEffect(Potion.fireResistance.id);
 	}
 
 	@Override
-	public void onWornTick(ItemStack par1ItemStack, EntityLivingBase player) {
+	public void onWornTick(ItemStack par1ItemStack, EntityLivingBase player)
+	{
 
 		if (!player.isPotionActive(Potion.fireResistance)
 				& SoulNetworkHandler.syphonFromNetwork(par1ItemStack, 15) > 0) {

@@ -7,7 +7,8 @@ import WayofTime.alchemicalWizardry.api.bindingRegistry.BindingRegistry;
 
 public class BloodMagicRecipes {
 
-	public static void init() {
+	public static void init()
+	{
 		// Altar Recipes
 		AltarRecipeRegistry.registerAltarRecipe(new ItemStack(
 				BloodItems.BloodBlankTalisman), TalismanStacks.talismanBlank,

@@ -21,7 +21,8 @@ public class ItemTalismanRings extends ItemTalismanBauble {
 
 	private IIcon[] textures;
 
-	public ItemTalismanRings() {
+	public ItemTalismanRings()
+	{
 		super();
 		this.setHasSubtypes(true);
 		this.setUnlocalizedName("Talisman Ring");
@@ -30,13 +31,15 @@ public class ItemTalismanRings extends ItemTalismanBauble {
 
 	@Override
 	// Tells Baubles What slot Rings Can Be Equiped To
-	public BaubleType getBaubleType(ItemStack itemstack) {
+	public BaubleType getBaubleType(ItemStack itemstack)
+	{
 		return BaubleType.RING;
 	}
 
 	@Override
 	// Registers Textures For All Rings
-	public void registerIcons(IIconRegister iconRegister) {
+	public void registerIcons(IIconRegister iconRegister)
+	{
 		textures = new IIcon[types.length];
 
 		for (int i = 0; i < types.length; ++i) {
@@ -46,7 +49,8 @@ public class ItemTalismanRings extends ItemTalismanBauble {
 
 	@Override
 	// Adds Texture what match's meta data
-	public IIcon getIconFromDamage(int meta) {
+	public IIcon getIconFromDamage(int meta)
+	{
 		if (meta < 0 || meta >= textures.length) {
 			meta = 0;
 		}
@@ -56,7 +60,8 @@ public class ItemTalismanRings extends ItemTalismanBauble {
 
 	@Override
 	// gets Unlocalized Name depending on meta data
-	public String getUnlocalizedName(ItemStack itemStack) {
+	public String getUnlocalizedName(ItemStack itemStack)
+	{
 		int meta = itemStack.getItemDamage();
 		if (meta < 0 || meta >= types.length) {
 			meta = 0;
@@ -66,14 +71,16 @@ public class ItemTalismanRings extends ItemTalismanBauble {
 	}
 
 	// Adds Rings SubItems To Creative Tab
-	public void getSubItems(Item item, CreativeTabs creativeTabs, List list) {
+	public void getSubItems(Item item, CreativeTabs creativeTabs, List list)
+	{
 		for (int meta = 0; meta < types.length; ++meta) {
 			list.add(new ItemStack(item, 1, meta));
 		}
 	}
 
 	@Override
-	public void onWornTick(ItemStack itemstack, EntityLivingBase player) {
+	public void onWornTick(ItemStack itemstack, EntityLivingBase player)
+	{
 
 		if (itemstack.getItemDamage() == 2
 				&& !player.isPotionActive(Potion.fireResistance)) {
@@ -114,7 +121,8 @@ public class ItemTalismanRings extends ItemTalismanBauble {
 
 	@Override
 	// Removes Potion effect on Unequip
-	public void onUnequipped(ItemStack itemstack, EntityLivingBase player) {
+	public void onUnequipped(ItemStack itemstack, EntityLivingBase player)
+	{
 		if (itemstack.getItemDamage() == 2)
 			player.removePotionEffect(Potion.fireResistance.id);
 

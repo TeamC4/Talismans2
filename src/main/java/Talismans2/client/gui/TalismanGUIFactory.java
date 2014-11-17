@@ -1,4 +1,4 @@
-package Talismans2.gui;
+package Talismans2.client.gui;
 
 import java.util.Set;
 
@@ -8,23 +8,27 @@ import cpw.mods.fml.client.IModGuiFactory;
 
 public class TalismanGUIFactory implements IModGuiFactory {
 	@Override
-	public void initialize(Minecraft minecraftInstance) {
+	public void initialize(Minecraft minecraftInstance)
+	{
 
 	}
 
 	@Override
-	public Class<? extends GuiScreen> mainConfigGuiClass() {
+	public Class<? extends GuiScreen> mainConfigGuiClass()
+	{
 		return TalismanConfigGUI.class;
 	}
 
 	@Override
-	public Set<RuntimeOptionCategoryElement> runtimeGuiCategories() {
+	public Set<RuntimeOptionCategoryElement> runtimeGuiCategories()
+	{
 		return null;
 	}
 
 	@Override
 	public RuntimeOptionGuiHandler getHandlerFor(
-			RuntimeOptionCategoryElement element) {
+			RuntimeOptionCategoryElement element)
+	{
 		return null;
 	}
 }
