@@ -132,24 +132,18 @@ botania.entry.movementTalisman=Movement Talisman
 botania.entry.waterTalisman=Water Talisman
 botania.entry.witherlessTalisman=Witherless Talisman
 
-botania.page.blankTalisman0=TODO
+botania.page.blankTalisman0=The Blank Talisman is used as a crafting component for all of the Talismans. 
 botania.page.blankTalisman1=Recipe For Blank Talisman
-botania.page.flameTalisman0=TODO
+botania.page.flameTalisman0=The Flame Talisman will grant the user imunity to heat.
 botania.page.flameTalisman1=Recipe For Flame Talisman
-botania.page.lightTalisman0=TODO
+botania.page.lightTalisman0=The light Talisman will grant the user the ability to see even when the world is dark and dreery.
 botania.page.lightTalisman1=Recipe For Light Talisman
-botania.page.miningTalisman0=TODO
+botania.page.miningTalisman0=The Mining Talisman will grant the user with a increased abillity to mine.
 botania.page.miningTalisman1=Recipe For Mining Talisman
-botania.page.movementTalisman0=TODO
+botania.page.movementTalisman0=The movement Talisman will grant the user with the ability to move and jump with a boost.
 botania.page.movementTalisman1=Recipe For Blank Talisman
-botania.page.waterTalisman0=TODO
+botania.page.waterTalisman0=The Wather Talisman will grant the user with the abillity to breath under water.
 botania.page.waterTalisman1=Recipe For Water Talisman
-botania.page.witherlessTalisman0=TODO
+botania.page.witherlessTalisman0=The witherless Talisman will grant the user imuity to the wither effect.
 botania.page.witherlessTalisman1=Recipe For Witherless Talisman
-
-
-
-
-
-
 
