@@ -5,6 +5,7 @@ import java.io.File;
 import net.minecraft.creativetab.CreativeTabs;
 import Talismans2.config.ConfigTalismans;
 import Talismans2.creativeTab.CreativeTabTalismans;
+import Talismans2.handler.ModuleHandler;
 import Talismans2.init.DungeonLoot;
 import Talismans2.init.ModItems;
 import Talismans2.lib.Modinfo;
@@ -83,21 +84,7 @@ public class Talismans2 {
 	@Mod.EventHandler
 	public void postinit(FMLPostInitializationEvent event)
 	{
-		// Loads Thaumcraft Module if Thaumcraft is Installed
-		if (Loader.isModLoaded("Thaumcraft")) 
-		{
-			ThaumcraftModule.init(properties);
-		} 
-		// Loads Blood Magic Module
-		if (Loader.isModLoaded("AWWayofTime")) 
-		{
-			BloodMagicModule.init(properties);
-		} 
-		// Loads Botania Module
-	    if (Loader.isModLoaded("Botania")) 
-	    { 
-	    	BotaniaModule.init(properties);
-		} 
+		ModuleHandler.init();
 
 		LogHelper.info("Post Initialization Complete!");
 
