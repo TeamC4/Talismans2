@@ -2,4 +2,3 @@
 package thaumcraft.api;
 
 import cpw.mods.fml.common.API;
-

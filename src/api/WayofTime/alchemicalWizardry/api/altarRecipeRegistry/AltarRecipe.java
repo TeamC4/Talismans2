@@ -2,18 +2,18 @@ package WayofTime.alchemicalWizardry.api.altarRecipeRegistry;
 
 import net.minecraft.item.ItemStack;
 
-public class AltarRecipe {
+public class AltarRecipe 
+{
 	public int minTier;
 	public int liquidRequired;
-	public boolean canBeFilled; // Tells the system that the item is an orb
+	public boolean canBeFilled; //Tells the system that the item is an orb
 	public int consumptionRate;
 	public int drainRate;
 	public ItemStack requiredItem;
 	public ItemStack result;
-
-	public AltarRecipe(ItemStack result, ItemStack requiredItem, int minTier,
-			int liquidRequired, int consumptionRate, int drainRate,
-			boolean canBeFilled) {
+	
+	public AltarRecipe(ItemStack result, ItemStack requiredItem, int minTier, int liquidRequired, int consumptionRate, int drainRate, boolean canBeFilled)
+	{
 		this.result = result;
 		this.requiredItem = requiredItem;
 		this.minTier = minTier;
@@ -22,41 +22,49 @@ public class AltarRecipe {
 		this.drainRate = drainRate;
 		this.canBeFilled = canBeFilled;
 	}
-
-	public ItemStack getResult() {
+	
+	public ItemStack getResult()
+	{
 		return this.result;
 	}
-
-	public ItemStack getRequiredItem() {
+	
+	public ItemStack getRequiredItem()
+	{
 		return this.requiredItem;
 	}
-
-	public boolean doesRequiredItemMatch(ItemStack comparedStack, int tierCheck) {
-		if (comparedStack == null || this.requiredItem == null) {
+	
+	public boolean doesRequiredItemMatch(ItemStack comparedStack, int tierCheck)
+	{
+		if(comparedStack == null || this.requiredItem == null)
+		{
 			return false;
 		}
-
-		return tierCheck >= minTier
-				&& this.requiredItem.isItemEqual(comparedStack);
+		
+		return tierCheck>=minTier && this.requiredItem.isItemEqual(comparedStack);
 	}
-
-	public int getMinTier() {
+	
+	public int getMinTier()
+	{
 		return this.minTier;
 	}
-
-	public int getLiquidRequired() {
+	
+	public int getLiquidRequired()
+	{
 		return this.liquidRequired;
 	}
-
-	public int getConsumptionRate() {
+	
+	public int getConsumptionRate()
+	{
 		return this.consumptionRate;
 	}
-
-	public int getDrainRate() {
+	
+	public int getDrainRate()
+	{
 		return this.drainRate;
 	}
-
-	public boolean getCanBeFilled() {
+	
+	public boolean getCanBeFilled()
+	{
 		return this.canBeFilled;
 	}
 }

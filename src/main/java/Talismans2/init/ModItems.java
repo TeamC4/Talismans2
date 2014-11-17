@@ -1,6 +1,5 @@
 package Talismans2.init;
 
-import vazkii.botania.common.item.equipment.bauble.ItemMagnetRing;
 import net.minecraft.item.Item;
 import Talismans2.item.misc.ItemTalismanRings;
 import Talismans2.item.talismans.ItemBlankTalisman;

@@ -34,10 +34,8 @@ public class ShapelessBloodOrbRecipe implements IRecipe {
 		for (Object in : recipe) {
 			if (in instanceof ItemStack) {
 				input.add(((ItemStack) in).copy());
-			} else if (in instanceof IBloodOrb) { // If the item is an
-													// instanceof IBloodOrb then
-													// save the level of the orb
-				input.add((Integer) (((IBloodOrb) in).getOrbLevel()));
+			} else if (in instanceof IBloodOrb) { //If the item is an instanceof IBloodOrb then save the level of the orb
+				input.add((Integer)(((IBloodOrb)in).getOrbLevel()));
 			} else if (in instanceof Item) {
 				input.add(new ItemStack((Item) in));
 			} else if (in instanceof Block) {
@@ -56,8 +54,7 @@ public class ShapelessBloodOrbRecipe implements IRecipe {
 	}
 
 	@SuppressWarnings("unchecked")
-	ShapelessBloodOrbRecipe(ShapelessRecipes recipe,
-			Map<ItemStack, String> replacements) {
+	ShapelessBloodOrbRecipe(ShapelessRecipes recipe, Map<ItemStack, String> replacements) {
 		output = recipe.getRecipeOutput();
 
 		for (ItemStack ingred : ((List<ItemStack>) recipe.recipeItems)) {
@@ -104,25 +101,20 @@ public class ShapelessBloodOrbRecipe implements IRecipe {
 
 					Object next = req.next();
 
-					// If target is integer, then we should be check the blood
-					// orb value of the item instead
-					if (next instanceof Integer) {
-						if (slot != null && slot.getItem() instanceof IBloodOrb) {
+					//If target is integer, then we should be check the blood orb value of the item instead
+					if(next instanceof Integer) {
+						if(slot != null && slot.getItem() instanceof IBloodOrb) {
 							IBloodOrb orb = (IBloodOrb) slot.getItem();
-							if (orb.getOrbLevel() < (Integer) next) {
+							if(orb.getOrbLevel() < (Integer)next) {
 								return false;
 							}
-						} else
-							return false;
+						} else return false;
 					} else if (next instanceof ItemStack) {
-						match = OreDictionary.itemMatches((ItemStack) next,
-								slot, false);
+						match = OreDictionary.itemMatches((ItemStack) next, slot, false);
 					} else if (next instanceof ArrayList) {
-						Iterator<ItemStack> itr = ((ArrayList<ItemStack>) next)
-								.iterator();
+						Iterator<ItemStack> itr = ((ArrayList<ItemStack>) next).iterator();
 						while (itr.hasNext() && !match) {
-							match = OreDictionary.itemMatches(itr.next(), slot,
-									false);
+							match = OreDictionary.itemMatches(itr.next(), slot, false);
 						}
 					}
 

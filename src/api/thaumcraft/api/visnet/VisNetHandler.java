@@ -19,20 +19,14 @@ public class VisNetHandler {
 	 * take that into account.
 	 * 
 	 * @param world
-	 * @param x
-	 *            the x position of the draining block or entity
-	 * @param y
-	 *            the y position of the draining block or entity
-	 * @param z
-	 *            the z position of the draining block or entity
-	 * @param aspect
-	 *            what aspect to drain
-	 * @param amount
-	 *            how much to drain
+	 * @param x the x position of the draining block or entity
+	 * @param y the y position of the draining block or entity
+	 * @param z the z position of the draining block or entity
+	 * @param aspect what aspect to drain
+	 * @param amount how much to drain
 	 * @return how much was actually drained
 	 */
-	public static int drainVis(World world, int x, int y, int z, Aspect aspect,
-			int amount) {
+	public static int drainVis(World world, int x, int y, int z, Aspect aspect, int amount) {
 
 		int drainedAmount = 0;
 
@@ -43,45 +37,39 @@ public class VisNetHandler {
 		}
 
 		ArrayList<WeakReference<TileVisNode>> nodes = nearbyNodes.get(drainer);
-		if (nodes != null && nodes.size() > 0)
-			for (WeakReference<TileVisNode> noderef : nodes) {
+		if (nodes!=null && nodes.size()>0)
+		for (WeakReference<TileVisNode> noderef : nodes) {
+			
+			TileVisNode node = noderef.get();
+			
+			if (node == null) continue;
 
-				TileVisNode node = noderef.get();
-
-				if (node == null)
-					continue;
-
-				int a = node.consumeVis(aspect, amount);
-				drainedAmount += a;
-				amount -= a;
-				if (a > 0) {
-					int color = Aspect.getPrimalAspects().indexOf(aspect);
-					generateVisEffect(world.provider.dimensionId, x, y, z,
-							node.xCoord, node.yCoord, node.zCoord, color);
-				}
-				if (amount <= 0) {
-					break;
-				}
+			int a = node.consumeVis(aspect, amount);
+			drainedAmount += a;
+			amount -= a;
+			if (a>0) {
+				int color = Aspect.getPrimalAspects().indexOf(aspect);
+				generateVisEffect(world.provider.dimensionId, x, y, z, node.xCoord, node.yCoord, node.zCoord, color);				
 			}
-
+			if (amount <= 0) {
+				break;
+			}
+		}
+		
 		return drainedAmount;
 	}
-
+	
 	static Method generateVisEffect;
-
-	public static void generateVisEffect(int dim, int x, int y, int z, int x2,
-			int y2, int z2, int color) {
+	public static void generateVisEffect(int dim, int x, int y, int z, int x2, int y2, int z2, int color) {
 		try {
-			if (generateVisEffect == null) {
-				Class fake = Class.forName("thaumcraft.common.lib.Utils");
-				generateVisEffect = fake.getMethod("generateVisEffect",
-						int.class, int.class, int.class, int.class, int.class,
-						int.class, int.class, int.class);
-			}
-			generateVisEffect.invoke(null, dim, x, y, z, x2, y2, z2, color);
-		} catch (Exception ex) {
-			FMLLog.warning("[Thaumcraft API] Could not invoke thaumcraft.common.lib.Utils method generateVisEffect");
-		}
+	        if(generateVisEffect == null) {
+	            Class fake = Class.forName("thaumcraft.common.lib.Utils");
+	            generateVisEffect = fake.getMethod("generateVisEffect", int.class, int.class, int.class, int.class, int.class, int.class, int.class, int.class);
+	        }
+	        generateVisEffect.invoke(null, dim, x,y,z,x2,y2,z2,color);
+	    } catch(Exception ex) { 
+	    	FMLLog.warning("[Thaumcraft API] Could not invoke thaumcraft.common.lib.Utils method generateVisEffect");
+	    }
 	}
 
 	public static HashMap<Integer, HashMap<WorldCoordinates, WeakReference<TileVisNode>>> sources = new HashMap<Integer, HashMap<WorldCoordinates, WeakReference<TileVisNode>>>();
@@ -198,12 +186,12 @@ public class VisNetHandler {
 		ArrayList<Object[]> nearby = new ArrayList<Object[]>();
 
 		for (WeakReference<TileVisNode> root : sourcelist.values()) {
-
+			
 			if (!isNodeValid(root))
 				continue;
 
 			TileVisNode source = root.get();
-
+			
 			TileVisNode closest = null;
 			float range = Float.MAX_VALUE;
 
@@ -213,14 +201,14 @@ public class VisNetHandler {
 				range = r;
 				closest = source;
 			}
-
+			
 			ArrayList<WeakReference<TileVisNode>> children = new ArrayList<WeakReference<TileVisNode>>();
-			children = getAllChildren(source, children);
-
+			children = getAllChildren(source,children);
+			
 			for (WeakReference<TileVisNode> child : children) {
 				TileVisNode n = child.get();
 				if (n != null && !n.equals(root)) {
-
+					
 					float r2 = inRange(n.getWorldObj(), n.getLocation(),
 							drainer, n.getRange());
 					if (r2 > 0 && r2 < range) {
@@ -231,21 +219,20 @@ public class VisNetHandler {
 			}
 
 			if (closest != null) {
-
+				
 				cn.add(new WeakReference(closest));
 			}
 		}
 
 		nearbyNodes.put(drainer, cn);
 	}
-
-	private static ArrayList<WeakReference<TileVisNode>> getAllChildren(
-			TileVisNode source, ArrayList<WeakReference<TileVisNode>> list) {
+	
+	private static ArrayList<WeakReference<TileVisNode>> getAllChildren(TileVisNode source, ArrayList<WeakReference<TileVisNode>> list) {
 		for (WeakReference<TileVisNode> child : source.getChildren()) {
 			TileVisNode n = child.get();
 			if (n != null) {
 				list.add(child);
-				list = getAllChildren(n, list);
+				list = getAllChildren(n,list);
 			}
 		}
 		return list;
