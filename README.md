@@ -18,4 +18,3 @@ The licence is located at COPYING.txt, but to save you the trouble, it's GPLv3 (
 
 Basically, do whatever you want, as long as it's free, open source, and stays under GPL. (Yes, that allows you to use it in your modpack.)
 
-THIS MOD IS NOT FINISHED SO PLEASE DON'T PUT IT IN ANY MODPACK
