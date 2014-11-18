@@ -1,0 +1,28 @@
+Talismans2-1.7.10-1.0.0.jar
+
+	- Fixed problems with researching Talismans
+        - Fixed various other things
+        - Full release build
+
+========================================================================================
+Talismans2-1.7.10-Beta1.0.3.jar
+
+	- Final fix for not having blood magic installed. Sorry all for the rapid releases! 
+
+========================================================================================
+Talismans2-1.7.10-Beta1.0.2.jar
+
+	- Fixed crash when Blood Magic wasn't installed.
+        - Fixed bug where Talismans could be equipped with no owner.
+
+==========================================================================================
+ Talismans2-1.7.10-Beta1.0.1.jar
+
+    - Fixed Crash with blood movement Talisman
+    - Fixed Talismans keeping effects after blood network empty's 
+    - Removed Blood Talismans Equipping on Right click as was causing some strange D-sync 
+
+==========================================================================================
+ Talismans2-1.7.10-Beta1.0.0.jar
+
+    - Initial Beta Release
