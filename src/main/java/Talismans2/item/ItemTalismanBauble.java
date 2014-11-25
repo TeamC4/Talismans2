@@ -1,11 +1,18 @@
 package Talismans2.item;
 
+import java.util.List;
+
+import org.lwjgl.input.Keyboard;
+
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import Talismans2.Talismans2;
+import Talismans2.lib.Modinfo;
+import Talismans2.util.Color;
 import baubles.api.BaubleType;
 import baubles.api.IBauble;
 import baubles.common.container.InventoryBaubles;
@@ -101,6 +108,23 @@ public class ItemTalismanBauble extends Item implements IBauble {
 		}
 
 		return par1ItemStack;
+	}
+	
+	@Override
+	public void addInformation(ItemStack iS, EntityPlayer par2EntityPlayer,
+			List par3List, boolean par4)
+	{
+		if (Keyboard.isKeyDown(Keyboard.KEY_LSHIFT)
+				|| Keyboard.isKeyDown(Keyboard.KEY_RSHIFT)) {
+			par3List.add(StatCollector.translateToLocal("toolTip1"
+					+ iS.getUnlocalizedName()));
+
+		} else {
+
+			par3List.add(Color.DARK_PURPLE
+					+ StatCollector.translateToLocal(Modinfo.ID + "toolTipShift"));
+
+		}
 	}
 
 }

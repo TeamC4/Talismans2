@@ -147,3 +147,26 @@ botania.page.waterTalisman1=Recipe For Water Talisman
 botania.page.witherlessTalisman0=The witherless Talisman will grant the user imuity to the wither effect.
 botania.page.witherlessTalisman1=Recipe For Witherless Talisman
 
+#ToolTips
+Talismans 2toolTipShift=Hold Shift For Infomation
+
+toolTip1item.Flame Talisman=When Equiped grants the player fire resistance.
+toolTip1item.Water Talisman=When Equiped grants the player water breathing.
+toolTip1item.Light Talisman=When Equiped grants the player night vision.
+toolTip1item.Movement Talisman=When Equiped grants the player jump boost and speed.
+toolTip1item.Mining Talisman=When Equiped grants the player haste.
+toolTip1item.Invisible Talisman=When Equiped grants the player invisibility.
+toolTip1item.Witherless Talisman=When Equiped grants the player emunity to the withering effect.
+toolTip1item.Magnet Talisman=When Equiped Grants the player the effect of drawing in nearby items.
+toolTip1item.Crafting Talisman=WIP.
+
+toolTip1item.Talisman Ring.Blank=A Normal Ring.
+toolTip1item.Talisman Ring.Flame=When Equiped grants the player fire resistance.
+toolTip1item.Talisman Ring.Water=When Equiped grants the player water breathing.
+toolTip1item.Talisman Ring.Light=When Equiped grants the player night vision.
+toolTip1item.Talisman Ring.Movement=When Equiped grants the player jump boost and speed.
+toolTip1item.Talisman Ring.Mining=When Equiped grants the player haste.
+toolTip1item.Talisman Ring.Invisible=When Equiped grants the player invisibility.
+toolTip1item.Talisman Ring.Witherless=When Equiped grants the player emunity to the withering effect.
+toolTip1item.Talisman Ring.Crafting=WIP.
+
