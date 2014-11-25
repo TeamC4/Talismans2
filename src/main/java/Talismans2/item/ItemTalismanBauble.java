@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.lwjgl.input.Keyboard;
 
+import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
@@ -30,6 +31,11 @@ public class ItemTalismanBauble extends Item implements IBauble {
 		this.setCreativeTab(Talismans2.tabsTalismans);
 		this.setMaxStackSize(1);
 
+	}
+	
+	@Override
+	public void registerIcons(IIconRegister iconRegister) {
+		itemIcon = iconRegister.registerIcon(Modinfo.ID.toLowerCase() + ":" + getUnlocalizedName());
 	}
 
 	@Override
