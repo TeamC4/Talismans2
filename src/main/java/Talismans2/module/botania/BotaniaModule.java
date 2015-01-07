@@ -17,9 +17,9 @@ public class BotaniaModule {
 
 	public static void Botaniainit()
 	{
-		BotaniaRecipes.init();
+//		BotaniaRecipes.init();
 
-		BotaniaLexicon.init();
+//		BotaniaLexicon.init();
 
 	}
 

@@ -6,12 +6,13 @@ import java.util.List;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraftforge.common.config.ConfigElement;
 import net.minecraftforge.common.config.Configuration;
+import net.minecraftforge.fml.client.config.DummyConfigElement;
+import net.minecraftforge.fml.client.config.GuiConfig;
+import net.minecraftforge.fml.client.config.GuiConfigEntries;
+import net.minecraftforge.fml.client.config.GuiConfigEntries.CategoryEntry;
+import net.minecraftforge.fml.client.config.GuiConfigEntries.IConfigEntry;
+import net.minecraftforge.fml.client.config.IConfigElement;
 import Talismans2.config.ConfigTalismans;
-import cpw.mods.fml.client.config.DummyConfigElement;
-import cpw.mods.fml.client.config.GuiConfig;
-import cpw.mods.fml.client.config.GuiConfigEntries;
-import cpw.mods.fml.client.config.GuiConfigEntries.CategoryEntry;
-import cpw.mods.fml.client.config.IConfigElement;
 
 public class TalismanConfigGUI extends GuiConfig {
 	public TalismanConfigGUI(GuiScreen top)
@@ -25,22 +26,22 @@ public class TalismanConfigGUI extends GuiConfig {
 	{
 		List<IConfigElement> list = new ArrayList<IConfigElement>();
 		list.add(new DummyConfigElement.DummyCategoryElement("Spawn Chances",
-				"tm2.configgui.category.tmGeneral", TMGeneral.class));
+				"tm2.configgui.category.tmGeneral", (Class<? extends IConfigEntry>) TMGeneral.class));
 		list.add(new DummyConfigElement.DummyCategoryElement(
 				"Loot Spawn Chances", "tm2.configgui.category.tmLoot",
-				TMLoot.class));
+				(Class<? extends IConfigEntry>) TMLoot.class));
 		list.add(new DummyConfigElement.DummyCategoryElement(
 				"Configure Boolean Recipes",
-				"tm2.configgui.category.tmRecipes", TMRecipes.class));
+				"tm2.configgui.category.tmRecipes", (Class<? extends IConfigEntry>) TMRecipes.class));
 		list.add(new DummyConfigElement.DummyCategoryElement(
 				"Blood Magic Integration",
-				"tm2.configgui.category.tmBloodMagic", TMBloodMagic.class));
+				"tm2.configgui.category.tmBloodMagic", (Class<? extends IConfigEntry>) TMBloodMagic.class));
 		list.add(new DummyConfigElement.DummyCategoryElement(
 				"Thaumcraft Integration",
-				"tm2.configgui.category.tmThaumcraft", TMTC.class));
+				"tm2.configgui.category.tmThaumcraft", (Class<? extends IConfigEntry>) TMTC.class));
 		list.add(new DummyConfigElement.DummyCategoryElement(
 				"Botania Integration", "tm2.configgui.category.tmBotania",
-				TMBotania.class));
+				(Class<? extends IConfigEntry>) TMBotania.class));
 		return list;
 	}
 

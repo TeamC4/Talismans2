@@ -1,8 +1,8 @@
 package Talismans2.proxies;
 
+import net.minecraftforge.fml.client.registry.ClientRegistry;
 import Talismans2.client.PlayerRenderHandler;
 import Talismans2.keybinding.Keybindings;
-import cpw.mods.fml.client.registry.ClientRegistry;
 
 /**
  * @author Gigabit101

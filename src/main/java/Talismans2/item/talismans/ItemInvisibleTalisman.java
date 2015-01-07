@@ -1,6 +1,5 @@
 package Talismans2.item.talismans;
 
-import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
@@ -19,17 +18,11 @@ public class ItemInvisibleTalisman extends ItemTalismanBauble {
 	}
 
 	@Override
-	public void registerIcons(IIconRegister iconRegister)
-	{
-		itemIcon = iconRegister.registerIcon("talismans2:Invisible");
-	}
-
-	@Override
 	public void onWornTick(ItemStack itemstack, EntityLivingBase player)
 	{
 		if (!player.isPotionActive(Potion.invisibility)) {
 			player.addPotionEffect(new PotionEffect(Potion.invisibility.id,
-					Integer.MAX_VALUE, 1, true));
+					Integer.MAX_VALUE, 1, true, true));
 		}
 
 	}

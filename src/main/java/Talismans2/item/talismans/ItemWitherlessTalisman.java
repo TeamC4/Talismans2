@@ -1,6 +1,5 @@
 package Talismans2.item.talismans;
 
-import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
@@ -20,12 +19,6 @@ public class ItemWitherlessTalisman extends ItemTalismanBauble {
 		this.setCreativeTab(Talismans2.tabsTalismans);
 		this.setMaxStackSize(1);
 		this.setUnlocalizedName("Witherless Talisman");
-	}
-
-	@Override
-	public void registerIcons(IIconRegister iconRegister)
-	{
-		itemIcon = iconRegister.registerIcon("talismans2:Witherless");
 	}
 
 	@Override

@@ -14,9 +14,9 @@ public class BloodMagicModule {
 	public static void BloodMagicInit()
 	{
 		// Load Blood Items
-		BloodItems.init();
+//		BloodItems.init();
 
 		// Load Blood Magic Recipes
-		BloodMagicRecipes.init();
+//		BloodMagicRecipes.init();
 	}
 }

@@ -1,8 +1,8 @@
 package Talismans2.module.botania;
 
-import cpw.mods.fml.common.registry.GameRegistry;
-import Talismans2.module.botania.items.ItemManaFlameTalisman;
 import net.minecraft.item.Item;
+import net.minecraftforge.fml.common.registry.GameRegistry;
+import Talismans2.module.botania.items.ItemManaFlameTalisman;
 
 public class BotaniaItems {
 	

@@ -1,6 +1,5 @@
 package Talismans2.item.talismans;
 
-import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
@@ -23,11 +22,7 @@ public class ItemMiningTalisman extends ItemTalismanBauble {
 		this.setUnlocalizedName("Mining Talisman");
 	}
 
-	@Override
-	public void registerIcons(IIconRegister iconRegister)
-	{
-		itemIcon = iconRegister.registerIcon("talismans2:Mining");
-	}
+
 
 	@Override
 	// Returns Potion Effect on Tick
@@ -35,7 +30,7 @@ public class ItemMiningTalisman extends ItemTalismanBauble {
 	{
 		if (!player.isPotionActive(Potion.digSpeed)) {
 			player.addPotionEffect(new PotionEffect(Potion.digSpeed.id,
-					Integer.MAX_VALUE, 3, true));
+					Integer.MAX_VALUE, 3, true, true));
 		}
 	}
 

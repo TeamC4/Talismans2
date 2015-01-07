@@ -4,18 +4,16 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.texture.TextureMap;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.IIcon;
 import net.minecraftforge.client.event.RenderLivingEvent;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.common.FMLCommonHandler;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.gameevent.TickEvent;
 
 import org.lwjgl.opengl.GL11;
 
 import Talismans2.init.ModItems;
-import Talismans2.util.RendererUtil;
 import Talismans2.util.TalismanStacks;
-import cpw.mods.fml.common.FMLCommonHandler;
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import cpw.mods.fml.common.gameevent.TickEvent;
 
 public class PlayerRenderHandler {
 	public static EntityPlayer player;
@@ -44,13 +42,13 @@ public class PlayerRenderHandler {
 			return;
 		ItemStack iS = TalismanStacks.talismanFlame;
 		Minecraft mc = Minecraft.getMinecraft();
-		IIcon icon = ModItems.FlameTalisman.getIconFromDamage(0); // This can
+//		IIcon icon = ModItems.FlameTalisman.getIconFromDamage(0); // This can
 
 		// changed to
 		// whatever you
 		// want
 
-		mc.getTextureManager().bindTexture(TextureMap.locationItemsTexture);
+//		mc.getTextureManager().bindTexture(TextureMap.locationItemsTexture);
 		// mc.getTextureManager().bindTexture(TextureMap.locationBlocksTexture);
 		// Uncomment this if using a block texture
 
@@ -72,7 +70,7 @@ public class PlayerRenderHandler {
 
 		GL11.glScaled(0.5, 0.5, 0.5);
 
-		RendererUtil.renderItemIn3d(iS);
+//		RendererUtil.renderItemIn3d(iS);
 
 		GL11.glPopMatrix();
 

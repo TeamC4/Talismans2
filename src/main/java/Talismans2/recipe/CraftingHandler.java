@@ -1,8 +1,8 @@
 package Talismans2.recipe;
 
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import Talismans2.config.ConfigTalismans;
 import Talismans2.util.TalismanStacks;
-import cpw.mods.fml.common.registry.GameRegistry;
 
 public class CraftingHandler {
 

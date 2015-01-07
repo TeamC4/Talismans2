@@ -2,14 +2,12 @@ package Talismans2.item.misc;
 
 import java.util.List;
 
-import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
-import net.minecraft.util.IIcon;
 import Talismans2.item.ItemTalismanBauble;
 import baubles.api.BaubleType;
 
@@ -18,8 +16,6 @@ public class ItemTalismanRings extends ItemTalismanBauble {
 	public static final String[] types = new String[] { "Blank", "Crafting",
 			"Flame", "Invisible", "Light", "Mining", "Movement", "Water",
 			"Witherless", };
-
-	private IIcon[] textures;
 
 	public ItemTalismanRings()
 	{
@@ -34,28 +30,6 @@ public class ItemTalismanRings extends ItemTalismanBauble {
 	public BaubleType getBaubleType(ItemStack itemstack)
 	{
 		return BaubleType.RING;
-	}
-
-	@Override
-	// Registers Textures For All Rings
-	public void registerIcons(IIconRegister iconRegister)
-	{
-		textures = new IIcon[types.length];
-
-		for (int i = 0; i < types.length; ++i) {
-			textures[i] = iconRegister.registerIcon("talismans2:" + "Ring");
-		}
-	}
-
-	@Override
-	// Adds Texture what match's meta data
-	public IIcon getIconFromDamage(int meta)
-	{
-		if (meta < 0 || meta >= textures.length) {
-			meta = 0;
-		}
-
-		return textures[meta];
 	}
 
 	@Override
@@ -85,34 +59,34 @@ public class ItemTalismanRings extends ItemTalismanBauble {
 		if (itemstack.getItemDamage() == 2
 				&& !player.isPotionActive(Potion.fireResistance)) {
 			player.addPotionEffect(new PotionEffect(Potion.fireResistance.id,
-					Integer.MAX_VALUE, 1, true));
+					Integer.MAX_VALUE, 1, true, true));
 		}
 		if (itemstack.getItemDamage() == 3
 				&& !player.isPotionActive(Potion.invisibility)) {
 			player.addPotionEffect(new PotionEffect(Potion.invisibility.id,
-					Integer.MAX_VALUE, 1, true));
+					Integer.MAX_VALUE, 1, true, true));
 		}
 		if (itemstack.getItemDamage() == 4
 				&& !player.isPotionActive(Potion.nightVision)) {
 			player.addPotionEffect(new PotionEffect(Potion.nightVision.id,
-					Integer.MAX_VALUE, 1, true));
+					Integer.MAX_VALUE, 1, true, true));
 		}
 		if (itemstack.getItemDamage() == 5
 				&& !player.isPotionActive(Potion.digSpeed)) {
 			player.addPotionEffect(new PotionEffect(Potion.digSpeed.id,
-					Integer.MAX_VALUE, 1, true));
+					Integer.MAX_VALUE, 1, true, true));
 		}
 		if (itemstack.getItemDamage() == 6
 				&& !player.isPotionActive(Potion.moveSpeed)) {
 			player.addPotionEffect(new PotionEffect(Potion.moveSpeed.id,
-					Integer.MAX_VALUE, 1, true));
+					Integer.MAX_VALUE, 1, true, true));
 			player.addPotionEffect(new PotionEffect(Potion.jump.id,
-					Integer.MAX_VALUE, 1, true));
+					Integer.MAX_VALUE, 1, true, true));
 		}
 		if (itemstack.getItemDamage() == 7
 				&& !player.isPotionActive(Potion.waterBreathing)) {
 			player.addPotionEffect(new PotionEffect(Potion.waterBreathing.id,
-					Integer.MAX_VALUE, 1, true));
+					Integer.MAX_VALUE, 1, true, true));
 		}
 		if (itemstack.getItemDamage() == 8)
 			;

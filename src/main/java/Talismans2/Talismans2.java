@@ -3,28 +3,24 @@ package Talismans2;
 import java.io.File;
 
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraftforge.fml.client.event.ConfigChangedEvent;
+import net.minecraftforge.fml.common.FMLCommonHandler;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.Instance;
+import net.minecraftforge.fml.common.SidedProxy;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import Talismans2.config.ConfigTalismans;
 import Talismans2.creativeTab.CreativeTabTalismans;
 import Talismans2.handler.ModuleHandler;
 import Talismans2.init.DungeonLoot;
 import Talismans2.init.ModItems;
 import Talismans2.lib.Modinfo;
-import Talismans2.module.bloodmagic.BloodMagicModule;
-import Talismans2.module.botania.BotaniaModule;
-import Talismans2.module.thaumcraft.ThaumcraftModule;
 import Talismans2.proxies.CommonProxy;
 import Talismans2.recipe.CraftingHandler;
 import Talismans2.util.LogHelper;
-import cpw.mods.fml.client.event.ConfigChangedEvent;
-import cpw.mods.fml.common.FMLCommonHandler;
-import cpw.mods.fml.common.Loader;
-import cpw.mods.fml.common.Mod;
-import cpw.mods.fml.common.Mod.Instance;
-import cpw.mods.fml.common.SidedProxy;
-import cpw.mods.fml.common.event.FMLInitializationEvent;
-import cpw.mods.fml.common.event.FMLPostInitializationEvent;
-import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 
 /**
  * @author Gigabit101

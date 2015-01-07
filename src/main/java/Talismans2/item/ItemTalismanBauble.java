@@ -2,15 +2,15 @@ package Talismans2.item;
 
 import java.util.List;
 
-import org.lwjgl.input.Keyboard;
-
-import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
+
+import org.lwjgl.input.Keyboard;
+
 import Talismans2.Talismans2;
 import Talismans2.lib.Modinfo;
 import Talismans2.util.Color;
@@ -33,10 +33,6 @@ public class ItemTalismanBauble extends Item implements IBauble {
 
 	}
 	
-	@Override
-	public void registerIcons(IIconRegister iconRegister) {
-		itemIcon = iconRegister.registerIcon(Modinfo.ID.toLowerCase() + ":" + getUnlocalizedName());
-	}
 
 	@Override
 	public boolean canEquip(ItemStack arg0, EntityLivingBase arg1)

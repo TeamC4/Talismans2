@@ -1,6 +1,5 @@
 package Talismans2.item.talismans;
 
-import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
@@ -22,11 +21,7 @@ public class ItemFlameTalisman extends ItemTalismanBauble {
 		this.setUnlocalizedName("Flame Talisman");
 	}
 
-	@Override
-	public void registerIcons(IIconRegister iconRegister)
-	{
-		itemIcon = iconRegister.registerIcon("talismans2:Flame");
-	}
+
 
 	@Override
 	// Returns Potion Effect on Tick
@@ -34,7 +29,7 @@ public class ItemFlameTalisman extends ItemTalismanBauble {
 	{
 		if (!player.isPotionActive(Potion.fireResistance)) {
 			player.addPotionEffect(new PotionEffect(Potion.fireResistance.id,
-					Integer.MAX_VALUE, 1, true));
+					Integer.MAX_VALUE, 1, true, true));
 		}
 	}
 

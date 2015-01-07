@@ -1,9 +1,10 @@
 package Talismans2.util;
 
+import net.minecraftforge.fml.common.FMLLog;
+
 import org.apache.logging.log4j.Level;
 
 import Talismans2.lib.Modinfo;
-import cpw.mods.fml.common.FMLLog;
 
 /**
  * @author Gigabit101
