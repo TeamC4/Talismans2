@@ -17,7 +17,7 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "0.0"
+version = "2.1.0"
 group= "com.gigabit101.talismans2" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "Talismans2"
 
@@ -36,32 +36,32 @@ dependencies {
         f.mkdir()
     }
 	println("  Downloading dependencies!")
-	grabDep('gbl', 'https://dl.dropboxusercontent.com/u/47135879/Baubles-deobf-1.7.10-1.0.1.4.jar')
-	grabDep('gbt', 'https://dl.dropboxusercontent.com/u/47135879/Thaumcraft-1.7.10-4.2.0.1.jar')
-    grabDep('gbb', 'https://dl.dropbox.com/s/0xtjcs9nxxs9znb/Blood%20Magic-v1.1.0(1.7.10).jar')
-    grabDep('gbd', 'http://vazkii.us/mod/Botania/files/Botania%20r1.2-120.jar')
+	grabDep('gbl', 'https://dl.dropboxusercontent.com/u/47135879/Baubles-1.8-1.1.0.0-deobf.jar')
+//	grabDep('gbt', 'https://dl.dropboxusercontent.com/u/47135879/Thaumcraft-1.7.10-4.2.0.1.jar')
+//    grabDep('gbb', 'https://dl.dropbox.com/s/0xtjcs9nxxs9znb/Blood%20Magic-v1.1.0(1.7.10).jar')
+//    grabDep('gbd', 'http://vazkii.us/mod/Botania/files/Botania%20r1.2-120.jar')
     
 
 
 	println("  Adding dependencies!")
     compile files("dep/gbl.jar")
-     compile files("dep/gbt.jar")
-	 compile files("dep/gbb.jar")
-	 compile files("dep/gbd.jar")
+//     compile files("dep/gbt.jar")
+//	 compile files("dep/gbb.jar")
+//	 compile files("dep/gbd.jar")
 	println("  Finished adding dependencies!")
 }
 
 minecraft {
-    version = "1.7.10-10.13.0.1200"
+    version = "1.8-11.14.0.1295-1.8"
     assetDir = "eclipse/assets"
 }
 
 dependencies {
 	compile files (
 		'Baubles-deobf.jar',
-		'Thaumcraft.jar',
-		'Blood.jar',
-		'Botania.jar'
+//		'Thaumcraft.jar',
+//		'Blood.jar',
+//		'Botania.jar'
 	)
 }
 
