@@ -1,7 +1,11 @@
 package Talismans2.init;
 
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 import Talismans2.item.misc.ItemTalismanRings;
 import Talismans2.item.talismans.ItemBlankTalisman;
 import Talismans2.item.talismans.ItemCraftingTalisman;
@@ -12,6 +16,8 @@ import Talismans2.item.talismans.ItemMiningTalisman;
 import Talismans2.item.talismans.ItemMovementTalisman;
 import Talismans2.item.talismans.ItemWaterTalisman;
 import Talismans2.item.talismans.ItemWitherlessTalisman;
+import Talismans2.lib.Modinfo;
+import Talismans2.lib.Names;
 
 /**
  * @author Gigabit101
@@ -29,41 +35,40 @@ public class ModItems {
 	public static Item InvisibleTalisman;
 	public static Item WitherlessTalisman;
 	public static Item CraftingTalisman;
-	public static Item MagnetTalisman;
 	public static Item TalismanRings;
 
 	public static void init()
 	{
 		// Blank Talisman
 		BlankTalisman = new ItemBlankTalisman();
-		GameRegistry.registerItem(BlankTalisman, "Blank Talisman");
+		GameRegistry.registerItem(BlankTalisman, Names.NameBlankTalisman);
 		// Flame Talisman
 		FlameTalisman = new ItemFlameTalisman();
-		GameRegistry.registerItem(FlameTalisman, "Flame Talisman");
+		GameRegistry.registerItem(FlameTalisman, Names.NameFlameTalisman);
 		// Water Talisman
 		WaterTalisman = new ItemWaterTalisman();
-		GameRegistry.registerItem(WaterTalisman, "Water Talisman");
+		GameRegistry.registerItem(WaterTalisman, Names.NameWaterTalisman);
 		// Light Talisman
 		LightTalisman = new ItemLightTalisman();
-		GameRegistry.registerItem(LightTalisman, "Light Talisman");
+		GameRegistry.registerItem(LightTalisman, Names.NameLightTalisman);
 		// Movement Talisman
 		MovementTalisman = new ItemMovementTalisman();
-		GameRegistry.registerItem(MovementTalisman, "Movement Talisman");
+		GameRegistry.registerItem(MovementTalisman, Names.NameMovementTalisman);
 		// Mining Talisman
 		MiningTalisman = new ItemMiningTalisman();
-		GameRegistry.registerItem(MiningTalisman, "Mining Talisman");
+		GameRegistry.registerItem(MiningTalisman, Names.NameminingTalisman);
 		// Invisible Talisman
 		InvisibleTalisman = new ItemInvisibleTalisman();
-		GameRegistry.registerItem(InvisibleTalisman, "Invisible Talisman");
+		GameRegistry.registerItem(InvisibleTalisman, Names.NameInvisibleTalisman);
 		// Witherless Talisman
 		WitherlessTalisman = new ItemWitherlessTalisman();
-		GameRegistry.registerItem(WitherlessTalisman, "Witherless Talisman");
+		GameRegistry.registerItem(WitherlessTalisman, Names.NameWitherlessTalisman);
 		// Crafting Talisman
 		CraftingTalisman = new ItemCraftingTalisman();
-		GameRegistry.registerItem(CraftingTalisman, "Crafting Talisman");
-		// Talisman Rings
-		TalismanRings = new ItemTalismanRings();
-		GameRegistry.registerItem(TalismanRings, "Talisman Rings");
+		GameRegistry.registerItem(CraftingTalisman, Names.NameCraftTalisman);
+//		// Talisman Rings
+//		TalismanRings = new ItemTalismanRings();
+//		GameRegistry.registerItem(TalismanRings, "Talisman Rings");
 
 		// Container Items
 		FlameTalisman.setContainerItem(FlameTalisman);
@@ -74,9 +79,26 @@ public class ModItems {
 		InvisibleTalisman.setContainerItem(InvisibleTalisman);
 		WitherlessTalisman.setContainerItem(WitherlessTalisman);
 		CraftingTalisman.setContainerItem(CraftingTalisman);
-		MagnetTalisman.setContainerItem(MagnetTalisman);
-		MagnetTalisman.setContainerItem(MagnetTalisman);
 
+	}
+	
+	@SideOnly(Side.CLIENT)
+	public static void registerRenders()
+	{
+		registerRender(BlankTalisman);
+		registerRender(CraftingTalisman);
+		registerRender(FlameTalisman);
+		registerRender(InvisibleTalisman);
+		registerRender(LightTalisman);
+		registerRender(MiningTalisman);
+		registerRender(MovementTalisman);
+		registerRender(WaterTalisman);
+		registerRender(WitherlessTalisman);
+	}
+	
+	public static void registerRender(Item item)
+	{
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Modinfo.ID.toLowerCase() + ":" + item.getUnlocalizedName().toLowerCase().substring(5), "inventory"));
 	}
 
 }

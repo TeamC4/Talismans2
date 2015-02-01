@@ -6,6 +6,7 @@ import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import Talismans2.Talismans2;
 import Talismans2.item.ItemTalismanBauble;
+import Talismans2.lib.Names;
 import baubles.api.BaubleType;
 
 public class ItemMovementTalisman extends ItemTalismanBauble {
@@ -13,7 +14,7 @@ public class ItemMovementTalisman extends ItemTalismanBauble {
 	public ItemMovementTalisman()
 	{
 		super();
-		this.setUnlocalizedName("Movement Talisman");
+		this.setUnlocalizedName(Names.NameMovementTalisman);
 		this.setCreativeTab(Talismans2.tabsTalismans);
 	}
 

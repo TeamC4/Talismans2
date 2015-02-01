@@ -8,14 +8,17 @@ public class CommonProxy {
 
 	public void registerKeyBindings()
 	{
-
 		// NOOP
 	}
 
 	public void registerPlayerRenderHandler()
 	{
-
 		// NOOP
+	}
+	
+	public void registerRender()
+	{
+		//NOOP
 	}
 
 }

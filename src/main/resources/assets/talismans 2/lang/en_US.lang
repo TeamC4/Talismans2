@@ -1,15 +1,14 @@
 
 # Item localizations
-item.Blank Talisman.name=Blank Talisman
-item.Light Talisman.name=Light Talisman
-item.Flame Talisman.name=Flame Talisman
-item.Water Talisman.name=Water Talisman
-item.Movement Talisman.name=Movement Talisman
-item.Mining Talisman.name=Mining Talisman
-item.Invisible Talisman.name=Invisible Talisman
-item.Witherless Talisman.name=Witherless Talisman
-item.Crafting Talisman.name=Crafting Talisman
-item.Magnet Talisman.name=Magnet Talisman
+item.blank_talisman.name=Blank Talisman
+item.light_talisman.name=Light Talisman
+item.flame_talisman.name=Flame Talisman
+item.water_talisman.name=Water Talisman
+item.movement_talisman.name=Movement Talisman
+item.mining_talisman.name=Mining Talisman
+item.invisible_talisman.name=Invisible Talisman
+item.witherless_talisman.name=Witherless Talisman
+item.crafting_talisman.name=Crafting Talisman
 
 item.Talisman Ring.Blank.name=A Normal Ring
 item.Talisman Ring.Crafting.name=Ring Of Crafting
@@ -150,14 +149,13 @@ botania.page.witherlessTalisman1=Recipe For Witherless Talisman
 #ToolTips
 Talismans 2toolTipShift=Hold Shift For Infomation
 
-toolTip1item.Flame Talisman=When Equiped grants the player fire resistance.
-toolTip1item.Water Talisman=When Equiped grants the player water breathing.
-toolTip1item.Light Talisman=When Equiped grants the player night vision.
-toolTip1item.Movement Talisman=When Equiped grants the player jump boost and speed.
-toolTip1item.Mining Talisman=When Equiped grants the player haste.
-toolTip1item.Invisible Talisman=When Equiped grants the player invisibility.
-toolTip1item.Witherless Talisman=When Equiped grants the player emunity to the withering effect.
-toolTip1item.Magnet Talisman=When Equiped Grants the player the effect of drawing in nearby items.
+toolTip1item.flame_talisman=When Equiped grants the player fire resistance.
+toolTip1item.water_talisman=When Equiped grants the player water breathing.
+toolTip1item.light_talisman=When Equiped grants the player night vision.
+toolTip1item.movement_talisman=When Equiped grants the player jump boost and speed.
+toolTip1item.mining_talisman=When Equiped grants the player haste.
+toolTip1item.invisible_talisman=When Equiped grants the player invisibility.
+toolTip1item.witherless_talisman=When Equiped grants the player emunity to the withering effect.
 toolTip1item.Crafting Talisman=WIP.
 
 toolTip1item.Talisman Ring.Blank=A Normal Ring.

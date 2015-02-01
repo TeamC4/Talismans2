@@ -6,6 +6,7 @@ import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import Talismans2.Talismans2;
 import Talismans2.item.ItemTalismanBauble;
+import Talismans2.lib.Names;
 import baubles.api.BaubleType;
 
 /**
@@ -19,7 +20,7 @@ public class ItemWaterTalisman extends ItemTalismanBauble {
 		super();
 		this.setCreativeTab(Talismans2.tabsTalismans);
 		this.setMaxStackSize(1);
-		this.setUnlocalizedName("Water Talisman");
+		this.setUnlocalizedName(Names.NameWaterTalisman);
 	}
 
 	@Override

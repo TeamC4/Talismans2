@@ -41,8 +41,5 @@ public class CraftingHandler {
 						TalismanStacks.talismanBlank,
 						TalismanStacks.talismanWitherless);
 
-		GameRegistry.addShapelessRecipe(TalismanStacks.talismanMagnet,
-				TalismanStacks.talismanBlank, TalismanStacks.talismanMagnet);
-
 	}
 }

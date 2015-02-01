@@ -70,6 +70,8 @@ public class Talismans2 {
 	{
 		// Load DungeonLoot
 		DungeonLoot.init(properties);
+		
+//		proxy.registerRender();
 
 		LogHelper.info("Initialization Complete!");
 
@@ -80,6 +82,8 @@ public class Talismans2 {
 	@Mod.EventHandler
 	public void postinit(FMLPostInitializationEvent event)
 	{
+		proxy.registerRender();
+
 		ModuleHandler.init();
 
 		LogHelper.info("Post Initialization Complete!");

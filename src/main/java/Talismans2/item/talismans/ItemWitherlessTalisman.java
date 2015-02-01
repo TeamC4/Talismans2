@@ -5,6 +5,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import Talismans2.Talismans2;
 import Talismans2.item.ItemTalismanBauble;
+import Talismans2.lib.Names;
 import baubles.api.BaubleType;
 
 /**
@@ -18,7 +19,7 @@ public class ItemWitherlessTalisman extends ItemTalismanBauble {
 		super();
 		this.setCreativeTab(Talismans2.tabsTalismans);
 		this.setMaxStackSize(1);
-		this.setUnlocalizedName("Witherless Talisman");
+		this.setUnlocalizedName(Names.NameWitherlessTalisman);
 	}
 
 	@Override

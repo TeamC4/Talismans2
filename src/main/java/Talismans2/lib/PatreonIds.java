@@ -4,7 +4,7 @@ package Talismans2.lib;
  * @author Gigabit101
  */
 
-public class Uuids {
+public class PatreonIds {
 
 	public static final String Gig = "b75b47bb2a6b4b5cbb815bd4bb56d81b";
 
