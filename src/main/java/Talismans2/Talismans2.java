@@ -26,7 +26,7 @@ import Talismans2.util.LogHelper;
  * @author Gigabit101
  */
 
-@Mod(modid = Modinfo.ID, name = Modinfo.NAME, version = Modinfo.Version, dependencies = "required-after:Baubles@:", guiFactory = "Talismans2.gui.TalismanGUIFactory")
+@Mod(modid = Modinfo.ID, name = Modinfo.NAME, version = Modinfo.Version, dependencies = Modinfo.ModDependences, guiFactory = "Talismans2.gui.TalismanGUIFactory")
 public class Talismans2 {
 	public static ConfigTalismans properties;
 

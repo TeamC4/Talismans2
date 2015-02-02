@@ -11,9 +11,9 @@ import net.minecraft.world.World;
 
 import org.lwjgl.input.Keyboard;
 
+import C4Lib.util.Color;
 import Talismans2.Talismans2;
 import Talismans2.lib.Modinfo;
-import Talismans2.util.Color;
 import baubles.api.BaubleType;
 import baubles.api.IBauble;
 import baubles.common.container.InventoryBaubles;
