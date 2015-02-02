@@ -37,7 +37,7 @@ dependencies {
     }
 	println("  Downloading dependencies!")
 	grabDep('gbl', 'https://dl.dropboxusercontent.com/u/47135879/Baubles-1.8-1.1.0.0-deobf.jar')
-	grabDep('C4lib', 'https://dl.dropbox.com/s/xapl117176h1ai9/C4Lib-1.8-1.0.0-deobf.jar?dl=0')
+	grabDep('C4lib', 'https://dl.dropbox.com/s/xapl117176h1ai9/C4Lib-1.8-1.0.0-deobf.jar')
 	
 //	grabDep('gbt', 'https://dl.dropboxusercontent.com/u/47135879/Thaumcraft-1.7.10-4.2.0.1.jar')
 //    grabDep('gbb', 'https://dl.dropbox.com/s/0xtjcs9nxxs9znb/Blood%20Magic-v1.1.0(1.7.10).jar')
@@ -62,7 +62,7 @@ minecraft {
 dependencies {
 	compile files (
 		'Baubles-deobf.jar',
-		'C4Lib-deobf.jar',
+		'C4Lib-deobf.jar'
 //		'Thaumcraft.jar',
 //		'Blood.jar',
 //		'Botania.jar'
