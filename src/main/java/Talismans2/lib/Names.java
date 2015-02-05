@@ -21,12 +21,4 @@ public class Names {
 	public static final String NameWaterTalisman = "water_talisman";
 	public static final String NameWitherlessTalisman = "witherless_talisman";
 
-
-
-
-
-
-
-
-
 }

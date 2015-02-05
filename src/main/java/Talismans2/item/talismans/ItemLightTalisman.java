@@ -15,6 +15,7 @@ public class ItemLightTalisman extends ItemTalismanBauble {
 	{
 		super();
 		this.setCreativeTab(Talismans2.tabsTalismans);
+		this.setMaxStackSize(1);
 		this.setUnlocalizedName(Names.NameLightTalisman);
 
 	}

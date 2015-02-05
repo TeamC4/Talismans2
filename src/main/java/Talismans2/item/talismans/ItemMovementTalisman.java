@@ -15,6 +15,7 @@ public class ItemMovementTalisman extends ItemTalismanBauble {
 	{
 		super();
 		this.setUnlocalizedName(Names.NameMovementTalisman);
+		this.setMaxStackSize(1);
 		this.setCreativeTab(Talismans2.tabsTalismans);
 	}
 
