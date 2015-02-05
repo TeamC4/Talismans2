@@ -16,6 +16,8 @@ public class Modinfo {
 	public static final String SERVER_PROXY_CLASS = "Talismans2.proxies.CommonProxy";
 	// Client Proxy
 	public static final String CLIENT_PROXY_CLASS = "Talismans2.proxies.ClientProxy";
+	// Gui Factory Class
+	public static final String GUI_FACTORY_CLASS = "Talismans2.client.gui.TalismanGUIFactory";
 	// Mod Dependences
 	public static final String ModDependences = "required-after:Baubles;required-after:C4Lib:";
 
