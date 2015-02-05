@@ -9,6 +9,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import Talismans2.item.ItemTalismanBauble;
+import Talismans2.lib.Names;
 import baubles.api.BaubleType;
 
 public class ItemTalismanRings extends ItemTalismanBauble {
@@ -21,7 +22,7 @@ public class ItemTalismanRings extends ItemTalismanBauble {
 	{
 		super();
 		this.setHasSubtypes(true);
-		this.setUnlocalizedName("Talisman Ring");
+		this.setUnlocalizedName(Names.NameTalismanRing);
 
 	}
 

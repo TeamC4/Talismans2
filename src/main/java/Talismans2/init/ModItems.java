@@ -66,9 +66,9 @@ public class ModItems {
 		// Crafting Talisman
 		CraftingTalisman = new ItemCraftingTalisman();
 		GameRegistry.registerItem(CraftingTalisman, Names.NameCraftTalisman);
-//		// Talisman Rings
-//		TalismanRings = new ItemTalismanRings();
-//		GameRegistry.registerItem(TalismanRings, "Talisman Rings");
+		// Talisman Rings
+		TalismanRings = new ItemTalismanRings();
+		GameRegistry.registerItem(TalismanRings, Names.NameTalismanRing);
 
 		// Container Items
 		FlameTalisman.setContainerItem(FlameTalisman);
@@ -94,11 +94,21 @@ public class ModItems {
 		registerRender(MovementTalisman);
 		registerRender(WaterTalisman);
 		registerRender(WitherlessTalisman);
+		registerRender(TalismanRings);
 	}
 	
 	public static void registerRender(Item item)
 	{
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Modinfo.ID.toLowerCase() + ":" + item.getUnlocalizedName().toLowerCase().substring(5), "inventory"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 1, new ModelResourceLocation(Modinfo.ID.toLowerCase() + ":" + item.getUnlocalizedName().toLowerCase().substring(5), "inventory"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 2, new ModelResourceLocation(Modinfo.ID.toLowerCase() + ":" + item.getUnlocalizedName().toLowerCase().substring(5), "inventory"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 3, new ModelResourceLocation(Modinfo.ID.toLowerCase() + ":" + item.getUnlocalizedName().toLowerCase().substring(5), "inventory"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 4, new ModelResourceLocation(Modinfo.ID.toLowerCase() + ":" + item.getUnlocalizedName().toLowerCase().substring(5), "inventory"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 5, new ModelResourceLocation(Modinfo.ID.toLowerCase() + ":" + item.getUnlocalizedName().toLowerCase().substring(5), "inventory"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 6, new ModelResourceLocation(Modinfo.ID.toLowerCase() + ":" + item.getUnlocalizedName().toLowerCase().substring(5), "inventory"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 7, new ModelResourceLocation(Modinfo.ID.toLowerCase() + ":" + item.getUnlocalizedName().toLowerCase().substring(5), "inventory"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 8, new ModelResourceLocation(Modinfo.ID.toLowerCase() + ":" + item.getUnlocalizedName().toLowerCase().substring(5), "inventory"));
+
 	}
 
 }
