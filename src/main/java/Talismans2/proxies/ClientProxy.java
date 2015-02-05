@@ -1,6 +1,7 @@
 package Talismans2.proxies;
 
 import net.minecraftforge.fml.client.registry.ClientRegistry;
+import net.minecraftforge.fml.common.Loader;
 import Talismans2.client.PlayerRenderHandler;
 import Talismans2.init.ModItems;
 import Talismans2.keybinding.Keybindings;
@@ -27,7 +28,10 @@ public class ClientProxy extends CommonProxy {
 	public void registerRender()
 	{
 		ModItems.registerRenders();
+		if (Loader.isModLoaded("AWWayofTime")){
 		BloodItems.registerRenders();
+		}
 	}
+		
 
 }

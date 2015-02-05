@@ -1,4 +1,3 @@
-[![Build Status](https://drone.io/bitbucket.org/gigabit101/talismans-2/status.png)](https://drone.io/bitbucket.org/gigabit101/talismans-2/latest)
 =========
 
 The offical repository of Talismans 2.
