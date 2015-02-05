@@ -11,7 +11,7 @@ public class Modinfo {
 	// Mod Name
 	public static final String NAME = "Talismans 2";
 	// Mod Version
-	public static final String Version = "2.1.0";
+	public static final String Version = "2.1.1";
 	// Common Proxy
 	public static final String SERVER_PROXY_CLASS = "Talismans2.proxies.CommonProxy";
 	// Client Proxy

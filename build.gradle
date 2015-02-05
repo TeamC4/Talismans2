@@ -17,7 +17,7 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "2.1.0"
+version = "2.1.1"
 group= "com.gigabit101.talismans2" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "Talismans2"
 
