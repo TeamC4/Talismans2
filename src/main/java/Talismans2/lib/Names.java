@@ -21,5 +21,13 @@ public class Names {
 	public static final String NameWaterTalisman = "water_talisman";
 	public static final String NameWitherlessTalisman = "witherless_talisman";
 	public static final String NameTalismanRing = "ring_talisman";
+	
+	public static final String NameBloodFlameTalisman = "blood_flame_talisman";
+	public static final String NameBloodInvisibleTalisman = "blood_invisible_talisman";
+	public static final String NameBloodLightTalisman = "blood_light_talisman";
+	public static final String NameBloodMiningTalisman = "blood_mining_talisman";
+	public static final String NameBloodMovementTalisman = "blood_movement_talisman";
+	public static final String NameBloodWaterTalisman = "blood_water_talisman";
+	public static final String NameBloodWitherlessTalisman = "blood_witherless_talisman";
 
 }

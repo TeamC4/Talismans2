@@ -20,15 +20,13 @@ item.ring_talisman.Movement.name=Ring Of Movement
 item.ring_talisman.Water.name=Ring Of Water Breathing
 item.ring_talisman.Witherless.name=Ring Of Witherless
 
-item.Blood Light Talisman.name=Blood Light Talisman
-item.Blood Invisible Talisman.name=Blood Invisible Talisman
-item.Blood Movement Talisman.name=Blood Movement Talisman
-item.Blood Witherless Talisman.name=Blood Witherless Talisman
-item.Blood Mining Talisman.name=Blood Mining Talisman
-item.Blood Water Talisman.name=Blood Water Talisman
-item.Blood Flame Talisman.name=Blood Flame Talisman
-item.Blood Crafting Talisman.name=Blood Crafting Talisman
-item.Blank Blood Talisman.name=Blank Blood Talisman
+item.blood_light_talisman.name=Blood Light Talisman
+item.blood_invisible_talisman.name=Blood Invisible Talisman
+item.blood_movement_talisman.name=Blood Movement Talisman
+item.blood_witherless_talisman.name=Blood Witherless Talisman
+item.blood_mining_talisman.name=Blood Mining Talisman
+item.blood_water_talisman.name=Blood Water Talisman
+item.blood_flame_talisman.name=Blood Flame Talisman
 
 
 # Creative Tab localizations

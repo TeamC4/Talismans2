@@ -4,6 +4,7 @@ import net.minecraftforge.fml.client.registry.ClientRegistry;
 import Talismans2.client.PlayerRenderHandler;
 import Talismans2.init.ModItems;
 import Talismans2.keybinding.Keybindings;
+import Talismans2.module.bloodmagic.BloodItems;
 
 /**
  * @author Gigabit101
@@ -26,6 +27,7 @@ public class ClientProxy extends CommonProxy {
 	public void registerRender()
 	{
 		ModItems.registerRenders();
+		BloodItems.registerRenders();
 	}
 
 }

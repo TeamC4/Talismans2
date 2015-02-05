@@ -18,6 +18,7 @@ import Talismans2.init.DungeonLoot;
 import Talismans2.init.ModItems;
 import Talismans2.lib.Modinfo;
 import Talismans2.module.ModuleHandler;
+import Talismans2.module.bloodmagic.BloodItems;
 import Talismans2.proxies.CommonProxy;
 import Talismans2.recipe.CraftingHandler;
 import Talismans2.util.LogHelper;
