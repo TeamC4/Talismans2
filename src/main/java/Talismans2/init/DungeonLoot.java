@@ -157,6 +157,143 @@ public class DungeonLoot {
 							ModItems.WitherlessTalisman), 0, 1,
 							ConfigTalismans.ChanceWitherlessTalisman));
 		}
+		if (properties.RingTalismanRingsTrue) {
+			ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(
+					new WeightedRandomChestContent(new ItemStack(
+							ModItems.TalismanRings), 0, 1,
+							ConfigTalismans.ChanceRingTalisman));
+			ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(
+					new WeightedRandomChestContent(new ItemStack(
+							ModItems.TalismanRings), 0, 1,
+							ConfigTalismans.ChanceRingTalisman));
+			ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(
+					new WeightedRandomChestContent(new ItemStack(
+							ModItems.TalismanRings), 0, 1,
+							ConfigTalismans.ChanceRingTalisman));
+			ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(
+					new WeightedRandomChestContent(new ItemStack(
+							ModItems.TalismanRings), 0, 1,
+							ConfigTalismans.ChanceRingTalisman));
+			
+			ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(
+					new WeightedRandomChestContent(new ItemStack(
+							ModItems.TalismanRings), 0, 2,
+							ConfigTalismans.ChanceRingTalisman));
+			ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(
+					new WeightedRandomChestContent(new ItemStack(
+							ModItems.TalismanRings), 0, 2,
+							ConfigTalismans.ChanceRingTalisman));
+			ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(
+					new WeightedRandomChestContent(new ItemStack(
+							ModItems.TalismanRings), 0, 2,
+							ConfigTalismans.ChanceRingTalisman));
+			ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(
+					new WeightedRandomChestContent(new ItemStack(
+							ModItems.TalismanRings), 0, 2,
+							ConfigTalismans.ChanceRingTalisman));
+			
+			ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(
+					new WeightedRandomChestContent(new ItemStack(
+							ModItems.TalismanRings), 0, 3,
+							ConfigTalismans.ChanceRingTalisman));
+			ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(
+					new WeightedRandomChestContent(new ItemStack(
+							ModItems.TalismanRings), 0, 3,
+							ConfigTalismans.ChanceRingTalisman));
+			ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(
+					new WeightedRandomChestContent(new ItemStack(
+							ModItems.TalismanRings), 0, 3,
+							ConfigTalismans.ChanceRingTalisman));
+			ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(
+					new WeightedRandomChestContent(new ItemStack(
+							ModItems.TalismanRings), 0, 3,
+							ConfigTalismans.ChanceRingTalisman));
+			
+			ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(
+					new WeightedRandomChestContent(new ItemStack(
+							ModItems.TalismanRings), 0, 4,
+							ConfigTalismans.ChanceRingTalisman));
+			ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(
+					new WeightedRandomChestContent(new ItemStack(
+							ModItems.TalismanRings), 0, 4,
+							ConfigTalismans.ChanceRingTalisman));
+			ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(
+					new WeightedRandomChestContent(new ItemStack(
+							ModItems.TalismanRings), 0, 4,
+							ConfigTalismans.ChanceRingTalisman));
+			ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(
+					new WeightedRandomChestContent(new ItemStack(
+							ModItems.TalismanRings), 0, 4,
+							ConfigTalismans.ChanceRingTalisman));
+	
+			ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(
+					new WeightedRandomChestContent(new ItemStack(
+							ModItems.TalismanRings), 0, 5,
+							ConfigTalismans.ChanceRingTalisman));
+			ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(
+					new WeightedRandomChestContent(new ItemStack(
+							ModItems.TalismanRings), 0, 5,
+							ConfigTalismans.ChanceRingTalisman));
+			ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(
+					new WeightedRandomChestContent(new ItemStack(
+							ModItems.TalismanRings), 0, 5,
+							ConfigTalismans.ChanceRingTalisman));
+			ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(
+					new WeightedRandomChestContent(new ItemStack(
+							ModItems.TalismanRings), 0, 5,
+							ConfigTalismans.ChanceRingTalisman));
+			
+			ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(
+					new WeightedRandomChestContent(new ItemStack(
+							ModItems.TalismanRings), 0, 6,
+							ConfigTalismans.ChanceRingTalisman));
+			ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(
+					new WeightedRandomChestContent(new ItemStack(
+							ModItems.TalismanRings), 0, 6,
+							ConfigTalismans.ChanceRingTalisman));
+			ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(
+					new WeightedRandomChestContent(new ItemStack(
+							ModItems.TalismanRings), 0, 6,
+							ConfigTalismans.ChanceRingTalisman));
+			ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(
+					new WeightedRandomChestContent(new ItemStack(
+							ModItems.TalismanRings), 0, 6,
+							ConfigTalismans.ChanceRingTalisman));
+			
+			ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(
+					new WeightedRandomChestContent(new ItemStack(
+							ModItems.TalismanRings), 0, 7,
+							ConfigTalismans.ChanceRingTalisman));
+			ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(
+					new WeightedRandomChestContent(new ItemStack(
+							ModItems.TalismanRings), 0, 7,
+							ConfigTalismans.ChanceRingTalisman));
+			ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(
+					new WeightedRandomChestContent(new ItemStack(
+							ModItems.TalismanRings), 0, 7,
+							ConfigTalismans.ChanceRingTalisman));
+			ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(
+					new WeightedRandomChestContent(new ItemStack(
+							ModItems.TalismanRings), 0, 7,
+							ConfigTalismans.ChanceRingTalisman));
+			
+			ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(
+					new WeightedRandomChestContent(new ItemStack(
+							ModItems.TalismanRings), 0, 8,
+							ConfigTalismans.ChanceRingTalisman));
+			ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(
+					new WeightedRandomChestContent(new ItemStack(
+							ModItems.TalismanRings), 0, 8,
+							ConfigTalismans.ChanceRingTalisman));
+			ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(
+					new WeightedRandomChestContent(new ItemStack(
+							ModItems.TalismanRings), 0, 8,
+							ConfigTalismans.ChanceRingTalisman));
+			ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(
+					new WeightedRandomChestContent(new ItemStack(
+							ModItems.TalismanRings), 0, 8,
+							ConfigTalismans.ChanceRingTalisman));
+		}
 
 	}
 

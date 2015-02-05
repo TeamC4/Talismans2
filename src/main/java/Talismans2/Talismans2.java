@@ -14,10 +14,10 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import Talismans2.config.ConfigTalismans;
 import Talismans2.creativeTab.CreativeTabTalismans;
-import Talismans2.handler.ModuleHandler;
 import Talismans2.init.DungeonLoot;
 import Talismans2.init.ModItems;
 import Talismans2.lib.Modinfo;
+import Talismans2.module.ModuleHandler;
 import Talismans2.proxies.CommonProxy;
 import Talismans2.recipe.CraftingHandler;
 import Talismans2.util.LogHelper;
@@ -70,8 +70,6 @@ public class Talismans2 {
 	{
 		// Load DungeonLoot
 		DungeonLoot.init(properties);
-		
-//		proxy.registerRender();
 
 		LogHelper.info("Initialization Complete!");
 

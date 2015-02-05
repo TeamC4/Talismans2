@@ -31,6 +31,7 @@ public class ConfigTalismans {
 	public static boolean InvisibleTalismanLootTrue;
 	public static boolean WitherlessTalismanLootTrue;
 	public static boolean MagnetTalismanLootTrue;
+	public static boolean RingTalismanRingsTrue;
 	// Disable Recipes
 	public static boolean BlankTalismanTrue;
 	public static boolean FlameTalismanTrue;
@@ -53,6 +54,7 @@ public class ConfigTalismans {
 	public static int ChanceInvisibleTalisman;
 	public static int ChanceWitherlessTalisman;
 	public static int ChanceMagnetTalisman;
+	public static int ChanceRingTalisman;
 
 	public static Configuration config;
 
@@ -157,6 +159,9 @@ public class ConfigTalismans {
 		MagnetTalismanLootTrue = config.get(CATEGORY_LOOT,
 				"Add Magnet Talisman To DungeonLoot", true,
 				"Add or Remove Magnet Talismans from loot").getBoolean(true);
+		RingTalismanRingsTrue = config.get(CATEGORY_LOOT,
+				"Add Talisman Rings To DungeonLoot", true,
+				"Add or Remove Talismans Rings from loot").getBoolean(true);
 
 		// Loot Chance
 		ChanceBlankTalisman = config
@@ -203,6 +208,11 @@ public class ConfigTalismans {
 				.get(Configuration.CATEGORY_GENERAL,
 						"Magnet Talisman Spawning Chance", 7,
 						"Change the spawn chance for Magnet Talisman's to appear in chests")
+				.getInt();
+		ChanceRingTalisman = config
+				.get(Configuration.CATEGORY_GENERAL,
+						"Talisman Rings Spawning Chance", 7,
+						"Change the spawn chance for Talisman Rings to appear in chests")
 				.getInt();
 
 		if (config.hasChanged())

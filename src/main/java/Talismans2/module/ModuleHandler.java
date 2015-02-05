@@ -1,4 +1,4 @@
-package Talismans2.handler;
+package Talismans2.module;
 
 import net.minecraftforge.fml.common.Loader;
 import Talismans2.config.ConfigTalismans;
