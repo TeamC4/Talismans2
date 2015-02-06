@@ -1,31 +1,31 @@
 # Item localizations
-item.blank_talisman.name=Blank Talisman
-item.light_talisman.name=Light Talisman
-item.flame_talisman.name=Flame Talisman
-item.water_talisman.name=Water Talisman
-item.movement_talisman.name=Movement Talisman
-item.mining_talisman.name=Mining Talisman
-item.invisible_talisman.name=Invisible Talisman
-item.witherless_talisman.name=Witherless Talisman
-item.craft_talisman.name=Crafting Talisman
+item.blank_talisman.name=Talisman vide
+item.light_talisman.name=Talisman de lumière
+item.flame_talisman.name=Talisman de flamme
+item.water_talisman.name=Talisman d'eau
+item.movement_talisman.name=Talisman de mouvement
+item.mining_talisman.name=Talisman de minage
+item.invisible_talisman.name=Talisman invisible
+item.witherless_talisman.name=Talisman moins fanant
+item.craft_talisman.name=Talisman d'artisanat
 
-item.ring_talisman.Blank.name=A Normal Ring
-item.ring_talisman.Crafting.name=Ring Of Crafting
-item.ring_talisman.Flame.name=Ring Of Fire
-item.ring_talisman.Invisible.name=Ring Of Invisibility
-item.ring_talisman.Light.name=Ring Of Light
-item.ring_talisman.Mining.name=Ring Of The Miner
-item.ring_talisman.Movement.name=Ring Of Movement
-item.ring_talisman.Water.name=Ring Of Water Breathing
-item.ring_talisman.Witherless.name=Ring Of Witherless
+item.ring_talisman.Blank.name=Un anneau normal
+item.ring_talisman.Crafting.name=Anneau d'artisanat
+item.ring_talisman.Flame.name=Anneau de feu
+item.ring_talisman.Invisible.name=Anneau d'invibilité
+item.ring_talisman.Light.name=Anneau de lumière
+item.ring_talisman.Mining.name=Anneau du mineur
+item.ring_talisman.Movement.name=Anneau du mouvement
+item.ring_talisman.Water.name=Anneau de la respiration aquatique
+item.ring_talisman.Witherless.name=Anneau moins fanant
 
-item.blood_light_talisman.name=Blood Light Talisman
-item.blood_invisible_talisman.name=Blood Invisible Talisman
-item.blood_movement_talisman.name=Blood Movement Talisman
-item.blood_witherless_talisman.name=Blood Witherless Talisman
-item.blood_mining_talisman.name=Blood Mining Talisman
-item.blood_water_talisman.name=Blood Water Talisman
-item.blood_flame_talisman.name=Blood Flame Talisman
+item.blood_light_talisman.name=Talisman de lumière de sang
+item.blood_invisible_talisman.name=Talisman d'invisibilité de sang
+item.blood_movement_talisman.name=Talisman de mouvement de sang
+item.blood_witherless_talisman.name=Talisman moins fanant de sang
+item.blood_mining_talisman.name=Talisman de minage de sang
+item.blood_water_talisman.name=Talisman d'eau de sang
+item.blood_flame_talisman.name=Talisman de flamme de sang
 
 
 # Creative Tab localizations
@@ -33,33 +33,33 @@ itemGroup.Talismans 2=Talismans 2
 
 # KeyBinding 
 keys.Talismans.category=Talismans 2
-keys.Talismans.craft=Portable Crafting
+keys.Talismans.craft=Artisanat portable
 
 # Thaumcraft Tab localizations
 tc.research_category.Talismans=Talismans 2
 
 
 # Thaumcraft Research localizations
-tc.research_name.Flame_Talisman=Flame Talisman
-tc.research_name.Blank_Talisman=Blank Talisman
-tc.research_name.Water_Talisman=Water Talisman
-tc.research_name.Light_Talisman=Light Talisman
-tc.research_name.Movement_Talisman=Movement Talisman
-tc.research_name.Mining_Talisman=Mining Talisman
-tc.research_name.Invisible_Talisman=Invisible Talisman
-tc.research_name.Witherless_Talisman=Witherless Talisman
-tc.research_name.Fusion=Talisman Fusion
-tc.research_name.Light_Ring=Ring Of Light
-tc.research_name.Light_Ring=Ring Of Light
-tc.research_name.Movement_Ring=Ring Of Movement
-tc.research_name.Mining_Ring=Ring Of Mining
-tc.research_name.Blank_Ring=A Normal Ring
-tc.research_name.Flame_Ring=Ring Of Fire
-tc.research_name.Water_Ring=Ring Of Water
-tc.research_name.Invisible_Ring=Ring Of Invisibility
-tc.research_name.Witherless_Ring=Ring Of Witherless
+tc.research_name.Flame_Talisman=Talisman de flamme
+tc.research_name.Blank_Talisman=Talisman vide
+tc.research_name.Water_Talisman=Talisman d'eau
+tc.research_name.Light_Talisman=Talisman de lumière
+tc.research_name.Movement_Talisman=Talisman de mouvement
+tc.research_name.Mining_Talisman=Talisman de minage
+tc.research_name.Invisible_Talisman=Talisman invisible
+tc.research_name.Witherless_Talisman=Talisman moins fanant
+tc.research_name.Fusion=Talisman de fusion
+tc.research_name.Light_Ring=Anneau de lumière
+tc.research_name.Light_Ring=Anneau de lumière
+tc.research_name.Movement_Ring=Anneau de mouvement
+tc.research_name.Mining_Ring=Anneau de minage
+tc.research_name.Blank_Ring=Un anneau normal
+tc.research_name.Flame_Ring=Anneau de feu
+tc.research_name.Water_Ring=Anneau d'eau
+tc.research_name.Invisible_Ring=Anneau d'invisibilité
+tc.research_name.Witherless_Ring=Anneau moins fanant
 
-tc.research_name.Thanks=Thanks To My Supporters
+tc.research_name.Thanks=Remerciments à mes supporters
 
 
 # Thaumcraft Research Text localizations
