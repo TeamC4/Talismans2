@@ -1,0 +1,166 @@
+# Item localizations
+item.blank_talisman.name=Talisman vide
+item.light_talisman.name=Talisman de lumière
+item.flame_talisman.name=Talisman de flamme
+item.water_talisman.name=Talisman d'eau
+item.movement_talisman.name=Talisman de mouvement
+item.mining_talisman.name=Talisman de minage
+item.invisible_talisman.name=Talisman invisible
+item.witherless_talisman.name=Talisman moins fanant
+item.craft_talisman.name=Talisman d'artisanat
+
+item.ring_talisman.Blank.name=Un anneau normal
+item.ring_talisman.Crafting.name=Anneau d'artisanat
+item.ring_talisman.Flame.name=Anneau de feu
+item.ring_talisman.Invisible.name=Anneau d'invibilité
+item.ring_talisman.Light.name=Anneau de lumière
+item.ring_talisman.Mining.name=Anneau du mineur
+item.ring_talisman.Movement.name=Anneau du mouvement
+item.ring_talisman.Water.name=Anneau de la respiration aquatique
+item.ring_talisman.Witherless.name=Anneau moins fanant
+
+item.blood_light_talisman.name=Talisman de lumière de sang
+item.blood_invisible_talisman.name=Talisman d'invisibilité de sang
+item.blood_movement_talisman.name=Talisman de mouvement de sang
+item.blood_witherless_talisman.name=Talisman moins fanant de sang
+item.blood_mining_talisman.name=Talisman de minage de sang
+item.blood_water_talisman.name=Talisman d'eau de sang
+item.blood_flame_talisman.name=Talisman de flamme de sang
+
+
+# Creative Tab localizations
+itemGroup.Talismans 2=Talismans 2
+
+# KeyBinding 
+keys.Talismans.category=Talismans 2
+keys.Talismans.craft=Artisanat portable
+
+# Thaumcraft Tab localizations
+tc.research_category.Talismans=Talismans 2
+
+
+# Thaumcraft Research localizations
+tc.research_name.Flame_Talisman=Talisman de flamme
+tc.research_name.Blank_Talisman=Talisman vide
+tc.research_name.Water_Talisman=Talisman d'eau
+tc.research_name.Light_Talisman=Talisman de lumière
+tc.research_name.Movement_Talisman=Talisman de mouvement
+tc.research_name.Mining_Talisman=Talisman de minage
+tc.research_name.Invisible_Talisman=Talisman invisible
+tc.research_name.Witherless_Talisman=Talisman moins fanant
+tc.research_name.Fusion=Talisman de fusion
+tc.research_name.Light_Ring=Anneau de lumière
+tc.research_name.Light_Ring=Anneau de lumière
+tc.research_name.Movement_Ring=Anneau de mouvement
+tc.research_name.Mining_Ring=Anneau de minage
+tc.research_name.Blank_Ring=Un anneau normal
+tc.research_name.Flame_Ring=Anneau de feu
+tc.research_name.Water_Ring=Anneau d'eau
+tc.research_name.Invisible_Ring=Anneau d'invisibilité
+tc.research_name.Witherless_Ring=Anneau moins fanant
+
+tc.research_name.Thanks=Remerciments à mes supporters
+
+
+# Thaumcraft Research Text localizations
+tc.research_text.Flame_Talisman=Lava? What Lava?
+tc.research_text.Blank_Talisman=First steps into the world of Talismans
+tc.research_text.Water_Talisman=One with the squid.
+tc.research_text.Light_Talisman=Not blind as a bat.
+tc.research_text.Movement_Talisman=Swift as a windigo.
+tc.research_text.Mining_Talisman=Putting dwarves to shame.
+tc.research_text.Invisible_Talisman=Finding nemo.
+tc.research_text.Witherless_Talisman=Snake oil.
+tc.research_text.Fusion=Making talismans fashionable.
+tc.research_text.Light_Ring=All the better to see you with my dear
+tc.research_text.Movement_Ring=RUN FORREST RUN!
+tc.research_text.Mining_Ring=Careful of black lung!
+tc.research_text.Blank_Ring=Why?
+tc.research_text.Flame_Ring=Remember, the key words are, "It wasn't you"
+tc.research_text.Water_Ring=Need squids?!
+tc.research_text.Invisible_Ring=TAKE THE RING OFF FRODO
+tc.research_text.Witherless_Ring=Take THAT Wither!
+
+tc.research_text.Thanks=Thanks To My Supporters
+
+#ConfigGUI Text
+tm2.configgui.category.tmLoot=Enable or Disable Talismans
+tm2.configgui.category.tmRecipes=Crafting Changes
+tm2.configgui.category.tmTC=Thaumcraft Integration
+tm2.configgui.category.tmBloodMagic=Blood Magic Integration
+tm2.configgui.category.tmGeneral=Spawn Rates
+
+tm2.configgui.category.tmLoot.tooltip=Change the rate at which talismans spawn
+tm2.configgui.category.tmRecipes.tooltip=Change crafting mechanics
+tm2.configgui.category.tmThaumcraft.tooltip=Enable or disable integration
+tm2.configgui.category.tmBloodMagic.tooltip=Enable or disable Integration
+tm2.configgui.category.tmGeneral.tooltip=Enable or Disable Certain Talismans
+
+
+# Thaumcraft Thaumonomicon Text localizations
+PAGE_BLANK_TALISMAN=Through experimentation or accident you have discovered a new way to use arcane stone. By further soaking in a cauldron it shape becomes altered into a disc like form that can be infused with many useful abilities. You have decided to call these talismans.
+PAGE_FLAME_TALISMAN=Focusing the essence of flame into a blank talisman will yield this variant. The Flame talisman grants immunity to flames of all sorts. Should you ever decide to venture into the depths of the nether be sure to take this with you.
+PAGE_WATER_TALISMAN=By infusing a blank talisman with the elements of water it becomes attuned to the creatures that dwell within. This talisman grants its wearer water breathing.
+PAGE_LIGHT_TALISMAN=Through accident whilst trying to discover a way to remain unseen you stumbled upon this infusion. This infusion allows you to see in the dark. No longer shall you fear the dark for now you can see what horrors lurk within.
+PAGE_MOVEMENT_TALISMAN=Ever wanted to run faster? Jump higher? Well with this discovery now you can. The talisman of movement will make your parkour dreams come true.
+PAGE_MINING_TALISMAN=After many failures and much wasted resources you have discovered a talisman infusion that enhances your mining skills. Now all the ore shall be yours, Just don't dig too deep for none truly know what lies at the bottom of the world.
+PAGE_INVISIBLE_TALISMAN=By infusing a blank talisman with light and the reflective properties of mirrors you have made a talisman that will bend light around its wearer. Use responsibly
+PAGE_WITHERLESS_TALISMAN=By taking the curative properties of milk and infusing a blank talisman with the ability to negate any negative potion effects. Now the wither shall quiver.
+PAGE_FUSION_RESEARCH=During your research as a thaumaturge you discovered ways to produce enchanted trinkets.As you progressed down the path of research into talismans it dawns on you. â€œWhy can't I combine talisman abilities with rings or belts?â€�. After many nights of experimentation you discover the secret to this process. You can now infuse mundane rings and belts with talismans.
+PAGE_LIGHT_RING=Worn on either finger this ring will grant the same ablitiy as a light talisman.
+PAGE_MOVEMENT_RING=Worn on either finger this ring will grant the movement powers of the talisman of movement.
+PAGE_MINING_RING=While wearing this ring you will be granted the power of the mining talisman.
+PAGE_BLANK_RING=Why would you ever bother wearing this?
+PAGE_FLAME_RING=Granting you resistance to fire no matter which finger it adorns.
+PAGE_WATER_RING=Wearing this ring keeps you from drowning as long as it has vis.
+PAGE_INVISIBLE_RING=Wearing this instantly make you see through.
+PAGE_WITHERLESS_RING=The witherless ring will grant all the powers of the witherless talisman. No longer fear Poison.
+
+PAGE_THANKS_RESEARCH=This is just a small Thankyou to all the people who support me and my mods.                               CyborgShadow (Brandon)                                               Necrogami
+
+#Botania Lexica localizations
+KEY_BOTANIA_LEXICA_CATERGORY=Talismans
+botania.entry.blankTalisman=Blank Talisman
+botania.entry.flameTalisman=Flame Talisman
+botania.entry.lightTalisman=Light Talisman
+botania.entry.miningTalisman=Mining Talisman
+botania.entry.movementTalisman=Movement Talisman
+botania.entry.waterTalisman=Water Talisman
+botania.entry.witherlessTalisman=Witherless Talisman
+
+botania.page.blankTalisman0=The Blank Talisman is used as a crafting component for all of the Talismans. 
+botania.page.blankTalisman1=Recipe For Blank Talisman
+botania.page.flameTalisman0=The Flame Talisman will grant the user imunity to heat.
+botania.page.flameTalisman1=Recipe For Flame Talisman
+botania.page.lightTalisman0=The light Talisman will grant the user the ability to see even when the world is dark and dreery.
+botania.page.lightTalisman1=Recipe For Light Talisman
+botania.page.miningTalisman0=The Mining Talisman will grant the user with a increased abillity to mine.
+botania.page.miningTalisman1=Recipe For Mining Talisman
+botania.page.movementTalisman0=The movement Talisman will grant the user with the ability to move and jump with a boost.
+botania.page.movementTalisman1=Recipe For Blank Talisman
+botania.page.waterTalisman0=The Wather Talisman will grant the user with the abillity to breath under water.
+botania.page.waterTalisman1=Recipe For Water Talisman
+botania.page.witherlessTalisman0=The witherless Talisman will grant the user imuity to the wither effect.
+botania.page.witherlessTalisman1=Recipe For Witherless Talisman
+
+#ToolTips
+Talismans 2toolTipShift=Hold Shift For Infomation
+
+toolTip1item.flame_talisman=When Equiped grants the player fire resistance.
+toolTip1item.water_talisman=When Equiped grants the player water breathing.
+toolTip1item.light_talisman=When Equiped grants the player night vision.
+toolTip1item.movement_talisman=When Equiped grants the player jump boost and speed.
+toolTip1item.mining_talisman=When Equiped grants the player haste.
+toolTip1item.invisible_talisman=When Equiped grants the player invisibility.
+toolTip1item.witherless_talisman=When Equiped grants the player emunity to the withering effect.
+toolTip1item.Crafting Talisman=WIP.
+
+toolTip1item.ring_talisman.Blank=A Normal Ring.
+toolTip1item.ring_talisman.Flame=When Equiped grants the player fire resistance.
+toolTip1item.ring_talisman.Water=When Equiped grants the player water breathing.
+toolTip1item.ring_talisman.Light=When Equiped grants the player night vision.
+toolTip1item.ring_talisman.Movement=When Equiped grants the player jump boost and speed.
+toolTip1item.ring_talisman.Mining=When Equiped grants the player haste.
+toolTip1item.ring_talisman.Invisible=When Equiped grants the player invisibility.
+toolTip1item.ring_talisman.Witherless=When Equiped grants the player emunity to the withering effect.
+toolTip1item.ring_talisman.Crafting=WIP.
