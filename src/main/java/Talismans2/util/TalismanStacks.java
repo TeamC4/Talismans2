@@ -5,7 +5,6 @@ import Talismans2.init.ModItems;
 
 //All thanks to Tombenpotter for having Sanguimancy open source with this, making life much easier and code cleaner!
 public class TalismanStacks {
-
 	// Talismans
 	public static ItemStack talismanBlank = new ItemStack(
 			ModItems.BlankTalisman);

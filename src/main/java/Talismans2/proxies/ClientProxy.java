@@ -28,8 +28,9 @@ public class ClientProxy extends CommonProxy {
 	public void registerRender()
 	{
 		ModItems.registerRenders();
+		
 		if (Loader.isModLoaded("AWWayofTime")){
-		BloodItems.registerRenders();
+			BloodItems.registerRenders();
 		}
 	}
 		

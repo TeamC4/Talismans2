@@ -23,8 +23,6 @@ public class ItemFlameTalisman extends ItemTalismanBauble {
 		this.setUnlocalizedName(Names.NameFlameTalisman);
 	}
 
-
-
 	@Override
 	// Returns Potion Effect on Tick
 	public void onWornTick(ItemStack itemstack, EntityLivingBase player)
