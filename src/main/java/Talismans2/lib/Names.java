@@ -29,5 +29,7 @@ public class Names {
 	public static final String NameBloodMovementTalisman = "blood_movement_talisman";
 	public static final String NameBloodWaterTalisman = "blood_water_talisman";
 	public static final String NameBloodWitherlessTalisman = "blood_witherless_talisman";
+	
+	public static final String NameTalismanCrafter = "talisman_crafter";
 
 }

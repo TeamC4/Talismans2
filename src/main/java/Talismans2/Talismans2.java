@@ -12,9 +12,12 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
+import Talismans2.client.gui.GuiHandler;
 import Talismans2.config.ConfigTalismans;
 import Talismans2.creativeTab.CreativeTabTalismans;
 import Talismans2.init.DungeonLoot;
+import Talismans2.init.ModBlocks;
 import Talismans2.init.ModItems;
 import Talismans2.lib.Modinfo;
 import Talismans2.module.ModuleHandler;
@@ -60,9 +63,13 @@ public class Talismans2 {
 
 		// Load ModItems
 		ModItems.init();
+		// Load ModBlocks
+		ModBlocks.init();
 
 		// Load Old Recipes
 		CraftingHandler.CopyTalismans(properties);
+		// Register Gui Handler
+		NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
 
 		LogHelper.info("Pre Initialization Complete!");
 	}
@@ -85,7 +92,7 @@ public class Talismans2 {
 		proxy.registerRender();
 
 		ModuleHandler.init();
-
+		
 		LogHelper.info("Post Initialization Complete!");
 
 	}

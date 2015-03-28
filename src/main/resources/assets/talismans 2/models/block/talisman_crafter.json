@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "talismans 2:blocks/talisman_crafter"
+    }
+}
