@@ -30,6 +30,8 @@ public class Names {
 	public static final String NameBloodWaterTalisman = "blood_water_talisman";
 	public static final String NameBloodWitherlessTalisman = "blood_witherless_talisman";
 	
+	public static final String NameCraftingItem = "crafting_item1";
+	
 	public static final String NameTalismanCrafter = "talisman_crafter";
 
 }

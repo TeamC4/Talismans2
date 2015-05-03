@@ -10,7 +10,6 @@ public class CraftingHandler {
 	{
 		if (properties.CopyTalismansTrue)
 			addCopyRecipes();
-
 	}
 
 	public static void addCopyRecipes()

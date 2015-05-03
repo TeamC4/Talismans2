@@ -28,9 +28,8 @@ public class ItemTalismanBauble extends Item implements IBauble {
 	public ItemTalismanBauble()
 	{
 		super();
-		this.setCreativeTab(Talismans2.tabsTalismans);
-		this.setMaxStackSize(1);
-
+		setCreativeTab(Talismans2.tabsTalismans);
+		setMaxStackSize(1);
 	}
 	
 

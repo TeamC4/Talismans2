@@ -6,6 +6,7 @@ import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import Talismans2.item.misc.ItemCraftingItems;
 import Talismans2.item.misc.ItemTalismanRings;
 import Talismans2.item.talismans.ItemBlankTalisman;
 import Talismans2.item.talismans.ItemCraftingTalisman;
@@ -36,6 +37,7 @@ public class ModItems {
 	public static Item WitherlessTalisman;
 	public static Item CraftingTalisman;
 	public static Item TalismanRings;
+	public static Item CraftingItems;
 
 	public static void init()
 	{
@@ -69,6 +71,9 @@ public class ModItems {
 		// Talisman Rings
 		TalismanRings = new ItemTalismanRings();
 		GameRegistry.registerItem(TalismanRings, Names.NameTalismanRing);
+		// Crafting Items
+		CraftingItems = new ItemCraftingItems();
+		GameRegistry.registerItem(CraftingItems, Names.NameCraftingItem);
 
 		// Container Items
 		FlameTalisman.setContainerItem(FlameTalisman);
@@ -94,10 +99,18 @@ public class ModItems {
 		registerRender(MovementTalisman);
 		registerRender(WaterTalisman);
 		registerRender(WitherlessTalisman);
-		registerRender(TalismanRings);
+		registerRender(CraftingItems);
+		
+		registerMetaRender(TalismanRings);
+	
 	}
 	
 	public static void registerRender(Item item)
+	{
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Modinfo.ID.toLowerCase() + ":" + item.getUnlocalizedName().toLowerCase().substring(5), "inventory"));
+	}
+	
+	public static void registerMetaRender(Item item)
 	{
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Modinfo.ID.toLowerCase() + ":" + item.getUnlocalizedName().toLowerCase().substring(5), "inventory"));
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 1, new ModelResourceLocation(Modinfo.ID.toLowerCase() + ":" + item.getUnlocalizedName().toLowerCase().substring(5), "inventory"));
@@ -108,7 +121,6 @@ public class ModItems {
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 6, new ModelResourceLocation(Modinfo.ID.toLowerCase() + ":" + item.getUnlocalizedName().toLowerCase().substring(5), "inventory"));
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 7, new ModelResourceLocation(Modinfo.ID.toLowerCase() + ":" + item.getUnlocalizedName().toLowerCase().substring(5), "inventory"));
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 8, new ModelResourceLocation(Modinfo.ID.toLowerCase() + ":" + item.getUnlocalizedName().toLowerCase().substring(5), "inventory"));
-
 	}
 
 }
