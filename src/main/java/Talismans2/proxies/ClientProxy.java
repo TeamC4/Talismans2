@@ -33,9 +33,9 @@ public class ClientProxy extends CommonProxy {
 		// Load textures for ModBlocks
 		ModBlocks.registerRenders();
 		// Load textures for Blood Items if BloodMagic is installed
-		if (Loader.isModLoaded("AWWayofTime")){
-			BloodItems.registerRenders();
-		}
+//		if (Loader.isModLoaded("AWWayofTime")){
+//			BloodItems.registerRenders();
+//		}
 	}
 		
 
