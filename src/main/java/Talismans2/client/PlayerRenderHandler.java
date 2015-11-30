@@ -1,7 +1,9 @@
 package Talismans2.client;
 
+import org.lwjgl.opengl.GL11;
+
+import Talismans2.util.TalismanStacks;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.texture.TextureMap;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.event.RenderLivingEvent;
@@ -9,11 +11,6 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
-
-import org.lwjgl.opengl.GL11;
-
-import Talismans2.init.ModItems;
-import Talismans2.util.TalismanStacks;
 
 public class PlayerRenderHandler {
 	public static EntityPlayer player;
@@ -75,5 +72,4 @@ public class PlayerRenderHandler {
 		GL11.glPopMatrix();
 
 	}
-
 }

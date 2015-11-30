@@ -1,7 +1,7 @@
 package Talismans2.util;
 
-import net.minecraft.item.ItemStack;
 import Talismans2.init.ModItems;
+import net.minecraft.item.ItemStack;
 
 //All thanks to Tombenpotter for having Sanguimancy open source with this, making life much easier and code cleaner!
 public class TalismanStacks 

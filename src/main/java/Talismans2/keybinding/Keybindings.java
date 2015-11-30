@@ -1,10 +1,9 @@
 package Talismans2.keybinding;
 
-import net.minecraft.client.settings.KeyBinding;
-
 import org.lwjgl.input.Keyboard;
 
 import Talismans2.lib.Names;
+import net.minecraft.client.settings.KeyBinding;
 
 /**
  * @author Gigabit101

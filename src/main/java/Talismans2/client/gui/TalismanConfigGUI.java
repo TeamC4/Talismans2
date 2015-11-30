@@ -3,6 +3,7 @@ package Talismans2.client.gui;
 import java.util.ArrayList;
 import java.util.List;
 
+import Talismans2.config.ConfigTalismans;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraftforge.common.config.ConfigElement;
 import net.minecraftforge.common.config.Configuration;
@@ -12,7 +13,6 @@ import net.minecraftforge.fml.client.config.GuiConfigEntries;
 import net.minecraftforge.fml.client.config.GuiConfigEntries.CategoryEntry;
 import net.minecraftforge.fml.client.config.GuiConfigEntries.IConfigEntry;
 import net.minecraftforge.fml.client.config.IConfigElement;
-import Talismans2.config.ConfigTalismans;
 
 public class TalismanConfigGUI extends GuiConfig {
 	public TalismanConfigGUI(GuiScreen top)

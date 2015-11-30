@@ -1,9 +1,9 @@
 package Talismans2.keybinding;
 
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.gameevent.InputEvent;
 import Talismans2.lib.Key;
 import Talismans2.util.LogHelper;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.gameevent.InputEvent;
 
 /**
  * @author Gigabit101

@@ -2,15 +2,15 @@ package Talismans2.item.misc;
 
 import java.util.List;
 
+import Talismans2.item.ItemTalismanBauble;
+import Talismans2.lib.Names;
+import baubles.api.BaubleType;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
-import Talismans2.item.ItemTalismanBauble;
-import Talismans2.lib.Names;
-import baubles.api.BaubleType;
 
 public class ItemTalismanRings extends ItemTalismanBauble {
 	// Names For Rings Depending on Meta Data
@@ -20,7 +20,7 @@ public class ItemTalismanRings extends ItemTalismanBauble {
 
 	public ItemTalismanRings()
 	{
-		super();
+		super(null, null);
 		this.setHasSubtypes(true);
 		this.setUnlocalizedName(Names.NameTalismanRing);
 

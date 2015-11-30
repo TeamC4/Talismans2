@@ -1,32 +1,24 @@
 package Talismans2.init;
 
+import Talismans2.item.ItemTalismanBauble;
+import Talismans2.item.misc.ItemTalismanRings;
+import Talismans2.lib.Modinfo;
+import Talismans2.lib.Names;
+import baubles.api.BaubleType;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
+import net.minecraft.potion.Potion;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import Talismans2.item.misc.ItemCraftingItems;
-import Talismans2.item.misc.ItemTalismanRings;
-import Talismans2.item.talismans.ItemBlankTalisman;
-import Talismans2.item.talismans.ItemCraftingTalisman;
-import Talismans2.item.talismans.ItemFlameTalisman;
-import Talismans2.item.talismans.ItemInvisibleTalisman;
-import Talismans2.item.talismans.ItemLightTalisman;
-import Talismans2.item.talismans.ItemMiningTalisman;
-import Talismans2.item.talismans.ItemMovementTalisman;
-import Talismans2.item.talismans.ItemWaterTalisman;
-import Talismans2.item.talismans.ItemWitherlessTalisman;
-import Talismans2.lib.Modinfo;
-import Talismans2.lib.Names;
 
 /**
  * @author Gigabit101
  */
 
-public class ModItems {
-
-	// Default Items
+public class ModItems 
+{
 	public static Item BlankTalisman;
 	public static Item FlameTalisman;
 	public static Item WaterTalisman;
@@ -37,43 +29,39 @@ public class ModItems {
 	public static Item WitherlessTalisman;
 	public static Item CraftingTalisman;
 	public static Item TalismanRings;
-	public static Item CraftingItems;
 
 	public static void init()
 	{
-		// Blank Talisman
-		BlankTalisman = new ItemBlankTalisman();
+		//Blank Talisman
+		BlankTalisman = new ItemTalismanBauble(null, BaubleType.AMULET).setUnlocalizedName(Names.NameBlankTalisman);
 		GameRegistry.registerItem(BlankTalisman, Names.NameBlankTalisman);
 		// Flame Talisman
-		FlameTalisman = new ItemFlameTalisman();
+		FlameTalisman = new ItemTalismanBauble(Potion.fireResistance, BaubleType.AMULET).setUnlocalizedName(Names.NameFlameTalisman);
 		GameRegistry.registerItem(FlameTalisman, Names.NameFlameTalisman);
 		// Water Talisman
-		WaterTalisman = new ItemWaterTalisman();
+		WaterTalisman = new ItemTalismanBauble(Potion.waterBreathing, BaubleType.AMULET).setUnlocalizedName(Names.NameWaterTalisman);
 		GameRegistry.registerItem(WaterTalisman, Names.NameWaterTalisman);
 		// Light Talisman
-		LightTalisman = new ItemLightTalisman();
+		LightTalisman = new ItemTalismanBauble(Potion.nightVision, BaubleType.AMULET).setUnlocalizedName(Names.NameLightTalisman);
 		GameRegistry.registerItem(LightTalisman, Names.NameLightTalisman);
 		// Movement Talisman
-		MovementTalisman = new ItemMovementTalisman();
+		MovementTalisman = new ItemTalismanBauble(Potion.moveSpeed, BaubleType.AMULET).setUnlocalizedName(Names.NameMovementTalisman);
 		GameRegistry.registerItem(MovementTalisman, Names.NameMovementTalisman);
 		// Mining Talisman
-		MiningTalisman = new ItemMiningTalisman();
+		MiningTalisman = new ItemTalismanBauble(Potion.digSpeed, BaubleType.AMULET).setUnlocalizedName(Names.NameminingTalisman);
 		GameRegistry.registerItem(MiningTalisman, Names.NameminingTalisman);
 		// Invisible Talisman
-		InvisibleTalisman = new ItemInvisibleTalisman();
+		InvisibleTalisman = new ItemTalismanBauble(Potion.invisibility, BaubleType.AMULET).setUnlocalizedName(Names.NameInvisibleTalisman);
 		GameRegistry.registerItem(InvisibleTalisman, Names.NameInvisibleTalisman);
 		// Witherless Talisman
-		WitherlessTalisman = new ItemWitherlessTalisman();
+		WitherlessTalisman = new ItemTalismanBauble(Potion.wither, BaubleType.AMULET).setUnlocalizedName(Names.NameWitherlessTalisman);
 		GameRegistry.registerItem(WitherlessTalisman, Names.NameWitherlessTalisman);
 		// Crafting Talisman
-		CraftingTalisman = new ItemCraftingTalisman();
+		CraftingTalisman = new ItemTalismanBauble(null, BaubleType.AMULET).setUnlocalizedName(Names.NameCraftTalisman);
 		GameRegistry.registerItem(CraftingTalisman, Names.NameCraftTalisman);
 		// Talisman Rings
 		TalismanRings = new ItemTalismanRings();
 		GameRegistry.registerItem(TalismanRings, Names.NameTalismanRing);
-		// Crafting Items
-		CraftingItems = new ItemCraftingItems();
-		GameRegistry.registerItem(CraftingItems, Names.NameCraftingItem);
 
 		// Container Items
 		FlameTalisman.setContainerItem(FlameTalisman);
@@ -98,9 +86,7 @@ public class ModItems {
 		registerRender(MiningTalisman);
 		registerRender(MovementTalisman);
 		registerRender(WaterTalisman);
-		registerRender(WitherlessTalisman);
-		registerRender(CraftingItems);
-		
+		registerRender(WitherlessTalisman);		
 		registerMetaRender(TalismanRings);
 	
 	}
@@ -122,5 +108,4 @@ public class ModItems {
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 7, new ModelResourceLocation(Modinfo.ID.toLowerCase() + ":" + item.getUnlocalizedName().toLowerCase().substring(5), "inventory"));
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 8, new ModelResourceLocation(Modinfo.ID.toLowerCase() + ":" + item.getUnlocalizedName().toLowerCase().substring(5), "inventory"));
 	}
-
 }
