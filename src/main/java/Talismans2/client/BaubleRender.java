@@ -9,7 +9,10 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemRenderer;
 import net.minecraft.client.renderer.OpenGlHelper;
 import net.minecraft.client.renderer.Tessellator;
+import net.minecraft.client.renderer.entity.RenderItem;
 import net.minecraft.client.renderer.texture.TextureMap;
+import net.minecraft.client.renderer.tileentity.RenderItemFrame;
+import net.minecraft.client.resources.model.IBakedModel;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -21,7 +24,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 public class BaubleRender 
 {
 	@SubscribeEvent
-	public void onPlayerRender(RenderPlayerEvent.Specials.Post event)
+	public void onPlayerRender(RenderPlayerEvent.Post event)
 	{
 		EntityPlayer player = event.entityPlayer;
 		InventoryBaubles inv = PlayerHandler.getPlayerBaubles(player);
@@ -29,7 +32,7 @@ public class BaubleRender
 		float yaw = player.prevRotationYawHead + (player.rotationYawHead - player.prevRotationYawHead) * event.partialRenderTick;
 		float yawOffset = player.prevRenderYawOffset + (player.renderYawOffset - player.prevRenderYawOffset) * event.partialRenderTick;
 		float pitch = player.prevRotationPitch + (player.rotationPitch - player.prevRotationPitch) * event.partialRenderTick;
-//		renderTalisman(event);
+		renderTalisman(event);
 		GL11.glPushMatrix();
 		GL11.glRotatef(yawOffset, 0, -1, 0);
 		GL11.glRotatef(yaw - 270, 0, 1, 0);
@@ -39,16 +42,13 @@ public class BaubleRender
 	
 	private void renderTalisman(RenderPlayerEvent event) 
 	{
-		//TODO fix this no more getIcon
 		EntityPlayer player = event.entityPlayer;
 		InventoryBaubles inv = PlayerHandler.getPlayerBaubles(player);
 		boolean renderedOne = false;
 			ItemStack stack = inv.getStackInSlot(0);
 			if(stack != null && stack.getItem() instanceof ItemTalismanBauble && !player.isInvisible())
 			{
-				Item item = stack.getItem();
 				GL11.glPushMatrix();
-//				Minecraft.getMinecraft().renderEngine.bindTexture(TextureMap.locationItemsTexture);
 				boolean armor = event.entityPlayer.getCurrentArmor(2) != null;
 				GL11.glRotatef(180F, 1F, 0F, 0F);
 				GL11.glRotatef(0F, 0F, 1F, 10F);
@@ -60,14 +60,18 @@ public class BaubleRender
 				int lightmapX = light % 65536;
 				int lightmapY = light / 65536;
 				OpenGlHelper.setLightmapTextureCoords(OpenGlHelper.lightmapTexUnit, lightmapX, lightmapY);
+				RenderItem itemRenderer = Minecraft.getMinecraft().getRenderItem();
 				for(int j = 0; j < 2; j++)
 				{
-//					IIcon icon = item.getIcon(stack, j);
+//					itemRenderer.renderItemAndEffectIntoGUI(stack, 10, 01);
+//					System.out.println("" + stack.getDisplayName());
+					IBakedModel model = itemRenderer.getItemModelMesher().getItemModel(stack);
 //					float f = icon.getMinU();
 //					float f1 = icon.getMaxU();
 //					float f2 = icon.getMinV();
 //					float f3 = icon.getMaxV();
 //					ItemRenderer.renderItemIn2D(Tessellator.instance, f1, f2, f, f3, icon.getIconWidth(), icon.getIconHeight(), 1F / 16F);
+					itemRenderer.renderItem(stack, model);
 				}
 				GL11.glPopMatrix();
 			}
@@ -76,7 +80,6 @@ public class BaubleRender
 	public static void initialize()
 	{
 		BaubleRender playerRenderHandler = new BaubleRender();
-		FMLCommonHandler.instance().bus().register(playerRenderHandler);
 		MinecraftForge.EVENT_BUS.register(playerRenderHandler);
 	}
 }

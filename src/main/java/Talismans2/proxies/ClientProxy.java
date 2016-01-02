@@ -1,5 +1,6 @@
 package Talismans2.proxies;
 
+import Talismans2.client.BaubleRender;
 import Talismans2.client.PlayerRenderHandler;
 import Talismans2.init.ModItems;
 import Talismans2.keybinding.Keybindings;
@@ -17,16 +18,13 @@ public class ClientProxy extends CommonProxy
 	{
 		ClientRegistry.registerKeyBinding(Keybindings.craft);
 	}
-
-	public void registerPlayerRenderHandler()
-	{
-		PlayerRenderHandler.initialize();
-	}
 	
 	@Override
 	public void registerRender()
 	{
 		// Load textures for ModItems
 		ModItems.registerRenders();
+		// TODO fix Load Custum Renders
+//		BaubleRender.initialize();
 	}
 }
