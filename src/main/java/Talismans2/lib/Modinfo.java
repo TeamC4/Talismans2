@@ -11,7 +11,7 @@ public class Modinfo {
 	// Mod Name
 	public static final String NAME = "Talismans 2";
 	// Mod Version
-	public static final String Version = "2.2.0";
+	public static final String Version = "2.2.1";
 	// Common Proxy
 	public static final String SERVER_PROXY_CLASS = "Talismans2.proxies.CommonProxy";
 	// Client Proxy
@@ -19,6 +19,6 @@ public class Modinfo {
 	// Gui Factory Class
 	public static final String GUI_FACTORY_CLASS = "Talismans2.client.gui.TalismanGUIFactory";
 	// Mod Dependences
-	public static final String ModDependences = "required-after:Baubles;required-after:C4Lib:";
+	public static final String ModDependences = "required-after:Baubles;";
 
 }

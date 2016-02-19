@@ -54,9 +54,6 @@ public class Talismans2
 		// Loads Floating Talisman Patreon Only
 		// proxy.registerPlayerRenderHandler();
 
-		// Load ModItems
-		ModItems.init();
-
 		// Load Old Recipes
 		CraftingHandler.CopyTalismans(properties);
 
@@ -66,6 +63,9 @@ public class Talismans2
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event)
 	{
+		// Load ModItems
+		ModItems.init();
+		
 		// Load DungeonLoot
 		DungeonLoot.init(properties);
 

@@ -12,7 +12,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 
-public class ItemTalismanRings extends ItemTalismanBauble {
+public class ItemTalismanRings extends ItemTalismanBauble 
+{
 	// Names For Rings Depending on Meta Data
 	public static final String[] types = new String[] { "Blank", "Crafting",
 			"Flame", "Invisible", "Light", "Mining", "Movement", "Water",
@@ -20,7 +21,7 @@ public class ItemTalismanRings extends ItemTalismanBauble {
 
 	public ItemTalismanRings()
 	{
-		super(null, null);
+		super(null, null, false, null);
 		this.setHasSubtypes(true);
 		this.setUnlocalizedName(Names.NameTalismanRing);
 

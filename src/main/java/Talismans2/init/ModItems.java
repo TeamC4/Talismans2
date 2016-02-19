@@ -33,31 +33,31 @@ public class ModItems
 	public static void init()
 	{
 		//Blank Talisman
-		BlankTalisman = new ItemTalismanBauble(null, BaubleType.AMULET).setUnlocalizedName(Names.NameBlankTalisman);
+		BlankTalisman = new ItemTalismanBauble(null, null, false, BaubleType.AMULET).setUnlocalizedName(Names.NameBlankTalisman);
 		GameRegistry.registerItem(BlankTalisman, Names.NameBlankTalisman);
 		// Flame Talisman
-		FlameTalisman = new ItemTalismanBauble(Potion.fireResistance, BaubleType.AMULET).setUnlocalizedName(Names.NameFlameTalisman);
+		FlameTalisman = new ItemTalismanBauble(Potion.fireResistance, null, false, BaubleType.AMULET).setUnlocalizedName(Names.NameFlameTalisman);
 		GameRegistry.registerItem(FlameTalisman, Names.NameFlameTalisman);
 		// Water Talisman
-		WaterTalisman = new ItemTalismanBauble(Potion.waterBreathing, BaubleType.AMULET).setUnlocalizedName(Names.NameWaterTalisman);
+		WaterTalisman = new ItemTalismanBauble(Potion.waterBreathing, null, false, BaubleType.AMULET).setUnlocalizedName(Names.NameWaterTalisman);
 		GameRegistry.registerItem(WaterTalisman, Names.NameWaterTalisman);
 		// Light Talisman
-		LightTalisman = new ItemTalismanBauble(Potion.nightVision, BaubleType.AMULET).setUnlocalizedName(Names.NameLightTalisman);
+		LightTalisman = new ItemTalismanBauble(Potion.nightVision, null, false, BaubleType.AMULET).setUnlocalizedName(Names.NameLightTalisman);
 		GameRegistry.registerItem(LightTalisman, Names.NameLightTalisman);
 		// Movement Talisman
-		MovementTalisman = new ItemTalismanBauble(Potion.moveSpeed, BaubleType.AMULET).setUnlocalizedName(Names.NameMovementTalisman);
+		MovementTalisman = new ItemTalismanBauble(Potion.moveSpeed, Potion.jump, false, BaubleType.AMULET).setUnlocalizedName(Names.NameMovementTalisman);
 		GameRegistry.registerItem(MovementTalisman, Names.NameMovementTalisman);
 		// Mining Talisman
-		MiningTalisman = new ItemTalismanBauble(Potion.digSpeed, BaubleType.AMULET).setUnlocalizedName(Names.NameminingTalisman);
+		MiningTalisman = new ItemTalismanBauble(Potion.digSpeed, null, false, BaubleType.AMULET).setUnlocalizedName(Names.NameminingTalisman);
 		GameRegistry.registerItem(MiningTalisman, Names.NameminingTalisman);
 		// Invisible Talisman
-		InvisibleTalisman = new ItemTalismanBauble(Potion.invisibility, BaubleType.AMULET).setUnlocalizedName(Names.NameInvisibleTalisman);
+		InvisibleTalisman = new ItemTalismanBauble(Potion.invisibility, null, false, BaubleType.AMULET).setUnlocalizedName(Names.NameInvisibleTalisman);
 		GameRegistry.registerItem(InvisibleTalisman, Names.NameInvisibleTalisman);
 		// Witherless Talisman
-		WitherlessTalisman = new ItemTalismanBauble(Potion.wither, BaubleType.AMULET).setUnlocalizedName(Names.NameWitherlessTalisman);
+		WitherlessTalisman = new ItemTalismanBauble(Potion.wither, null, true, BaubleType.AMULET).setUnlocalizedName(Names.NameWitherlessTalisman);
 		GameRegistry.registerItem(WitherlessTalisman, Names.NameWitherlessTalisman);
 		// Crafting Talisman
-		CraftingTalisman = new ItemTalismanBauble(null, BaubleType.AMULET).setUnlocalizedName(Names.NameCraftTalisman);
+		CraftingTalisman = new ItemTalismanBauble(null, null, false, BaubleType.AMULET).setUnlocalizedName(Names.NameCraftTalisman);
 		GameRegistry.registerItem(CraftingTalisman, Names.NameCraftTalisman);
 		// Talisman Rings
 		TalismanRings = new ItemTalismanRings();
@@ -72,7 +72,6 @@ public class ModItems
 		InvisibleTalisman.setContainerItem(InvisibleTalisman);
 		WitherlessTalisman.setContainerItem(WitherlessTalisman);
 		CraftingTalisman.setContainerItem(CraftingTalisman);
-
 	}
 	
 	@SideOnly(Side.CLIENT)
@@ -88,14 +87,15 @@ public class ModItems
 		registerRender(WaterTalisman);
 		registerRender(WitherlessTalisman);		
 		registerMetaRender(TalismanRings);
-	
 	}
 	
+	@SideOnly(Side.CLIENT)
 	public static void registerRender(Item item)
 	{
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Modinfo.ID.toLowerCase() + ":" + item.getUnlocalizedName().toLowerCase().substring(5), "inventory"));
 	}
 	
+	@SideOnly(Side.CLIENT)
 	public static void registerMetaRender(Item item)
 	{
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Modinfo.ID.toLowerCase() + ":" + item.getUnlocalizedName().toLowerCase().substring(5), "inventory"));

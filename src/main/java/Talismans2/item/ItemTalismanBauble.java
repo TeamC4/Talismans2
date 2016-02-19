@@ -23,20 +23,22 @@ import net.minecraft.world.World;
  * @author Gigabit101
  */
 
-public class ItemTalismanBauble extends Item implements IBauble {
-
-	Potion potioneffect;
+public class ItemTalismanBauble extends Item implements IBauble 
+{
+	Potion effect;
+	Potion effect2;
+	boolean removeEffect;
 	BaubleType baubletype;
 	
-	public ItemTalismanBauble(Potion effect, BaubleType type)
+	public ItemTalismanBauble(Potion effect, Potion effect2, boolean removeeffect, BaubleType type)
 	{
-		super();
 		setCreativeTab(Talismans2.tabsTalismans);
 		setMaxStackSize(1);
 		this.baubletype = type;
-		this.potioneffect = effect;
+		this.effect = effect;
+		this.effect2 = effect2;
+		this.removeEffect = removeeffect;
 	}
-	
 
 	@Override
 	public boolean canEquip(ItemStack arg0, EntityLivingBase arg1)
@@ -62,21 +64,36 @@ public class ItemTalismanBauble extends Item implements IBauble {
 	@Override
 	public void onUnequipped(ItemStack stack, EntityLivingBase player)
 	{
-		if(potioneffect != null)
+		if(effect != null)
 		{
-			player.removePotionEffect(potioneffect.id);
+			player.removePotionEffect(effect.id);
+		}
+		if(effect2 != null)
+		{
+			player.removePotionEffect(effect2.id);
 		}
 	}
 
 	@Override
 	public void onWornTick(ItemStack stack, EntityLivingBase player)
 	{
-		if(potioneffect != null)
+		if(effect != null && !removeEffect)
 		{
-			if (!player.isPotionActive(potioneffect)) 
+			if (!player.isPotionActive(effect)) 
 			{
-				player.addPotionEffect(new PotionEffect(potioneffect.id, Integer.MAX_VALUE, 1, true, true));
+				player.addPotionEffect(new PotionEffect(effect.id, Integer.MAX_VALUE, 1, true, true));
 			}
+		}
+		if(effect2 != null && !removeEffect)
+		{
+			if (!player.isPotionActive(effect2)) 
+			{
+				player.addPotionEffect(new PotionEffect(effect2.id, Integer.MAX_VALUE, 1, true, true));
+			}
+		}
+		if(removeEffect)
+		{
+			player.removePotionEffect(effect.id);
 		}
 	}
 
@@ -99,11 +116,10 @@ public class ItemTalismanBauble extends Item implements IBauble {
 				{
 					if (!par2World.isRemote) 
 					{
-						baubles.setInventorySlotContents(i,
-								par1ItemStack.copy());
+						baubles.setInventorySlotContents(i, par1ItemStack.copy());
 
 						if (!par3EntityPlayer.capabilities.isCreativeMode)
-							par3EntityPlayer.inventory.setInventorySlotContents(par3EntityPlayer.inventory.currentItem,null);
+							par3EntityPlayer.inventory.setInventorySlotContents(par3EntityPlayer.inventory.currentItem, null);
 					}
 
 					onEquipped(par1ItemStack, par3EntityPlayer);
