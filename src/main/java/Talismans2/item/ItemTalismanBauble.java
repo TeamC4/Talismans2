@@ -2,6 +2,11 @@ package Talismans2.item;
 
 import java.util.List;
 
+import net.minecraft.init.MobEffects;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.EnumActionResult;
+import net.minecraft.util.EnumHand;
+import net.minecraft.util.text.translation.I18n;
 import org.lwjgl.input.Keyboard;
 
 import Talismans2.Talismans2;
@@ -16,7 +21,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
-import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 
 /**
@@ -34,6 +38,7 @@ public class ItemTalismanBauble extends Item implements IBauble
 	{
 		setCreativeTab(Talismans2.tabsTalismans);
 		setMaxStackSize(1);
+		setUnlocalizedName("talisman");
 		this.baubletype = type;
 		this.effect = effect;
 		this.effect2 = effect2;
@@ -66,11 +71,11 @@ public class ItemTalismanBauble extends Item implements IBauble
 	{
 		if(effect != null)
 		{
-			player.removePotionEffect(effect.id);
+			player.removePotionEffect(effect);
 		}
 		if(effect2 != null)
 		{
-			player.removePotionEffect(effect2.id);
+			player.removePotionEffect(effect2);
 		}
 	}
 
@@ -79,21 +84,21 @@ public class ItemTalismanBauble extends Item implements IBauble
 	{
 		if(effect != null && !removeEffect)
 		{
-			if (!player.isPotionActive(effect)) 
+			if (!player.isPotionActive(effect))
 			{
-				player.addPotionEffect(new PotionEffect(effect.id, Integer.MAX_VALUE, 1, true, true));
+				player.addPotionEffect(new PotionEffect(effect, Integer.MAX_VALUE, 1, true, true));
 			}
 		}
 		if(effect2 != null && !removeEffect)
 		{
 			if (!player.isPotionActive(effect2)) 
 			{
-				player.addPotionEffect(new PotionEffect(effect2.id, Integer.MAX_VALUE, 1, true, true));
+				player.addPotionEffect(new PotionEffect(effect2, Integer.MAX_VALUE, 1, true, true));
 			}
 		}
 		if(removeEffect)
 		{
-			player.removePotionEffect(effect.id);
+			player.removePotionEffect(effect);
 		}
 	}
 
@@ -103,38 +108,36 @@ public class ItemTalismanBauble extends Item implements IBauble
 	}
 
 	@Override
-	// Equips Talismans When Right Clicked In Players Hand
-	public ItemStack onItemRightClick(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer)
+	public ActionResult<ItemStack> onItemRightClick(ItemStack itemStack, World world, EntityPlayer player, EnumHand hand)
 	{
-		InventoryBaubles baubles = PlayerHandler.getPlayerBaubles(par3EntityPlayer);
-		for (int i = 0; i < baubles.getSizeInventory(); i++) 
+		InventoryBaubles baubles = PlayerHandler.getPlayerBaubles(player);
+		for (int i = 0; i < baubles.getSizeInventory(); i++)
 		{
-			if (baubles.isItemValidForSlot(i, par1ItemStack)) 
+			if (baubles.isItemValidForSlot(i, itemStack))
 			{
 				ItemStack stackInSlot = baubles.getStackInSlot(i);
-				if (stackInSlot == null || ((IBauble) stackInSlot.getItem()).canUnequip(stackInSlot, par3EntityPlayer)) 
+				if (stackInSlot == null || ((IBauble) stackInSlot.getItem()).canUnequip(stackInSlot, player))
 				{
-					if (!par2World.isRemote) 
+					if (!world.isRemote)
 					{
-						baubles.setInventorySlotContents(i, par1ItemStack.copy());
+						baubles.setInventorySlotContents(i, itemStack.copy());
 
-						if (!par3EntityPlayer.capabilities.isCreativeMode)
-							par3EntityPlayer.inventory.setInventorySlotContents(par3EntityPlayer.inventory.currentItem, null);
+						if (!player.capabilities.isCreativeMode)
+							player.inventory.setInventorySlotContents(player.inventory.currentItem, null);
 					}
 
-					onEquipped(par1ItemStack, par3EntityPlayer);
+					onEquipped(itemStack, player);
 
-					if (stackInSlot != null) 
+					if (stackInSlot != null)
 					{
-						((IBauble) stackInSlot.getItem()).onUnequipped(stackInSlot, par3EntityPlayer);
-						return stackInSlot.copy();
+						((IBauble) stackInSlot.getItem()).onUnequipped(stackInSlot, player);
+						return new ActionResult<>(EnumActionResult.SUCCESS ,itemStack);
 					}
 					break;
 				}
 			}
 		}
-
-		return par1ItemStack;
+		return new ActionResult<>(EnumActionResult.FAIL ,itemStack);
 	}
 	
 	@Override
@@ -142,11 +145,11 @@ public class ItemTalismanBauble extends Item implements IBauble
 	{
 		if (Keyboard.isKeyDown(Keyboard.KEY_LSHIFT) || Keyboard.isKeyDown(Keyboard.KEY_RSHIFT)) 
 		{
-			par3List.add(StatCollector.translateToLocal("toolTip1" + iS.getUnlocalizedName()));
+			par3List.add(I18n.translateToLocal("toolTip1" + iS.getUnlocalizedName()));
 		} 
 		else 
 		{
-			par3List.add(StatCollector.translateToLocal(Modinfo.ID + "toolTipShift"));
+			par3List.add(I18n.translateToLocal(Modinfo.ID + "toolTipShift"));
 		}
 	}
 }

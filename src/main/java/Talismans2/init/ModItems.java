@@ -6,9 +6,9 @@ import Talismans2.lib.Modinfo;
 import Talismans2.lib.Names;
 import baubles.api.BaubleType;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.resources.model.ModelResourceLocation;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.init.MobEffects;
 import net.minecraft.item.Item;
-import net.minecraft.potion.Potion;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -36,25 +36,25 @@ public class ModItems
 		BlankTalisman = new ItemTalismanBauble(null, null, false, BaubleType.AMULET).setUnlocalizedName(Names.NameBlankTalisman);
 		GameRegistry.registerItem(BlankTalisman, Names.NameBlankTalisman);
 		// Flame Talisman
-		FlameTalisman = new ItemTalismanBauble(Potion.fireResistance, null, false, BaubleType.AMULET).setUnlocalizedName(Names.NameFlameTalisman);
+		FlameTalisman = new ItemTalismanBauble(MobEffects.fireResistance, null, false, BaubleType.AMULET).setUnlocalizedName(Names.NameFlameTalisman);
 		GameRegistry.registerItem(FlameTalisman, Names.NameFlameTalisman);
 		// Water Talisman
-		WaterTalisman = new ItemTalismanBauble(Potion.waterBreathing, null, false, BaubleType.AMULET).setUnlocalizedName(Names.NameWaterTalisman);
+		WaterTalisman = new ItemTalismanBauble(MobEffects.waterBreathing, null, false, BaubleType.AMULET).setUnlocalizedName(Names.NameWaterTalisman);
 		GameRegistry.registerItem(WaterTalisman, Names.NameWaterTalisman);
 		// Light Talisman
-		LightTalisman = new ItemTalismanBauble(Potion.nightVision, null, false, BaubleType.AMULET).setUnlocalizedName(Names.NameLightTalisman);
+		LightTalisman = new ItemTalismanBauble(MobEffects.nightVision, null, false, BaubleType.AMULET).setUnlocalizedName(Names.NameLightTalisman);
 		GameRegistry.registerItem(LightTalisman, Names.NameLightTalisman);
 		// Movement Talisman
-		MovementTalisman = new ItemTalismanBauble(Potion.moveSpeed, Potion.jump, false, BaubleType.AMULET).setUnlocalizedName(Names.NameMovementTalisman);
+		MovementTalisman = new ItemTalismanBauble(MobEffects.moveSpeed, MobEffects.jump, false, BaubleType.AMULET).setUnlocalizedName(Names.NameMovementTalisman);
 		GameRegistry.registerItem(MovementTalisman, Names.NameMovementTalisman);
 		// Mining Talisman
-		MiningTalisman = new ItemTalismanBauble(Potion.digSpeed, null, false, BaubleType.AMULET).setUnlocalizedName(Names.NameminingTalisman);
+		MiningTalisman = new ItemTalismanBauble(MobEffects.digSpeed, null, false, BaubleType.AMULET).setUnlocalizedName(Names.NameminingTalisman);
 		GameRegistry.registerItem(MiningTalisman, Names.NameminingTalisman);
 		// Invisible Talisman
-		InvisibleTalisman = new ItemTalismanBauble(Potion.invisibility, null, false, BaubleType.AMULET).setUnlocalizedName(Names.NameInvisibleTalisman);
+		InvisibleTalisman = new ItemTalismanBauble(MobEffects.invisibility, null, false, BaubleType.AMULET).setUnlocalizedName(Names.NameInvisibleTalisman);
 		GameRegistry.registerItem(InvisibleTalisman, Names.NameInvisibleTalisman);
 		// Witherless Talisman
-		WitherlessTalisman = new ItemTalismanBauble(Potion.wither, null, true, BaubleType.AMULET).setUnlocalizedName(Names.NameWitherlessTalisman);
+		WitherlessTalisman = new ItemTalismanBauble(MobEffects.wither, null, true, BaubleType.AMULET).setUnlocalizedName(Names.NameWitherlessTalisman);
 		GameRegistry.registerItem(WitherlessTalisman, Names.NameWitherlessTalisman);
 		// Crafting Talisman
 		CraftingTalisman = new ItemTalismanBauble(null, null, false, BaubleType.AMULET).setUnlocalizedName(Names.NameCraftTalisman);

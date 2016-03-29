@@ -1,11 +1,8 @@
 package Talismans2.proxies;
 
-import Talismans2.client.BaubleRender;
-import Talismans2.client.PlayerRenderHandler;
 import Talismans2.init.ModItems;
 import Talismans2.keybinding.Keybindings;
 import net.minecraftforge.fml.client.registry.ClientRegistry;
-import net.minecraftforge.fml.common.Loader;
 
 /**
  * @author Gigabit101

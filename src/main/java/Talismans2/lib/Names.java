@@ -11,27 +11,27 @@ public class Names {
 		public static final String CRAFT = "keys.Talismans.craft";
 	}
 	
-	public static final String NameBlankTalisman = "blank_talisman";
-	public static final String NameCraftTalisman = "craft_talisman";
-	public static final String NameFlameTalisman = "flame_talisman";
-	public static final String NameInvisibleTalisman = "invisible_talisman";
-	public static final String NameLightTalisman = "light_talisman";
-	public static final String NameminingTalisman = "mining_talisman";
-	public static final String NameMovementTalisman = "movement_talisman";
-	public static final String NameWaterTalisman = "water_talisman";
-	public static final String NameWitherlessTalisman = "witherless_talisman";
-	public static final String NameTalismanRing = "ring_talisman";
+	public static String NameBlankTalisman = "blank_talisman";
+	public static String NameCraftTalisman = "craft_talisman";
+	public static String NameFlameTalisman = "flame_talisman";
+	public static String NameInvisibleTalisman = "invisible_talisman";
+	public static String NameLightTalisman = "light_talisman";
+	public static String NameminingTalisman = "mining_talisman";
+	public static String NameMovementTalisman = "movement_talisman";
+	public static String NameWaterTalisman = "water_talisman";
+	public static String NameWitherlessTalisman = "witherless_talisman";
+	public static String NameTalismanRing = "ring_talisman";
 	
-	public static final String NameBloodFlameTalisman = "blood_flame_talisman";
-	public static final String NameBloodInvisibleTalisman = "blood_invisible_talisman";
-	public static final String NameBloodLightTalisman = "blood_light_talisman";
-	public static final String NameBloodMiningTalisman = "blood_mining_talisman";
-	public static final String NameBloodMovementTalisman = "blood_movement_talisman";
-	public static final String NameBloodWaterTalisman = "blood_water_talisman";
-	public static final String NameBloodWitherlessTalisman = "blood_witherless_talisman";
+	public static String NameBloodFlameTalisman = "blood_flame_talisman";
+	public static String NameBloodInvisibleTalisman = "blood_invisible_talisman";
+	public static String NameBloodLightTalisman = "blood_light_talisman";
+	public static String NameBloodMiningTalisman = "blood_mining_talisman";
+	public static String NameBloodMovementTalisman = "blood_movement_talisman";
+	public static String NameBloodWaterTalisman = "blood_water_talisman";
+	public static String NameBloodWitherlessTalisman = "blood_witherless_talisman";
 	
-	public static final String NameCraftingItem = "crafting_item1";
+	public static String NameCraftingItem = "crafting_item1";
 	
-	public static final String NameTalismanCrafter = "talisman_crafter";
+	public static String NameTalismanCrafter = "talisman_crafter";
 
 }

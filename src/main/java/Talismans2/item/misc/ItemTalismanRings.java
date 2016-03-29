@@ -7,6 +7,7 @@ import Talismans2.lib.Names;
 import baubles.api.BaubleType;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.init.MobEffects;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
@@ -59,40 +60,40 @@ public class ItemTalismanRings extends ItemTalismanBauble
 	{
 
 		if (itemstack.getItemDamage() == 2
-				&& !player.isPotionActive(Potion.fireResistance)) {
-			player.addPotionEffect(new PotionEffect(Potion.fireResistance.id,
+				&& !player.isPotionActive(MobEffects.fireResistance)) {
+			player.addPotionEffect(new PotionEffect(MobEffects.fireResistance,
 					Integer.MAX_VALUE, 1, true, true));
 		}
 		if (itemstack.getItemDamage() == 3
-				&& !player.isPotionActive(Potion.invisibility)) {
-			player.addPotionEffect(new PotionEffect(Potion.invisibility.id,
+				&& !player.isPotionActive(MobEffects.invisibility)) {
+			player.addPotionEffect(new PotionEffect(MobEffects.invisibility,
 					Integer.MAX_VALUE, 1, true, true));
 		}
 		if (itemstack.getItemDamage() == 4
-				&& !player.isPotionActive(Potion.nightVision)) {
-			player.addPotionEffect(new PotionEffect(Potion.nightVision.id,
+				&& !player.isPotionActive(MobEffects.nightVision)) {
+			player.addPotionEffect(new PotionEffect(MobEffects.nightVision,
 					Integer.MAX_VALUE, 1, true, true));
 		}
 		if (itemstack.getItemDamage() == 5
-				&& !player.isPotionActive(Potion.digSpeed)) {
-			player.addPotionEffect(new PotionEffect(Potion.digSpeed.id,
+				&& !player.isPotionActive(MobEffects.digSpeed)) {
+			player.addPotionEffect(new PotionEffect(MobEffects.digSpeed,
 					Integer.MAX_VALUE, 1, true, true));
 		}
 		if (itemstack.getItemDamage() == 6
-				&& !player.isPotionActive(Potion.moveSpeed)) {
-			player.addPotionEffect(new PotionEffect(Potion.moveSpeed.id,
+				&& !player.isPotionActive(MobEffects.moveSpeed)) {
+			player.addPotionEffect(new PotionEffect(MobEffects.moveSpeed,
 					Integer.MAX_VALUE, 1, true, true));
-			player.addPotionEffect(new PotionEffect(Potion.jump.id,
+			player.addPotionEffect(new PotionEffect(MobEffects.jump,
 					Integer.MAX_VALUE, 1, true, true));
 		}
 		if (itemstack.getItemDamage() == 7
-				&& !player.isPotionActive(Potion.waterBreathing)) {
-			player.addPotionEffect(new PotionEffect(Potion.waterBreathing.id,
+				&& !player.isPotionActive(MobEffects.waterBreathing)) {
+			player.addPotionEffect(new PotionEffect(MobEffects.waterBreathing,
 					Integer.MAX_VALUE, 1, true, true));
 		}
 		if (itemstack.getItemDamage() == 8)
 			;
-		player.removePotionEffect(Potion.wither.id);
+		player.removePotionEffect(MobEffects.wither);
 	}
 
 	@Override
@@ -100,23 +101,23 @@ public class ItemTalismanRings extends ItemTalismanBauble
 	public void onUnequipped(ItemStack itemstack, EntityLivingBase player)
 	{
 		if (itemstack.getItemDamage() == 2)
-			player.removePotionEffect(Potion.fireResistance.id);
+			player.removePotionEffect(MobEffects.fireResistance);
 
 		if (itemstack.getItemDamage() == 3)
-			player.removePotionEffect(Potion.invisibility.id);
+			player.removePotionEffect(MobEffects.invisibility);
 
 		if (itemstack.getItemDamage() == 4)
-			player.removePotionEffect(Potion.nightVision.id);
+			player.removePotionEffect(MobEffects.nightVision);
 
 		if (itemstack.getItemDamage() == 5)
-			player.removePotionEffect(Potion.digSpeed.id);
+			player.removePotionEffect(MobEffects.digSpeed);
 
 		if (itemstack.getItemDamage() == 6)
-			player.removePotionEffect(Potion.moveSpeed.id);
-		player.removePotionEffect(Potion.jump.id);
+			player.removePotionEffect(MobEffects.moveSpeed);
+		player.removePotionEffect(MobEffects.jump);
 
 		if (itemstack.getItemDamage() == 7)
-			player.removePotionEffect(Potion.waterBreathing.id);
+			player.removePotionEffect(MobEffects.waterBreathing);
 
 	}
 }

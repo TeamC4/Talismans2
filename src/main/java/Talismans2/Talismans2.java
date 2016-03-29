@@ -79,13 +79,4 @@ public class Talismans2
 		
 		LogHelper.info("Post Initialization Complete!");
 	}
-
-	@SubscribeEvent
-	public void onConfigChanged(ConfigChangedEvent.OnConfigChangedEvent cfgChange)
-	{
-		if (cfgChange.modID.equals("Talismans 2")) 
-		{
-			ConfigTalismans.Configs();
-		}
-	}
 }
